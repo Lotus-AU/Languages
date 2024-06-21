@@ -1,0 +1,1345 @@
+Name: English
+Authors:
+- Shiftyrose
+- Essence
+- Thetaa
+- Eur Mom
+- Discussions
+Translations:
+  Roles:
+    Options:
+      SubsequentChance: N/A
+    Assassin:
+      RoleName: Assassin
+      Description: Assassin is an evil guesser and part of the Impostor team. While in meeting the Assassin first vote locks in the player they're going to guess. Then the Assassin uses a chat command to guess the role (i.e. /r [role]). The Assassin's second guess locks in the guess. The Assassin has the ability to kill regularly and will suicide if they miss-guess.
+      Blurb: Guess the oppositions roles.
+    Blackmailer:
+      RoleName: Blackmailer
+      Description: Shapeshift into a player to blackmail them.\nDuring meeting, the blackmailed player will have text displaying "BLACKMAILED" to all players.\nIf the Blackmailed player attempts to speak a certain amount of times (Depends on settings), they will die.
+      Blurb: Shapeshifting Will Blackmail Target
+      BlackmailMessage: You have been blackmailed! Sending a chat message will kill you.
+      BlackmailWarning: You are not allowed to speak! If you speak again you may be killed.
+      Options:
+        WarningsUntilDeath: Warnings Until Death
+        ShowBlackmailedToAll: SHow Blackmailed to All
+      BlackmailedMessage: You have been blackmailed! Sending a chat message will kill you.
+      WarningMessage: You are not allowed to speak! If you speak again you may be killed.
+      BlackmailedText: BLACKMAILED
+    BountyHunter:
+      RoleName: Bounty Hunter
+      Description: The Bounty Hunter will receive a target whose name will show under their name. If the Bounty Hunter kills their target, their kill cooldown is significantly reduced for their next kill. The time it takes for the target to change, the kill cooldown after killing their target, and kill cooldown after killing a non-target are predetermined by host in settings.
+      Blurb: Kill Bounty Players & Gain a Reduced Kill Cooldown
+    Camouflager:
+      RoleName: Camouflager
+      Description: Shapeshift into a player and cause every living player to shapeshift into the chosen player for a short amount of time. When the duration is over (predetermined by host in settings), or if a meeting is called, players return to their normal form.
+      Blurb: Disguise Everyone
+    Consort:
+      RoleName: Consort
+      Description: Use the Pet button to alternate between Role-Blocking a player and Killing. Role-Blocks prevent the player from killing, reporting bodies, calling meetings, shapeshifting, and/or venting.
+      Blurb: Role-Block Players
+    Creeper:
+      RoleName: Creeper
+      Description: The Creeper's only job is to cause as much chaos as possible. Use either your Pet or Shapeshift button to kill yourself and any player within a radius determined by host.\nYou might find yourself lucky and be protected from your bombs with a shield (ex. medic shield) and live to see another day. If the option is off however, nothing can protect you.
+      Blurb: Bomb Players
+      Options:
+        BomberProtection: Bomber Protected by Shielding
+        ExplosionRadius: Explosion Radius
+        CreeperProtection: Protected by Shielding
+        CreeperGracePeriod: Grace Period
+        CanKillNormal: Can Kill Normally
+      ExplosionGracePeriod: 'Explosion Grace Period: {0}'
+    Disperser:
+      RoleName: Disperser
+      Description: Use Pet button to teleport everyone to a random vent.
+      Blurb: Teleport Players
+      Options:
+        DisperseCooldown: Disperse Cooldown
+        DisperserGetsDispersed: Disperser::0 Gets Dispersed
+    Escapist:
+      RoleName: Escapist
+      Description: Use the Pet button to mark a location. After a minor cooldown, you can re-use the Pet button to teleport back to your marked location. This will then put the mark ability on cooldown for a set amount of time.
+      Blurb: Mark a Location & Strategically Escape
+    FireWorks:
+      RoleName: FireWorks
+      Description: Use the Shapeshift button to plant fireworks (aka bombs) around the map until the Max Firework Count has been reached (determined by host). Use Shapeshift button again to detonate all of the Fireworks, killing everyone within radius of each firework. Can also kill normally between placing fireworks.\n\nNote - The explosion goes through walls\n\n
+      Blurb: Plant Fireworks to Explode Players
+      Options:
+        PlantFireworkCooldown: Plant Firework Cooldown
+        TotalFireworks: Total Firework Charges
+        AbleToDetonateText: Only Detonate When Last Impostor::0
+      AbleToDetonateText: Detonations Ready!
+    Freezer:
+      RoleName: Freezer
+      Description: Shapeshift into a player to freeze that selected player for the duration of the shapeshift. Can kill at any time.
+      Blurb: Shapeshift Into A Player To Freeze Them In Place
+    Grenadier:
+      RoleName: Grenadier
+      Description: Using the Pet button sets off a flash-bang, blinding players in a certain radius. It may also blind allied-Impostors, based on the settings.
+      Blurb: Blind Nearby Players
+    IdentityThief:
+      RoleName: Identity Thief
+      Description: The Identity Thief shapeshifts into whoever they kill. The disguise lasts until they are ready to kill again, or, optionally, until they kill another player and shift into their next victim.
+      Blurb: Shapeshift Into Your Victim
+      Options:
+        DisguiseSettings: Disguise Settings
+        UntilKillCooldown: Kill CD
+        UntilNextKill: Next Kill
+        TotallySwapIdentity: Totally Swap Identity
+        UntilMeeting: Until Meeting
+    Impostor:
+      RoleName: Imposter
+      Blurb: Kill Crewmates and Neutrals.
+      Description: A vanilla impostor. Kill all other players, less your allies, and be the last faction standing.
+    Janitor:
+      RoleName: Janitor
+      Description: Choose between killing and cleaning at the end of kill cooldown. Use Report button to clean dead bodies, making them un-reportable. Use Kill button to kill players. The Janitor is unable to report bodies normally. The host may also set it so that bodies are automatically cleaned upon being killed.
+      Blurb: Report Bodies To Make Them Un-reportable.
+      Options:
+        CleanOnKill: Clean On KIll
+        KillCooldownMultiplier: Kill Cooldown Multiplier
+    Mafioso:
+      Options:
+        StartsGameWithGun: Starts Game With Gun
+        ModifyShopCosts: Modify Shop Costs
+        GunCost: Gun Cost
+        BulletCost: Bullet Cost
+        VestCost: Vest Cost
+        RoleRevealerCost: Role Revealer Cost
+        GunCooldown: Gun Cooldown
+        CashFromReporting: Cash from Reporting Bodies
+        RefreshTasks: Refresh Tasks When All Complete
+      CashText: 'Cash::0: {0}'
+      GunItem: Tommy Gun
+      VestItem: Bulletproof Vest
+      BulletItem: Bullet
+      RevealerItem: Role Revealer
+      RevealerReady: Role Revealer Ready
+      ShopMessage: >-
+        You are a member of the Mafia! You can purchase items during meetings. To purchase an item, first vote yourself until that item is selected. Then skip to continue.
+
+        Voting for ANY OTHER player will count as your vote for that player, otherwise you will still remain in shop mode.
+      SelectedItemMessage: You have selected to purchase {0}. Purchasing this will leave you with {1} cash. Press the skip vote button to continue your purchase.
+      PurchaseItemMessage: 'You have purchased: {0}. You now have {1} cash leftover.'
+      RoleName: Mafioso
+      Blurb: Gain cash by completing tasks
+      Description: The Mafioso is a unique impostor role, who cannot kill off the bat. Instead the Mafioso must complete tasks in order to gain cash. During meetings, the Mafioso can use their cash to purchase a couple of different items.\n\nTommy Gun - Allows the Mafioso to kill (one time purchase)\n\nBullet - Required to use with the Tommy Gun\n\nBulletproof Vest - Gives the Mafioso one-time use invincibility for next round\n\nRole Revealer - Allows the Mafioso to reveal the role of one other player\n\nType /o to see how much each item costs. Only items you are able to use/buy will show up in the shop.
+    Mare:
+      RoleName: Mare
+      Description: Obtain increased speed and decreased kill cooldown during the sabotages determined by host. Be careful! If it's enabled, your name will appear purple while your ability is active.
+      Blurb: Sabotage to Unleash Your Powers
+    Mastermind:
+      Options:
+        ManipulatedPlayerLimit: Manipulated Player Limit
+        ImpostorsCanSeeManipulated: Impostors::0 Can See Manipulated
+        TimeUntilSuicide: Time Until Suicide
+        ManipulationCooldown: Manipulation Cooldown
+      ManipulatedText: Manipulated
+      KillImploredText: >-
+        You <b>MUST</b> Kill Someone In {0}
+
+        (Use either your Kill or Pet button!)
+      RoleName: Mastermind
+      Description: As the Mastermind, you have the ability to manipulate players. By using your kill button on someone, you can manipulate them into killing for you. The manipulated must use their Kill/Pet button to kill others. If the manipulated player does not kill in time, they will suicide.
+      Blurb: Manipulate and control others.
+    Miner:
+      RoleName: Miner
+      Description: Use the Pet button to teleport to the last vent used. Kill, vent, and sabotage like any other Impostor role.\n\nPro Tip - Make sure you have enough room for the Pet animation!
+      Blurb: Use Pet To Teleport to Vents
+    Morphling:
+      RoleName: Morphling
+      Description: The Morphling can shapeshift themselves into any player that was still alive at the end of the last meeting.\nIt is the Vanilla Shapeshifter.
+      Blurb: Morph Into Other Players
+    Ninja:
+      RoleName: Ninja
+      Description: Use the Pet or Shapeshift button (depending on host's settings) to switch between Hunting and Killing mode. While in Hunting mode, use the Kill button to mark a target, then use the Pet button to teleport the player to you (or you to the player depending on settings) and execute the kill. Ninja may not use their Kill button to kill normally while in Hunting mode.\n\nPro Tip - Make sure you have enough room for the Pet animation!
+      Blurb: Discreetly kill your Victims
+    PickPocket:
+      RoleName: Pickpocket
+      Description: The Pickpocket steals the votes from the players they kill. These votes stack up, which can make the Pickpocket very powerful. They may have a maximum number of votes depending on host's settings.
+      Blurb: Steal Votes From Your Kills
+      Options:
+        MaximumAdditionalVotes: Maximum Additional Votes
+        ResetVotesAfterMeeting: Reset Votes After Meetings
+    Puppeteer:
+      RoleName: Puppeteer
+      Description: The Puppeteer cannot perform a normal kill. Instead, they can control a player and force them to kill the next non-Impostor they come near.\n\nUse the Kill button next to a player to gain control over them. If the person who was killed by the Puppeteer's victim has an ability that activates upon dying, then the victim will have the ability affect them.
+      Blurb: Control Players
+    Sniper:
+      RoleName: Sniper
+      Description: Use Shapeshift button to shift into another player. Take 1-2 steps in the direction you want to fire and un-shift to shoot. A bullet will travel in that direction until it kills a player.\n\nWhen out of bullets, Sniper turns into a normal Impostor.
+      Blurb: Kill From A Far Distance
+      Options:
+        SniperBulletCount: Sniper Bullet Count
+        SnipingCooldown: Sniping Cooldown
+        RefundBulletOnKill: Refund Bullet on Kills
+        PreciseShooting: Precise Shooting
+        PlayerPiercing: Player Piercing
+    Swooper:
+      RoleName: Swooper
+      Description: Use the Vent button to temporarily become invisible. Venting while invisible will cause the Swooper to become visible again. NOTE -  If the Swooper kills the Demolitionist, it will die as Swooper cannot full vent.
+      Blurb: Vent To Become Invisible
+    TimeThief:
+      RoleName: Time Thief
+      Description: Kill players to decrease meeting/voting time.
+      Blurb: Decrease Meeting and Voting Time
+    Vampire:
+      RoleName: Vampire
+      Description: The Vampire's Kill/Bite button causes a delayed kill. The bitten player will die after a certain amount of time (which host controls) or when the next meeting is called.\n\nIf the Vampire bites Bait, the player will die immediately, and they will self-report.
+      Blurb: Delayed Kills
+      Options:
+        KillDelay: Kill Delay
+    Vampiress:
+      RoleName: Vampiress
+      Description: Like the vampire, the Vampiress can bite players who will then die after a certain time (determined by host), however, it can also make direct kills like regular impostors. Use the Pet Button to switch between Bite and Kill.\n\nPro Tip - Make sure you have enough room for the Pet animation!
+      Blurb: Delayed & Normal Kills
+    Warlock:
+      RoleName: Warlock
+      Description: Use the Kill Button to curse a player. The next time the Warlock shapeshifts, the cursed player will kill the nearest person. The Warlock may kill normally while shapeshifted.\n\nBe Careful! Cursed players can kill allied Impostors (and even the Warlock themself!).
+      Blurb: Curse Players and Force Them to Kill Others
+    Witch:
+      RoleName: Witch
+      Description: The Witch's Kill/Spell Button alternates between spelling and killing players.\n\nPlayers will who are spelled by the witch will be seen with a cross during the meeting. If the Witch is not voted off during this meeting, the cursed player dies.\n\nRegular kill self-reports Bait.\nSpell does not self-report Bait.
+      Blurb: Kill & Cast Spells
+      Options:
+        FreelySwitchModes: Freely Switch Modes
+        SwitchModesAfterAttack: Switch Modes After Attack
+      CursedMessage: '{0}::0 cursed {1}::1 to die at the end of next meeting.'
+      CursingModeText: Cursing
+      KillingModeText: Killing
+      HexedCauseOfDeath: Hexed
+      CursedStatusDescription: You have been hexed. Hexed players will die after the meeting unless the source of the hex is voted out.
+    YinYanger:
+      RoleName: Yin Yanger
+      Description: The Yin Yanger can make two Crewmates kill each other. Use the Kill button to tag two players. When they come within kill distance, they will kill each other. Yin Yanger can kill normally once targets have been set.
+      Blurb: Make Two Players Kill Each Other
+      YinYangCooldown: Yin Yang Cooldown
+    Madmate:
+      RoleName: Madmate
+      Description: The Madmate is a Impostor sided Crewmate. They are unable to kill and do not know who the Impostors are and the Impostors cannot tell them apart from other Crewmates.\n\nWhat To Do:\nTry to get back into the Impostors good graces.\nAct sus. Take suspicion off of Impostors by pretending to fix sabotages, venting, etc.
+      Blurb: Betray the Crewmates
+    MadGuardian:
+      RoleName: Mad Guardian
+      Description: The Mad Guardian is an Imposter sided Crewmate.\nThe Mad Guardian must do tasks to become invincible.\nMadmates do not know who the Impostors are and the Impostors cannot tell who they are from other Crewmates.
+      Blurb: Finish Tasks To Become Unkillable
+    MadSnitch:
+      RoleName: Mad Snitch
+      Description: The Mad Snitch is an Imposter sided Crewmate.\n\nMuch like the Snitch, The Mad Snitch must complete tasks to figure out the Imposters to defend them in meetings.\n\nThey do not know who the Impostors are and the Impostors cannot tell them apart from other Crewmates.
+      Blurb: Finish Tasks To See Impostors
+    Parasite:
+      RoleName: Parasite
+      Description: The Parasite is an Impostor Sided Killer who is able to kill but doesn't know who the Imposters are and vice versa. The Parasite is able to do everything that a regular imposter can do, and it must work with the Imposters to win together.. If they're still alive, that is. *wink*
+      Blurb: Work with the Imposters to win.
+    Alchemist:
+      RoleName: Alchemist
+      Blurb: Collect Ingredients to Craft the Perfect Potions
+      Description: >
+        Alchemist is a jack-of-all-trades crewmate role that collects "ingredients". Ingredients can be found in the following ways:
+          • Catalyst - Found by completing tasks
+          • Essence of Sight - Found when helping fix lights
+          • Fragment of Discussions - Found randomly in groups of 3 or more players
+          • Shifting Rose - Found after a player shapeshifts
+          • Theta Rift - Found randomly
+          • Vial of Decay - Found off dead bodies
+        The Alchemist can use their pet button to pick up these ingredients, and will get a message below their name saying: "Found: [Ingredient Name]".
+
+        The Alchemist uses ingredients to craft potions, to switch into "crafting mode" the Alchemist must hold down their pet button. Once in crafting mode, the pet button can be used to switch the next crafted potion.
+
+        If in the crafting menu, the Alchemist can hold down their pet button to exit it. If the Alchemist has all of the necessary ingredients to craft the potion they were on, the potion will begin crafting as they hold the pet button.
+
+        Once the Alchemist has a potion, they can hold down the pet button to use it, consuming it.
+      Ingredients:
+        Catalyst: Catalyst
+        Chaos: Theta Rift
+        Death: Vial of Decay
+        Purity: Shifting Rose
+        Sight: Essence of Sight
+        Tinkering: Fragment of Discussions
+      CraftingPotionText: 'Crafting:'
+      Potions:
+        Death: Potion of Death
+        Protection: Castling Brew
+        Random: Unstable Concoction
+        Revealing: Serene Grace
+        Sabotage: Mechanic's Mix
+        Sight: Potion of Sight
+        Teleportation: Warp Potion
+        Voting: Leader Potion
+      FoundIngredientText: 'Found:'
+    Charmer:
+      RoleName: Charmer
+      Description: When the Charmer uses their target button on an impostor or neutral killer, they become charmed and join the crewmates team. Charmed players will know they've been charmed, and lose the ability to kill crewmates.  If the Charmer charms a crewmate, they misfire and die.
+      Blurb: Charm enemies to join your team.
+      Options:
+        AbilityButton: Ability Button
+        KillButton: Kill Button
+        PetButton: Pet Button
+        TasksPerAbility: Tasks Needed for Ability
+        CharmingCooldown: Charming Cooldown
+        CharmedPlayersWinWithCrew: Charmed Players Win with Crew
+        BreakCharmOnDeath: Break Charm on Charmer::0 Death
+        MaxCharmedPlayers: Max Charmed Players
+      CharmedText: Charmed
+      CharmedStatistic: Charmed Players
+      CharmedDescription: You have been Charmed. So long as you are charmed, you cannot kill Crewmates and are considered allies with them.
+    Bastion:
+      RoleName: Bastion
+      Blurb: Bomb Vents
+      Description: Plant bombs in vents by venting. Players who use that vent will be bombed (killed).\nBe careful! The Bastion can bomb themself by using a vent they’ve already planted a bomb in.\nBombs last for one round only. Vents will be reset at each meeting.
+      Options:
+        PlantBombCooldown: Plant Bomb Cooldown
+        BombsPerRound: Bombs per Round
+    Bodyguard:
+      RoleName: Bodyguard
+      Description: The first vote from a Bodyguard becomes the Bodyguard's Target. This will not count as a vote. When the Bodyguard's Target is attacked, the target will switch spots with the Bodyguard who will then kill the attacker and themselves.\n\nThe Bodyguard may skip freely before their targe is locked in, and vote freely after.
+      Blurb: Sacrifice's Life To Protect Another
+      ProtectingMessage: 'You are currently protecting:'
+      VotePlayerInfo: Vote to select a player to guard.
+      Options:
+        BeneficialInteractionProtection: Protect against Beneficial::0 Interactions
+        NeutralInteractionProtection: Protect against Neutral::0 Interactions
+      BodyguardHelpMessage: 'You are a Bodyguard! Your duty: to protect the innocent! Vote a player to protect next round! Alternatively, you can skip here to return to normal voting.'
+    Chameleon:
+      RoleName: Chameleon
+      Description: The Chameleon can use their vent button to temporarily turn invisible. Their invisible duration is displayed below their name, and after a fixed duration they will re-appear in their current spot.
+      Blurb: Camoflague With Your Environment
+      Options:
+        InvisibilityDuration: Invisibility Duration
+        InvisibilityCooldown: Invisibility Cooldown
+      HiddenText: Hidden::0 {0}
+      TimesInvisibleStatistic: Times Invisible
+    Crewmate:
+      RoleName: Crewmate
+      Description: A normal, vanilla Crewmate. Win by completing all your tasks with your fellow crewmates, or be the last faction left standing.
+      Blurb: Find Impostors & Finish Tasks
+      Options:
+        OverrideRoleTasks: Override {0}'s Tasks
+        AllowCommonTasks: Allow Common Tasks
+        CustomLongTasks: '{0} Long Tasks'
+        CustomShortTasks: '{0} Short Tasks'
+    Crusader:
+      RoleName: Crusader
+      Description: Use the Kill button to select a target. This target will be protected from attacks and whoever interacts with your target will die.
+      Blurb: Protect Players From Attacks
+      Options:
+        BeneficialInteractionProtection: Protect against Beneficial::0 Interactions
+        NeutralInteractionProtection: Protect against Neutral::0 Interactions
+    Demolitionist:
+      RoleName: Demolitionist
+      Description: When the Demolitionist is killed, they bomb the ground, giving the killer a few seconds to find a vent. If the killer does not vent in time, they will die.
+      Blurb: Curses Impostor Upon Death
+      YouKilledDemoMessage: You Killed the {0}! Vent to stay alive!
+    Dictator:
+      RoleName: Dictator
+      Description: When the Dictator votes for someone in a meeting, they forcibly end that meeting, exile the player they voted for, and die just after the meeting.\n\nNothing happens when the Dictator skips.\nIn some lobbies, the Dictator has multiple executions before dying.
+      Blurb: Picks Who To Vote Out
+      Options:
+        NumberOfDictates: Number of Dictates
+        SuicideIfVoteCrewmate: Suicide if Crewmate::0 Executed
+        ShowDictatorVoteAtMeetingEnd: Show Dictate at End of Meeting
+      LynchEventMessage: '{0}::0 lynched {1}::1.'
+      DictateMessage: '{0} was voted out by the {1}::0'
+      PlayersEjectedStat: Players Ejected
+    Doctor:
+      RoleName: Doctor
+      Description: The Doctor has a portable vitals panel just like the Vanilla Scientist. Check this regularly to get an approximated time of death.\nWhile in meeting (and by closing the chat), Doctor can see a player’s cause of death in parentheses under their name.
+      Blurb: Can See How Players Died
+    Escort:
+      RoleName: Escort
+      Description: Use the Pet button to roleblock players. Roleblocks prevent kills, reports, and/or venting.\n\nCannot roleblock The Glitch.
+      Blurb: Roleblock Players
+    Herbalist:
+      RoleName: Herbalist
+      Description: Use your pet button to plant a seed on a player. After a set period of time, that player's "bloom counter" will increase. After a set number of blooms, use your pet button to reveal that player's role. After a player's role has been revealed, you can continue to reveal it to the nearest player by using the pet button on the same player.
+      Blurb: Plant Blooms to Slowly Gather Info
+      Options:
+        TimeUntilBloom: Time Until Bloom
+        BloomsUntilRoleReveal: Blooms Until Role Reveal
+        PlantBloomCooldown: Plant Bloom Cooldown
+        RevealOnBloom: Reveal on Bloom
+      BloomsGrownStatistic: Blooms Grown
+      RolesRevealedStatistic: Roles Revealed
+    Investigator:
+      RoleName: Investigator
+      Description: Use the Pet button to investigate if the player is good or bad. In general, red is bad & green is good. However, depending on hosts settings, Sheriff/Veteran may show up as red.
+      Blurb: Investigate Roles
+      Options:
+        InvestigateCooldown: Investigate Cooldown
+        NeutralKillingRed: Neutral::1 Killing::2 Are Red::0
+        NeutralPassiveRed: Neutral::1 Passive::2 Are Red::0
+        MadmateRed: Madmates::1 Are Red::0
+    Mayor:
+      RoleName: Mayor
+      Blurb: Gets Extra Votes
+      Description: The Mayor's vote is counted multiple times.\n\nDepending on the options, they will have to reveal to gain access to the extra votes (reveal by voting yourself). They can call emergency meetings by using the Pet button if it's enabled.
+      RevealMessage: Mayor, you must reveal yourself to gain additional votes. Currently you can vote normally, but if you vote yourself you'll reveal your role to everyone and gain more votes!
+      Options:
+        MayorReveal: Reveal for Votes
+        MayorAdditionalVotes: Mayor Additional Votes
+        PocketMeeting: Pocket Meeting
+        NumberOfUses: Number of Uses
+      MayorRevealTitle: Mayor Reveal
+      MayorRevealMessage: '{0} revealed themself as mayor!'
+    Mechanic:
+      RoleName: Mechanic
+      Description: The Mechanic can use vents to travel around the map. They are restricted by the Vent Use Cooldown & Max Time In Vents Options used for vanilla Engineer.\n\nThe Mechanic is a renamed Vanilla Engineer.
+      Blurb: Use Vents
+    Medic:
+      RoleName: Medic
+      Description: The first person to be voted by the Medic will gain a shield. Once the Medic dies, this shield is lost. The Medic protects a target by voting them twice in meeting.\n\nThe Medic may choose to bypass this ability by skipping.
+      Blurb: Shield A Player
+      ProtectingMessage: 'You are currently protecting: {0}'
+      VotePlayerInfo: Vote to select a player to guard.
+      MedicHelpMessage: 'You are a medic! Your duty: to save innocent lives! Vote a player to protect next round! Alternatively, you can skip here to return to normal voting.'
+      SelectedPlayerMessage: You have decided to protect {0}. Vote them again to confirm your choice, or Skip to return to normal voting.
+      ReturnToNormalVoting: You are now protecting {0}. Your next vote works as normal.
+      Options:
+        ChangeGuardedPlayer: Change Guarded Player
+        OnDeathValue: After Death
+        MeetingsValue: Meetings
+        NeverValue: Never
+    Medium:
+      RoleName: Medium
+      Description: Use the Report button to report a body. In meeting chat, the Medium will receive a message revealing the role of the reported player's killer.\n\nMedium can only see killer's role if they reported the body themselves.
+      Blurb: Reveal The Killers Role When Reporting
+      MediumMessage: N/A
+    Mystic:
+      RoleName: Mystic
+      Description: When a player is killed, Mystic receives a single flash and alert. It is very similar to when the reactor is sabotaged.
+      Blurb: Get Notified When Players Are Killed
+      Options:
+        MysticIsModifier: Mystic is a Modifier
+        FlashDuration: Flash Duration
+        SendAudioAlert: Send Audio Alert
+        RestrictedToCrewmates: Restricted to Crewmates::0
+    Observer:
+      RoleName: Observer
+      Description: Finish tasks to gain vision. Depending on the host's options, you may gain a small vision boost upon completing tasks, or, a large vision boost when all of your tasks are complete. Additionally, if enabled, you'll be able to see even during lights out.
+      Blurb: Increased Vision
+    Oracle:
+      RoleName: Oracle
+      Description: The first player voted & confirmed by the Oracle becomes the Oracle's Target. When the Oracle dies, the Target's role is revealed to everyone.\n\nThe Oracle can vote for themselves to reveal their own role if they wish.
+      Blurb: Reveal A Role Upon Death
+      SelectRole: 'You have selected: {0}'
+      UnselectRole: 'You have unselected: {0}'
+      VotePlayerInfo: Vote to select a player to reveal on your death. You can re-vote a player to unselect them.\n\nAfter confirming, your target cannot be changed.
+      OracleMessageTitle: Oracle Ability
+      VoteNormallyMessage: You may now vote normally
+      SkipMessage: Press "Skip Vote" to continue.
+      RevealMessage: The Oracle has revealed to all that {0} is the {1}
+    Physicist:
+      RoleName: Physicist
+      Description: The Physicist has a portable vitals panel that can be accessed anywhere on the map.\n\nThe Physicist is a renamed Scientist from vanilla Amoung Us.
+      Blurb: Can See Vitals
+    Psychic:
+      RoleName: Psychic
+      Description: A number of players (depending on host's settings) are highlighted in red during each meeting, at least one of them is evil.
+      Blurb: See Potential Evils During Meeting
+      Options:
+        MaxHighlightedPlayers: Maximum Highlighted Players
+        AllKillingRolesAreEvil: All Killing::0 Roles Are Evil
+    Repairman:
+      RoleName: Repairman
+      Description: The Repairman can fix sabotages that typically require two players (e.g. reactor), on their own. Lights can be fixed by touching a single lever. Opening a door will open all the linked doors. The repairman can vent based on Host's settings.
+      Blurb: Clears Sabotages Faster and Alone
+      Options:
+        RepairmanCanVent: Repairman::0 Can Vent
+        FastFixLights: Fast Fixes Lights
+        FastFixReactor: Fast Fixes Reactor
+        FastFixOxygen: Fast Fixes Oxygen
+        FastFixComms: Fast Fixes Comms
+        FastFixDoors: Fast Fixes Doors
+        FastFixHelicopter: Fast Fixes Crash Course
+      RepairmanFixMessage: '{0} fixed {1}.'
+    Sheriff:
+      RoleName: Sheriff
+      Description: The Sheriff can kill Impostors.\nBe Careful, if enabled by host, Sheriff will misfire (kill themself) if they shoot a crewmate.\nAdditionally (depending on settings) they may have no tasks, and may be able to kill some or all neutrals.
+      Blurb: Can Shoot Impostors
+      MisfireStat: Misfires
+      NeutralKillingSetting: Can Kill Neutral::0 Killing::1
+      NeutralPassiveSetting: Can Kill Neutral::0 Passive::1
+      MadmateSetting: Can Kill Madmates::0 Settings
+    Snitch:
+      RoleName: Snitch
+      Description: The Snitch can see Impostors once tasks are complete.\n\nWhen the Snitch has a few tasks left (depending on settings), they will be revealed to the killers by a Light Green Star next to their name. Depending on the settings, when their tasks are completed, the Snitch may also see arrows pointed in the direction of each player they're tracking.
+      Blurb: Finish Tasks To See Killers
+      Options:
+        RemainingTaskWarning: Remaining Task Warning
+        EvilArrowToSnitch: Evil Have Arrow to Snitch::0
+        SnitchArrow: Enable Arrow for Snitch::0
+        ColoredArrow: Colored Arrow
+        SnitchTracksAllKillers: Snitch::0 Can Track Any Killing
+    Speedrunner:
+      RoleName: Speedrunner
+      Description: Finish tasks to gain a speed boost! Depending on the host's options, you may gain a small speed boost after completing singular tasks, or, get a large speed boost after reaching a task-threshold.
+      Blurb: Complete Tasks to Gain Speed
+      Options:
+        TempBoostOnTaskFinish: Temporary Boost Upon Finishing Task
+        TempBoostDuration: Temporary Boost Duration
+        PermanentSpeedGain: Permanent Speed Gain per Task
+        TaskUntilLargeSpeedBoost: Task Remaining Until Main Speed Boost
+        FinalSpeedBoost: Final Speed Boost
+    Tracker:
+      RoleName: Tracker
+      Description: Once per meeting the Tracker is able to select a player to track by voting them twice (after selecting a player, they're able to vote normally). After meeting, the Tracker will then have an arrow pointing to their selected player unless that player dies. Optionally, the tracker can also use their pet button to temporarily gain arrows to all dead bodies.
+      Blurb: Track Players' Movements
+    Transporter:
+      RoleName: Transporter
+      Description: Use the Pet Button and cause two random players to switch places.\n\nPro Tip - Make sure you have enough room for the Pet animation!
+      Blurb: Transport Two Players
+    Trapster:
+      RoleName: Trapster
+      Description: Upon death, Trapster freezes their killer in place for a few seconds. This duration is predetermined by host in settings.
+      Blurb: Can Freeze Impostors when Killed
+      Options:
+        TrapsOnIndirectKills: Traps on Indirect Kills
+        TrappedDuration: Trapped Duration
+        BlockReportWhileTrapped: Block Report While Trapped
+    Vigilante:
+      RoleName: Vigilante
+      Blurb: Guess Impostor Roles to Kill
+      Description: Vigilante is a nice guesser and part of the crewmate team. While in meeting the Vigilante's first vote locks in the player they're going to guess. Then the Vigilante uses a chat command to guess the role (i.e. /r [role]). The Vigilante's second guess locks in the guess. The Vigilante suicides if they miss-guess.
+      SelectPlayer: 'You have selected to kill:'
+      SelectRole: 'You are guessing:'
+      SkipToContinue: Press "Skip Vote" to continue.
+      VoteRoleInfo: To select a role, vote a player with the role over their name. If they have multiple roles over their name, voting that same player again will select the next role displayed.
+    Veteran:
+      RoleName: Veteran
+      Description: When the Veteran is attacked while on Alert, the attack will backfire resulting in the attacker's death. Use the Pet button to activate the Veteran's ability.\n\nPro Tip - Make sure you have enough room for the Pet animation!
+      Blurb: Counterattacks Players' Kill
+    AgiTater:
+      RoleName: AgiTater
+      Description: As an AgiTater your goal is to give your bomb to another player using your kill button.\nOnce another player is in range, the bomb will automatically be passed to them. \nThis continues until a meeting is called (or optionally after a duration) where the last person holding the bomb is then eliminated
+      Blurb: Pass The Bomb (Hot Potato)
+      Options:
+        PlaceBombCooldown: Place Bomb Cooldown
+        ExplodeOnMeetings: Explode On Meetings
+        ExplodeAfterDuration: Explode After Duration
+        ExplodeDoubleBombed: Explode When Bombed Twice
+        BombDuration: Bomb Duration
+        BombsPerRound: Bombs per Round
+        BombTransferRate: Bomb Transfer Rate
+      PassTheBombText: Pass The Bomb
+      HoldingBombLevel1: Holding Bomb!
+      HoldingBombLevel2: Holding Bomb!!!
+      HoldingBombLevel3: Holding Bomb!!!!!
+    Amalgamation:
+      RoleName: Amalgamation
+      Description: Everytime Amalgamation reports a body, they acquire the abiltiies of that role. The Amalgamation's win condition is determined by the first body they report, other bodies will continue to power the Amalgamation up.
+      Blurb: Become ALL the roles
+      Options:
+        WinConditionDeterminer: Win Condition Determiner
+        OldestRoleValue: Oldest Role
+        NewestRoleValue: Newest Role
+        MaxAbsorbedRoles: Max Absorbed Roles
+        AbsorbModifiers: Absorb Modifiers
+    Amnesiac:
+      RoleName: Amnesiac
+      Description: After reporting a body, the Amnesiac becomes part of that role’s team.\n\nReporting a Crewmate = Sheriff.\nReporting an Impostor = Traitor.\nReporting a Neutral (Non-Killer) = Opportunist.\nReporting a Neutral Killer = Becoming that neutral killer.\n\nIF ENABLED, the Amnesiac will instead steal the player's exact role
+      Blurb: Wins With The Joined Team
+      Options:
+        StealsExactRole: Steals Exact Role
+        HasArrowsToBody: Has Arrows to Bodies
+    Arsonist:
+      RoleName: Arsonist
+      Description: Use the Kill button repeatedly next to a player to douse oil onto them. The player is doused when they are marked by a full orange circle.\n\nDouse all players and ignite them to win by using the Pet button.
+      Blurb: Douse & Ignite All Players To Win
+      Options:
+        AttacksToCompleteDouse: Attacks to Complete Douse
+        CanIgniteAnytime: Can Ignite Anytime
+      IncineratedDeathName: Incinerated
+      DouseEventMessage: '{0} doused {1}.'
+      PressIgniteToWinMessage: Press Ignite to Win
+      DousedPlayerStatistic: Doused Players
+      IncineratedPlayerStatistic: Incinerated Players
+    Blood Knight:
+      RoleName: Blood Knight
+      Description: Each kill the Blood knight makes will protect them from attacks for a few seconds.\n\nWin Condition; Solo (be the last killer alive)
+      Blurb: Shielded With Each Kill
+    CrewPostor:
+      RoleName: Crewpostor
+      Description: Every task completed will instantly kill the player nearest you (even impostors and other killing roles).\n\nThe Crewpostor wins with Impostors
+      Blurb: Complete Tasks To Kill The Nearest Player
+      Options:
+        CanKillAllies: Can Kill Allies
+        WarpToTarget: Warp To Target
+        RefreshTasks: Refresh Tasks When All Complete
+    Copycat:
+      RoleName: Copycat
+      Description: As Copycat, the first time you get attacked you'll change affiliation. If you were attacked by an impostor, you're now an impostor. If by a solo killer, then you're also a solo killer.\nDepending on the host's options, you may become the Exact role that attacked you, and may even gain their 'progress'.
+      Blurb: Copies Killer's Role When Killed
+      CopycatFactionChangeName: '{0}cat'
+      CatFactionChangeName: '{0}cat'
+    Deathknight:
+      RoleName: Deathknight
+      Description: The Deathknight must help the Necromancer convert players to the Undead. By using your pet button by someone who the Necromancer had used their kill button on, they will be converted. The Deathknight is the first player to be converted by the Necromancer in the undead faction because of this it retains all abilities of its own role.\n\nThere can only be one Deathknight at a time, and if the Necromancer dies, the Deathknight will be the new Necromancer.
+      Blurb: Help convert roles to the Undead
+    Demon:
+      RoleName: Demon
+      Description: Demon is a neutral killing role whose goal is to kill all other players. When Demon is in the game all players spawn in with a green health bar over their heads. When the Demon attacks a player, their health bar will drop some percentage. After fully reducing a player's health bar, that player will die. When Demon gets attacked, their health bar also decreases. The Demon heals some health when they kill players.
+      Blurb: Attack players to reduce their health
+      Options:
+        AttackCooldown: Attack Cooldown
+        DamagePerAttack: Damage per Attack
+        HealthHealedOnKill: Healing on Kill
+        DamageTakenOnAttack: Damage Taken on Attack
+    Egoist:
+      RoleName: Egoist
+      Description: Kill as a normal Impostor on the Impostor team . . . but the Egoist is a traitor to the Impostors.\nUse Impostor-Seeing attribute to get them voted out (end game) and achieve a solo win.\nImpostors can kill but cannot see Egoist, Egoist can see but cannot kill Impostors.
+      Blurb: Be Final Impostor To Win
+    Executioner:
+      RoleName: Executioner
+      Description: >-
+        Executioner’s Target is marked with a maroon name & win if their target is voted out.
+
+        If the target dies before being voted out, the Executioner changes their Role and becomes Crewmate, Jester, or Opportunist according to a game option.
+
+        If the target is the Jester, the Executioners can be an additional winner.
+      Blurb: Get Target Voted Off To Win
+    Glitch:
+      RoleName: The Glitch
+      Description: Use the Kill button to Hack or Kill players. The Pet button can be used to switch between hacking and killing. Hacking prevents a player from using their buttons (report, vent, kill, sabotage).\n\nWin Condition:\nBe last person standing to win.
+      Blurb: Roleblock & Kill Players
+      ModeHacking: Hacking
+      ModeKilling: Killing
+    Hacker:
+      RoleName: Hacker
+      Description: As a Hacker, your goal is earn a number of points by fixing sabotages. You have the powers of a Repairman. Each sabotage fixed earns you one point.\n\nHacker can be killed by Sheriff if enabled in settings.
+      Blurb: Fix Sabotages to Win
+      Options:
+        HackerSabotagePointAmount: Points Needed to Win
+        HackerCanVent: Hacker::0 Can Vent
+        FixingDoorsGivesPoints: Fixing Doors Gives Points
+    Harbinger:
+      RoleName: Harbinger
+      Options:
+        TasksPerRitualCircle: Tasks per Ritual Circle
+        RitualCirclesUntilWin: Ritual Circles Until Win
+      Blurb: <Roles.Harbinger.Blurb>
+    Hitman:
+      RoleName: Hitman
+      Description: The Hitman can win with most teams so long as they are alive at the end of the game. Use the Kill button on anyone without consequence.\n\nHost can choose whether Hitman wins with Executioner and Jester.
+      Blurb: Kill Players & Win With Anyone
+    Jackal:
+      RoleName: Jackal
+      Description: Kill everyone, including impostors, and be the last player standing
+      Blurb: Kill Everyone
+    Jester:
+      RoleName: Jester
+      Description: Jester gets a solo win if they can be voted out.\nTroll players in meetings, act sus in game.\nCan also be given the option to vent (predetermined by host in settings).
+      Blurb: Get Voted Off
+      Options:
+        ImpostorVision: Has Impostor Vision
+        CanUseVents: Can Use Vents
+        CantCallEmergencyMeetings: Can't Call Emergency Meetings
+        MeetingsBeforeWinning: Minimum Meetings Before Ability to Win
+      WinConditionName: Jester::0 Exiled
+    Juggernaut:
+      RoleName: Juggernaut
+      Description: The Juggernaut starts with a higher kill cooldown, but with every kill, their cooldown decreases. They must kill everyone, including impostors, and be the last person standing.
+      Blurb: Kill Everyone & Be Last Player Alive
+      Options:
+        CooldownReductionPerKill: Cooldown Reduction per Kill
+    Marksman:
+      RoleName: Marksman
+      Description: The Marksman's kill distance increases with each kill.
+      Blurb: Receive A Longer Kill Distance With Each Kill
+    Necromancer:
+      RoleName: Necromancer
+      Description: The Necromancer is the main recruiter for the Undead faction, The Necromancer converts the first player that it kills using its kill button. Once the Necromancer has converted its target into the Deathknight, the Necromancer will tag other players that the Deathknight must use its pet button to complete the targets conversion to the undead.\n\nWith the help of the Deathknight, they must work together to convert others to the Undead.\n\nIf the Necromancer were to die, The Deathknight would turn into Necromancer.
+      Blurb: Convert Roles to the Undead
+    Opportunist:
+      RoleName: Opportunist
+      Description: Opportunist can win with impostors or Crewmates so long as they’re alive at the end of the game.
+      Blurb: Remain Alive Until Game End
+    Phantom:
+      RoleName: Phantom
+      Description: The Phantom cannot die until a set number of tasks have been completed. When they are on their final tasks, everyone gets an arrow pointing straight toward them. The Phantom cannot be exiled under any circumstances and if voted for before reveal the vote will still count so that the Phantom remains anonymous but will not be exiled, The Phantom will instead become revealed after meeting.\n\nWin Condition:\nComplete Tasks For Solo Win!
+      Blurb: Complete Tasks For Solo Win
+      Options:
+        ImmuneToRangedInteractions: Immune to Ranged Interactions
+        RemainingTaskWarning: Remaining Task Warning
+        RemainingTaskTargetable: Remaining Tasks for Targetability
+    Pirate:
+      RoleName: Pirate
+      Description: The Pirate is an neutral guesses and wins solo. The pirate will need to achieve a number of correct guessers determined by the host in order to win. While in meeting the Pirate first vote locks in the player they're going to guess. Then the Pirate uses a chat command to guess the role (i.e. /r [role]). The Pirate's second guess locks in the guess. Depending on the host's settings, The Pirate may suicide if they miss-guess.
+      Blurb: Guess the oppositions roles.
+    PlagueBearer:
+      RoleName: Plague Bearer
+      Description: Use the Kill button to infect everyone. Once everyone is infected, the Plague Bearer turns into Pestilence.
+      Blurb: Infect Everyone and Become Pestilence
+      Options:
+        InfectCooldown: Infect Cooldown
+      InfectedHistoryMessage: '{0}::0 infected {1}::1.'
+    Pelican:
+      RoleName: Pelican
+      Description: The Pelican gulps players by using their kill button. Gulped players are teleported out of the map and are unable to interact with the game (including Sabotages). Upon a meeting being called, all gulped players will instantly die. If the Pelican dies or disconnects, all gulped players will return to where the Pelican last was.
+      Blurb: Gulp Down the Competiton.
+    Pestilence:
+      RoleName: Pestilence
+      Description: Plague Bearer becomes Pestilence when they finish infecting all players. Pestilence cannot be killed (for the most part). Anyone who tries to kill the pestilence will backfire instead. Pestilence can be voted off or killed indirectly (like Warlock or Puppeteer).
+      Blurb: Kill Everyone & Win Alone
+      Options:
+        UnblockableKill: Unblockable Kill
+        InvincibilitySettings: Invincibility Settings
+        ImmuneManipulatorAttackers: Immune to Manipulated Attackers
+        ImmuneRangedAttacks: Immune to Ranged Attacks
+        ImmuneDelayedAttacks: Immune to Delayed Attacks
+        ImmuneArsonistIgnite: Immune to Arsonist Ignite
+    Postman:
+      RoleName: Postman
+      Description: Complete tasks to receive Target information (arrows pointing to Target is an option for this role). Postman must deliver their message to the Target by walking near them.\n\nComplete another task to get a new Target. Doing this before the last target's mail is delivered, results in suicide.\nAfter the Postman delivers all of their messages to all living players, a message will be shown in the next meeting that the Postman must be voted out. If the Postman is not voted out at that meeting they win.
+      Blurb: Deliver All Posts To Win
+      Announcement: The Postman has completed all of their deliveries. Vote them otherwise they win the game.
+    Retributionist:
+      RoleName: Retributionist
+      Description: The Retributionist is a Neutral killer with a twist. If the Retributionist were to ever die, it would have x seconds (time configured by Host) to find their killer and kill them to come back to life. The Retributionist can come back multiple times, depending on host's settings.
+      Blurb: Get a 2nd Chance at Living
+    SerialKiller:
+      RoleName: Serial Killer
+      Description: Has a reduced kill-cooldown (determined by host). Kill players before cooldown expires to avoid suicide.
+      Blurb: Kill or Die
+      Options:
+        TimeUntilSuicide: Time Until Suicide
+        TimerAfterFirstKill: Timer Begins After First Kill
+    Survivor:
+      RoleName: Survivor
+      Description: Survive to the end to win. Use your Pet button to protect yourself from attacks for short period of time. Cannot win with Executioner or Jester.
+      Blurb: Survive Until The End To Win
+    Swapper:
+      RoleName: Swapper
+      Description: The first two players you vote each meeting will have their votes against them swapped (not who they vote for). After voting those players, you may vote as normal. Alternatively, you can skip at the start and continue to normal voting.
+      Blurb: Swap Players' Votes
+      SwapperInfoMessage: >-
+        You are Swapper. To swap the votes received by two players, vote two separate players.
+
+        You may change the first swapped person by re-voting them.
+
+        Additionally, you may bypass this ability by initially skipping.
+      SwapperSelectMessage1: You've selected to swap {0}'s votes.
+      SwapperSelectMessage2: You've selected to swap {0}'s votes. {1} and {0} will now have their votes swapped.
+      SwapperUnselectMessage: You've unselected {0}.
+      SwapperPublicMessage: Swapper has swapped the votes received by {0} and {1}!
+      SwapperAbility: Swapper Ability
+      Options:
+        SwapsPerGame: Swaps::0 Per Game
+    Terrorist:
+      RoleName: Terrorist
+      Description: Finish all tasks and get killed to win. The Terrorist can also be voted out to win depending on host's settings
+      Blurb: Finish All Tasks, Then Die To Win
+      Options:
+        CanWinBySuicide: Can Win By Suicide
+        CanWinByExiled: Can Win By Exiled
+    Vulture:
+      RoleName: Vulture
+      Description: Use the Report button to eat dead bodies and make them unreportable. The vulture can switch between eating bodies and reporting them using the Pet button.\n\nThe Vulture wins when they've eaten a set amount of bodies, and they may also have an arrow pointing to dead bodies if enabled by host.
+      Blurb: Eat Dead Bodies
+      EatingModeText: Feasting
+      ReportingModeText: Reporting
+      Options:
+        RequiredBodies: Required Bodies
+        HasImpostorVision: Has Impostor Vision
+        SwitchModes: Can Switch between Eat and Report
+        CanUseVent: Can Use Vents
+        HasArrowsToBody: Has Arrows to Bodies
+    Werewolf:
+      RoleName: Werewolf
+      Description: Use Pet button to begin a rampage and kill with a shorter Kill Cooldown\n\nWerewolf can only kill during rampage.
+      Blurb: Rampage and Kill Everyone
+      Rampage: Kill Everyone
+    GM:
+      RoleName: GM
+      Blurb: You're the Game Master
+      Description: The "master" of the game (aka the host.) When the host is GM, they aren't counted as a player in the game and "die" immediately upon spawning into the game. This is so that they can watch over all players to ensure the game is running correctly. (Or so they can AFK)
+    Bait:
+      RoleName: Bait
+      Description: If Bait is killed, the killer automatically self-reports.
+      Blurb: Forced Self-Report Upon Death
+    Bewilder:
+      RoleName: Bewilder
+      Description: When someone with Bewilder is killed they'll force the killer to have crew vision distance for the rest of the game.
+      Blurb: Reduces Killer's Vision When Killed
+      BewilderedStatus: Bewildered
+      BewilderedDescription: The Bewildered status reduces your vision by a specific multiplier.
+    Coven:
+      RoleName: Coven
+      Blurb: N/A
+    <b><color=#FF0000>D</color><color=#FFBF00>e</color><color=#7FFF00>b</color><color=#00FF3F>u</color><color=#00FEFF>g</color><color=#003FFF>g</color><color=#7F00FF>e</color><color=#FF00BF>r</color></b>:
+      RoleName: N/A
+      Blurb: N/A
+    Diseased:
+      RoleName: Diseased
+      Description: Multiplies the killer's kill cooldown upon death
+      Blurb: Increase The Killer's Kill Cooldown
+      Options:
+        CooldownIncrease: Cooldown Increase
+      DiseasedAffectDescription: You you have the "Diseased" status. This means that your kill cooldown is increased by a certain percentage.
+    Flash:
+      RoleName: Flash
+      Description: The Flash makes the player move faster.\nDue to technical limitations, flash moves at normal speed for other players, and flash sees other players moving at the speed of Flash.
+      Blurb: Increases Speed
+      Options:
+        SpeedIncrease: Speed Increase
+    LastImpostor:
+      RoleName: Last Impostor
+      Blurb: Last Impostor
+    Lovers:
+      RoleName: Lovers
+      Description: The Lovers are modifiers assigned to two players and can be part of any team.\n\nLovers win if they're among the last 3 players alive (except Crewmate task completion). If one lover dies, the other lover suicides (this setting can be turned on or off).
+      Blurb: Receive A Partner In Game
+    Oblivious:
+      RoleName: Oblivious
+      Description: Oblivious cannot report bodies.
+      Blurb: Cannot Report Bodies
+      Options:
+        PassOnDeath: Pass on Death
+    Obvious:
+      RoleName: Obvious
+      Description: Obvious auto-reports bodies they come in contact with.
+      Blurb: Auto-Report Bodies
+    Sleuth:
+      RoleName: Sleuth
+      Description: Use the report button to report a body. In meeting chat, the Sleuth will receive a message revealing the role of the dead player. Sleuth can only see the role of the dead player if they reported the body themselves.
+      Blurb: Know Deceased Player Roles
+    Torch:
+      RoleName: Torch
+      Description: Torch is unaffected by lights out.
+      Blurb: Unaffected by Lights Out
+    Watcher:
+      RoleName: Watcher
+      Description: Can see everyone's votes in meetings.
+      Blurb: Can See Meeting Votes for Everyone
+    Fox:
+      RoleName: N/A
+      Blurb: N/A
+    Subroles:
+      Sleuth:
+        SleuthMessage: You've determined that {0} was a {1}! Great work, Detective!
+        SleuthTitle: Sleuth {0}
+    ExConvict:
+      RoleName: Ex-Convict
+      Description: First use pet button to mark a location, then after a set cooldown, you can re-use the pet button to teleport back to your marked location. This will then put the mark ability back on cooldown. This is the crewmate version of Escapist.
+      Blurb: Prepare a location, then escape!
+    EnforceFunctionOrdering:
+      RoleName: <Roles.EnforceFunctionOrdering.RoleName>
+      Blurb: <Roles.EnforceFunctionOrdering.Blurb>
+    Bloodlust:
+      RoleName: Bloodlust
+      Description: The Bloodlust modifier allows the user to keep the ability of their role, while also giving them the ability to kill. Kill all other players to win.
+      Blurb: Use your ability to kill everyone
+    Deadly:
+      RoleName: Deadly
+      Blurb: Kill players more often.
+      Description: Players with the Deadly modifer have their kill cooldown reduced by a set percentage.
+      Options:
+        CooldownReduction: Cooldown Reduction
+        AssignableToNonKilling: Assignable to Non-Killing
+    Honed:
+      RoleName: Honed
+      Blurb: Use your targeted ability more often.
+      Description: Players with the Honed modifer have their kill button cooldown reduced by a set percentage.
+    Illegal:
+      RoleName: <Roles.Illegal.RoleName>
+      Blurb: <Roles.Illegal.Blurb>
+    LoversReal:
+      RoleName: <Roles.LoversReal.RoleName>
+      Blurb: <Roles.LoversReal.Blurb>
+    Nimble:
+      RoleName: Nimble
+      Description: Grants any role the ability to vent, if they weren't able to previously vent.
+      Blurb: Gain the ability to vent!
+    TieBreaker:
+      RoleName: Tiebreaker
+      Description: If there is a tie between two players in a meeting, the Tiebreaker's vote will decide who to eject or to skip.
+      Blurb: Break Ties
+      TieBreakerMessage: The tie has been broken by {0}!
+    Workhorse:
+      RoleName: Workhorse
+      Description: Gives even more tasks to a player.
+      Blurb: Works hard, has more tasks
+      Options:
+        AdditionalShortTasks: Additional Short Tasks
+        AdditionalLongTasks: Additional Long Tasks
+    Occultist:
+      RoleName: Occultist
+      Description: The Occultist's Kill/Spell Button alternates between spelling and killing players.\n\nPlayers who are spelled by the Occultist will be seen with a cross during the meeting. If the Occultist is not voted off during this meeting, the cursed player dies.\n\nRegular kill self-reports Bait.\nSpell does not self-report Bait.
+      Blurb: Curse players die after meeting.
+      Options:
+        FreelySwitchModes: Freely Switch Modes
+        SwitchModesAfterAttack: Switch Modes After Attack
+      CursedMessage: '{0}::0 cursed {1}::1 to die at the end of next meeting.'
+      CursingModeText: Cursing
+      KillingModeText: Killing
+      HexedCauseOfDeath: Hexed
+      CursedStatusDescription: You have been hexed. Hexed players will die after the meeting unless the source of the hex is voted out.
+    Escalation:
+      RoleName: Escalation
+      Blurb: Gain Speed on Kills
+      Description: Players with the Escalation modifier gain a static speed boost per kill.
+      Options:
+        SpeedGainPerKill: Additional Speed per Kill
+    Scientist:
+      Options:
+        VitalsCooldown: Vitals Cooldown
+        VitalsBatteryCharge: Vitals Battery Charge
+    SchrodingersCat:
+      RoleName: Schrödinger's Cat
+      Description: The Schrödinger's Cat changes their affiliation with each attack against them! Win with the faction you convert into, but be careful! Cats only have so many lives!
+      Blurb: Changes affiliation when attacked
+      CopycatFactionChangeName: '{0}cat'
+      CatFactionChangeName: '{0}cat'
+      Options:
+        NumberOfLives: Number of Lives
+    Romantic:
+      RoleName: Romantic
+      Blurb: Pick a partner to spend your life with
+      Description: During the first meeting of the game, the Romantic MUST vote a player to become their partner (otherwise they'll die). Once a partner has been chosen, the Romantic can use their Pet Button to temporarily grant a shield to their partner. The Romantic wins if their partner wins (and is alive) at the end of the game. If their partner dies, the Romantic will transform into either the Vengeful Romantic or the Ruthless Romantic.
+      Options:
+        TargetKnowsRomantic: Notify Target of Romance
+        ProtectionCooldown: Protection Cooldown
+        ProtectionDuration: Protection Duration
+      PartnerText: Partner::0 {0} ♥::0
+      RomanticMessage: You are a Romantic. You must select a partner by the end of this meeting or die! To select a partner, vote them twice! Afterwards, you may vote normally.
+      RomanticSelectMessage: You have selected {0} to be your partner. To confirm, vote them again, otherwise vote a different player.
+      ConfirmedPartnerMessage: You have confirmed {0} to be your partner. You may now vote normally
+      NotifyPartnerMessage: You have been selected by {0} to be their romantic partner! Congrats!
+      NoSkipMessage: You may not skip until you have chosen a partner!
+    VengefulRomantic:
+      RoleName: Vengeful Romantic
+      Blurb: Avenge your true love
+      Description: The Vengeful Romantic had their love stripped away from them. Their goal is to now hunt down their partner's killer and to kill them. The Vengeful Romantic may use either their Pet Button or Kill Button to kill another player. But, if they target an innocent player, the Vengeful Romantic will die from misfire. After successfully avenging their partner, the Vengeful Romantic regains its normal win condition.
+      Adjective: Vengeful
+      Options:
+        CanKillBystanders: Can Kill Bystanders
+        ArrowToKiller: Arrow to Killer
+        SuicideAfterRevenge: Suicide after Revenge
+    RuthlessRomantic:
+      RoleName: Ruthless Romantic
+      Blurb: Leave no one left standing
+      Description: Your heart has been broken.. now it's time to break the hearts of others. As Ruthless Romantic you're now a standard Neutral Killer whose goal is to kill all other players and become the last player left standing.
+    Unstoppable:
+      RoleName: Unstoppable
+      Blurb: Pierce through opponents
+      Description: Players with Unstoppable are able to kill through most types of protection, including Medic shields. Based on the host's options this may even include "pure" immunity such as the Phantom.
+      Options:
+        CanKillUntargetable: Can Kill Untargetable Players
+    Miscellaneous:
+      PlayerSelector:
+        SelectPlayerString: 'You have selected: <b>{0}</b>'
+        UnselectPlayerString: 'You have unselected: <b>{0}</b>'
+        ConfirmationString: 'You have confirmed: <b>{0}</b>'
+    Debugger:
+      RoleName: <Roles.Debugger.RoleName>
+      Blurb: <Roles.Debugger.Blurb>
+    Guesser:
+      PickedRoleText: You are about to guess {0} as {1}. If you are certain about this, vote {0} again to finalize your guess. Otherwise you can pick another player by voting a different player.. OR pick a different role by typing /r [rolename]
+      RoleName: Guesser
+      Blurb: <Roles.Guesser.Blurb>
+      Guesser: Guesser
+      PickedPlayerText: You are guessing {0}'s role. To guess their role type /r [rolename].
+      TypeRText: Please type /r [roleName] to guess that role.
+      UnknownRole: Unknown role {0}. You can use /perc to view all enabled roles.
+      FinishedGuessingText: You have confirmed your guess. If you are not dead, you may now vote normally.
+      ErrorCompletingGuess: Error completing guess. You may try and guess again.
+      GuessAnnouncementMessage: The guesser has made a guess. {0} died.
+    Conman:
+      Options:
+        DiscussionTimeDecrease: Discussion Time Decrease
+        VotingTimeDecrease: Voting Time Decrease
+        AffectAnonymousVoting: Affect Anonymous Voting
+  StaticOptions:
+    AutoKick: AutoKick
+    EnableGM: Host GM
+    KillFlashDuration: Kill Flash Duration
+    SabotageTimeControl:
+      Enable: Sabotage Time Control
+      PolusReactorTime: Polus Reactor Time Limit
+      AirshipReactorTime: Airship Reactor Time Limit
+    TOSOptions:
+      Enable: TOS Options
+      AttackDefense: Attack Defense Values
+      ResetKillcooldown: Reset Kill Cooldown
+      SkKillsRB: Serial Killer Kills RoleBlockers
+      AutoGameProgress: Auto Game Progression
+      RoundReview: Round Review
+      AmnesiacRememberAnnouncement: Amnesiac Remembers Announcement
+      GAVoteImmunity: Guardian Angel Vote Immunity
+    LightsPanelSettings:
+      Enable: Lights Out Special Settings
+      AirshipGapRoom: Disable Airship Gap Room Lights Panel
+      AirshipCargoRoom: Disable Airship Cargo Lights Panel
+      AirshipViewingDeck: Disable Airship Viewing Deck Lights Panel
+    PlayerAppearanceCommands: Players have access to /name, /color, and /level
+    DisableTasks:
+      Enable: Disable Tasks
+      CardSwipe: Disable Swipe Card Tasks
+      CardScan: Disable Submit Scan
+      UnlockSafe: Disable Unlock Safe
+      UploadData: Disable Upload Data
+      StartReactor: Disable Start Reactor
+      ResetBreaker: Disable Reset Breaker
+    RandomMap:
+      Enable: Random Maps Mode
+      Skeld: Add The Skeld
+      Mira: Add Mira HQ
+      Polus: Add Polus
+      Airship: Add Airship
+    RandomSpawn:
+      Enable: Random Spawn
+      AirshipExtraSpawn: Airship Additional Spawn
+    SyncButton:
+      Enable: Sync Button Mode
+      Count: Sync Button Count
+    VoteMode:
+      Enable: Vote Mode
+      SkipMode: When Skip Vote
+      Mode:
+        Default: Default
+        Suicide: Suicide
+        SelfVote: Self Vote
+        Skip: Skip
+      SkipFirstMeeting: When SkipVote Ignore First Meeting
+      IgnoreNoBody: When SkipVote Ignore No Dead Body
+      IgnoreEmergencyMeeting: When SkipVote Ignore Emergency
+      NonVote: When Non Vote
+      Tie: When Tie
+      TieMode:
+        Default: Default
+        All: All
+        Random: Random
+    AllAliveMeeting:
+      Enable: All Alive Meeting
+      Time: All Alive Meeting Time
+    AdditionalEmergencyCooldown:
+      Enable: Additional Emergency Cooldown
+    LadderDeath:
+      Enable: Ladder Death
+      Chance: Ladder Death Chance
+    FixFirstCooldown: Fix First Kill Cooldown
+    DisableTaskWin: Disable Task Win
+    MinMax:
+      MinNeutralKiller: Min Neutral Killer
+      MaxNeutralKiller: Max Neutral Killer
+      MinNeutralNonKiller: Min Non-Killing Neutral
+      MaxNeutralNonKiller: Max Non-Killing Neutral
+    MadMates:
+      MinMadmates: Min Madmates
+      MaxMadmates: Max Madmates
+    NoGameEnd: NoGameEnd
+    GhostsCanSeeRoles: Ghosts Can See Other Roles
+    GhostsCanSeeVotes: Ghosts Can See Votes
+    GhostIgnoreTasks: Ghosts Ignore Tasks
+    CamoComms: Camoflauge Comms
+    AutoDisplayResult: Auto Display Last Result
+    SuffixMode: Suffix Mode
+    ColorNameMode: Color Name Mode
+    ChangeNameToRoleInfo: Change Name to Role Info
+    ShowHistoryTimestamp: Show History Timestamp
+    MayhemOptions:
+      Enable: Mayhem Options
+      AllRolesVent: Most Roles can Vent
+    CustomServerMode: N/A
+  Commands:
+    Aliases:
+      Help: ayudar
+    Help:
+      Roles:
+        Usage: Invalid usage. A valid role name must be provided.
+        RoleNotFound: Role {0} was not found
+      HelpTitle: Help
+      HostSection: 'Host Commands:'
+      GeneralSection: 'General Commands:'
+      LobbySection: 'Lobby Commands:'
+      InGameSection: 'In-Game Commands:'
+      OtherSection: 'Other Commands:'
+      MessageParameter: msg
+      RoleNameParameter: role
+      NameParameter: name
+      IdCommandDescription: Show all players/IDs
+      SayCommandDescription: Show message to ALL players
+      KickCommandDescription: Kick a given player
+      BanCommandDescription: Ban a given player
+      DumpCommandDescription: Create a log dump
+      TemplateHelpCommandDescription: Get info for all template commands.
+      MyRoleCommandDescription: Show your current role's description
+      RoleOptionCommandDescription: Show your current role's options
+      DescCommandDescription: Show the first-meeting text
+      LastResultCommandDescription: Show the latest results
+      WinnerCommandDescription: Show the latest winner(s)
+      DeathCommandDescription: Show your cause of death. (Only usable if dead or in lobby)
+      DeathOtherCommandDescription: Show another player's cause of death. (Only usable if dead or in lobby)
+      RoleInfoCommandDescription: Show a role's description/options
+      RolesCommandDescription: Show ALL roles in the mod
+      NowSpecificCommandDescription: Show all enabled roles/options for the given category
+      NowAllCommandDescription: Show all enabled roles/options
+      PercCommandDescription: Show all enabled roles and their spawn rates
+      NameCommandDescription: Change player name
+      ColorCommandDescription: Change player color
+      StatsCommandDescription: Show your stats for the lobby
+      StatsOtherCommandDescription: Show another player's stats for the lobby
+    Stats:
+      PlayerNotFound: Player "%s" not found
+    Color:
+      NotInRange: '{0} is not in range of valid colors.'
+    Winners: Winners
+    Dump:
+      Success: Successfully dumped log. Check your logs folder for a "dump.log!"
+    HostOptions:
+      RoleInfo: ★ Role Info ★
+      RoleCategory: ★ {0} Roles
+      CurrentRoles: Current Roles
+    InvalidUsage: ⚠ Invalid Usage ⚠
+    NotPermittedTitle: ⚠ Not Permitted ⚠
+    NotPermittedText: You are not permitted to use this command.
+    Say:
+      MessageTitle: Host Message
+    Admin:
+      KickMessage: '{0} was kicked by host.'
+      BanMessage: '{0} was banned by host.'
+    Ids:
+      PlayerIdMessage: "{0}'s player ID is {1}"
+    PlayerNotFoundText: Player "{0}" not found.
+    CommandError: ⚠ Command Error ⚠
+    Friends:
+      NoFriendcodeText: Could not add {0}. They do not have a valid friendcode.
+      SuccessText: Successfully added {0} ({1})
+      RemoveText: Successfully removed friend {0} from friends list
+      LastKnownAsText: 'Known As: {0}'
+    Template:
+      CreatedTemplateText: 'Successfully created template (ID: {0}).'
+      ErrorRemovingTemplateText: Error removing template.
+      SuccessRemovingTemplateText: 'Successfully removed template (ID: {0}).'
+      SuccessTaggingTemplateText: 'Successfully added tag "{0}" to template (ID: {1}).'
+      ErrorTaggingTemplateText: 'Error adding tag "{0}" to template (ID: {1}).'
+      SuccessRemovingTagText: 'Successfully removed tags from template (ID: {0}).'
+      ErrorPreviewingTemplateText: 'Error previewing template (ID: {0}).'
+      ErrorShowingTemplateText: Error showing template to {0}.
+      SuccessEditingTemplateText: 'Successfully edited template (ID: {0}).'
+      ErrorEditingTemplateText: 'Error editing template (ID: {0}).'
+      ReloadTemplatesText: Successfully reloaded templates.
+      ErrorRemovingTagText: 'Error removing tags from template (ID: {0}).'
+    TemplateCommands:
+      TemplateCommandTitle: Template Commands
+    LastResults:
+      NoPreviousGameText: No game played yet!
+      PlayerResultTitle: "{0}'s Results"
+      RoleText: <b>Role:</b> {0}
+      ModifierText: <b>Mods:</b> {0}
+      WinnerText: Winner
+      ResultsText: Results
+      WinResultText: 'Winners: {0}'
+      WinReasonText: 'Reason: {0}'
+    MyDeath:
+      DirectDeathString: '{0} died to {1}\nCause of Death: {2}'
+      IndirectDeathString: "{0}'s cause of death: {1}"
+      CouldNotDetermineDeathText: The cause of death of {0} could not be determined.
+      PlayerIsAliveText: '{0} is still alive and does not have a cause of death.'
+      DeathInfoTitle: Death Info
+      CannotViewDeathWhileAlive: You cannot view deaths while alive!
+    NoPreviousGameText: No game played yet!
+  Announcements:
+    SystemMessage: System Message
+  OptionShower:
+    ActiveRolesList: Active Role List
+    NextPage: Press (Tab) To Go Next...
+  ModUpdater:
+    ModBrokenMessage: N/A
+    ModUpdateMessage: N/A
+    UpdateButton: N/A
+  HistoryEvent:
+    PlayerChangedRole: Changed Role
+    Death:
+      PlayerMurdered: Murdered
+      PlayerSuicide: Suicided
+  PingDisplay:
+    AddonsLoaded: Addons Loaded
+  Gamemodes:
+    Colorwars:
+      Options:
+        GracePeriod: Grace Period
+  Statistics:
+    BodiesReported: Bodies Reported
+    CommonTasksComplete: Common Tasks Completed
+    Deaths: Deaths
+    FirstDeaths: First Deaths
+    FirstKills: First Kills
+    Games: Games
+    Kills: Kills
+    LongTasksComplete: Long Tasks Completed
+    MeetingsCalled: Meetings Called
+    MessagesSent: Messages Sent
+    PlayersExiled: Players Exiled
+    SabotagesCalled: Sabotages Called
+    SabotagesFixed: Sabotages Fixed
+    Shapeshifts: Shapeshifts
+    ShortTasksComplete: Short Tasks Completed
+    TimeAlive: Time Spent Alive
+    TimeDead: Time Spent Dead
+    TimesExiled: Times Exiled
+    TimesVented: Times Venting
+    TimesVoteSkipped: Votes Skipped
+    TimesVoted: Times Voted
+    TotalTasksComplete: Tasks Completed
+    TotalTime: Total Play Time
+    TotalVotesFor: Total Votes for Player
+    CommsSabotaged: Comms Sabotaged
+    DoorsSabotaged: Doors Sabotaged
+    LightsSabotaged: Lights Sabotaged
+    OxygenSabotaged: Oxygen Sabotaged
+    ReactorSabotaged: Reactor Sabotaged
+    Losses: Losses
+    Wins: Wins
+    Statistics: Statistics
+  Options:
+    Roles:
+      Maximum: Maximum
+      SubsequentChance: Subsequent Chance
+    General:
+      OnText: ON
+      OffText: OFF
+      EnabledText: Enabled
+      DisabledText: Disabled
+      DefaultText: Default
+      NeverText: Never
+      ShowText: Show
+      HideText: Hide
+      FriendsText: Friends
+      EveryoneText: Everyone
+      DurationText: Duration
+      AllText: All
+      NoOneText: No One
+      CommonText: Common
+      GlobalText: Global
+      CustomText: Custom
+      NoneText: None
+      SecondsSuffix: s
+      AlwaysText: Always
+    RolesNeutral:
+      NeutralPassiveSlots: Neutral::0 Passive::1 Slots
+      NeutralKillingSlots: Neutral::0 Killing::2 Slots
+      MinimumNeutralPassiveRoles: Minimum Neutral::0 Passive::1 Roles
+      MaximumNeutralPassiveRoles: Maximum Neutral::0 Passive::1 Roles
+      MinimumNeutralKillingRoles: Minimum Neutral::0 Killing::2 Roles
+      MaximumNeutralKillingRoles: Maximum Neutral::0 Killing::2 Roles
+      NeutralTeamMode: Neutral::0 Teaming Mode
+      SameRoleText: Same Role
+      KillingAndPassiveText: Killing::2 And Passive::1
+      AlliedKnowRoles: Team Knows Everyone's Role
+    Subroles:
+      ModifierMaximumText: Maximum Modifiers::0 per Player
+      EvenlyDistributeModifierText: Evenly Distribute Modifiers::0
+      UncappedText: Uncapped
+      NoModifiersText: No Modifiers
+    Admin:
+      SectionTitle: Host Options
+      HostGM: Host GM
+      AutoKick: Chat Auto Kick
+      AutoKickNoFriendcode: Kick Players w/o Friendcodes
+      AutoKickLevel: Kick Players Under Level
+      AutoKickMobile: Kick Mobile Players
+      AutoStart: Auto Start
+      AutoStartOptionSuffix: Players
+      AutoPlayAgain: Auto Play Again
+      AutoStartPlayerThreshold: Player Threshold
+      AutoStartMaxWaitTime: Maximum Wait Time
+      AutoStartGameCountdown: Game Countdown
+    Debug:
+      SectionTitle: Debug Options
+      NoGameEnd: Prevent Game Over
+      NameRoleAssignment: Name-Based Role Assignment
+    New:
+      SectionTitle: ???
+      SwitchToRoblox: Switch To Roblox
+    Gameplay:
+      SectionTitle: Gameplay Options
+      OptimizeRoleAmounts: Optimize Role Counts for Playability
+      FixFirstKillCooldown: Fix First Kill Cooldown
+      DisableTasks: Disable Tasks
+      DisableCardSwipe: Disable Card Swipe
+      DisableMedScan: Disable Med Scan
+      DisableUnlockSafe: Disable Unlock Safe
+      DisableUploadData: Disable Upload Data
+      DisableStartReactor: Disable Start Reactor
+      DisableResetBreaker: Disable Reset Breaker
+      DisableTaskWin: Disable Task Win
+      GhostSeeRoles: Ghosts See Roles
+      GhostSeeInfo: Ghosts See Info
+      GhostIgnoreTask: Ghosts Ignore Tasks
+      SyncMeetingText: Sync Meetings
+      SyncMeetingNever: Never
+      ForceNoVenting: Force No Venting
+      FirstKillCooldown: First Kill Cooldown
+      TenSecondCooldown: 10 Seconds
+      GlobalCooldown: Global CD
+      RoleCooldown: Role CD
+      SetCooldown: Set CD
+      SetCooldownValue: Set Cooldown Value
+      DisableFixWiring: Disable Fix Wiring
+      LadderDeath: Ladder Death
+      ModifierTextMode: Modifier Text Mode
+      FirstValue: First
+    Mayhem:
+      SectionTitle: Mayhem Options
+      RandomMaps: Enable Random Maps
+      RandomSpawn: Random Spawn
+      CamoComms: Camo Comms
+      AllRolesCanVent: All Roles Can Vent
+    Miscellaneous:
+      SectionTitle: Miscellaneous Options
+      AssignedPet: Assigned Pet
+      AllowNameCommand: Allow /name
+      AllowColorAndLevelCommand: Allow /color and /level
+      AutoDisplayResults: Auto Display Results
+      SuffixMode: Suffix Mode
+      ColorNames: Color Names
+      LadderDeath: Ladder Death
+      AutoDisplayCauseOfDeath: Auto Display Cause of Death
+    Sabotage:
+      SectionTitle: Sabotage Options
+      DefaultValue: Default
+      DisableSabotages: Disable Sabotages
+      ReactorCountdown: Reactor Countdown
+      OxygenCountdown: Oxygen Countdown
+      DisableReactor: Disable Reactor
+      DisableOxygen: Disable Oxygen
+      DisableLights: Disable Lights
+      DisableCommunications: Disable Communications
+      DisableDoors: Disable Doors
+      DisableHelicopters: Disable Crash Course
+      CrashCourseCountdown: Crash Course Countdown
+    RolesMadmates:
+      MadmatesTakeImpostorSlots: Madmates::0 Take Impostor Slots
+  GUI:
+    GeneralButton: General
+    GraphicsButton: Graphics
+    SoundButton: Sound
+    VentLibButton: VentLib
+    AddonsButton: Addons
+    ReturnButton: Return
+    LeaveGameButton: Leave Game
+    ModUpdateMenu:
+      ExitGameText: Exit Game
+      CloseText: Close
+      UpdateText: Update
+      UpdateAvailableText: Updates Available!
+  Factions:
+    Madmates:
+      Name: Madmates
+    Neutral:
+      Name: Neutrals
+    Modifiers:
+      Name: Modifiers
+  Constants:
+    DeathNames:
+      Killed: Killed
+      Suicide: Suicide
+      Exiled: Exiled
+      Bombed: Bombed
+      Bitten: Bitten
+      Cursed: Cursed
+      Incinerated: Incinerated
+      Misfired: Misfired
+      Parried: Parried
+  Meetings:
+    RoleRevealText: '{0} was the {1}.'
+    RemainingImpostorsText: '{0} impostors remaining.'
+    NoImpostorsText: No impostors remaining.
