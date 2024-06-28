@@ -539,6 +539,10 @@ Translations:
       Options:
         StealsExactRole: Steals Exact Role
         HasArrowsToBody: Has Arrows to Bodies
+    Archangel:
+      RoleName: Archangel
+      Description: <Roles.Archangel.Description>
+      Blurb: <Roles.Archangel.Blurb>
     Arsonist:
       RoleName: Arsonist
       Description: Use the Kill button repeatedly next to a player to douse oil onto them. The player is doused when they are marked by a full orange circle.\n\nDouse all players and ignite them to win by using the Pet button.
@@ -551,7 +555,7 @@ Translations:
       PressIgniteToWinMessage: Press Ignite to Win
       DousedPlayerStatistic: Doused Players
       IncineratedPlayerStatistic: Incinerated Players
-    Blood Knight:
+    BloodKnight:
       RoleName: Blood Knight
       Description: Each kill the Blood knight makes will protect them from attacks for a few seconds.\n\nWin Condition; Solo (be the last killer alive)
       Blurb: Shielded With Each Kill
