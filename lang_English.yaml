@@ -539,6 +539,24 @@ Translations:
       Options:
         StealsExactRole: Steals Exact Role
         HasArrowsToBody: Has Arrows to Bodies
+    Archangel:
+      RoleName: Archangel
+      Description: <Roles.Archangel.Description>
+      Blurb: <Roles.Archangel.Blurb>
+      Options:
+        ProtectDuration: Protect Duration
+        ProtectCooldown: Protect Cooldown
+        TargetKnowsArchAngelExists: Target Knows They have an Archangel
+        ArchAngelKnowsTargetRole: Archangel Knows Target Role
+        RoleChangeWhenTargetDies: Role Change When Target Dies
+        ShouldCancelWhichInteractions: Should Protect Which Interactions
+        InteractionFormatter: Cancel {0} Interactions
+        Indirect: Indirect
+        Ranged: Ranged
+        Delayed: Delayed
+        Neutral: Neutral
+        Fatal: Fatal
+        Hostile: Hostile
     Arsonist:
       RoleName: Arsonist
       Description: Use the Kill button repeatedly next to a player to douse oil onto them. The player is doused when they are marked by a full orange circle.\n\nDouse all players and ignite them to win by using the Pet button.
@@ -551,6 +569,10 @@ Translations:
       PressIgniteToWinMessage: Press Ignite to Win
       DousedPlayerStatistic: Doused Players
       IncineratedPlayerStatistic: Incinerated Players
+    BloodKnight:
+      RoleName: Blood Knight
+      Description: Each kill the Blood knight makes will protect them from attacks for a few seconds.\n\nWin Condition; Solo (be the last killer alive)
+      Blurb: Shielded With Each Kill
     Blood Knight:
       RoleName: Blood Knight
       Description: Each kill the Blood knight makes will protect them from attacks for a few seconds.\n\nWin Condition; Solo (be the last killer alive)
@@ -946,6 +968,15 @@ Translations:
         DiscussionTimeDecrease: Discussion Time Decrease
         VotingTimeDecrease: Voting Time Decrease
         AffectAnonymousVoting: Affect Anonymous Voting
+    GuesserRoleBase:
+      GuesserRoleBase: Guesser
+      PickedRoleText: You are about to guess {0} as {1}. If you are certain about this, vote {0} again to finalize your guess. Otherwise you can pick another player by voting a different player.. OR pick a different role by typing /r [rolename]
+      PickedPlayerText: You are guessing {0}'s role. To guess their role type /r [rolename].
+      TypeRText: Please type /r [roleName] to guess that role.
+      UnknownRole: Unknown role {0}. You can use /perc to view all enabled roles.
+      FinishedGuessingText: You have confirmed your guess. If you are not dead, you may now vote normally.
+      ErrorCompletingGuess: Error completing guess. You may try and guess again.
+      GuessAnnouncementMessage: The guesser has made a guess. {0} died.
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
@@ -1136,6 +1167,11 @@ Translations:
       DeathInfoTitle: Death Info
       CannotViewDeathWhileAlive: You cannot view deaths while alive!
     NoPreviousGameText: No game played yet!
+    Mods:
+      SomethingWentWrong: Something went wrong executing that command. Please check your parameters.
+      SuccessfulMod: '{0} is now a mod! They have access to the /kick and /ban commands now!'
+      RemovedMod: '{0} was removed. They no longer have access to mod-related commands.'
+      AlreadyMod: '{0} is already a mod. Nothing happenend.'
   Announcements:
     SystemMessage: System Message
   OptionShower:
@@ -1229,6 +1265,7 @@ Translations:
       EvenlyDistributeModifierText: Evenly Distribute Modifiers::0
       UncappedText: Uncapped
       NoModifiersText: No Modifiers
+      SubroleOptions: Subrole Options
     Admin:
       SectionTitle: Host Options
       HostGM: Host GM
@@ -1246,6 +1283,7 @@ Translations:
       SectionTitle: Debug Options
       NoGameEnd: Prevent Game Over
       NameRoleAssignment: Name-Based Role Assignment
+      AdvancedRoleAssignment: Advanced Role Assignment
     New:
       SectionTitle: ???
       SwitchToRoblox: Switch To Roblox
@@ -1293,6 +1331,7 @@ Translations:
       ColorNames: Color Names
       LadderDeath: Ladder Death
       AutoDisplayCauseOfDeath: Auto Display Cause of Death
+      AllowTeleportCommand: Allow /tpin and /tpout
     Sabotage:
       SectionTitle: Sabotage Options
       DefaultValue: Default
@@ -1339,7 +1378,13 @@ Translations:
       Incinerated: Incinerated
       Misfired: Misfired
       Parried: Parried
+      Sniped: Sniped
   Meetings:
     RoleRevealText: '{0} was the {1}.'
     RemainingImpostorsText: '{0} impostors remaining.'
     NoImpostorsText: No impostors remaining.
+  Internals:
+    FatalErrorHandler:
+      FatalErrorTitle: Fatal Error
+      FatalErrorMessage: Encountered fatal error during [{0}]
+      CheckLogMessage: Check logs for more info.
