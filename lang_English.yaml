@@ -1179,7 +1179,7 @@ Translations:
 
         Error: {0}
       ReportingBug: Your request has went through and we are now reporting your bug. Thanks!
-      ReportedBug: Your bug has been successfully report. Again, thank you!
+      ReportedBug: Your bug has been successfully reported. Again, thank you!
   Announcements:
     SystemMessage: System Message
   OptionShower:
