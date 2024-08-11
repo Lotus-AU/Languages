@@ -541,8 +541,8 @@ Translations:
         HasArrowsToBody: Has Arrows to Bodies
     Archangel:
       RoleName: Archangel
-      Description: <Roles.Archangel.Description>
-      Blurb: <Roles.Archangel.Blurb>
+      Description: Use the pet button to temporarily protect your target from specific types of interactions based on the host settings. If you die, you still win with your target. If your target dies, you will either change into a different role or keep the Archangel role. If your target is an impostor or crewmate, you still have a chance at winning.
+      Blurb: Protect your Target from Death
       Options:
         ProtectDuration: Protect Duration
         ProtectCooldown: Protect Cooldown
@@ -1172,6 +1172,14 @@ Translations:
       SuccessfulMod: '{0} is now a mod! They have access to the /kick and /ban commands now!'
       RemovedMod: '{0} was removed. They no longer have access to mod-related commands.'
       AlreadyMod: '{0} is already a mod. Nothing happenend.'
+    BugReports:
+      WaitingOnReport: This report has been voided as we are waiting on a response for your previous report.
+      FailedReport: >-
+        An error occured while sending the request. Please try again in a minute.
+
+        Error: {0}
+      ReportingBug: Your request has went through and we are now reporting your bug. Thanks!
+      ReportedBug: Your bug has been successfully report. Again, thank you!
   Announcements:
     SystemMessage: System Message
   OptionShower:
