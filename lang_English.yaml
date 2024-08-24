@@ -21,7 +21,7 @@ Translations:
       BlackmailWarning: You are not allowed to speak! If you speak again you may be killed.
       Options:
         WarningsUntilDeath: Warnings Until Death
-        ShowBlackmailedToAll: SHow Blackmailed to All
+        ShowBlackmailedToAll: Show Blackmailed to All
       BlackmailedMessage: You have been blackmailed! Sending a chat message will kill you.
       WarningMessage: You are not allowed to speak! If you speak again you may be killed.
       BlackmailedText: BLACKMAILED
