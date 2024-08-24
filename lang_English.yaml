@@ -673,9 +673,9 @@ Translations:
       RoleName: Opportunist
       Description: Opportunist can win with impostors or Crewmates so long as they’re alive at the end of the game.
       Blurb: Remain Alive Until Game End
-    Phantom:
-      RoleName: Phantom
-      Description: The Phantom cannot die until a set number of tasks have been completed. When they are on their final tasks, everyone gets an arrow pointing straight toward them. The Phantom cannot be exiled under any circumstances and if voted for before reveal the vote will still count so that the Phantom remains anonymous but will not be exiled, The Phantom will instead become revealed after meeting.\n\nWin Condition:\nComplete Tasks For Solo Win!
+    Taskrunner:
+      RoleName: Taskrunner
+      Description: The Taskrunner cannot die until a set number of tasks have been completed. When they are on their final tasks, everyone gets an arrow pointing straight toward them. The Taskrunner cannot be exiled under any circumstances and if voted for before reveal the vote will still count so that the Taskrunner remains anonymous but will not be exiled, The Taskrunner will instead become revealed after meeting.\n\nWin Condition:\nComplete Tasks For Solo Win!
       Blurb: Complete Tasks For Solo Win
       Options:
         ImmuneToRangedInteractions: Immune to Ranged Interactions
@@ -848,6 +848,8 @@ Translations:
       RoleName: Bloodlust
       Description: The Bloodlust modifier allows the user to keep the ability of their role, while also giving them the ability to kill. Kill all other players to win.
       Blurb: Use your ability to kill everyone
+      Options:
+        RestrictToCompatbileRoles: Restrict to Compatible Roles
     Deadly:
       RoleName: Deadly
       Blurb: Kill players more often.
@@ -941,7 +943,7 @@ Translations:
     Unstoppable:
       RoleName: Unstoppable
       Blurb: Pierce through opponents
-      Description: Players with Unstoppable are able to kill through most types of protection, including Medic shields. Based on the host's options this may even include "pure" immunity such as the Phantom.
+      Description: Players with Unstoppable are able to kill through most types of protection, including Medic shields. Based on the host's options this may even include "pure" immunity such as the Taskrunner.
       Options:
         CanKillUntargetable: Can Kill Untargetable Players
     Miscellaneous:
@@ -977,6 +979,19 @@ Translations:
       FinishedGuessingText: You have confirmed your guess. If you are not dead, you may now vote normally.
       ErrorCompletingGuess: Error completing guess. You may try and guess again.
       GuessAnnouncementMessage: The guesser has made a guess. {0} died.
+    LastResort:
+      Options:
+        AdditionalVotes: Additional Votes
+      RevealText: '{0} was revealed as the {1}!'
+      HintText: Vote yourself to reveal your role. You can vote any other player normally however.
+      RoleName: Last Resort
+      Blurb: Gain extra votes at the last second
+      Description: As the Last Resort, you can vote yourself to gain votes for the rest of the match. This vote is canceled and you are able to vote anyone else after this. The drawback is that your role is now revealed to the public for everyone to see.
+    Phantom:
+      Options:
+        ImmuneToRangedInteractions: Immune to Ranged Interactions
+        RemainingTaskWarning: Remaining Task Warning
+        RemainingTaskTargetable: Remaining Tasks for Targetability
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
@@ -1179,7 +1194,7 @@ Translations:
 
         Error: {0}
       ReportingBug: Your request has went through and we are now reporting your bug. Thanks!
-      ReportedBug: Your bug has been successfully reported. Again, thank you!
+      ReportedBug: Your bug has been successfully report. Again, thank you!
   Announcements:
     SystemMessage: System Message
   OptionShower:
@@ -1287,6 +1302,8 @@ Translations:
       AutoStartPlayerThreshold: Player Threshold
       AutoStartMaxWaitTime: Maximum Wait Time
       AutoStartGameCountdown: Game Countdown
+      SpectatorMode: Spectator Mode
+      AutoHauntCooldown: Auto Haunt Cooldown
     Debug:
       SectionTitle: Debug Options
       NoGameEnd: Prevent Game Over
