@@ -145,10 +145,6 @@ Translations:
       RoleName: Miner
       Description: Use the Pet button to teleport to the last vent used. Kill, vent, and sabotage like any other Impostor role.\n\nPro Tip - Make sure you have enough room for the Pet animation!
       Blurb: Use Pet To Teleport to Vents
-    Morphling:
-      RoleName: Morphling
-      Description: The Morphling can shapeshift themselves into any player that was still alive at the end of the last meeting.\nIt is the Vanilla Shapeshifter.
-      Blurb: Morph Into Other Players
     Ninja:
       RoleName: Ninja
       Description: Use the Pet or Shapeshift button (depending on host's settings) to switch between Hunting and Killing mode. While in Hunting mode, use the Kill button to mark a target, then use the Pet button to teleport the player to you (or you to the player depending on settings) and execute the kill. Ninja may not use their Kill button to kill normally while in Hunting mode.\n\nPro Tip - Make sure you have enough room for the Pet animation!
@@ -482,6 +478,11 @@ Translations:
       RoleName: Tracker
       Description: Once per meeting the Tracker is able to select a player to track by voting them twice (after selecting a player, they're able to vote normally). After meeting, the Tracker will then have an arrow pointing to their selected player unless that player dies. Optionally, the tracker can also use their pet button to temporarily gain arrows to all dead bodies.
       Blurb: Track Players' Movements
+      Options:
+        lol: these are from vanilla tracker and they got added here
+        TrackerCooldown: Tracker Cooldown
+        TrackerDuration: Tracker Duration
+        TrackerDelay: Tracker Update Delay
     Transporter:
       RoleName: Transporter
       Description: Use the Pet Button and cause two random players to switch places.\n\nPro Tip - Make sure you have enough room for the Pet animation!
@@ -905,6 +906,9 @@ Translations:
       Options:
         VitalsCooldown: Vitals Cooldown
         VitalsBatteryCharge: Vitals Battery Charge
+      RoleName: Scientist
+      Blurb: Access vitals at any time
+      Desctiption: This is the same Scientist role as vanilla Among Us.
     SchrodingersCat:
       RoleName: Schrödinger's Cat
       Description: The Schrödinger's Cat changes their affiliation with each attack against them! Win with the faction you convert into, but be careful! Cats only have so many lives!
@@ -987,11 +991,34 @@ Translations:
       RoleName: Last Resort
       Blurb: Gain extra votes at the last second
       Description: As the Last Resort, you can vote yourself to gain votes for the rest of the match. This vote is canceled and you are able to vote anyone else after this. The drawback is that your role is now revealed to the public for everyone to see.
+    Engineer:
+      Options:
+        VentCooldown: Vent Cooldown
+        VentDuration: Vent Duration
+      RoleName: Engineer
+      Blurb: Can use the vents
+      Descrption: This is the same Engineer role as vanilla Among Us.
+    Noisemaker:
+      RoleName: Noisemaker
+      Blurb: Send out an alert when killed
+      Description: This is the same Noisemaker role as vanilla Among Us.
+      Options:
+        ImpostorsGetAlert: Impostors Get Alert
+        AlertDuration: Alert Duration
     Phantom:
       Options:
-        ImmuneToRangedInteractions: Immune to Ranged Interactions
-        RemainingTaskWarning: Remaining Task Warning
-        RemainingTaskTargetable: Remaining Tasks for Targetability
+        VanishCooldown: Vanish Cooldown
+        VanishDuration: Vanish Duration
+      RoleName: Phantom
+      Blurb: Turn invisible
+      Description: This is the same Phantom role as vanilla Among Us.
+    Shapeshifter:
+      Options:
+        ShapeshiftCooldown: Shapeshift Cooldown
+        ShapeshiftDuration: Shapeshift Duration
+      RoleName: Shapeshifter
+      Blurb: Disguise yourself
+      Description: This is the same Shapeshifter role as vanilla Among Us.
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
