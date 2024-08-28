@@ -1025,10 +1025,21 @@ Translations:
       Description: The Shapeshifter can shapeshift themselves into any player that was still alive at the end of the last meeting. This is a vanilla Impostor role. 
     Altruist:
       RoleName: Altruist
-      Blurb: <Roles.Alturist.Blurb>
-    Alturist:
-      RoleName: <Roles.Alturist.RoleName>
-      Blurb: <Roles.Alturist.Blurb>
+      Blurb: Revive a player
+      Description: Report a body to revive the player at the cost of your own life. Depending on the settings, the revival may be delayed. If a meeting is called during this time, the revive is canceled and nothing happens.
+      Options:
+        ReviveDelay: Revive Delay
+        InstantText: Instant
+    Duplicator:
+      RoleName: Duplicator
+      Blurb: Duplicate yourself
+      Description: Use the pet button to duplicate yourself at your current location or a random position. If anyone tries to interact with the duplicated player, the kill is canceled and parried.
+      Options:
+        DuplicateCooldown: Duplicate Cooldown
+        DuplicateDuration: Duplicate Duration
+        SpawnLocation: Spawn Location
+        CurrentLocation: Current
+        RandomLocation: Random
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
