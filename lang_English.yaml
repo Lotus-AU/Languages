@@ -15,7 +15,7 @@ Translations:
       Blurb: Guess the oppositions roles.
     Blackmailer:
       RoleName: Blackmailer
-      Description: Shapeshift into a player to blackmail them.\nDuring meeting, the blackmailed player will have text displaying "BLACKMAILED" to all players.\nIf the Blackmailed player attempts to speak a certain amount of times (Depends on settings), they will die.
+      Description: Shapeshift into a player to blackmail them. During meeting, the blackmailed player will have text displaying "BLACKMAILED" to all players. If a player tries to speak while blackmailed, they may receive a warning reminding them to stay quiet. Once they receive the max warning threshold (determined by host) they will be executed.
       Blurb: Shapeshifting Will Blackmail Target
       BlackmailMessage: You have been blackmailed! Sending a chat message will kill you.
       BlackmailWarning: You are not allowed to speak! If you speak again you may be killed.
@@ -27,19 +27,19 @@ Translations:
       BlackmailedText: BLACKMAILED
     BountyHunter:
       RoleName: Bounty Hunter
-      Description: The Bounty Hunter will receive a target whose name will show under their name. If the Bounty Hunter kills their target, their kill cooldown is significantly reduced for their next kill. The time it takes for the target to change, the kill cooldown after killing their target, and kill cooldown after killing a non-target are predetermined by host in settings.
-      Blurb: Kill Bounty Players & Gain a Reduced Kill Cooldown
+      Description: The Bounty Hunter will receive a target player to kill (marked by a black name). If the Bounty Hunter kills their target, their kill cooldown is significantly reduced for their next kill. The time it takes for the target to change, the kill cooldown after killing their target, and kill cooldown after killing a non-target are predetermined by host in settings.
+      Blurb: Kill Bounties to Reduce Kill Cooldown
     Camouflager:
       RoleName: Camouflager
-      Description: Shapeshift into a player and cause every living player to shapeshift into the chosen player for a short amount of time. When the duration is over (predetermined by host in settings), or if a meeting is called, players return to their normal form.
+      Description: Shapeshift into a player and cause every living player to shapeshift into the same player for a short amount of time. When the duration is over, or if a meeting is called, all players return to their normal form.
       Blurb: Disguise Everyone
     Consort:
       RoleName: Consort
-      Description: Use the Pet button to alternate between Role-Blocking a player and Killing. Role-Blocks prevent the player from killing, reporting bodies, calling meetings, shapeshifting, and/or venting.
+      Description: Use the Pet button to alternate between Role-Blocking and Killing. Role-Blocking a player prevents them from killing, reporting dead bodies, calling meetings, shapeshifting, and venting.
       Blurb: Role-Block Players
     Creeper:
       RoleName: Creeper
-      Description: The Creeper's only job is to cause as much chaos as possible. Use either your Pet or Shapeshift button to kill yourself and any player within a radius determined by host.\nYou might find yourself lucky and be protected from your bombs with a shield (ex. medic shield) and live to see another day. If the option is off however, nothing can protect you.
+      Description: The Creeper's only job is to cause as much devastation as possible. Use either your Pet or Shapeshift button (determined by host) to kill yourself and any player within a specified radius. You might find yourself lucky and be protected from your bombs with a shield (ex. medic shield) and live to see another day. If the option is off however, not even the medic shield will protect you.
       Blurb: Bomb Players
       Options:
         BomberProtection: Bomber Protected by Shielding
@@ -50,18 +50,22 @@ Translations:
       ExplosionGracePeriod: 'Explosion Grace Period: {0}'
     Disperser:
       RoleName: Disperser
-      Description: Use Pet button to teleport everyone to a random vent.
+      Description: Use your Pet button to teleport everyone to a random vent.
       Blurb: Teleport Players
       Options:
         DisperseCooldown: Disperse Cooldown
         DisperserGetsDispersed: Disperser::0 Gets Dispersed
     Escapist:
       RoleName: Escapist
-      Description: Use the Pet button to mark a location. After a minor cooldown, you can re-use the Pet button to teleport back to your marked location. This will then put the mark ability on cooldown for a set amount of time.
-      Blurb: Mark a Location & Strategically Escape
+      Description: The first time you use your Pet button will mark your current location. After a set cooldown, you can use the Pet button again to teleport back to the location you marked. This will then put the mark ability back on cooldown.
+      Blurb: Mark A Location & Strategically Escape
     FireWorks:
       RoleName: FireWorks
-      Description: Use the Shapeshift button to plant fireworks (aka bombs) around the map until the Max Firework Count has been reached (determined by host). Use Shapeshift button again to detonate all of the Fireworks, killing everyone within radius of each firework. Can also kill normally between placing fireworks.\n\nNote - The explosion goes through walls\n\n
+      Description: >-
+        Use your Pet button to plant a fireworks (i.e. bombs) around the map. Make sure you have enough room for the pet animation. Shapeshift to detonate all of the Fireworks, killing everyone within radius of each one.
+
+
+        Note: The explosion goes through walls. The FireWorks can also kill normally between placing fireworks.
       Blurb: Plant Fireworks to Explode Players
       Options:
         PlantFireworkCooldown: Plant Firework Cooldown
@@ -74,7 +78,7 @@ Translations:
       Blurb: Shapeshift Into A Player To Freeze Them In Place
     Grenadier:
       RoleName: Grenadier
-      Description: Using the Pet button sets off a flash-bang, blinding players in a certain radius. It may also blind allied-Impostors, based on the settings.
+      Description: Use the Pet button to set off a bomb that will blind nearby players in a fixed-distance. It may also blind allied-Impostors depending on host's settings. During this time The Grenadier may kill undetected.
       Blurb: Blind Nearby Players
     IdentityThief:
       RoleName: Identity Thief
@@ -87,13 +91,13 @@ Translations:
         TotallySwapIdentity: Totally Swap Identity
         UntilMeeting: Until Meeting
     Impostor:
-      RoleName: Imposter
+      RoleName: Impostor
       Blurb: Kill Crewmates and Neutrals.
       Description: A vanilla impostor. Kill all other players, less your allies, and be the last faction standing.
     Janitor:
       RoleName: Janitor
-      Description: Choose between killing and cleaning at the end of kill cooldown. Use Report button to clean dead bodies, making them un-reportable. Use Kill button to kill players. The Janitor is unable to report bodies normally. The host may also set it so that bodies are automatically cleaned upon being killed.
-      Blurb: Report Bodies To Make Them Un-reportable.
+      Description: The Janitor can choose between killing and cleaning at the end of their kill cooldown. A Janitor can clean up a body by using their report button and make it unreportable, or use their kill button to kill players. The Janitor can only report bodies normally while they are on cooldown.
+      Blurb: Clean Bodies To Make Them Un-reportable.
       Options:
         CleanOnKill: Clean On KIll
         KillCooldownMultiplier: Kill Cooldown Multiplier
@@ -125,7 +129,7 @@ Translations:
       Description: The Mafioso is a unique impostor role, who cannot kill off the bat. Instead the Mafioso must complete tasks in order to gain cash. During meetings, the Mafioso can use their cash to purchase a couple of different items.\n\nTommy Gun - Allows the Mafioso to kill (one time purchase)\n\nBullet - Required to use with the Tommy Gun\n\nBulletproof Vest - Gives the Mafioso one-time use invincibility for next round\n\nRole Revealer - Allows the Mafioso to reveal the role of one other player\n\nType /o to see how much each item costs. Only items you are able to use/buy will show up in the shop.
     Mare:
       RoleName: Mare
-      Description: Obtain increased speed and decreased kill cooldown during the sabotages determined by host. Be careful! If it's enabled, your name will appear purple while your ability is active.
+      Description: 'Mare gains special powers during certain sabotages (determined by host). These powers may include: Increased Speed and Decreased Kill-Cooldown. Be careful! If enabled in settings, your name will appear Purple while your ability is active.'
       Blurb: Sabotage to Unleash Your Powers
     Mastermind:
       Options:
@@ -139,7 +143,7 @@ Translations:
 
         (Use either your Kill or Pet button!)
       RoleName: Mastermind
-      Description: As the Mastermind, you have the ability to manipulate players. By using your kill button on someone, you can manipulate them into killing for you. The manipulated must use their Kill/Pet button to kill others. If the manipulated player does not kill in time, they will suicide.
+      Description: The Mastermind marks a player with their Kill button. After a delay, that player will gain text saying they've been Manipulated, and a countdown will begin. That player must kill another player before their countdown ends (by using either Pet or Kill), otherwise they suicide. The Mastermind cannot kill normally.
       Blurb: Manipulate and control others.
     Miner:
       RoleName: Miner
@@ -151,7 +155,7 @@ Translations:
       Blurb: Discreetly kill your Victims
     PickPocket:
       RoleName: Pickpocket
-      Description: The Pickpocket steals the votes from the players they kill. These votes stack up, which can make the Pickpocket very powerful. They may have a maximum number of votes depending on host's settings.
+      Description: The Pickpocket is an Impostor who gains an extra vote for every player they kill. These votes stack up, which can make the Pickpocket very powerful.
       Blurb: Steal Votes From Your Kills
       Options:
         MaximumAdditionalVotes: Maximum Additional Votes
@@ -772,7 +776,7 @@ Translations:
     GM:
       RoleName: GM
       Blurb: You're the Game Master
-      Description: The "master" of the game (aka the host.) When the host is GM, they aren't counted as a player in the game and "die" immediately upon spawning into the game. This is so that they can watch over all players to ensure the game is running correctly. (Or so they can AFK)
+      Description: The "master" of the game (aka the host.) When the host is GM, they aren't counted as a player in the game and "die" immediately upon spawning into the game. This is so that they can watch over all players to ensure the game is running correctly (Or so they can AFK).
     Bait:
       RoleName: Bait
       Description: If Bait is killed, the killer automatically self-reports.
@@ -1011,21 +1015,20 @@ Translations:
         VanishDuration: Vanish Duration
       RoleName: Phantom
       Blurb: Turn invisible
-      Description: This is the same Phantom role as vanilla Among Us.
+      Description: The Phantom can turn invisible for a certain period of time. While invisible, they may vent but they may not kill. This is a vanilla Impostor role.
     Shapeshifter:
       Options:
         ShapeshiftCooldown: Shapeshift Cooldown
         ShapeshiftDuration: Shapeshift Duration
       RoleName: Shapeshifter
       Blurb: Disguise yourself
-      Description: This is the same Shapeshifter role as vanilla Among Us.
+      Description: The Shapeshifter can shapeshift themselves into any player that was still alive at the end of the last meeting. This is a vanilla Impostor role. 
     Altruist:
       RoleName: Altruist
-      Blurb: Revive a player
-      Description: Report a body to revive the player at the cost of your own life. Depending on the settings, the revival may be delayed. If a meeting is called during this time, the revive is canceled and nothing happens.
-      Options:
-        ReviveDelay: Revive Delay
-        InstantText: Instant
+      Blurb: <Roles.Alturist.Blurb>
+    Alturist:
+      RoleName: <Roles.Alturist.RoleName>
+      Blurb: <Roles.Alturist.Blurb>
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
