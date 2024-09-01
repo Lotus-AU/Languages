@@ -1022,7 +1022,7 @@ Translations:
         ShapeshiftDuration: Shapeshift Duration
       RoleName: Shapeshifter
       Blurb: Disguise yourself
-      Description: The Shapeshifter can shapeshift themselves into any player that was still alive at the end of the last meeting. This is a vanilla Impostor role. 
+      Description: The Shapeshifter can shapeshift themselves into any player that was still alive at the end of the last meeting. This is a vanilla Impostor role.
     Altruist:
       RoleName: Altruist
       Blurb: Revive a player
@@ -1030,6 +1030,8 @@ Translations:
       Options:
         ReviveDelay: Revive Delay
         InstantText: Instant
+        KillerArrow: Killer Gets Arrow to Revived Player
+        PortableVitals: Has Portable Vitals
     Duplicator:
       RoleName: Duplicator
       Blurb: Duplicate yourself
