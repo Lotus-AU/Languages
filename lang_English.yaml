@@ -458,6 +458,12 @@ Translations:
       NeutralKillingSetting: Can Kill Neutral::0 Killing::1
       NeutralPassiveSetting: Can Kill Neutral::0 Passive::1
       MadmateSetting: Can Kill Madmates::0 Settings
+      Options:
+        SheriffActionButton: Sheriff Action Button
+        OneShotPerRound: One Shot Per Round
+        KillOnMisfire: Kill Target On Misfire
+        KillCooldown: Shoot Cooldown
+        TotalShots: Total Shots
     Snitch:
       RoleName: Snitch
       Description: The Snitch can see Impostors once tasks are complete.\n\nWhen the Snitch has a few tasks left (depending on settings), they will be revealed to the killers by a Light Green Star next to their name. Depending on the settings, when their tasks are completed, the Snitch may also see arrows pointed in the direction of each player they're tracking.
