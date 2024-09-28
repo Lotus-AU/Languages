@@ -506,149 +506,149 @@ Translations:
     Mayor:
       RoleName: Alcalde
       Description: El voto del alcalde se cuenta varias veces.\n\nDependiendo de la configuración, es posible que puedan convocar reuniones de emergencia usando el botón de su mascota.\n\nAdemás, hay una opción en la que el alcalde debe revelar su rol antes de poder obtener votos adicionales (revélelo votando usted mismo).
-      Blurb: Your Vote is Holds More Weight
-      RevealMessage: Mayor, you must reveal yourself to gain additional votes. Currently you can vote normally, but if you vote yourself you'll reveal your role to everyone and gain more votes!
+      Blurb: Tu Voto Influye Más
+      RevealMessage: Alcalde, debe revelar tu identidad para obtener votos adicionales. Actualmente puedes votar normalmente, pero si te votas, revelarás tu rol a todos y obtendrás más votos.
       Options:
-        MayorReveal: Reveal for Votes
-        MayorAdditionalVotes: Mayor Additional Votes
-        PocketMeeting: Pocket Meeting
-        NumberOfUses: Number of Uses
-      MayorRevealTitle: Mayor Reveal
-      MayorRevealMessage: '{0} revealed themself as mayor!'
+        MayorReveal: Revelar para Votos Extra
+        MayorAdditionalVotes: Votos Extra
+        PocketMeeting: Reunión de Bolsillo
+        NumberOfUses: Cantidad de Usos
+      MayorRevealTitle: Revelación de Alcalde
+      MayorRevealMessage: '¡{0} se reveló como alcalde!'
     Medic:
-      RoleName: Medic
-      Description: The Medic is able to vote for a player they want to protect. This player will be protected from attacks as long as the Medic remains alive.\n\nVoting for a player to protect them does not count as a vote, and once the Medic has selected a player to protect they will be able to vote/skip freely.\n\nBased on host's settings, the Medic may be able to change their protected player during following meetings.
-      Blurb: Shield A Player
-      ProtectingMessage: 'You are currently protecting: {0}'
-      VotePlayerInfo: Vote to select a player to guard.
-      MedicHelpMessage: You are a medic! Vote for a player you want to protect next round! Alternatively, you can skip here to return to normal voting.
-      SelectedPlayerMessage: You have decided to protect {0}. Vote them again to confirm your choice, or Skip to return to normal voting.
-      ReturnToNormalVoting: You are now protecting {0}. Your next vote works as normal.
+      RoleName: Médico
+      Description: El médico puede votar por un jugador que desea proteger. Este jugador estará protegido de ataques mientras el médico permanezca con vida. Votar por un jugador para protegerlo no cuenta como un voto, y una vez que el médico haya seleccionado a un jugador para proteger, podrá votar/saltar libremente. Según la configuración del anfitrión, el médico puede cambiar su jugador protegido durante las siguientes reuniones.
+      Blurb: Proteje a un Jugador
+      ProtectingMessage: 'Estás protegiendo a: {0}'
+      VotePlayerInfo: Vota a alguien para protegerlo.
+      MedicHelpMessage: ¡Eres médico! Vota por un jugador que quieras proteger en la próxima ronda (no contará como voto normal). También puedes omitir voto para volver a la votación normal.
+      SelectedPlayerMessage: Has decidido proteger a {0}. Vota en la misma persona otra vez para confirmar tu elección u omite voto para volver a la votación normal.
+      ReturnToNormalVoting: Estás protegiendo a {0}. Tu siguiente voto funcionará de forma normal.
       Options:
-        ChangeGuardedPlayer: Change Guarded Player
-        OnDeathValue: After Death
-        MeetingsValue: Meetings
-        NeverValue: Never
+        ChangeGuardedPlayer: Cambiar Protegido
+        OnDeathValue: Después de Morir
+        MeetingsValue: Reuniones
+        NeverValue: Nunca
     Medium:
-      RoleName: Medium
-      Description: When the Medium reports a body, they will receive a message in the meeting chat telling them the role of that body's Killer.\n\nThe Medium can only see the killer's role if they reported the body themselves.\n\nDepending on host's settings, they may also see an arrow pointing to bodies.
-      Blurb: Reveal The Killer's Role When Reporting
+      RoleName: Médium
+      Description: Cuando el médium informa sobre un cadáver, recibirá un mensaje en el chat de la reunión que le indicará el rol del asesino de ese cadáver. El médium solo puede ver el rol del asesino si él mismo informó sobre el cadáver. Dependiendo de la configuración del anfitrión, también puede ver una flecha que apunta a los cadáveres.
+      Blurb: Revelar el rol del asesino al informar
       MediumMessage: N/A
     Mystic:
-      RoleName: Mystic
-      Description: When a player is killed, the Mystic receives a single flash and alert. It is very similar to when the reactor is sabotaged.\n\nUse this alert to estimate time of death.
-      Blurb: Get Notified When Players Are Killed
+      RoleName: Místico
+      Description: Cuando un jugador muere, el Místico recibe un destello y una alerta. Es muy similar a cuando sabotean el reactor.\n\nUsa esta alerta para estimar el momento de la muerte.
+      Blurb: Recibe Avisos Por Muertes
       Options:
-        MysticIsModifier: Mystic is a Modifier
-        FlashDuration: Flash Duration
-        SendAudioAlert: Send Audio Alert
-        RestrictedToCrewmates: Restricted to Crewmates::0
+        MysticIsModifier: Místico es un Modificador
+        FlashDuration: Duración del Aviso
+        SendAudioAlert: Aviso con Audio
+        RestrictedToCrewmates: Limitado a Tripulantes::0
     Noisemaker:
-      RoleName: Noisemaker
-      Description: When a player kills the the Noisemaker, a visual and audio alert is briefly sent out with an arrow showing the direction of their body. This is a vanilla Among Us role.
-      Blurb: Send Out An Alert When Killed
+      RoleName: Alertador
+      Description: Cuando un jugador mata al Alertador, se envía una alerta visual y sonora breve con una flecha que muestra la dirección de su cuerpo. Este es un rol básico de Among Us.
+      Blurb: Envia Una Alerta Al Morir
       Options:
-        ImpostorsGetAlert: Impostors Get Alert
-        AlertDuration: Alert Duration
+        ImpostorsGetAlert: Impostores reciben Alerta
+        AlertDuration: Duración de Alerta
     Observer:
-      RoleName: Observer
-      Description: Finish tasks to gain vision. Depending on the host's options, you may gain a small vision boost upon completing each task, or, a large vision boost when all tasks have been complete.
-      Blurb: Do Tasks to Increase Vision
+      RoleName: Observador
+      Description: Completa las tareas para ganar visión. Según las opciones del anfitrión, puedes ganar una pequeña mejora de visión al completar cada tarea o una gran mejora de visión cuando hayas completado todas las tareas.
+      Blurb: Realizar tareas para aumentar la visión
       Options:
-        SlowlyGainsVision: Slowly Gains Vision
-        VisionGain: Vision Gain  on Task Complete
-        OverrideVision: Override Starting Vision
-        StartingVision: Starting Vision Modifier
-        FinalVision: Finished Tasks Vision
-        LightsImmunity: Lights Immunity if Tasks Finished
+        SlowlyGainsVision: Poco a poco va adquiriendo visión
+        VisionGain: Ganancia de visión al completar la tarea
+        OverrideVision: Anular la visión inicial
+        StartingVision: Modificador de visión inicial
+        FinalVision: Visión de Tareas Finalizadas
+        LightsImmunity: Inmunidad a las luces si se finalizan las tareas
     Oracle:
-      RoleName: Oracle
-      Description: The Oracle can vote a player in meeting to pick a target (this will not count as a vote). When the Oracle dies, the Target's role is revealed to everyone.\n\nThe Oracle may skip normally before selecting a target, or they may lock in their target then vote/skip freely. The Oracle can choose to reveal their own role if they wish by voting themselves.
-      Blurb: Reveal A Role Upon Death
-      SelectRole: 'You have selected: {0}'
-      UnselectRole: 'You have unselected: {0}'
-      VotePlayerInfo: Vote to select a player to reveal on your death. You can re-vote a player to unselect them.\n\nAfter confirming, your target cannot be changed.
-      OracleMessageTitle: Oracle Ability
-      VoteNormallyMessage: You may now vote normally
-      SkipMessage: Press "Skip Vote" to continue.
-      RevealMessage: The Oracle has revealed to all that {0} is the {1}
+      RoleName: Oráculo
+      Description: El Oráculo puede votar a un jugador en una reunión para elegir un objetivo (esto no contará como un voto). Cuando el Oráculo muere, el rol del Objetivo se revela a todos. El Oráculo puede saltar normalmente antes de seleccionar un objetivo, o puede fijar su objetivo y luego votar/saltar libremente. El Oráculo puede elegir revelar su propio rol si lo desea votándose a sí mismo.
+      Blurb: Revelar un rol tras la muerte
+      SelectRole: 'Has seleccionado: {0}'
+      UnselectRole: 'Has deseleccionado: {0}'
+      VotePlayerInfo: Vota para seleccionar un jugador que se revelará cuando mueras. Puedes volver a votar a un jugador para deseleccionarlo.\n\nDespués de confirmar, no se puede cambiar tu objetivo.
+      OracleMessageTitle: Habilidad del Oráculo
+      VoteNormallyMessage: Ahora puedes votar normalmente
+      SkipMessage: Pulse "Omitir votación" para continuar.
+      RevealMessage: El Oráculo ha revelado a todos que {0} es el {1}
     Psychic:
-      RoleName: Psychic
-      Description: The Psychic has the ability to see potential evils during a meeting.\n\nThree players' names will be highlighted in red, at least one of them is evil. The number of players highlighted can be adjusted by the host.
-      Blurb: See Potential Evils
+      RoleName: Psíquico
+      Description: El psíquico tiene la capacidad de ver posibles males durante una reunión.\n\nSe resaltarán en rojo los nombres de tres jugadores, al menos uno de ellos es malvado. El anfitrión puede ajustar la cantidad de jugadores resaltados.
+      Blurb: Ve Males Potenciales
       Options:
-        MaxHighlightedPlayers: Maximum Highlighted Players
-        AllKillingRolesAreEvil: All Killing::0 Roles Are Evil
+        MaxHighlightedPlayers: Máximo de jugadores destacados
+        AllKillingRolesAreEvil: Todos los Asesinos::0 son malvados
     Repairman:
-      RoleName: Repairman
-      Description: Repairman can fast-fix sabotages that typically require two players (e.g. reactor) on their own.\n\nLights can be fixed by touching a single lever. Opening a door that can be manually opened (ex. Polus) will open all the linked doors.
-      Blurb: Quickly Fix Sabotages
+      RoleName: Técnico
+      Description: El Técnico puede solucionar rápidamente sabotajes que normalmente requieren dos jugadores (por ejemplo, el reactor) por su cuenta.\n\nLas luces se pueden arreglar tocando una sola palanca. Al abrir una puerta que se puede abrir manualmente (por ejemplo, Polus), se abrirán todas las puertas vinculadas..
+      Blurb: Repara Sabotajes Rápidamente
       Options:
-        RepairmanCanVent: Repairman::0 Can Vent
-        FastFixLights: Fast Fixes Lights
-        FastFixReactor: Fast Fixes Reactor
-        FastFixOxygen: Fast Fixes Oxygen
-        FastFixComms: Fast Fixes Comms
-        FastFixDoors: Fast Fixes Doors
-        FastFixHelicopter: Fast Fixes Crash Course
-      RepairmanFixMessage: '{0} fixed {1}.'
+        RepairmanCanVent: Técnico::0 Puede Usar Ductos
+        FastFixLights: Reparar Rápido las Luces 
+        FastFixReactor: Reparar Rápido el Reactor
+        FastFixOxygen: Reparar Rápido el Oxígeno
+        FastFixComms: Reparar Rápido las Comunicaciones
+        FastFixDoors: Reparar Rápido las Puertas
+        FastFixHelicopter: Reparar Rápido el Trayecto de Choque
+      RepairmanFixMessage: '{0} reparó {1}.'
     Scientist:
-      RoleName: Scientist
-      Description: The Scientist has a portable vitals monitor that can be accessed anywhere on the map. The is a vanilla Among Us role.
-      Blurb: Access vitals At Any Time
+      RoleName: Científico
+      Description: El científico tiene un monitor de signos vitales portátil al que se puede acceder desde cualquier lugar del mapa. Este es un rol básico de Among Us.
+      Blurb: Acceda a los signos vitales en cualquier momento
       Options:
-        VitalsCooldown: Vitals Cooldown
-        VitalsBatteryCharge: Vitals Battery Charge
+        VitalsCooldown: Enfriamiento de signos vitales
+        VitalsBatteryCharge: Carga de batería de Vitals
     Sheriff:
       RoleName: Sheriff
       Description: >-
-        The Sheriff can kill Impostors and Neutrals. Be Careful! The Sheriff will misfire (kill themselves) if they try to shoot a Crewmate or a Neutral not allowed by host.
+        El Sheriff puede matar a impostores y neutrales. ¡Ten cuidado! El Sheriff fallará (se suicidará) si intenta disparar a un miembro de la tripulación o a un neutral que no esté autorizado por el anfitrión.
 
 
-        Note: If the Sheriff's 'Action Button' is set to Kill, the Sheriff will not be given any tasks to complete.
-      Blurb: Shoot Impostors
-      MisfireStat: Misfires
-      NeutralKillingSetting: Can Kill Neutral::0 Killing::1
-      NeutralPassiveSetting: Can Kill Neutral::0 Passive::1
-      MadmateSetting: Can Kill Madmates::0
+        Nota: Si el 'Botón de acción' del Sheriff está configurado en Matar, el Sheriff no recibirá ninguna tarea para completar.
+      Blurb: Dispara a los impostores
+      MisfireStat: Fallos al Disparar
+      NeutralKillingSetting: Puede Matar Asesinos::1 Neutrales::0
+      NeutralPassiveSetting: Puede Matar Pasivos::1 Neutrales::0
+      MadmateSetting: Puede Matar Cómplices::0
       Options:
-        SheriffActionButton: Sheriff Action Button
-        OneShotPerRound: One Shot Per Round
-        KillOnMisfire: Kill Target On Misfire
-        KillCooldown: Shoot Cooldown
-        TotalShots: Total Shots
-        ActionKillButton: Kill Button (Legacy)
-        ActionPetButton: Pet Button
+        SheriffActionButton: Botón de Habilidad del Sheriff
+        OneShotPerRound: Un Disparo Por Ronda
+        KillOnMisfire: Objetivo Muere al Fallar Disparo
+        KillCooldown: Espera para Disparar
+        TotalShots: Total de Disparos
+        ActionKillButton: Botón de Matar (de legado)
+        ActionPetButton: Botón Acariciar
     Snitch:
-      RoleName: Snitch
-      Description: The Snitch is a Crewmate who must complete their taks to see who the Impostors are (may also see neutral killers depending on settings).\n\nWhen the Snitch has a certain number of tasks left, they will be revealed to the killers with a ⚠ indicator.\n\nDepending on the settings and when their tasks are completed, the Snitch may also see arrows pointed in the direction of each player they're tracking and vice versa.
-      Blurb: Finish Tasks To See Killers
+      RoleName: Soplón
+      Description: El soplón es un miembro de la tripulación que debe completar sus tareas para ver quiénes son los impostores (también puede ver asesinos neutrales según la configuración). Cuando al soplón le queden una cierta cantidad de tareas, se las revelarán a los asesinos con un indicador ⚠. Dependiendo de la configuración y de cuándo se completen sus tareas, el soplón también puede ver flechas que apuntan en la dirección de cada jugador que está rastreando y viceversa.
+      Blurb: Termina tareas para ver a los asesinos
       Options:
-        RemainingTaskWarning: Remaining Task Warning
-        EvilArrowToSnitch: Evils Have Arrow to Snitch::0
-        SnitchArrow: Enable Arrow for Snitch::0
-        ColoredArrow: Colored Arrow
-        SnitchTracksAllKillers: Snitch::0 Can Track Any Killing
+        RemainingTaskWarning: Advertencia de tarea restante
+        EvilArrowToSnitch: Los males tienen una flecha para delatar::0
+        SnitchArrow: Habilitar flecha para Snitch::0
+        ColoredArrow: Flecha de color
+        SnitchTracksAllKillers: Soplón::0 puede rastrear cualquier asesinato
     Speedrunner:
       RoleName: Speedrunner
-      Description: The Speedrunner must finish tasks to gain speed.\n\nDepending on the host's settings, you may gain a small speed boost (possibly temporarily depending on settings) after completing singular tasks, or, get a large speed boost after reaching a task-threshold.
-      Blurb: Complete Tasks to Gain Speed
+      Description: El Speedrunner debe completar tareas para ganar velocidad.\n\nDependiendo de la configuración del anfitrión, puedes obtener un pequeño aumento de velocidad (posiblemente temporalmente dependiendo de la configuración) después de completar tareas singulares, o puedes obtener un gran aumento de velocidad después de alcanzar un umbral de tarea.
+      Blurb: Completar tareas para ganar velocidad
       Options:
-        TempBoostOnTaskFinish: Temporary Boost Upon Finishing Task
-        TempBoostDuration: Temporary Boost Duration
-        PermanentSpeedGain: Permanent Speed Gain per Task
-        TaskUntilLargeSpeedBoost: Task Remaining Until Final Speed Boost
-        FinalSpeedBoost: Final Speed
+        TempBoostOnTaskFinish: Aumento temporal al finalizar la tarea
+        TempBoostDuration: Duración del impulso temporal
+        PermanentSpeedGain: Ganancia de velocidad permanente por tarea
+        TaskUntilLargeSpeedBoost: Tarea restante hasta el aumento de velocidad final
+        FinalSpeedBoost: Velocidad final
     Swapper:
-      RoleName: Swapper
-      Description: The first two players you vote each meeting will have the number of votes against them swapped.\n\nAfter voting those players, you may vote as normal. Alternatively, you can skip at the start and continue to normal voting.
-      Blurb: Swap Players' Votes
+      RoleName: Cambiavotos
+      Description: Los primeros dos jugadores a los que votes en cada reunión tendrán el número de votos en su contra intercambiado.\n\nDespués de votar a esos jugadores, puedes votar de forma normal. Alternativamente, puedes saltarte el comienzo y continuar con la votación normal.
+      Blurb: Intercambiar votos de los jugadores
       SwapperInfoMessage: >-
-        You are Swapper. To swap the votes received by two players, vote two separate players.
+        Eres el Cambiavotos. Para intercambiar los votos recibidos por dos jugadores, vota a dos jugadores diferentes.
 
-        You may change the first swapped person by re-voting them.
+        Puedes cambiar a la primera persona intercambiada volviéndola a votar.
 
-        Additionally, you may bypass this ability by initially skipping.
+        Además, puedes omitir esta habilidad saltando inicialmente.
       SwapperSelectMessage1: You've selected to swap {0}'s votes.
       SwapperSelectMessage2: You've selected to swap {0}'s votes. {1} and {0} will now have their votes against them swapped.
       SwapperUnselectMessage: You've unselected {0}.
