@@ -7,6 +7,10 @@ Authors:
 - Shiftyrose
 Translations:
   Roles:
+    Assassin:
+      RoleName: Assassin
+      Description: "The Assassin is an Impostor that can also kill other players by guessing their roles. If the Assassin is able to successfully guess a player's role, then that player will be elimianted.\n\nWhile in meeting, the Assassin can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Doctor) in the chat. If the Assassin correctly guesses both the player and their role, then that player will die.\n\nIf the Assassin misgueseses they will suicide. \n\nTo skip guessing, you may skip first before voting for a player.\n\nNote: Revealed roles (e.g. from Oracle) are unable to be guessed."
+      Blurb: Kill & Guess Players' Roles
     Blackmailer:
       RoleName: Blackmailer
       Description: Shapeshift into a player to blackmail them. During meeting, the blackmailed player will have text displaying "BLACKMAILED" that may be seen by all players.\n\nIf a player tries to speak while blackmailed, they may receive a warning reminding them to stay quiet. Once they receive the max warning threshold (determined by host) they will be executed.
@@ -177,7 +181,7 @@ Translations:
         AbilityCooldown: Miner Ability Cooldown
     Ninja:
       RoleName: Ninja
-      Description: Use the Pet or Shapeshift button (depending on host's settings) to switch between Hunting and Killing mode.\n\nWhile in Hunting mode, use the Kill button to mark a target, then use the Pet button (or unshift) to teleport the player to you (or you to the player depending on settings) and execute the kill. 
+      Description: Use the Pet or Shapeshift button (depending on host's settings) to switch between Hunting and Killing mode.\n\nWhile in Hunting mode, use the Kill button to mark a target, then use the Pet button (or unshift) to teleport the player to you (or you to the player depending on settings) and execute the kill.
       Blurb: Discreetly kill your Victims
       Options:
         TeleportToNinja: Players Teleport to Ninja
@@ -205,7 +209,11 @@ Translations:
       Blurb: Use Players As Your Puppets
     SerialKiller:
       RoleName: Serial Killer
-      Description: "The Serial Killer has a significantly reduced kill cooldown (determined by host), however, they also have a timer next to their name. Every time the Serial Killer kills, the timer will reset. If the timer reaches 0, the Serial Killer will die.\n\nNote: If 'Timer Begins After First Kill' is off, then Suicide Timer will be extended by the same amount as the 'First Kill Cooldown' in Gameplay Options."
+      Description: >-
+        The Serial Killer has a significantly reduced kill cooldown (determined by host), however, they also have a timer next to their name. Every time the Serial Killer kills, the timer will reset. If the timer reaches 0, the Serial Killer will die.
+
+
+        Note: If 'Timer Begins After First Kill' is off, then Suicide Timer will be extended by the same amount as the 'First Kill Cooldown' in Gameplay Options.
       Blurb: Kill Quickly to Stay Alive
       Options:
         TimeUntilSuicide: Time Until Suicide
@@ -239,7 +247,7 @@ Translations:
         InvisibleOnKill: Remain Invisible on Kill
     TimeThief:
       RoleName: Time Thief
-      Description: For every kill the Time Thief gets, it will reduce the total meeting time by a certain amount.\n\nDepending on host's settings, the meeting time may be restored back to normal once the Time Thief dies. 
+      Description: For every kill the Time Thief gets, it will reduce the total meeting time by a certain amount.\n\nDepending on host's settings, the meeting time may be restored back to normal once the Time Thief dies.
       Blurb: Steal Time From Meetings
       Options:
         MeetingTimeStolen: Meeting Time Stolen
@@ -279,6 +287,8 @@ Translations:
       Description: The Yin Yanger is an Impostor with the ability to make two players kill each other. Use the Kill button to tag two players. When they come within kill distance, they will kill each other.\n\nYin Yanger can also kill normally once 2 targets have been set.
       Blurb: Turn Players Against Each Other
       YinYangCooldown: Yin Yang Cooldown
+      Options:
+        YinYangCooldown: Yin Yang Cooldown
     CrewPostor:
       RoleName: Crewpostor
       Description: Complete a task to instantly kill the player closest to you (even impostors and other killing roles). The Crewpostor wins with Impostors.
@@ -509,7 +519,7 @@ Translations:
     Mayor:
       RoleName: Mayor
       Description: The Mayor's vote is counted multiple times.\n\nDepending on the settings, they may be able to call emergency meetings by using their Pet button.\n\nAdditionally, there's an option where Mayor has to reveal their role before being able to gain additional votes (reveal by voting yourself).
-      Blurb: Your Vote is Holds More Weight
+      Blurb: Your Vote Holds More Weight
       RevealMessage: Mayor, you must reveal yourself to gain additional votes. Currently you can vote normally, but if you vote yourself you'll reveal your role to everyone and gain more votes!
       Options:
         MayorReveal: Reveal for Votes
@@ -537,6 +547,14 @@ Translations:
       Description: When the Medium reports a body, they will receive a message in the meeting chat telling them the role of that body's Killer.\n\nThe Medium can only see the killer's role if they reported the body themselves.\n\nDepending on host's settings, they may also see an arrow pointing to bodies.
       Blurb: Reveal The Killer's Role When Reporting
       MediumMessage: N/A
+      Options:
+        HasArrowsToBody: Has Arrows to Bodies
+        CanSeeChatOfReportedPlayer: Can Speak with Ghost of Reported
+      MediumTitle: Meditation
+      MediumConnection: You're now able to speak with the ghost of {0}. They can answer with "yes" or "no" to your questions.
+      MediumConnectionGhost: The Medium {0} has connected with you. You may talk to them by answering ONLY "yes" or "no".
+      YesAnswer: yes
+      NoAnswer: no
     Mystic:
       RoleName: Mystic
       Description: When a player is killed, the Mystic receives a single flash and alert. It is very similar to when the reactor is sabotaged.\n\nUse this alert to estimate time of death.
@@ -696,14 +714,24 @@ Translations:
     Vigilante:
       RoleName: Vigilante
       Blurb: Guess Impostor Roles to Kill
-      Description: The Vigilante is a Crewmate that can kill Impostors and Neutrals by guessing the players and their roles. If the Vigilante is able to successfully guess a non-Crewmate's role, then that player will be elimianted.\n\nWhile in meeting, the Vigilante can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat. If the Vigilante correctly guesses both the player and their role, then that player will die.\n\nIf the Vigilante misgueses, or tries to guess a Crewmate, they will suicide.
+      Description: "The Vigilante is a Crewmate that can kill Impostors and Neutrals by guessing the players and their roles. If the Vigilante is able to successfully guess a non-Crewmate's role, then that player will be elimianted.\n\nWhile in meeting, the Vigilante can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat. If the Vigilante correctly guesses both the player and their role, then that player will die.\n\nIf the Vigilante misguesses, they will suicide. The Vigilante is not able to guess Crewmate roles. \n\nTo skip guessing, you may skip first before voting for a player.\n\nNote: Revealed roles (e.g. from Oracle) are unable to be guessed."
       SelectPlayer: 'You have selected to kill:'
       SelectRole: 'You are guessing:'
       SkipToContinue: Press "Skip Vote" to continue.
       VoteRoleInfo: To select a role, vote a player with the role over their name. If they have multiple roles over their name, voting that same player again will select the next role displayed.
     AgiTater:
       RoleName: AgiTater
-      Description: "The AgiTater can start a deadly game of 'hot potato'.\n\nUse your Kill button to pass a bomb to a player who must pass the bomb to another player before it explodes (may be after a duration or when the next meeting is called).\n\nPlayers holding the bomb can pass it on by walking by another player, and whoever is holding it will have an indicator text that says 'Holding the Bomb!'.\n\nNote: If the bomb is set to explode after a duration, the indicator text will turn from green, to yellow, to red as it gets closer to exploding."
+      Description: >-
+        The AgiTater can start a deadly game of 'hot potato'.
+
+
+        Use your Kill button to pass a bomb to a player who must pass the bomb to another player before it explodes (may be after a duration or when the next meeting is called).
+
+
+        Players holding the bomb can pass it on by walking by another player, and whoever is holding it will have an indicator text that says 'Holding the Bomb!'.
+
+
+        Note: If the bomb is set to explode after a duration, the indicator text will turn from green, to yellow, to red as it gets closer to exploding.
       Blurb: Pass The Bomb (Hot Potato)
       Options:
         PlaceBombCooldown: Place Bomb Cooldown
@@ -780,12 +808,18 @@ Translations:
       RoleName: Blood Knight
       Description: The Blood Knight is a neutral killer where every time they kill a player, they will be protected from attacks for a few seconds.
       Blurb: Gain a Shield For Each Kill
+      Options:
+        ProtectDuration: Protect Duration
     Copycat:
       RoleName: Copycat
       Description: As Copycat, the first time you get attacked you'll change faction and role. If you were attacked by an impostor, you're now an impostor. If by a solo killer, then you're also a solo killer. Depending on the host's settings, you may gain their 'progress' as well.
       Blurb: Become Your Killer's Sidekick
       CopycatFactionChangeName: '{0}cat'
       CatFactionChangeName: '{0}cat'
+      Options:
+        KillerKnowsCopycat: Killer Knows Copycat::0
+        CopyRoleProgress: Copy Role's Progress
+      CopyCatFactionChangeName: '{0}cat'
     Deathknight:
       RoleName: Deathknight
       Description: The Deathknight is a Secondary Role of the Necromancer who must help them convert players to the Undead.\nConvert players by using your Pet button near someone who the Necromancer had used their Kill button on (indicated by circle next to their name). There can only be one Deathknight at a time, and if the Necromancer dies, the Deathknight will become the new Necromancer.\n\nThe Deathknight is assigned by being the first person the Necromancer converts.
@@ -903,6 +937,11 @@ Translations:
       RoleName: Pelican
       Description: The Pelican gulps players by using their kill button. Gulped players are teleported out of the map and are unable to interact with the game (including Sabotages).\n\nOnce a meeting is called, all gulped players will instantly die. If the Pelican dies or disconnects, all gulped players will return to where the Pelican last was.
       Blurb: Gulp Down Players
+      Options:
+        GulpCooldown: Gulp Cooldown
+        AllowEscapeFromPelican: Allow Escape from Pelican
+      GulpedStatistic: Players Gulped
+      DeathName: Swallowed
     Pestilence:
       RoleName: Pestilence
       Description: Plague Bearer becomes Pestilence when they finish infecting all players. Pestilence cannot be killed (for the most part). Anyone who tries to kill the pestilence will backfire instead. Pestilence can be voted off or killed indirectly (like Warlock or Puppeteer).
@@ -917,7 +956,7 @@ Translations:
     Pirate:
       RoleName: Pirate
       Description: The Pirate is a Neutral Guesser that can kill players by guessing their roles. If the Pirate is able to successfully guess a player's role, then that player will be elimianted.\n\nWhile in meeting, the Pirate can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat.\n\nIf the Pirate correctly guesses both the player and their role, then that player will die. The Pirate will need to guess a certain number of players (depending on settings) correctly in order to win.
-      Blurb: Guess the Players' Roles
+      Blurb: Guess Players' Roles
       Options:
         GuessesPerMeeting: Guesses Per Meeting
         GuessWinAmount: Pirate Guess Win Amount
@@ -950,6 +989,7 @@ Translations:
       RoleName: Schrödinger's Cat
       Description: The Schrödinger's Cat changes teams every time someone tries to kill them. They have a maximum number of lives and will keep changing teams until they run out of lives or the game ends.\n\nThe Schrödinger's Cat role name will change to reflect whose team they are currently on. Their job is to help that team win by defending them in-game or by taking suspicion off of their teammate.\n\nThe Schrödinger's Cat will win with whoever's team they're on when the game ends. Ex. If the Jackal were to kill the Schrödinger's Cat, their role name would change to "Jackalcat", and the Schrödinger's Cat will win with the Jackal (assuming they're still Jackalcat by the end of the game).\n\nUnlike Copycat, the Schrödinger's Cat cannot kill
       Blurb: Change Teams With Each Attempt on Your Life
+      Aliases: Schrodingers Cat, SC, SCat, S Cat
       CopycatFactionChangeName: '{0}cat'
       CatFactionChangeName: '{0}cat'
       Options:
@@ -1001,6 +1041,12 @@ Translations:
           RampageDuration: Rampage Duration
           CanVentNormally: Can Vent Normally
           CanVentInRampage: Can Vent in Rampage
+      Options:
+        RampageKillCooldown: Rampage Kill Cooldown
+        RampageCooldown: Rampage Cooldown
+        RampageDuration: Rampage Duration
+        CanVentNormally: Can Vent Normally
+        CanVentInRampage: Can Vent in Rampage
     GM:
       RoleName: GM
       Blurb: You're the Game Master
@@ -1015,6 +1061,8 @@ Translations:
       Blurb: Reduces Killer's Vision When Killed
       BewilderedStatus: Bewildered
       BewilderedDescription: The Bewildered status reduces your vision by a specific multiplier.
+      Options:
+        VisionMultiplier: Vision Multiplier
     Deadly:
       RoleName: Deadly
       Blurb: Lower Kill Cooldown
@@ -1041,6 +1089,34 @@ Translations:
       Blurb: Increases Speed
       Options:
         SpeedIncrease: Speed Increase
+    Guesser:
+      RoleName: Guesser
+      Description: "Gives any role the ability to guess. Guessers have the ability to guess players' roles to eliminate them.\n\nWhile in meeting, a guesser can select a player they want to guess by voting for them. They can guess that player's role by typing /r [rolename] in chat (e.g. /r Vampire).\n\nIf the guess is correct, the guessed player will die, otherwise the guesser will die on misguess.\n\nTo skip guessing, you may skip first before voting for a player.\n\nNote: Revealed roles (e.g. from Oracle) are unable to be guessed."
+      Blurb: Guess Players' Roles
+      PickedRoleText: You are about to guess {0} as {1}. If you are certain about this, vote {0} again to finalize your guess. Otherwise you can pick another player by voting a different player.. OR pick a different role by typing /r [rolename]
+      Guesser: Guesser
+      PickedPlayerText: You are guessing {0}'s role. To guess their role type /r [rolename].
+      TypeRText: Please type /r [roleName] to guess that role.
+      UnknownRole: Unknown role {0}. You can use /perc to view all enabled roles.
+      FinishedGuessingText: You have confirmed your guess. If you are not dead, you may now vote normally.
+      ErrorCompletingGuess: Error completing guess. You may try and guess again.
+      GuessAnnouncementMessage: The guesser has made a guess. {0} died.
+      Options:
+        GuesserPerMeeting: Guesses per Meeting
+        CanGuessTeammates: Can Guess Teammates
+        FactionMaxGuessers: '{0}::0 Faction Max Guessers'
+        NeutralKillingSetting: Can Guess Neutral::0 Killing::1
+        NeutralPassiveSetting: Can Guess Neutral::0 Passive::1
+        ImpostorSetting: Can Guess Impostors::0
+        CrewmateSetting: Can Guess Crewmates::0
+        MadmateSetting: Can Guess Madmates::0
+        SubroleSetting: Can Guess Subroles::0
+        RestrictedToNonVote: Restricted to Non Vote-Related Roles
+      CantGuessRole: The role, {0}, was disabled by Host to be guessed. Please use /r [rolename] on a different role. Use /o to check which roles you can guess.
+      CantGuessRoleBecauseOfRole: Your role prevented you from guessing a player as {0}. You might be able to find out why using /m.
+      CantGuessBecauseOfRole: Your role prevented you from guessing {0}! Try a different player.
+      CantGuessTeammate: "{0} is your teammate! You can't guess that player."
+      CanSeeRole: You can see {0}'s role! You can't guess that player.
     LastResort:
       RoleName: Last Resort
       Description: As the Last Resort, you can vote yourself to gain extra votes for the rest of the match. This vote is canceled and you are able to vote anyone else after this.\n\nThe drawback is that your role is now revealed to the public for everyone to see.
@@ -1146,22 +1222,6 @@ Translations:
     Debugger:
       RoleName: <Roles.Debugger.RoleName>
       Blurb: <Roles.Debugger.Blurb>
-    Guesser:
-      PickedRoleText: You are about to guess {0} as {1}. If you are certain about this, vote {0} again to finalize your guess. Otherwise you can pick another player by voting a different player.. OR pick a different role by typing /r [rolename]
-      RoleName: Guesser
-      Blurb: <Roles.Guesser.Blurb>
-      Guesser: Guesser
-      PickedPlayerText: You are guessing {0}'s role. To guess their role type /r [rolename].
-      TypeRText: Please type /r [roleName] to guess that role.
-      UnknownRole: Unknown role {0}. You can use /perc to view all enabled roles.
-      FinishedGuessingText: You have confirmed your guess. If you are not dead, you may now vote normally.
-      ErrorCompletingGuess: Error completing guess. You may try and guess again.
-      GuessAnnouncementMessage: The guesser has made a guess. {0} died.
-    Conman:
-      Options:
-        DiscussionTimeDecrease: Discussion Time Decrease
-        VotingTimeDecrease: Voting Time Decrease
-        AffectAnonymousVoting: Affect Anonymous Voting
     Duplicator:
       Options:
         DuplicateCooldown: Duplicate Cooldown
@@ -1180,9 +1240,6 @@ Translations:
       FinishedGuessingText: You have confirmed your guess. If you are not dead, you may now vote normally.
       ErrorCompletingGuess: Error completing guess. You may try and guess again.
       GuessAnnouncementMessage: The guesser has made a guess. {0} died.
-    Assassin:
-      RoleName: <Roles.Assassin.RoleName>
-      Blurb: <Roles.Assassin.Blurb>
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
