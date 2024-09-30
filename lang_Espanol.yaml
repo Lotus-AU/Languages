@@ -2,12 +2,9 @@ Name: Latam
 Authors:
 - Skarlat (Spike)
 - CreepPower
-
-
-
 Translations:
   Roles:
-      Assassin:
+    Assassin:
       RoleName: Asesino
       Description: "El Asesino es un impostor que también puede matar a otros jugadores adivinando sus roles. Si el Asesino logra adivinar el rol de un jugador, ese jugador será eliminado.\n\nDurante la reunión, el Asesino puede seleccionar al jugador que quiere adivinar votando por él. Luego puede intentar adivinar el rol de ese jugador usando el comando /r [rol] (por ejemplo, /r Doctor) en el chat. Si el Asesino adivina correctamente tanto el jugador como su rol, ese jugador morirá.\n\nSi el Asesino adivina mal, se suicidará. \n\nSi prefieres no adivinar en esa reunión, puedes Omitir Voto primero antes de votar por un jugador.\n\nNota: los roles revelados (por ejemplo, por un Oráculo) no se pueden adivinar."
       Blurb: Mata Y Adivina Roles De Los Jugadores
@@ -546,7 +543,7 @@ Translations:
       RoleName: Médium
       Description: Cuando el Médium reporta un cuerpo, recibirá un mensaje en el chat de la reunión que le indicará el rol del asesino de ese cuerpo. El Médium solo puede ver el rol del asesino si él mismo reportó el cuerpo. Dependiendo de la configuración del anfitrión, también puede ver una flecha que apunta a los cuerpos.
       Blurb: Revelar El Rol Del Asesino Al Reportar
-      MediumMessage: N/A
+      MediumMessage: Has reportado un cadáver y, tras una larga conversación con su espíritu, has determinado que el asesino fue {0}.
       Options:
         HasArrowsToBody: Indicadores Hacia Cuerpos
         CanSeeChatOfReportedPlayer: Hablar Con Fantasma De Víctima
