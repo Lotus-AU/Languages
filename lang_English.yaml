@@ -9,7 +9,7 @@ Translations:
   Roles:
     Assassin:
       RoleName: Assassin
-      Description: "The Assassin is an Impostor that can also kill other players by guessing their roles. If the Assassin is able to successfully guess a player's role, then that player will be elimianted.\n\nWhile in meeting, the Assassin can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Doctor) in the chat. If the Assassin correctly guesses both the player and their role, then that player will die.\n\nIf the Assassin misgueseses they will suicide. \n\nTo skip guessing, you may skip first before voting for a player.\n\nNote: Revealed roles (e.g. from Oracle) are unable to be guessed."
+      Description: "The Assassin is an Impostor that can also kill other players by guessing their roles. If the Assassin is able to successfully guess a player's role, then that player will be eliminated.\n\nWhile in meeting, the Assassin can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Doctor) in the chat. If the Assassin correctly guesses both the player and their role, then that player will die.\n\nIf the Assassin misguesseses they will suicide. \n\nTo skip guessing, you may skip first before voting for a player.\n\nNote: Revealed roles (e.g. from Oracle) are unable to be guessed."
       Blurb: Kill & Guess Players' Roles
     Blackmailer:
       RoleName: Blackmailer
@@ -89,7 +89,7 @@ Translations:
       Description: The Freezer can freeze a player in place by shapeshifting into them. The player will be frozen until the Freezer unshapeshifts. The Freezer may kill normally shifted or unshifted.
       Blurb: Shapeshift Into A Player To Freeze Them In Place
       Options:
-        FreezeCooldown: FreezeCooldown
+        FreezeCooldown: Freeze Cooldown
         FreezeDuration: Freeze Duration
     Grenadier:
       RoleName: Grenadier
@@ -286,7 +286,6 @@ Translations:
       RoleName: Yin Yanger
       Description: The Yin Yanger is an Impostor with the ability to make two players kill each other. Use the Kill button to tag two players. When they come within kill distance, they will kill each other.\n\nYin Yanger can also kill normally once 2 targets have been set.
       Blurb: Turn Players Against Each Other
-      YinYangCooldown: Yin Yang Cooldown
       Options:
         YinYangCooldown: Yin Yang Cooldown
     CrewPostor:
@@ -544,9 +543,9 @@ Translations:
         NeverValue: Never
     Medium:
       RoleName: Medium
-      Description: When the Medium reports a body, they will receive a message in the meeting chat telling them the role of that body's Killer.\n\nThe Medium can only see the killer's role if they reported the body themselves.\n\nDepending on host's settings, they may also see an arrow pointing to bodies.
+      Description: When the Medium reports a body, they will receive a message in the meeting chat telling them the role of that body's Killer.\n\nThe Medium can only see the killer's role if they reported the body themselves.\n\nDepending on host's settings, they may also see an arrow pointing to bodies.\n\nThe Medium may also have the ability to speak with the dead. At the beginning of the meeting, the Medium will be paired with a random dead player (notified in the chat).\n\nThe Medium can ask questions and the dead player can only respond with either 'yes' or 'no'.
       Blurb: Reveal The Killer's Role When Reporting
-      MediumMessage: N/A
+      MediumMessage: You've reported a body, and after great discussion with its spirits. You've determined the killer's role was {0}.
       Options:
         HasArrowsToBody: Has Arrows to Bodies
         CanSeeChatOfReportedPlayer: Can Speak with Ghost of Reported
@@ -662,7 +661,7 @@ Translations:
         FinalSpeedBoost: Final Speed
     Swapper:
       RoleName: Swapper
-      Description: The first two players you vote each meeting will have the number of votes against them swapped.\n\nAfter voting those players, you may vote as normal. Alternatively, you can skip at the start and continue to normal voting.
+      Description: The first two players you vote each meeting will have the number of votes against them swapped.\n\nAfter voting those players, you may vote as normal. Alternatively, you can skip at the start and continue to normal voting.\n\nAfter you have chosen one player to swap, you may revote them to cancel the selection. Once you have selected two players to swap you may not change your selections
       Blurb: Swap Players' Votes
       SwapperInfoMessage: >-
         You are Swapper. To swap the votes received by two players, vote two separate players.
@@ -714,7 +713,7 @@ Translations:
     Vigilante:
       RoleName: Vigilante
       Blurb: Guess Impostor Roles to Kill
-      Description: "The Vigilante is a Crewmate that can kill Impostors and Neutrals by guessing the players and their roles. If the Vigilante is able to successfully guess a non-Crewmate's role, then that player will be elimianted.\n\nWhile in meeting, the Vigilante can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat. If the Vigilante correctly guesses both the player and their role, then that player will die.\n\nIf the Vigilante misguesses, they will suicide. The Vigilante is not able to guess Crewmate roles. \n\nTo skip guessing, you may skip first before voting for a player.\n\nNote: Revealed roles (e.g. from Oracle) are unable to be guessed."
+      Description: "The Vigilante is a Crewmate that can kill Impostors and Neutrals by guessing the players and their roles. If the Vigilante is able to successfully guess a non-Crewmate's role, then that player will be eliminated.\n\nWhile in meeting, the Vigilante can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat. If the Vigilante correctly guesses both the player and their role, then that player will die.\n\nIf the Vigilante misguesses, they will suicide. The Vigilante is not able to guess Crewmate roles. \n\nTo skip guessing, you may skip first before voting for a player.\n\nNote: Revealed roles (e.g. from Oracle) are unable to be guessed."
       SelectPlayer: 'You have selected to kill:'
       SelectRole: 'You are guessing:'
       SkipToContinue: Press "Skip Vote" to continue.
@@ -761,7 +760,7 @@ Translations:
         When the Amnesiac first reports a body, they will join the dead player's team. If enabled, the Amnesiac will instead steal the player's exact role.
 
 
-        If Amnesaic reports --> Then it becomes:
+        If Amnesiac reports --> Then it becomes:
 
         Neutral Killer --> Hitman
 
@@ -814,15 +813,13 @@ Translations:
       RoleName: Copycat
       Description: As Copycat, the first time you get attacked you'll change faction and role. If you were attacked by an impostor, you're now an impostor. If by a solo killer, then you're also a solo killer. Depending on the host's settings, you may gain their 'progress' as well.
       Blurb: Become Your Killer's Sidekick
-      CopycatFactionChangeName: '{0}cat'
-      CatFactionChangeName: '{0}cat'
       Options:
         KillerKnowsCopycat: Killer Knows Copycat::0
         CopyRoleProgress: Copy Role's Progress
       CopyCatFactionChangeName: '{0}cat'
     Deathknight:
       RoleName: Deathknight
-      Description: The Deathknight is a Secondary Role of the Necromancer who must help them convert players to the Undead.\nConvert players by using your Pet button near someone who the Necromancer had used their Kill button on (indicated by circle next to their name). There can only be one Deathknight at a time, and if the Necromancer dies, the Deathknight will become the new Necromancer.\n\nThe Deathknight is assigned by being the first person the Necromancer converts.
+      Description: The Deathknight is a Secondary Role of the Necromancer who must help them convert players to the Undead.\nConvert players by using your Pet button near someone who the Necromancer had used their Kill button on (indicated by circle next to their name). There can only be one Deathknight at a time, and if the Necromancer dies, the Deathknight may become the new Necromancer (depending on the host's settings).\n\nThe Deathknight is assigned by being the first person the Necromancer converts.
       Blurb: Help Convert Roles to The Undead
       Options:
         CanBecomeNecromancer: Can Become Necromancer
@@ -944,7 +941,7 @@ Translations:
       DeathName: Swallowed
     Pestilence:
       RoleName: Pestilence
-      Description: Plague Bearer becomes Pestilence when they finish infecting all players. Pestilence cannot be killed (for the most part). Anyone who tries to kill the pestilence will backfire instead. Pestilence can be voted off or killed indirectly (like Warlock or Puppeteer).
+      Description: The Pestilence is a Secondary Role of the Plague Bearer once they finish infecting everyone. The Pestilence cannot be directly killed, and anyone who interacts with it will be parried (killed instead).\n\nThe Pestilence can be voted off or indirectly killed (ex. Warlocked or Puppeted players).\n\nDepending on the host's settings, other types of attacks may also be able to kill Pestilence, and Pestilence attacks may be unblockable. 
       Blurb: Kill Everyone & Win Alone
       Options:
         UnblockableKill: Unblockable Kill
@@ -955,7 +952,7 @@ Translations:
         ImmuneArsonistIgnite: Immune to Arsonist Ignite
     Pirate:
       RoleName: Pirate
-      Description: The Pirate is a Neutral Guesser that can kill players by guessing their roles. If the Pirate is able to successfully guess a player's role, then that player will be elimianted.\n\nWhile in meeting, the Pirate can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat.\n\nIf the Pirate correctly guesses both the player and their role, then that player will die. The Pirate will need to guess a certain number of players (depending on settings) correctly in order to win.
+      Description: The Pirate is a Neutral Guesser that can kill players by guessing their roles. If the Pirate is able to successfully guess a player's role, then that player will be eliminated.\n\nWhile in meeting, the Pirate can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat.\n\nIf the Pirate correctly guesses both the player and their role, then that player will die. The Pirate will need to guess a certain number of players (depending on settings) correctly in order to win.
       Blurb: Guess Players' Roles
       Options:
         GuessesPerMeeting: Guesses Per Meeting
@@ -989,7 +986,7 @@ Translations:
       RoleName: Schrödinger's Cat
       Description: The Schrödinger's Cat changes teams every time someone tries to kill them. They have a maximum number of lives and will keep changing teams until they run out of lives or the game ends.\n\nThe Schrödinger's Cat role name will change to reflect whose team they are currently on. Their job is to help that team win by defending them in-game or by taking suspicion off of their teammate.\n\nThe Schrödinger's Cat will win with whoever's team they're on when the game ends. Ex. If the Jackal were to kill the Schrödinger's Cat, their role name would change to "Jackalcat", and the Schrödinger's Cat will win with the Jackal (assuming they're still Jackalcat by the end of the game).\n\nUnlike Copycat, the Schrödinger's Cat cannot kill
       Blurb: Change Teams With Each Attempt on Your Life
-      Aliases: Schrodingers Cat, SC, SCat, S Cat
+      Aliases: Schrodingers Cat, SC, SCat, S Cat, SchrodingersCat, Schrodinger's Cat
       CopycatFactionChangeName: '{0}cat'
       CatFactionChangeName: '{0}cat'
       Options:
@@ -1034,13 +1031,6 @@ Translations:
       Description: The Werewolf is a neutral killer that can use Pet button to begin a rampage and kill with a shorter Kill Cooldown.\n\nThe Werewolf can only kill during a rampage.
       Blurb: Rampage and Kill Everyone
       Rampage: Kill Everyone
-      Werewolf:
-        Options:
-          RampageKillCooldown: Rampage Kill Cooldown
-          RampageCooldown: Rampage Cooldown
-          RampageDuration: Rampage Duration
-          CanVentNormally: Can Vent Normally
-          CanVentInRampage: Can Vent in Rampage
       Options:
         RampageKillCooldown: Rampage Kill Cooldown
         RampageCooldown: Rampage Cooldown
