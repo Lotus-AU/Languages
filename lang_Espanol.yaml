@@ -527,10 +527,10 @@ Translations:
       MayorRevealMessage: '¡{0} se reveló como alcalde!'
     Medic:
       RoleName: Médico
-      Description: El Médico puede votar por un jugador que desea proteger. Este jugador estará protegido de ataques mientras el Médico permanezca con vida. Votar por un jugador para protegerlo no cuenta como un voto, y una vez que el Médico haya seleccionado a un jugador para proteger, podrá votar/saltar libremente. Según la configuración del anfitrión, el Médico puede cambiar su jugador protegido durante las siguientes reuniones.
+      Description: El Médico puede votar por un jugador que desea proteger. Este jugador estará protegido de ataques mientras el Médico permanezca con vida. Votar por un jugador para protegerlo no cuenta como un voto, y una vez que el Médico haya seleccionado a un jugador para proteger, podrá votar/omitir normalmente. Según la configuración del anfitrión, el Médico puede cambiar su jugador protegido durante las siguientes reuniones.
       Blurb: Proteje a un Jugador
       ProtectingMessage: 'Estás protegiendo a: {0}'
-      VotePlayerInfo: Vota a alguien para protegerlo.
+      VotePlayerInfo: Vota por alguien para protegerlo.
       MedicHelpMessage: ¡Eres médico! Vota por un jugador que quieras proteger la siguiente ronda. También puedes omitir voto para volver a la votación normal.
       SelectedPlayerMessage: Has decidido proteger a {0}. Vota en la misma persona otra vez para confirmar tu elección u omite voto para volver a la votación normal.
       ReturnToNormalVoting: Estás protegiendo a {0}. Tu siguiente voto funcionará normalmente.
@@ -984,7 +984,7 @@ Translations:
         TotalRevengeAmount: Número de Venganzas
     SchrodingersCat:
       RoleName: Gato de Schrödinger
-      Description: El Gato de Schrödinger cambia de equipo cada vez que alguien intenta matarlo. Tiene un número máximo de vidas y seguirá cambiando de equipo hasta que se quede sin vidas o termine el juego.\n\nEl NombreDelRol del Gato de Schrödinger cambiará para reflejar en qué equipo se encuentra actualmente. Su trabajo es ayudar a ese equipo a ganar defendiéndolo en el juego o quitando las sospechas de su compañero de equipo.\n\nEl Gato de Schrödinger ganará con el equipo en el que esté cuando termine el juego. Por ejemplo, si el Chacal 'mata' al Gato de Schrödinger, su nombre de rol cambiaría a "Gato Chacal", y el Gato de Schrödinger ganará con el Chacal (asumiendo que todavía sea Gato Chacal al final del juego).\n\nA diferencia del Imitador, el Gato de Schrödinger no puede matar.
+      Description: El Gato de Schrödinger cambia de equipo cada vez que alguien intenta matarlo. Tiene un número máximo de vidas y seguirá cambiando de equipo hasta que se quede sin vidas o termine el juego.\n\nEl nombre del rol del Gato de Schrödinger cambiará para reflejar en qué equipo se encuentra actualmente. Su trabajo es ayudar a ese equipo a ganar defendiéndolo en el juego o quitando las sospechas de su compañero de equipo.\n\nEl Gato de Schrödinger ganará con el equipo en el que esté cuando termine el juego. Por ejemplo, si el Chacal 'mata' al Gato de Schrödinger, su nombre de rol cambiaría a "Gato Chacal", y el Gato de Schrödinger ganará con el Chacal (asumiendo que todavía sea Gato Chacal al final del juego).\n\nA diferencia del Imitador, el Gato de Schrödinger no puede matar.
       Blurb: Cambia de equipo con cada intento de asesinato
       Aliases: Gato de Schrodinger, GS, Gato, GatoS, GatodeSchrodinger, Schrodinger
       CopycatFactionChangeName: 'Gato {0}'
