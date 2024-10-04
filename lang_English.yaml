@@ -9,7 +9,20 @@ Translations:
   Roles:
     Assassin:
       RoleName: Assassin
-      Description: "The Assassin is an Impostor that can also kill other players by guessing their roles. If the Assassin is able to successfully guess a player's role, then that player will be eliminated.\n\nWhile in meeting, the Assassin can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Doctor) in the chat. If the Assassin correctly guesses both the player and their role, then that player will die.\n\nIf the Assassin misguesseses they will suicide. \n\nTo skip guessing, you may skip first before voting for a player.\n\nNote: Revealed roles (e.g. from Oracle) are unable to be guessed."
+      Description: >-
+        The Assassin is an Impostor that can also kill other players by guessing their roles. If the Assassin is able to successfully guess a player's role, then that player will be eliminated.
+
+
+        While in meeting, the Assassin can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Doctor) in the chat. If the Assassin correctly guesses both the player and their role, then that player will die.
+
+
+        If the Assassin misguesseses they will suicide. 
+
+
+        To skip guessing, you may skip first before voting for a player.
+
+
+        Note: Revealed roles (e.g. from Oracle) are unable to be guessed.
       Blurb: Kill & Guess Players' Roles
     Blackmailer:
       RoleName: Blackmailer
@@ -713,7 +726,20 @@ Translations:
     Vigilante:
       RoleName: Vigilante
       Blurb: Guess Impostor Roles to Kill
-      Description: "The Vigilante is a Crewmate that can kill Impostors and Neutrals by guessing the players and their roles. If the Vigilante is able to successfully guess a non-Crewmate's role, then that player will be eliminated.\n\nWhile in meeting, the Vigilante can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat. If the Vigilante correctly guesses both the player and their role, then that player will die.\n\nIf the Vigilante misguesses, they will suicide. The Vigilante is not able to guess Crewmate roles. \n\nTo skip guessing, you may skip first before voting for a player.\n\nNote: Revealed roles (e.g. from Oracle) are unable to be guessed."
+      Description: >-
+        The Vigilante is a Crewmate that can kill Impostors and Neutrals by guessing the players and their roles. If the Vigilante is able to successfully guess a non-Crewmate's role, then that player will be eliminated.
+
+
+        While in meeting, the Vigilante can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat. If the Vigilante correctly guesses both the player and their role, then that player will die.
+
+
+        If the Vigilante misguesses, they will suicide. The Vigilante is not able to guess Crewmate roles. 
+
+
+        To skip guessing, you may skip first before voting for a player.
+
+
+        Note: Revealed roles (e.g. from Oracle) are unable to be guessed.
       SelectPlayer: 'You have selected to kill:'
       SelectRole: 'You are guessing:'
       SkipToContinue: Press "Skip Vote" to continue.
@@ -941,7 +967,7 @@ Translations:
       DeathName: Swallowed
     Pestilence:
       RoleName: Pestilence
-      Description: The Pestilence is a Secondary Role of the Plague Bearer once they finish infecting everyone. The Pestilence cannot be directly killed, and anyone who interacts with it will be parried (killed instead).\n\nThe Pestilence can be voted off or indirectly killed (ex. Warlocked or Puppeted players).\n\nDepending on the host's settings, other types of attacks may also be able to kill Pestilence, and Pestilence attacks may be unblockable. 
+      Description: The Pestilence is a Secondary Role of the Plague Bearer once they finish infecting everyone. The Pestilence cannot be directly killed, and anyone who interacts with it will be parried (killed instead).\n\nThe Pestilence can be voted off or indirectly killed (ex. Warlocked or Puppeted players).\n\nDepending on the host's settings, other types of attacks may also be able to kill Pestilence, and Pestilence attacks may be unblockable.
       Blurb: Kill Everyone & Win Alone
       Options:
         UnblockableKill: Unblockable Kill
@@ -1081,7 +1107,20 @@ Translations:
         SpeedIncrease: Speed Increase
     Guesser:
       RoleName: Guesser
-      Description: "Gives any role the ability to guess. Guessers have the ability to guess players' roles to eliminate them.\n\nWhile in meeting, a guesser can select a player they want to guess by voting for them. They can guess that player's role by typing /r [rolename] in chat (e.g. /r Vampire).\n\nIf the guess is correct, the guessed player will die, otherwise the guesser will die on misguess.\n\nTo skip guessing, you may skip first before voting for a player.\n\nNote: Revealed roles (e.g. from Oracle) are unable to be guessed."
+      Description: >-
+        Gives any role the ability to guess. Guessers have the ability to guess players' roles to eliminate them.
+
+
+        While in meeting, a guesser can select a player they want to guess by voting for them. They can guess that player's role by typing /r [rolename] in chat (e.g. /r Vampire).
+
+
+        If the guess is correct, the guessed player will die, otherwise the guesser will die on misguess.
+
+
+        To skip guessing, you may skip first before voting for a player.
+
+
+        Note: Revealed roles (e.g. from Oracle) are unable to be guessed.
       Blurb: Guess Players' Roles
       PickedRoleText: You are about to guess {0} as {1}. If you are certain about this, vote {0} again to finalize your guess. Otherwise you can pick another player by voting a different player.. OR pick a different role by typing /r [rolename]
       Guesser: Guesser
@@ -1102,6 +1141,7 @@ Translations:
         MadmateSetting: Can Guess Madmates::0
         SubroleSetting: Can Guess Subroles::0
         RestrictedToNonVote: Restricted to Non Vote-Related Roles
+        FollowGuesserSettings: Follow Guesser Settings
       CantGuessRole: The role, {0}, was disabled by Host to be guessed. Please use /r [rolename] on a different role. Use /o to check which roles you can guess.
       CantGuessRoleBecauseOfRole: Your role prevented you from guessing a player as {0}. You might be able to find out why using /m.
       CantGuessBecauseOfRole: Your role prevented you from guessing {0}! Try a different player.
@@ -1520,6 +1560,7 @@ Translations:
       NoneText: None
       SecondsSuffix: s
       AlwaysText: Always
+      Options: Options
     RolesNeutral:
       NeutralPassiveSlots: Neutral::0 Passive::1 Slots
       NeutralKillingSlots: Neutral::0 Killing::2 Slots
