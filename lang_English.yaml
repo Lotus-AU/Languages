@@ -556,7 +556,7 @@ Translations:
         NeverValue: Never
     Medium:
       RoleName: Medium
-      Description: When the Medium reports a body, they will receive a message in the meeting chat telling them the role of that body's Killer.\n\nThe Medium can only see the killer's role if they reported the body themselves.\n\nDepending on host's settings, they may also see an arrow pointing to bodies.\n\nThe Medium may also have the ability to speak with the dead. At the beginning of the meeting, the Medium will be paired with a random dead player (notified in the chat).\n\nThe Medium can ask questions and the dead player can only respond with either 'yes' or 'no'.
+      Description: When the Medium reports a body, they will receive a message in the meeting chat telling them the role of that body's killer.\n\nThe Medium can only see the killer's role if they reported the body themselves.\n\nDepending on host's settings, they may also see an arrow pointing to bodies.\n\nAfter reporting a body, the Medium may also have the ability to speak with the reported player. At the beginning of the meeting, the Medium and the reported player will be notified that they have been paired to speak together.\n\nThe Medium may ask questions, and the dead player can only respond with either 'yes' or 'no'.
       Blurb: Reveal The Killer's Role When Reporting
       MediumMessage: You've reported a body, and after great discussion with its spirits. You've determined the killer's role was {0}.
       Options:
