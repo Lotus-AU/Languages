@@ -1706,3 +1706,14 @@ Translations:
       FatalErrorTitle: Fatal Error
       FatalErrorMessage: Encountered fatal error during [{0}]
       CheckLogMessage: Check logs for more info.
+  PrivacyPolicy:
+    PrivacyPolicyText: Project Lotus has a few optional features that require sharing data with our API, bug reports and lobby information. Check our <link=https://beta.lotusau.top/privacy/>Privacy Policy</link> for more details. Do you want to enable these extra features and allow us to process your data?
+    UpdatedPrivacyPolicy: We have revised our <link=https://beta.lotusau.top/privacy/>Privacy Policy</link>. We encourage you to review it and update your preferences accordingly. Do you still allow us to process your data?
+    DisagreeText: All non-essential online requests have been turned off. You can enable specific ones through the Settings menu.
+    AcceptText: All online requests have been turned on. You can disable specific ones through the Settings menu.
+    CustomizeText: Your preferences have been saved. You can edit them any time through the Settings menu.
+    PrivacyPolicyTitle: 'Project: Lotus Privacy Policy'
+    ManageData: Manage Data Collection
+    CustomizeButtonText: Customize
+    DisagreeButtonText: No
+    AcceptButtonText: Yes
