@@ -250,7 +250,7 @@ Translations:
         PlayerPiercing: Player Piercing
     Swooper:
       RoleName: Swooper
-      Description: The Swooper can turn invisible by jumping into a vent. While invisible, the Swooper can do all normal things (kill, sabotage, vent). Once the invisibility duration ends, the Swooper will be teleported back to the vent that they used to become invisible.\n\nBe careful! Depending on the host's options you may be revealed when killing another player.
+      Description: The Swooper can turn invisible by jumping into a vent. While invisible, the Swooper can do all normal things (kill, sabotage, vent).\n\nBe careful! Depending on the host's options you may be revealed when killing another player.
       Blurb: Vent To Become Invisible
       Options:
         InvisibilityCooldown: Invisibility Cooldown
@@ -258,6 +258,9 @@ Translations:
         SeenByAllies: Can Be Seen By Allies
         VentDuringCooldown: Can Vent During Cooldown
         InvisibleOnKill: Remain Invisible on Kill
+        ReturnLocation: Return Location on Invisibility End
+        CurrentLocation: Current
+        StartLocation: Start
     TimeThief:
       RoleName: Time Thief
       Description: For every kill the Time Thief gets, it will reduce the total meeting time by a certain amount.\n\nDepending on host's settings, the meeting time may be restored back to normal once the Time Thief dies.
@@ -399,7 +402,7 @@ Translations:
       BodyguardHelpMessage: 'You are a Bodyguard! Your duty: to protect the innocent! Vote a player to protect next round! Alternatively, you can skip here to return to normal voting.'
     Chameleon:
       RoleName: Chameleon
-      Description: The Chameleon can vent to temporarily turn invisible.\n\nTheir invisiblility countdown is displayed below their name, and after a certain amount of time, they will re-appear and teleport to the original vent they used to activate their ability.
+      Description: The Chameleon can vent to temporarily turn invisible.\n\nTheir invisiblility countdown is displayed below their name, and they will re-appear after a certain amount of time.
       Blurb: Camouflauge With Your Environment
       Options:
         InvisibilityDuration: Invisibility Duration
@@ -1677,14 +1680,22 @@ Translations:
   Factions:
     Crewmates:
       Name: Crewmates
+      Description: Complete tasks and vote out the killers.
     Impostors:
       Name: Impostors
+      Description: Kill all non-Impostors.
     Madmates:
       Name: Madmates
+      Description: Help the Impostors win.
     Neutral:
       Name: Neutrals
+      Description: Stay alive and complete your objective.
     Modifiers:
       Name: Modifiers
+      Description: These roles add extra functionality to your base role.
+    TheUndead:
+      Name: The Undead
+      Description: Kill everyone who oppose the Undead.
   Constants:
     DeathNames:
       Killed: Killed
