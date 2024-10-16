@@ -565,11 +565,16 @@ Translations:
       Options:
         HasArrowsToBody: Has Arrows to Bodies
         CanSeeChatOfReportedPlayer: Can Speak with Ghost of Reported
+        IsClairvoyant: Can Speak To Dead
+        ShownToEveryone: Responses are Shown to Everyone
+        AmountOfMeditates: Amount of Meditates
       MediumTitle: Meditation
       MediumConnection: You're now able to speak with the ghost of {0}. They can answer with "yes" or "no" to your questions.
       MediumConnectionGhost: The Medium {0} has connected with you. You may talk to them by answering ONLY "yes" or "no".
       YesAnswer: yes
       NoAnswer: no
+      OutOfMeditates: You are out of meditates. Your connection to the ghost has closed.
+      OutOfMeditatesGhost: Your connection to the Medium has closed. Your answers are no longer heard.
     Mystic:
       RoleName: Mystic
       Description: When a player is killed, the Mystic receives a single flash and alert. It is very similar to when the reactor is sabotaged.\n\nUse this alert to estimate time of death.
@@ -1075,6 +1080,9 @@ Translations:
       RoleName: Bait
       Description: When Bait is killed, their killer will automatically self-report.
       Blurb: Forced Self-Report Upon Death
+      Options:
+        AnnounceBait: Announce Bait at First Meeting
+      BaitAnnounceMessage: '{0} is the Bait! When they die, the killer will automatically self-report their body.'
     Bewilder:
       RoleName: Bewilder
       Description: When someone with Bewilder is killed, they force their killer to have a significantly reduced vision distance for the rest of the game.
