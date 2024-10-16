@@ -569,7 +569,7 @@ Translations:
         ShownToEveryone: Responses are Shown to Everyone
         AmountOfMeditates: Amount of Meditates
       MediumTitle: Meditation
-      MediumConnection: You're now able to speak with the ghost of {0}. They can answer with "yes" or "no" to your questions.
+      MediumConnection: You're now able to speak with the ghost of {0}. They can answer with "yes" or "no" to your questions. You have {1} meditates left.
       MediumConnectionGhost: The Medium {0} has connected with you. You may talk to them by answering ONLY "yes" or "no".
       YesAnswer: yes
       NoAnswer: no
