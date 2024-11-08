@@ -403,7 +403,7 @@ Translations:
     Chameleon:
       RoleName: Chameleon
       Description: The Chameleon can vent to temporarily turn invisible.\n\nTheir invisiblility countdown is displayed below their name, and they will re-appear after a certain amount of time.
-      Blurb: Camouflauge With Your Environment
+      Blurb: Camouflage With Your Environment
       Options:
         InvisibilityDuration: Invisibility Duration
         InvisibilityCooldown: Invisibility Cooldown
@@ -636,7 +636,7 @@ Translations:
     Scientist:
       RoleName: Scientist
       Description: The Scientist has a portable vitals monitor that can be accessed anywhere on the map. The is a vanilla Among Us role.
-      Blurb: Access vitals At Any Time
+      Blurb: Access Vitals At Any Time
       Options:
         VitalsCooldown: Vitals Cooldown
         VitalsBatteryCharge: Vitals Battery Charge
