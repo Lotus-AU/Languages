@@ -1,0 +1,1857 @@
+Name: 简体中文
+Authors:
+-Fate
+Translations:
+  Roles:
+    Assassin:
+      RoleName: 刺客
+      Description: >-
+        刺客可以在会议中猜测其他玩家的职业进行击杀,如果刺客猜对了玩家的职业,那么那个玩家就会被刺杀.
+
+
+        在会议中, 刺客可以通过投票来选择他们想要猜测的玩家. 然后刺客可以在聊天框里输入指令 /r [职业名](如 /r 医生).如果刺客猜对了玩家的职业那么那个被猜测的玩家就会死亡.
+
+
+        如果刺客猜错了玩家的职业就会自杀.
+
+
+        要跳过刺杀, 刺客可以在选择玩家前跳过投票以跳过刺杀技能.
+
+
+        Note: 被揭示的职业(如被神谕者揭示)无法被猜测.
+      Blurb: 午时已到!
+      Aliases: 邪恶的赌怪, 坏赌, ASS
+    Blackmailer:
+      RoleName: 勒索者
+      Description: 变形成其他玩家以勒索他们. 会议中,被勒索的目标可能会在他们的名字下面显示"被勒索"给所有玩家(取决于设置). \n\n如果被勒索的玩家试图说话, 他们可能会收到提醒他们别说话的消息. 如果他们被警告的次数达到了上限(次数取决于房主设置)他们将会被处刑.
+      Blurb: 保持安静,永远...
+      Aliases: 勒索, BM
+      Options:
+        WarningsUntilDeath: 处刑前提示次数
+        ShowBlackmailedToAll: 勒索目标显示给所有玩家
+      BlackmailedMessage: 你被勒索了! 说话会害死你.
+      WarningMessage: 你不许说话! 如果你再说话就可能会被处刑.
+      BlackmailedText: 被勒索
+    BountyHunter:
+      RoleName: 赏金猎人
+      Description: 赏金猎人会得到一个悬赏目标(标记为黑色名字),如果赏金猎人杀死了他的目标,他的下一次击杀冷却会大幅减少.\n\n目标改变所需的时间以及杀死目标后的击杀冷却时间和杀死非目标后的击杀冷却时间由设置决定.
+      Blurb: 以杀养杀,生生不息,杀戮不止
+      Aliases: 赏金, BH
+      Options:
+        TimeUntilNewTarget: 目标切换时间
+        AfterKillingTarget: 击杀目标后冷却时间
+        AfterKillingNonTarget: 击杀非目标后冷却时间
+    Camouflager:
+      RoleName: 隐蔽者
+      Description: 隐蔽者通过变形成某个玩家,使所有存活玩家变形成他所变形的玩家,当持续时间结束时（由设置确定持续时间）,或者如果隐蔽时召开会议,所有玩家将恢复正常状态.
+      Blurb: 让所有人患上认知障碍!
+      Aliases: 小黑人, 隐蔽, CF
+      Options:
+        CamouflageCooldown: 隐蔽冷却时间
+        CamouflageDuration: 隐蔽持续时间
+    Consort:
+      RoleName: 魅惑者
+      Description: 通过宠物键在魅惑和击杀模式之间切换.被魅惑的玩家不能杀人,报告尸体,召集会议,变形和跳管.
+      Blurb: 小弟弟~别害羞嘛~
+      Aliases: 邪恶的护卫, 封锁者, 魅惑菇, 配偶, CS
+      Options:
+        roleblockCooldown: 魅惑冷却时间
+        roleblockDuration: 魅惑持续时间
+    Creeper:
+      RoleName: 自爆兵
+      Description: 自爆兵的工作就是使场面更加混乱.通过宠物键或者变形自爆(取决于设置),炸死一定范围内的所有人.\n\n你可能很幸运,有人给了你护盾(例如军医的护盾)保护了你没有死亡,并看到了明天的太阳.但是,如果"自爆兵自爆可被保护"这项设置处于关闭状态,则没有任何东西可以从苦力怕的魔爪中救下你:)
+      Blurb: Creeper? awww~man
+      Aliases: 苦力怕, 自爆步兵, 加拿大自爆兵, 自爆卡车, CP
+      Options:
+        BomberProtection: 爆炸可被保护
+        ExplosionRadius: 爆炸半径
+        CreeperProtection: 自爆兵自爆可被保护
+        CreeperGracePeriod: 自爆冷却时间
+        CanKillNormal: 可正常击杀
+      ExplosionGracePeriod: '自爆冷却时间: {0}'
+    Disperser:
+      RoleName: 分散者
+      Description: 使用宠物键可将所有玩家分散到随机的管道上.
+      Blurb: 我是谁?我在哪?
+      Aliases: 驱散者, DS
+      Options:
+        DisperseCooldown: 分散冷却时间
+        DisperserGetsDispersed: 分散者::0会分散自己
+    Escapist:
+      RoleName: 逃逸者
+      Description: 使用宠物键会标记你当前的位置.\n\n在冷却结束后,你可以再次使用宠物键传送回你标记的位置.然后标记进入冷却.
+      Blurb: 你好,再见:D
+      Aliases: 逃脱者, 邪恶的魔术师, EP
+      Options:
+        MarkCooldown: 标记后冷却时间
+        EscapeCooldown: 逃逸后冷却时间
+        ClearAfterMeeting: 会议后清除标记
+    FireWorks:
+      RoleName: 烟花商人
+      Description: >-
+        烟花商人通过摸宠物放置烟花（或者炸弹）,造成范围性杀伤.烟花商人在放置完烟花后可使用变形引爆并炸死一定范围内的所有玩家.烟花炸弹可以同样炸死烟花商人自己.
+
+
+        温馨提示: 烟花只能在场上仅剩烟花商人一个内鬼时才能引爆,爆炸可以穿墙. 烟花商人在放置烟花时(变形时)也能正常击杀.
+      Blurb: 啊哈,啊哈哈哈,烟花来咯!
+      Aliases: 烟花, FW
+      Options:
+        PlantFireworkCooldown: 烟花放置冷却时间
+        TotalFireworks: 烟花总数
+        AbleToDetonateText: 只能在成为最后一个 内鬼::0时引爆
+        AbleToDetonateEarly: 只能在成为最后一个 内鬼::0时引爆
+      AbleToDetonateEarly: 只能在成为最后一个 内鬼::0时引爆 0
+      AbleToDetonateText: 引爆准备!
+    Freezer:
+      RoleName: 冰法师
+      Description: 变形成一个玩家以冻结他,在变形时间内那个玩家将会被冻结(无法移动).冰法师在变形和非变形时均能正常击杀.
+      Blurb: 我超,冰!
+      Aliases: 冰, 冰术士, FZ
+      Options:
+        FreezeCooldown: 冰冻冷却时间
+        FreezeDuration: 冰冻持续时间
+    Grenadier:
+      RoleName: 掷弹兵
+      Description: 使用宠物键以投掷闪光弹,一定范围内的玩家将被致盲.掷弹兵也可能会致盲队友,而这取决于房间设置.在致盲持续时间时,掷弹兵能够做到悄无声息的击杀.
+      Blurb: 投掷傻瓜蛋!
+      Aliases: 掷蛋兵, GD
+      Options:
+        AmountOfGrenades: 闪光弹数量
+        BlindCooldown: 投掷冷却时间
+        BlindDuration: 致盲持续时间
+        BlindRadius: 闪光半径
+        CanBlindAllies: 可致盲队友
+    IdentityThief:
+      RoleName: 身份窃贼
+      Description: 身份窃贼会变成他们所杀的人,直到杀人冷却完毕才会变回,或者下次击杀时才会变成下一个受害者,而不是变回原形(取决于设置)
+      Blurb: 我就是你,而你将不再存在于世上
+      Aliases: IT, 身份小偷
+      Options:
+        DisguiseSettings: 变形设置
+        UntilKillCooldown: 击杀冷却完毕后
+        UntilNextKill: 下一次击杀
+        TotallySwapIdentity: 偷窃次数
+        UntilMeeting: 直到会议
+    Impostor:
+      RoleName: 伪装者
+      Blurb: 原汁原味的体验:))
+      Aliases: 内鬼
+      Description: 就是原版的内鬼,干掉阻挡伪装者的家伙,成为最后的幸存者.
+    Janitor:
+      RoleName: 清洁工
+      Description: 清洁工可以在击杀冷却结束后选择击杀或者清理.\n\n清洁工可以通过报告键以清理尸体使其变得不可报告,或者正常击杀玩家.\n\n清洁工可以在冷却时间时正常报告尸体.
+      Blurb: 垃圾就要丢到垃圾桶里面去~
+      Aliases: 清理者, JA
+      Options:
+        CleanOnKill: 击杀时清理
+        KillCooldownMultiplier: 击杀冷却增加倍数
+    Mafioso:
+    Options:
+        StartsGameWithGun: 游戏开始时自带枪
+        ModifyShopCosts: 商店价格设置
+        GunCost: 枪价格
+        BulletCost: 子弹价格
+        VestCost: 防弹衣价格
+        RoleRevealerCost: 预言球价格
+        GunCooldown: 枪冷却
+        CashFromReporting: 报告尸体获得的金钱
+        RefreshTasks: 完成所有任务时刷新任务
+      CashText: '金钱数量::0: {0}'
+      GunItem: 汤普森冲锋枪
+      VestItem: 防弹衣
+      BulletItem: 子弹
+      RevealerItem: 预言球
+      RevealerReady: 预言球准备就绪
+      ShopMessage: >-
+        你是黑手党的一员! 你可以在会议时购买物品. 如果要购买物品,先选择物品,然后再票自己. 最后选择跳过以继续购买.
+
+        给其他玩家投票将视为一票, 除非你仍处于商店模式.
+      SelectedItemMessage: 你选择购买 {0}. 买完这个物品你将剩余 {1} 块钱. 点跳过投票以确认购买.
+      PurchaseItemMessage: '你购买了: {0}. 你现在剩余 {1} 块钱.'
+      RoleName: 黑帮成员
+      Blurb: 什么AK47 M4A1都是tm的垃圾!
+      Aliases: 黑手党, 黑市商人, MF
+      Description: 黑帮成员是一个独特的内鬼职业,他不能直接击杀. 取而代之的是黑帮成员需要做任务以获得金钱.在会议中,黑帮成员可以使用他们的钱买到很多独特的物品.\n\n汤普森冲锋枪- 能够让黑帮成员击杀玩家(购买时立即击杀)\n\n子弹 - 需要跟汤普森冲锋枪一起使用\n\n防弹衣 - 让黑帮成员在下一回合能够有一次抵挡击杀的能力\n\n预言球 - 能够让黑帮成员揭示一个玩家的职业\n\n使用/o 以查看物品价格. 只有物品在能够使用/购买时才会在商店中显示.
+    Mare:
+      RoleName: 梦魇
+      Description: '梦魇会在某些破坏中获得特殊能力(取决于设置). 这些能力是: 增加移速和减少击杀冷却时间. 小心! 如果开了某些设置, 在能力生效时,你的名字会显示为紫色.'
+      Blurb: 直面你们的恐惧!
+      Aliases: MR, 噩梦
+      Options:
+        SpeedDuringSabotage: 破坏时速度增加值
+        KillWithoutSabotage: 可在非破坏期间击杀
+        KillCooldown: 正常击杀冷却时间
+        ColoredName: 破坏时名字变为彩色
+        SabotageKillCooldown: 破坏时击杀冷却时间
+        SabotageSettings: 破坏期间设置
+    Mastermind:
+      RoleName: 心灵大师
+      Description: 心灵大师通过击杀键标记其他玩家. 一段时间之后, 那个玩家会得到一个提示显示他被操控了, 并且开始倒计时. 那个玩家必须在倒计时结束前杀掉一个玩家(用他们的击杀键或宠物键), 不然他们就会自杀. 心灵大师不能正常击杀.
+      Blurb: 你,帮我杀个人,你自己也行:)
+      Aliases: 心灵操控师, 精神大师, 精神操控师, MD
+      Options:
+        ManipulatedPlayerLimit: 操控玩家数量限制
+        ImpostorsCanSeeManipulated: 内鬼::0可以看到被操控的玩家
+        TimeUntilSuicide: 自杀时间
+        ManipulationCooldown: 操控冷却时间
+      ManipulatedText: 被操控
+      KillImploredText: >-
+        你<b>必须</b> 在{0}秒内杀一个人
+
+        (用你的击杀键或者宠物键!)
+    Miner:
+      RoleName: 矿工
+      Description: 使用宠物键传送到你钻的上一个管道. 击杀, 跳管, 破坏都跟正常内鬼一样.
+      Blurb: 皇今旷工
+      Aliases: 管道工, ME
+      Options:
+        AbilityCooldown: 技能冷却时间
+    Ninja:
+      RoleName: 忍者
+      Description: 使用宠物键或变形(取决于设置)以切换刺杀和击杀模式.\n\n当忍者处于刺杀模式时,使用击杀键以标记一个目标,然后再次使用宠物键(或解除变形)将目标传送到你面前(或者你传送到他面前,取决于设置)并刺杀.
+      Blurb: 忍无可忍,何须再忍
+      Aliases: NJ
+      Options:
+        TeleportToNinja: 目标传送至忍者
+        AbilityActiviation: 忍者技能按键
+    Phantom:
+      RoleName: 幻术师
+      Description: 幻术师可以隐身一段时间,但是期间不能击杀,这是原版职业.
+      Blurb: 辣鸡幻术,不如真隐身
+      Aliases: 隐身人削弱版, PT
+      Options:
+        VanishCooldown: 幻术冷却时间
+        VanishDuration: 幻术持续时间
+    PickPocket:
+      RoleName: 窃票者
+      Description: 窃票者从他们杀死的玩家那里窃取选票.这些票加在一起,可以让窃票者变成市长awa.
+      Blurb: 我觉得我很懂如何利用剩余价值
+      Aliases: PPK, 强盗
+      Options:
+        MaximumAdditionalVotes: 最大增加票数
+        ResetVotesAfterMeeting: 会议后重置票数
+    Puppeteer:
+      RoleName: 傀儡师
+      Description: 傀儡师不能进行正常的击杀. 取而代之的是, 他可以控制一个玩家,使他在遇见下一个人的时候将那个人击杀,如果那个人是内鬼将不会进行击杀.\n\n使用击杀键控制他们. 如果傀儡师控制的人击杀了一个拥有死亡被动技能的人,那么这个效果将会由被控人承受.
+      Blurb: 小时候我喜欢玩玩偶,现在也是
+      Aliases: PPT, 操控者
+    SerialKiller:
+      RoleName: 连环杀手
+      Description: >-
+        连环杀手的击杀冷却时间显著的减少了(具体取决于设置), 但是, 连环杀手是名字后面有一个计时器. 连环杀手每次击杀, 计时器都会重置. 如果计时器归零, 连环杀手将会自杀.
+
+
+        小提示: 如果 '第一次击杀后开始倒计时' 是关着的, 那么自杀倒计时将会延长相同于'首轮击杀冷却'选项中的时间.
+      Blurb: 我早已无所畏惧...即便是死亡...
+      Aliases: SK, 杀戮机器
+      Options:
+        TimeUntilSuicide: 自杀时间
+        TimerAfterFirstKill: 第一次击杀后开始倒计时
+    Shapeshifter:
+      RoleName: 变形者
+      Description: 就是原版变形者.
+      Blurb: 不如隐蔽者
+      Aliases: SPS
+      Options:
+        ShapeshiftCooldown: 变形冷却时间
+        ShapeshiftDuration: 变形持续时间
+    Sniper:
+      RoleName: 狙击手
+      Description: 使用变形键狙击. 变形后向你想要射击方向走两步然后解除变形以开枪.在你狙杀了那一条线上的玩家的同时你也会消耗一颗子弹. 狙击手在子弹耗尽前不能直接击杀.
+      Blurb: 我起了,一枪秒了,有什么好说的
+      Aliases: 老六, SNP, 狙坤手
+      Options:
+        SniperBulletCount: 子弹数量
+        SnipingCooldown: 狙击冷却时间
+        RefundBulletOnKill: 击杀时回复子弹数
+        PreciseShooting: 穿透射击
+        PlayerPiercing: 可穿透玩家数
+    Swooper:
+      RoleName: 隐身人
+      Description: 隐身人可以通过跳进管道以隐身. 隐身时,隐身人可以做所有伪装者都能做的事(击杀,破坏,跳管).\n\n小心点! 取决于房主设置,隐身人在击杀时可能会现形!
+      Blurb: 悄无声息
+      Aliases: 隐身, SWP
+      Options:
+        InvisibilityCooldown: 隐身冷却时间
+        SwoopingDuration: 隐身持续时间
+        SeenByAllies: 隐身时队友可见
+        VentDuringCooldown: 隐身冷却时可以跳管
+        InvisibleOnKill: 击杀时保持隐身
+        ReturnLocation: 隐身结束时位置
+        CurrentLocation: 当前位置
+        StartLocation: 开始时位置
+    TimeThief:
+      RoleName: 时间小偷
+      Description: 时间小偷每次击杀,都会减少一定的会议总时间.\n\n根据房主设置,会议时间可能会在时间小偷死后恢复正常.
+      Blurb: 我也是个科学家...谁叫他们不重视我呢?
+      Aliases: TT, 时间窃贼
+      Options:
+        MeetingTimeStolen: 每次击杀会议减少时间
+        MinVotingTime: 最小投票时间
+        ReturnTimeAfterDeath: 死亡后时间恢复
+    Vampire:
+      RoleName: 吸血鬼
+      Description: 吸血鬼的击杀/吸血为延迟击杀. 被咬的玩家会在一段时间后死亡 (时间由房主设置) 或者在会议开始前死亡.\n\n如果吸血鬼刀了诱饵, 那么在延迟时间结束后,吸血鬼会报告诱饵的尸体.
+      Blurb: 死在血泊之中吧!
+      Aliases: VP, 吸血魔
+      Options:
+        KillDelay: 击杀延迟时间
+    Vampiress:
+      RoleName: 吸血公主
+      Description: 类似于吸血鬼, 吸血公主可以延迟击杀 (时间由房主设置), 但是, 吸血公主可以自己决定普通击杀和延迟击杀模式.通过摸宠物切换模式.\n\n吸血公主是一个隐藏角色,它生成时将会代替吸血鬼生成.
+      Blurb: 血溅与刀光的交错,多么美妙...
+      Aliases: VPS, 吸血女鬼
+    Warlock:
+      RoleName: 术士
+      Description: 通过击杀按键给他人下咒. 在术士变形时, 被下咒的玩家会击杀距离他最近的一个人. \n\n术士可以在变形时正常击杀.如果相关设置开启,被下咒的玩家会在下咒瞬间随机杀掉一个玩家.\n\n小贴士:被下咒的玩家可以杀掉伪装者 (甚至是术士自己!).
+      Blurb: 我只是让他们敢于做自己想做的事罢了
+      Aliases: 巫术师, WL
+      Options:
+        CursedKillImmediately: 下咒时立即击杀
+        LimitedCurseKillRange: 限制下咒击杀距离
+    Witch:
+      RoleName: 女巫
+      Description: 女巫有击杀和诅咒两种模式,两种模式轮流切换或可通过摸宠物自由更改模式.\n\n被女巫诅咒的玩家在会议中会在他的名字后面出现一个十字架. 如果女巫在那个会议没有被投出, 被诅咒的玩家就死了.\n\n一般击杀会触发诱饵效果.\n而诅咒不会触发.
+      Blurb: 你惊扰了witch!
+      Aliases: WC, 巫女
+      Options:
+        FreelySwitchModes: 自由切换模式
+        SwitchModesAfterAttack: 击杀/诅咒后改变模式
+      CursedMessage: '{0}::0 诅咒了 {1}::1 会在会议结束后死亡!.'
+      CursingModeText: 诅咒模式
+      KillingModeText: 击杀模式
+      HexedCauseOfDeath: 诅咒
+      CursedStatusDescription: 你被诅咒了. 被诅咒的玩家将会在会议结束后死亡除非诅咒你的人(女巫)被投出.
+    YinYanger:
+      RoleName: 阴阳师
+      Description: 阴阳师可以让两个船员互相击杀. 使用击杀键选择两个目标. 当他们进入击杀距离时, 他们会互相击杀. \n\n阴阳师可以正常击杀他已经标记的目标.
+      Blurb: 阴阳两合,天地色变
+      Aliases: YY, 营养师
+      Options:
+        YinYangCooldown: 阴阳标记冷却时间
+    CrewPostor:
+      RoleName: 间谍
+      Description: 完成任务以击杀离你最近的人(甚至是伪装者或者其他带刀职业).间谍与伪装者共同胜利.
+      Blurb: 将敌人尽数歼灭!
+      Aliases: CPT, 舰长, 总督, 船鬼, 持枪船员
+      Options:
+        CanKillAllies: 可以击杀伪装者
+        WarpToTarget: 击杀时传送至目标
+        RefreshTasks: 完成所有任务后刷新
+    MadGuardian:
+      RoleName: 叛徒保安
+      Description: 叛徒保安是伪装者方的船员.叛徒保安做完任务后将获得他的盾牌(无法击杀).\n\n叛徒保安不知道谁是伪装者,伪装者也不知道叛徒不是船员的一份子.
+      Blurb: 你猜是谁把那些家伙放进来的
+      Aliases: MG, 背叛的守卫
+    MadSnitch:
+      RoleName: 叛徒告密者
+      Description: 叛徒告密者是伪装者方的船员.叛徒告密者做完任务将会看到伪装者是谁.\n\n做完任务后伪装者仍不知道叛徒告密者不是船员的一份子.
+      Blurb: 这就是我为了活下去的挣扎啊啊啊!
+      Aliases: MSN, 背叛的告密者
+    Madmate:
+      RoleName: 叛徒
+      Description: 叛徒是伪装者方的船员.他们不能击杀或做任务.\n\n他们不知道谁是伪装者,伪装者也不知道谁是叛徒\n\n叛徒唯一的任务就是尝试认出伪装者并向伪装者做出可疑行为使其认出叛徒.
+      Blurb: 换了阵营,还是白板:(
+      Aliases: MM, 背叛者
+    Parasite:
+      RoleName: 寄生兽
+      Description: 寄生兽是看不到伪装者并且伪装者也不知道的但可以击杀的伪装者方的职业\n(吐槽:这一坨丝滑小从句给我看傻了)\n\n寄生兽可以做变形者所有能做的事,并且他们与伪装者共同胜利.
+      Blurb: 真是不错的寄生对象啊~
+      Aliases: PST, 寄居者, 寄生者, 寄生兽
+    Alchemist:
+      RoleName: 炼金术师
+      Blurb: 加点葱~再来点蒜~
+      Aliases: AL, 炼金术士
+      Description: >
+        炼金术师是一个万金油,他是船员阵营中最会寻找 "材料"的人. 材料可以通过这些方式或者地点获得:
+          • 催化剂 - 完成任务找到
+          • Ess之光 - 修复灯光后找到
+          • Discussion的碎片 - 在同时有3个玩家时随机找到
+          • 变形玫瑰 - 玩家变形后找到
+          • 裂开的Theta - 纯随机找到
+          • 腐化物 - 从尸体上找到
+        炼金术士可以使用他们的宠物按钮来拾取这些材料,并会在他们的名字下面得到一条消息:"找到:[材料名称]":
+
+        炼金术士使用配料来制作药水,要切换到"制作模式",炼金术士必须长按他们的宠物按钮.一旦进入制作模式,宠物按钮可以用来切换下一个制作的药剂.
+
+        如果在制造菜单中,炼金术士可以按住他们的宠物按钮退出.如果炼金术士拥有制作药剂所需的所有材料,药剂将在他们开始按住宠物键时开始制作.
+
+        当炼金术士有了药水,他们可以按住宠物按钮来使用它或者喝下它.ps:材料名称原文是制作组彩蛋哦\n所有药剂的作用:\n瞬间伤害药水:可以用来击杀玩家\n"城堡"啤酒:一次性盾牌\n吐真剂:揭示其他玩家身份\n机械师的密酿:修复破坏\n光之药水:获得伪装者视野\n虫洞药水:交换随机两个玩家的位置\n领袖药水:可以获得额外票数\n不稳定的混合物:随机能力
+      Ingredients:
+        Catalyst: 催化剂
+        Chaos: 裂开的西塔
+        Death: 腐化物
+        Purity: 变形玫瑰
+        Sight: 光之精华
+        Tinkering: 讨论的碎片
+      CraftingPotionText: '正在制作:'
+      Potions:
+        Death: 瞬间伤害药水
+        Protection: "城堡"啤酒
+        Random: 不稳定的混合物
+        Revealing: 吐真剂
+        Sabotage: 机械师的密酿
+        Sight: 光之药水
+        Teleportation: 虫洞药水
+        Voting: 领袖药水
+      FoundIngredientText: '找到了:'
+    Altruist:
+      RoleName: 利他主义者
+      Description: 用自己的生命复活其他玩家. 根据设置,复活也许需要一定时间. 如果会议在复活时召开, 复活将会被取消并且什么都不会发生.
+      Blurb: 复活吧!我滴爱人!
+      Aliases: AT, 殉道者, 奉献者, 死灵法师
+      Options:
+        ReviveDelay: 复活所需时间
+        InstantText: 立即
+        KillerArrow: 凶手有指向复活玩家箭头
+        PortableVitals: 拥有便携式生命检测仪
+    Bastion:
+      RoleName: 埋雷兵
+      Description: 跳管埋雷.下一个跳这个管道的人会被炸死.\n注意! 埋雷兵可以被自己炸死.\n炸弹只存在一回合. 下一回合管道会被重置.
+      Blurb: C4已放置!
+      Aliases: BA, 管道工
+      Options:
+        PlantBombCooldown: 埋雷冷却时间
+        BombsPerRound: 每回合可埋雷次数
+    Bodyguard:
+      RoleName: 保镖
+      Description: >-
+        作为保镖,你必须选择一个玩家保护.
+
+
+        保镖必须在会议中用投票选择一个玩家保护(这一票不计票).当保镖的保护目标被互动时,保镖将会与那个人同归于尽以保护他的目标.
+
+
+        保镖用投票选择目标后,他们就能正常投票或者跳过了
+
+
+        小贴士:当保镖保护生效后, 目标身边会出现2具尸体(保镖的尸体和凶手的尸体).
+      Blurb: 我是个小角色,但我会为大人物挡住那致命一击
+      Aliases: BD, 贴身护卫
+      ProtectingMessage: '你选择保护的是:'
+      VotePlayerInfo: 用投票选择你的保护目标.
+      Options:
+        BeneficialInteractionProtection: 抵挡 增益型::0 的互动
+        NeutralInteractionProtection: 抵挡 中立型::0 的互动
+      BodyguardHelpMessage: '你是个保镖! 你的职责是: 保护重要人物! 投票以选择你下回合要保护的人! 或者你可以选择跳票然后进行正常的投票.'
+    Chameleon:
+      RoleName: 研究员
+      Description: 研究员可以通过跳管以进入短时间的隐身.\n\n研究员的隐身持续时间将会显示在他们的名字底下,过一段时间后他们才会现形.
+      Blurb: 光学迷彩,小子!
+      Aliases: CH, 变色龙, 正义的隐身人
+      Options:
+        InvisibilityDuration: 隐身持续时间
+        InvisibilityCooldown: 隐身冷却时间
+      HiddenText: 隐身中::0 {0}
+      TimesInvisibleStatistic: 隐身次数
+    Charmer:
+      RoleName: 谈判家
+      Description: >-
+        谈判家可以使用他们的宠物/击杀键以说服伪装者或独立阵营(杀戮型)加入船员阵营.
+
+
+        被说服的玩家会知道自己被说服了,并且失去击杀其他玩家的能力.
+
+
+        如果谈判家尝试说服一个船员,他将会死于走火.
+
+
+        小贴士: 如果谈判家被设置为用宠物键发动技能,那么房主可能会要求在谈判家需要做一定数量的任务才能使用技能.如果'技能按键'设置为击杀键则此选项无法开启.
+      Blurb: 话术远比技术重要的多!
+      Options:
+        AbilityButton: 技能按键
+        KillButton: 击杀键
+        PetButton: 宠物键
+        TasksPerAbility: 每次说服所需完成任务数
+        CharmingCooldown: 说服冷却时间
+        CharmedPlayersWinWithCrew: 被说服的玩家跟随船员胜利
+        BreakCharmOnDeath: 谈判家::0 死亡后谈判破裂
+        MaxCharmedPlayers: 最大可说服玩家
+      CharmedText: 被说服
+      CharmedStatistic: 说服玩家数
+      CharmedDescription: 你被说服了. 被说服后,你无法击杀船员并且与他们是队友.
+    Crewmate:
+      RoleName: 船员
+      Description: 一个船员,做完任务,帮助队友,找出敌人,成为最后赢家.
+      Blurb: 原汁原味的体验
+      Aliases: CM, 废物
+      Options:
+        OverrideRoleTasks: 特殊设置{0}的任务
+        AllowCommonTasks: 开启普通任务
+        CustomLongTasks: '{0}长任务数'
+        CustomShortTasks: '{0}短任务数'
+    Crusader:
+      RoleName: 十字军
+      Description: 用击杀键选择目标.\n\n这个目标会被保护,并且他被互动时你将会自动击杀那个与目标互动的玩家.
+      Blurb: 你也许记得我,我叫莱因哈特.
+      Aliases: CRD, 莱因哈特
+      Options:
+        BeneficialInteractionProtection: 抵挡 增益型::0 的互动
+        NeutralInteractionProtection: 抵挡 中立型::0 的互动
+    Demolitionist:
+      RoleName: 同命爆手
+      Description:  同命爆手被杀后,会留下炸弹,如果凶手没有及时进入管道,则会被炸死.\n\n凶手击杀同命爆手后会在他们的名字下面提示他们刚刚击杀了同命爆手.
+      Blurb: 这就是我最后的爆炸了,收下吧!
+      Aliases: demo, De, 炸弹狂, 炸弹王
+      YouKilledDemoMessage: 你杀了{0}! 跳管以避免死亡!
+    Dictator:
+      RoleName: 独裁者
+      Description: >-
+        当独裁者在会议中投票时会发生的三件事:
+
+
+        1. 强制结束会议.
+
+        2. 被独裁者投票的玩家被驱逐.
+
+        3. 献祭他们自己(独裁者会自杀)如果他们没有剩余的独裁次数.
+
+
+        小贴士: 独裁者跳过投票时无事发生.
+      Blurb: 有的时候我们不需要民意
+      Aliases: DIC, 检察官
+      Options:
+        NumberOfDictates: 独裁次数
+        SuicideIfVoteCrewmate: 票出 船员::0 后自杀
+        ShowDictatorVoteAtMeetingEnd: 会议结束时显示独裁信息
+      LynchEventMessage: '{0}::0私下处刑了 {1}::1.'
+      DictateMessage: '{0} 被 {1}::0 独裁认为是有罪的'
+      PlayersEjectedStat: 票出玩家数
+    Doctor:
+      RoleName: 医生
+      Description: 医生就像原版科学家一样有便携式生命检测仪\n\n会议时,医生能看见死亡玩家的死因.
+      Blurb: 你...无药可救
+      Aliases: DOC, 科学家
+    Engineer:
+      RoleName: 工程师
+      Description:工程师可使用通风管在地图中移动. 
+      Blurb: 管道是我家,修理去他马
+      Aliases: ENG, 机械师
+      Options:
+        VentCooldown: 管道使用冷却时间
+        VentDuration: 管道使用持续时间
+    Escort:
+      RoleName: 护卫
+      Description: 使用宠物按钮来锁定其他玩家.\n\n被锁定的玩家不能击杀,报告,召开紧急会议,变形,钻管.
+      Blurb: 你说得对,但是你不准玩Among Us!
+      Aliases: ESC, 护花使者, 封锁者
+      Options:
+        RoleblockCooldown: 封锁冷却时间
+        RoleblockDuration: 封锁持续时间
+    ExConvict:
+      RoleName: 魔术师
+      Description: 第一次使用宠物键时会标记你当前的位置.\n\n在设定的冷却时间后,你可以再次使用宠物键以传送回你标记的位置.这将会让你的技能开始冷却.
+      Blurb: 答辩活人!
+      Aliases: EX, 逃犯, 正义的逃逸者
+      Options:
+        MarkCooldown: 传送冷却时间
+        EscapeCooldown: 标记冷却时间
+        ClearAfterMeeting: 会议后重置标记
+    Herbalist:
+      RoleName: 草药师
+      Description: 使用宠物按钮在玩家身上播种. 一段时间后, 那个玩家的 "绽放计数" 将会增加. \n\n当种子在同一玩家上绽放多次后,你将会在他们的名字下面看到一朵花,这时使用你的宠物按钮以揭示那个玩家的职业.\n\n在玩家的职业被揭示后, 你可以继续通过摸宠物揭示其他玩家的职业.
+      Blurb: 大自然永远不会说谎
+      Aliases: HB, 园丁
+      Options:
+        TimeUntilBloom: 绽放时间
+        BloomsUntilRoleReveal: 揭示职业所需绽放数
+        PlantBloomCooldown: 播种冷却时间
+        RevealOnBloom: 绽放时揭示职业
+      BloomsGrownStatistic: 种子开花数
+      RolesRevealedStatistic: 职业揭示数
+    Investigator:
+      RoleName: 调查员
+      Description: >-
+        使用宠物键以调查玩家的好坏.被调查玩家的名字会显示为红色或者绿色.一般来说,红色为邪恶的绿色为善良的.
+
+
+        注意,某些船员职业 (比如警长)也会显示为红名(邪恶阵营)!
+
+
+        小贴士: 某些带有改变阵营性质的附加职业的玩家会以主职业好坏作为判定标准.比如带有'疯子'附加职业的医生会显示为绿名,但是带有'疯子'附加职业的吸血鬼会显示为红名.
+      Blurb: 啊哈哈哈,盒武器来咯!
+      Aliases: INV, 预言家, 盒
+       Options:
+        InvestigateCooldown: 调查冷却时间
+        NeutralKillingRed: 独立阵营::1 杀戮型职业::2 显示为 红名::0
+        NeutralPassiveRed: 独立阵营::1 友善型职业::2 显示为 红名::0
+        MadmateRed: 叛徒::1 显示为 红名::0
+    Mayor:
+      RoleName: 市长
+      Description: 市长拥有更多的投票.\n\n根据设置,他们也许可以使用宠物键以召开紧急会议.\n\n另外,有一个选项要求市长必须透露自己的身份才能获得额外的选票 (通过自己投票来揭示).
+      Blurb: 我觉得我很懂投票
+      Aliases: MAY, 总统, 特朗普, 川普
+      RevealMessage: 市长,你必须表明自己的身份以获得更多的选票.现在你可以正常投票,或者自票,向所有人透露你的职业,以获得更多的选票!
+      Options:
+        MayorReveal: 揭示身份获得选票
+        MayorAdditionalVotes: 市长附加票数
+        PocketMeeting: 便携紧急按钮
+        NumberOfUses: 使用次数
+      MayorRevealTitle: <color=#6633FF>市长身份揭示</color>
+      MayorRevealMessage: '{0} 揭示了自己是市长!'
+    Medic:
+      RoleName: 随军医师
+      Description: 随军医师可以选择给他们想要保护的玩家投票.只要随军医师活着,这个玩家就不会被任何击杀互动影响.\n\n选择目标时的投票不算做票数,并且只要随军医师选择好了目标那么他就能正常投票/跳过了.\n\n根据房主设置,随军医师可能能在之后的会议切换保护目标.
+      Blurb: 我随身带盾,谁有意见?
+      Aliases: MED, 军医, 法医, 医师
+      ProtectingMessage: '你选择保护的目标是: {0}'
+      VotePlayerInfo: 投票以选择保护目标.
+      MedicHelpMessage: 你是随军医师!投票以选择你下回合想要保护的玩家!或者,你可以选择跳票以正常投票.
+      SelectedPlayerMessage: 你选择的目标是: {0}.再次投给他以确认选择,或者弃票以跳过技能发动.
+      ReturnToNormalVoting: 你现在保护的是 {0}. 现在你可以正常投票.
+      Options:
+        ChangeGuardedPlayer: 改变保护目标设置
+        OnDeathValue: 目标死亡后
+        MeetingsValue: 会议后
+        NeverValue: 永不
+    Medium:
+      RoleName: 通灵师
+      Description: 当通灵师报告尸体时,他们将会在会议中得知杀死该玩家的凶手的职业.\n\n只有在通灵师亲自报告尸体时才能看见凶手职业.\n\n根据设置,他们可能还有指向尸体的箭头.\n\n报告尸体后,通灵师也许能与报告的尸体所属玩家的灵魂交流.在会议开始时,通灵师和被报告的尸体的灵魂将会被提示他们能够对话.\n\n通灵师可以问问题,死亡的玩家只能回答'是'或'不是'.
+      Blurb: 有箭头?要什么秃鹫!
+      Aliases: MDM, 招魂师, 通灵者
+      MediumMessage: 你报告了一个尸体,并在与其灵魂进行了激烈交流后.你确定了凶手的职业是{0}.
+      Options:
+        HasArrowsToBody: 拥有指向尸体的箭头
+        CanSeeChatOfReportedPlayer: 可与报告尸体的灵魂对话
+        IsClairvoyant: 可以与灵魂对话
+        ShownToEveryone: 回答显示给所有人
+        AmountOfMeditates: 通灵次数
+      MediumTitle: <color=#9933FF>通灵时刻</color>
+      MediumConnection: 你现在可以询问{0}的灵魂. 他们只能用'是'或'不是'回答你的问题. 你还剩余{1}次通灵机会.
+      MediumConnectionGhost: 通灵师{0}已与你连接.你可以通过回答'是'或'不是'来与其交流.
+      YesAnswer: 是
+      NoAnswer: 不是
+      OutOfMeditates: 你的通灵时间结束了.你与灵魂的连接通道关闭了.
+      OutOfMeditatesGhost: 你与通灵师的连接已关闭.他无法再听到你的回答.
+    Mystic:
+      RoleName: 灵媒
+      Description: 当玩家被杀时,灵媒会收到类似反应堆破坏的闪光警告.\n\n用这个警告来估计死亡时间.
+      Blurb: 后知后觉
+      Aliases: MY, 先知
+      Options:
+        MysticIsModifier: 灵媒作为附加职业出现
+        FlashDuration: 闪光持续时间
+        SendAudioAlert: 声音提示
+        RestrictedToCrewmates: 只能分配给 船员::0
+    Noisemaker:
+      RoleName: 大嗓门
+      Description: 当玩家击杀大嗓门时,一个可视的声音警告会提示所有人,并且会有一小段时间存在指向尸体的箭头.这是Among Us原版职业.
+      Blurb: 原汁原味的体验,至少有点用=w=
+      Options:
+        ImpostorsGetAlert: 伪装者可得到提示
+        AlertDuration: 提示持续时间
+    Observer:
+      RoleName: 提灯人
+      Description: 完成任务以获得更大的视野. 根据房主设置,你可能会在完成一个任务后获得小小的视野提升,或者在你完成所有任务后获得更大视野提升.此外,如果启用执灯人完成任务后熄灯无效选项,即使在熄灯时你也能看的清清楚楚.
+      Blurb: 牢不可破的联盟.jpg
+      Aliases: OB, 老b灯, 灯人
+      Options:
+        SlowlyGainsVision: 缓慢获得更大视野
+        VisionGain: 完成任务时视野增加值
+        OverrideVision: 起始视野特殊设置
+        StartingVision: 起始视野附加值
+        FinalVision: 完成所有任务后视野
+        LightsImmunity: 任务完成后熄灯无效
+    Oracle:
+      RoleName: 神谕者
+      Description: 神谕者通过投票选择目标(这将不计为一票).当神谕者死后,目标的职业就会暴露给所有人.\n\n神谕者可以在选择目标前选择跳票以跳过技能发动,或者选择完目标后正常投票/跳过.如果他们愿意,神谕者可以为自己投票,死亡后揭示自己的职业.
+      Blurb: 追随神的旨意
+      Aliases: ORA
+      SelectRole: '你选择了: {0}'
+      UnselectRole: '你放弃选择: {0}'
+      VotePlayerInfo: 投票选择一个玩家并在你死后揭示他的职业.如果反悔,你可以重新投票一个玩家以取消上次的选择.\n\n确认后,您的目标不能更改.
+      OracleMessageTitle: 神谕降临
+      VoteNormallyMessage: 你现在可以正常投票
+      SkipMessage: 点"跳过投票"以继续.
+      RevealMessage: 神的旨意在此降临,神说 {0} 是 {1}
+    Psychic:
+      RoleName: 心理学家
+      Description: 心理学家在会议中可以看到一些潜在的坏人.\n\n三个玩家的名字会被标记为红色,其中至少有一个为坏人.标记红名的玩家数量可被房主设置.
+      Blurb: 我猜你...内心是个小南梁●ｖ●
+      Options:
+        MaxHighlightedPlayers: 最大标记玩家
+        AllKillingRolesAreEvil: 所有 带刀::0职业可显示为红名
+    Repairman:
+      RoleName: 修理大师
+      Description: 修理大师可以更快的修理.\n\n只需轻触一个开关就能修好灯.打开一扇门将会打开所有同区域关闭的门(比如Polus的门).反应堆也可以一个人修复.
+      Blurb: 我什么都能修...除了人心
+      Aliases RE, 修理工
+      Options:
+        RepairmanCanVent: 修理大师::0 可使用管道
+        FastFixLights: 可快速修灯
+        FastFixReactor: 可快速修反应堆
+        FastFixOxygen: 可快速修理氧气
+        FastFixComms: 可快速修理通讯
+        FastFixDoors: 可快速打开门
+        FastFixHelicopter: 可快速修理航线破坏
+      RepairmanFixMessage: '{0} 修理了 {1}.'
+    Scientist:
+      RoleName: 科学家
+      Description: 拥有便携式生命检测仪,就是原版科学家.
+      Blurb: 原汁原味的体验,但也没什么用
+      Options:
+        VitalsCooldown: 生命检测仪冷却时间
+        VitalsBatteryCharge: 生命检测仪电池持续时间
+    Sheriff:
+      RoleName: 警长
+      Description: >-
+        警长能击杀伪装者和独立阵营.小心!警长在尝试击杀船员或者某些独立阵营(取决于设置)时会走火(杀掉他们自己).
+
+
+        小贴士:如果警长的'技能按键'被设置为击杀键,那么警长将不会拥有任何任务.
+      Blurb: 我曾经可是美国最快的枪手!
+      Aliases: SHF, 美国警长, 碰瓷的
+      MisfireStat: 走火次数
+      NeutralKillingSetting: 可以击杀 独立阵营::0 杀戮型职业::1
+      NeutralPassiveSetting: 可以击杀 独立阵营::0 友善型职业::1
+      MadmateSetting: 可以击杀 叛徒::0
+      Options:
+        SheriffActionButton: 警长技能按键
+        OneShotPerRound: 一回合仅能使用一发子弹
+        KillOnMisfire: 走火时击杀目标
+        KillCooldown: 击杀冷却时间
+        TotalShots: 子弹数量
+        ActionKillButton: 击杀键 (遗留)
+        ActionPetButton: 宠物键
+    Snitch:
+      RoleName: 告密者
+      Description: 告密者在完成任务后可以看到所有的伪装者(也许根据设置还能看到所有带刀的独立阵营).\n\n当告密者还剩一定的任务时,那些将会被揭示职业的玩家能够看到告密者名字后面的绿色⚠符号.\n\n根据设置,当他们完成任务时,告密者可能有指向坏人的箭头,那些坏人也会有指向告密者的箭头.
+      Blurb: 不要...不要停下来啊!
+      Aliases: SNT, 难逃一死
+      Options:
+        RemainingTaskWarning: 警告时剩余任务数
+        EvilArrowToSnitch: 坏人有指向 告密者::0的箭头
+        SnitchArrow: 启用 告密者::0的箭头
+        ColoredArrow: 彩色箭头
+        SnitchTracksAllKillers: 告密者::0可以追踪所有坏人
+    Speedrunner:
+      RoleName: 增速者
+      Description: 增速者必须完成任务才能获得速度提升.\n\n 根据设置,你也许能做完成一个任务后获得小幅度的速度提升(根据设置可能是暂时性提升),或者在做完一定任务后速度大幅提升.
+      Blurb: 同步召唤!召来吧,废品增速者!
+      Aliases: SR, 极速跑者, 跑者
+      Options:
+        TempBoostOnTaskFinish: 完成任务获得短时间速度值
+        TempBoostDuration: 加速持续时间
+        PermanentSpeedGain: 完成任务获得永久速度值
+        TaskUntilLargeSpeedBoost: 获得大幅加速所需任务数
+        FinalSpeedBoost: 大幅加速值
+    Swapper:
+      RoleName: 换票师
+      Description: 每次会议换票师投票的前两个玩家将会交换他们的得票(而不是交换他们的投的人).\n\n使用技能后,换票师可以正常投票.或者,换票师可以跳过投票,以放弃这次技能使用,然后可以正常投票. \n\n在你选择一个玩家换票后,你可以选择再票他一次以取消选择.一旦你选择了两个玩家交换,那你就不能再切换目标了.
+      Blurb: 换个票,多简单:)
+      Aliases: SWP
+      SwapperInfoMessage: >-
+        你是换票师. 要交换玩家得票的话,投票以选择两个交换目标.
+
+        你可以通过再次投票同一人以取消第一个交换目标.
+
+        此外,您可以通过弃票来放弃交换.
+      SwapperSelectMessage1: 你选择了 {0}.
+      SwapperSelectMessage2: 你选择了 {0}. {1} 和 {0} 的得票将会被交换.
+      SwapperUnselectMessage: 你取消选择 {0}.
+      SwapperPublicMessage: 换票师交换了 {0} 和 {1} 的投票!
+      SwapperAbility: !票数交换!
+      Options:
+        SwapsPerGame: 总交换::0次数
+    Tracker:
+      RoleName: 追踪者
+      Description: 追踪者可以用追踪按钮标记一名玩家以追踪,那名玩家的动向将会显示在追踪者的地图上.\n\n另外,根据设置,追踪者还能使用宠物键开启指向尸体的箭头.
+      Blurb: 嘿嘿,真好看...
+      Aliases: TK, 变态, 色批
+      Options:
+        TrackerCooldown: 追踪冷却时间
+        TrackerDuration: 追踪持续时间
+        TrackerDelay: 追踪显示延迟
+    Transporter:
+      RoleName: 传送师
+      Description: 通过宠物键使两个随机的玩家交换位置.
+      Blurb: 芜,真好玩,芜...xwx
+      Aliases: TP
+      Options:
+        TotalTransports: 传送次数
+        TransportCooldown: 传送冷却时间
+    Trapster:
+      RoleName: 设陷者
+      Description: 设陷者被杀后, 设陷者会将凶手困在原地一段时间.\n\n根据设置,陷入陷阱的凶手被困时可能将不允许报告尸体.
+      Blurb: 守株待兔....
+      Aliases: TPS, 陷阱师
+      Options:
+        TrapsOnIndirectKills: 间接击杀会触发陷阱
+        TrappedDuration: 陷阱持续时间
+        BlockReportWhileTrapped: 被困时无法报告
+    Veteran:
+      RoleName: 老兵
+      Description: 老兵可以通过宠物键进入'警戒'状态.\n\n当老兵在警戒时受到其他玩家互动,老兵将会无效那次互动并反杀凶手.
+      Blurb: 我曾经也是个勇者,直到我的膝盖中了一箭...
+      Aliases: VET, vet
+      Options:
+        TotalAlerts: 警戒次数
+        AlertCooldown: 警戒冷却时间
+        AlertDuration: 警戒持续时间
+        KillCrewmates: 可反杀船员
+        KillWhileTransported: 传送时反杀
+        KillRangedAttackers: 可反杀远距离互动
+    Vigilante:
+      RoleName: 侠客
+      Blurb: 能力越大,责任越大!
+      Aliases: VI, 正义的赌怪
+      Description: >-
+        侠客可以通过猜测伪装者或独立阵营的职业以击杀.如果侠客成功猜测了一个非船员职业,那么那名玩家将会被刺杀.
+
+
+        在会议中,侠客可以通过投票选择要猜测的玩家,然后他们可以通过在聊天栏发送 /r [职业名] 以选择所要猜测的职业(如/r 吸血鬼).如果侠客成功猜测了该玩家的相应职业,那么那名玩家将会死于刺杀.
+
+
+        如果侠客猜错了,他们将会自杀.侠客不允许猜测船员职业. 
+
+
+        要跳过刺杀, 你可以直接选择跳过投票以跳过猜测.
+
+
+        小贴士: 被揭示的职业(比如被神谕者揭示的)将不能被猜测.
+      SelectPlayer: '你选择刺杀:'
+      SelectRole: '你选择猜测的职业是:'
+      SkipToContinue: 点击 "跳过投票"以继续.
+      VoteRoleInfo: 要选择猜测的职业,投票给名字下面有职业名的玩家.如果他们的名字下面有多个职业,再次给同一个玩家投票以选择显示的下一个职业.(汉化人员留:我不知道现在的猜测方式,如果名字底下没有职业,则输入/m以查询该职业描述,根据描述来猜测职业!)
+    AgiTater:
+      RoleName: 炸弹狂
+      Description: >-
+        炸弹狂能够开启一个致命的小游戏,'烫手山芋'.
+
+
+        使用你的击杀键给其他人传递一个炸弹,在炸弹爆炸前那个玩家必须在爆炸前把炸弹传给其他玩家(炸弹可能在一段时间后爆炸或者在召开会议时爆炸).
+
+
+        持有炸弹的玩家可以通过贴近其他玩家以传递炸弹,并且拥有炸弹的玩家会有一个文本提示写着'你手上有炸弹!'.
+
+
+        小贴士: 如果炸弹被设置为一段时间后爆炸,提示文本会根据炸弹的不同阶段从绿色变成黄色,最后变成红色.
+      Blurb: 烫手山芋?启动!
+      Aliases: AGI, 炸弹师, 煽动者
+      Options:
+        PlaceBombCooldown: 炸弹传出冷却时间
+        ExplodeOnMeetings: 会议开始时爆炸
+        ExplodeAfterDuration: 一段时间后爆炸
+        ExplodeDoubleBombed: 持有两个炸弹时直接爆炸
+        BombDuration: 炸弹爆炸时间
+        BombsPerRound: 每回合炸弹数量
+        BombTransferRate: 炸弹传递距离
+      PassTheBombText: 传递炸弹!
+      HoldingBombLevel1: 你手上有炸弹!
+      HoldingBombLevel2: 你手上有炸弹啊!!!
+      HoldingBombLevel3: 你手上有炸弹啊啊啊!!!!!
+    Amalgamation:
+      RoleName: 窃忆者
+      Description: 窃忆者每报告一个尸体,他们就会获得那个职业的能力.窃忆者的胜利条件以其第一个报告的尸体职业为准(或最后一个报告的尸体),而其他尸体仅给窃忆者提供能力.窃忆者作为一个隐藏职业,会小概率代替失忆者出现.
+      Blurb: 破碎的梦想,破碎的人生...
+      Aliases: AMA
+      Options:
+        WinConditionDeterminer: 胜利条件设置
+        OldestRoleValue: 最早窃取的职业
+        NewestRoleValue: 最近窃取的职业
+        MaxAbsorbedRoles: 最大窃取职业数
+        AbsorbModifiers: 窃取附加职业
+    Amnesiac:
+      RoleName: 失忆者
+      Description: >-
+        当失忆者报告一个尸体时, 他们将会加入这个死者所属的阵营.如果相关设置启用, 失忆者将会偷窃该玩家的实际职业.
+
+
+        失忆者报告尸体所属的阵营 --> 转变的职业:
+
+        独立阵营杀戮型 --> 雇佣杀手
+
+        独立阵营友善型 --> 投机主义者
+
+        船员 --> 警长
+
+        其他 --> 小丑
+      Blurb: 继承死者的意志
+      Aliases: AMN
+   AMNOptions:
+        StealsExactRole: 偷窃实际职业
+        HasArrowsToBody: 拥有指向尸体的箭头
+    Archangel:
+      RoleName: 守护天使
+      Description: 守护天使在游戏开始时会获得一个目标(在守护天使的名字下面会有文本提示).他们可以用宠物键以保护目标不被一些特殊互动影响(取决于设置).\n\n守护天使跟随目标胜利(守护天使死亡后也可跟随胜利).\n\n如果他们的目标死了,守护天使可能会改变职业(取决于房主设置),或者仍然保存守护天使这个职业,如果目标所属的阵营获胜,那么守护天使也能跟随胜利. (比如目标为船员,船员获得胜利的情况下,即使目标死了,守护天使还是能获得胜利).
+      Blurb: 保护他人是我的天性,并没有其他理由
+      Aliases: ARC
+      Options:
+        ProtectDuration: 保护持续时间
+        ProtectCooldown: 保护冷却时间
+        TargetKnowsArchAngelExists: 目标可见守护天使
+        ArchAngelKnowsTargetRole: 守护天使可见目标职业
+        RoleChangeWhenTargetDies: 目标死亡后改变职业
+        ShouldCancelWhichInteractions: 可保护的互动类型
+        InteractionFormatter: 保护 {0} 互动
+        Indirect: 非直接
+        Ranged: 远程
+        Delayed: 延迟
+        Neutral: 中立性
+        Fatal: 致命
+        Hostile: 不友善
+    Arsonist:
+      RoleName: 纵火犯
+      Description: 在玩家旁边多次点击击杀按钮,将油涂在他们身上. 当玩家被一个完整的橙色圆圈标记时,涂油就成功了.\n\n给所有玩家涂油并按下宠物键点燃以取得胜利.
+      Blurb: 经我手之污秽乃圣洁之物
+      Aliases: ARSO, 纵火狂
+      Options:
+        AttacksToCompleteDouse: 完成涂油所需点击数
+        CanIgniteAnytime: 可随时点燃(TOUR纵火狂模式)
+      IncineratedDeathName: 烧死
+      DouseEventMessage: '{0} 给 {1}涂了油.'
+      PressIgniteToWinMessage: 点燃以获胜
+      DousedPlayerStatistic: 涂油玩家数
+      IncineratedPlayerStatistic: 点燃玩家数
+    BloodKnight:
+      RoleName: 鲜血骑士
+      Description: 鲜血骑士是独立阵营职业,鲜血骑士每一次击杀后都将在一段时间内无敌.
+      Blurb: 血!!!!我要血!!!
+      Aliases: BK, 血之骑士, 嗜血骑士
+      Options:
+        ProtectDuration: 无敌持续时间
+    Copycat:
+      RoleName: 复制猫
+      Description: 作为复制猫，当你第一次受到互动时,你会改变所属阵营.如果你被内鬼互动,你就是一个内鬼. 如果是豺狼,那你也是豺狼.\n根据房主的设置,你甚至可能能获得他们的‘任务进度’.
+      Blurb: 猫某飘零半生,只恨未逢明主.......
+      Aliases: CC, 抄袭者
+      Options:
+        KillerKnowsCopycat: 凶手可见 复制猫::0
+        CopyRoleProgress: 复制职业任务进度
+      CopyCatFactionChangeName: '{0}猫'
+    Deathknight:
+      RoleName: 亡灵骑士
+      Description: 亡灵骑士是亡灵法师招募而来的职业,他们必须帮助亡灵法师将所有人转化为不死族.\n靠近某个已经被亡灵法师用击杀键标记的人并使用宠物键以转化那个人(被标记的人名字后面有一个圈标志). 场上只能存在一个亡灵骑士,并且如果亡灵法师死了,那么亡灵骑士可能会变成新的亡灵法师(取决于房主设置).\n\n亡灵法师标记的第一个人会变为亡灵骑士.
+      Blurb: 厄......(翻译:我要吃了你)
+      Aliases: DK, 僵尸, 死灵骑士, 死亡骑士, 死之骑士
+      Options:
+        CanBecomeNecromancer: 可以变成亡灵法师
+        InfluenceCooldown: 转化冷却时间
+        InfluenceRange: 转化范围
+        InfluenceMany: 可同时转化多人
+    Demon:
+      RoleName: 恶魔
+      Description: 当游戏中有恶魔存在时,所有玩家头上都会出现一个绿色的血条(仅恶魔可见).\n\n当恶魔试图击杀玩家时,玩家的生命值将会减少.在完全将一名玩家的血条归零时,那个玩家才会死.\n\n当恶魔被尝试击杀时,他的生命条会减少. 恶魔可以通过击杀别人以恢复血量.
+      Blurb: ruaaa...这样会恐怖点吗?
+      Aliases: DEM, 玩家
+      Options:
+        AttackCooldown: 攻击冷却时间
+        DamagePerAttack: 攻击伤害
+        HealthHealedOnKill: 击杀时回血
+        DamageTakenOnAttack: 被击杀时掉血
+    Egoist:
+      RoleName: 利己主义者
+      Description: 利己主义者是独立阵营的带刀职业,他们能看到谁是伪装者,但是不能击杀他们.\n\n他们的任务是背叛伪装者并把伪装者票出去,同时杀掉其他所有玩家以独自胜利.伪装者能击杀利己主义者,但是不知道利己主义者的存在.
+      Blurb: 他们只是一些棋子罢了...
+      Aliases: EGO, 野心家
+      Options:
+        IsShapeshifter: 利己主义者可变形
+    Executioner:
+      RoleName: 处刑者
+      Description: 处刑者在游戏开始时会得到一个目标.这个目标的名字会被不同的颜色标记(与处刑者的颜色相同).目标被票出后处刑者获得胜利.\n\n如果目标在被票出前死亡,处刑者会根据设置变成船员,小丑,或者投机主义者.如果目标是小丑,则处刑人能与其一同胜利.
+      Blurb: 你无法逃脱刑罚!
+      Aliases: EX, 处刑人, 行刑者
+      Options:
+        TargetImpostors: 目标可为伪装者
+        TargetNeutrals: 目标可为独立阵营
+        RoleChange: 目标死亡时改变职业
+    Glitch:
+      RoleName: 混沌
+      Description: 使用击杀键以封锁或击杀玩家.宠物键可以用来切换黑入(封锁)和击杀模式.\n\n黑入玩家可以阻止他们击杀,报告尸体,召开紧急会议,变形,以及跳管.
+      Blurb: 是混沌,不是馄饨!
+      Aliases: GL, 馄饨, 错误
+      ModeHacking: 黑入模式
+      ModeKilling: 击杀模式
+      Glitch:
+        Options:
+          HackingDuration: 黑入持续时间
+    Hacker:
+      RoleName: 黑客
+      Description: 黑客必须通过修理破坏以获得点数.每次修理破坏都能获得一个点数,黑客需要获得一定的点数(点数取决于设置)才能获胜.就像修理大师,黑客可以快速修复破坏.
+      Blurb: 最容易黑入的系统是社会
+      Aliases: HAC, 骇客
+      Options:
+        HackerSabotagePointAmount: 胜利所需点数
+        FixingDoorsGivesPoints: 开门给予点数
+        HackerCanVent: 黑客::0可使用管道
+    Harbinger:
+      RoleName: 预言者
+      Options:
+        TasksPerRitualCircle: 每个预言圈所需任务数
+        RitualCirclesUntilWin: 胜利所需预言圈
+      Blurb: <Roles.Harbinger.Blurb>
+    Hitman:
+      RoleName: 雇佣杀手
+      Description: 活下去! 雇佣杀手是一个只要活到最后就可以跟随大多数职业获胜的独立阵营带刀职业.\n\n房主可以选择雇佣杀手能否跟随处刑者/小丑胜利.
+      Blurb: Kill Players & Stay Alive
+      Aliases: HIT, 杀手, 47, 职业杀手
+      Options:
+        WinWithAbsolutes: 可跟随胜利职业设置
+        Executioner: 处刑者
+        Jester: 小丑
+    Jackal:
+      RoleName: 豺狼
+      Description: 豺狼必须杀掉所有人. 他们必须成为最后的幸存者才能获胜.
+      Blurb: 只狼,影逝二度
+      Aliases: JAC, 只狼
+    Jester:
+      RoleName: 小丑
+      Description: 小丑需要被票出才能获胜.一旦小丑被票出,游戏将以小丑的胜利而立刻结束.\n\n根据房主设置,小丑也许不能召开紧急会议,或者至少经过多少次会议才能胜利.
+      Blurb: 我觉得你很符合这个职业
+      Aliases: JES, 我
+      Options:
+        ImpostorVision: 拥有伪装者视野
+        CanUseVents: 可使用管道
+        CantCallEmergencyMeetings: 不能召开紧急会议
+        MeetingsBeforeWinning: 胜利前所需会议数
+      WinConditionName: 小丑::0被票出
+    Juggernaut:
+      RoleName: 天地启明者
+      Description: 天地启明者一开始有较高的击杀冷却时间,但每进行一次击杀,他们的冷却时间就会减少.\n\n他们必须杀死所有人,包括伪装者,并成为最后一个活着的人.
+      Blurb: 我就是即将到来的风暴!
+      Aliases: JUG, 天启, 剑圣, 宇宙之主
+      Options:
+        CooldownReductionPerKill: 每次击杀减少冷却时间
+    Marksman:
+      RoleName: 神射手
+      Description: 神射手可以通过击杀玩家以获得更远的击杀距离.获得击杀距离所需的击杀数取决于房主设置.
+      Blurb: 我超会射的!
+      Aliases: MAR, 射, 召命之神弓
+      Options:
+        KillsBeforeIncrease: 增加击杀距离所需击杀数
+        StartingKillDistance: 初始击杀距离
+    Necromancer:
+      RoleName: 亡灵法师
+      Description: 亡灵法师是亡灵阵营的主要招募者,亡灵法师使用击杀按钮标记的第一个玩家将转化为亡灵骑士(使用击杀键转化).有了亡灵骑士的加入后,他们必须一起把其他玩家转化成不死族.\n\n亡灵法师可以使用击杀键部分地转化玩家,然后亡灵骑士就可以用能力完成转化.\n\n转化后的/转化一部分的玩家将会在他们的名字后面有一个圈.完整的实心圈才代表着完全转化.
+      Blurb: 他们来了...
+      Aliases: NEC, 死灵法师
+      Options:
+        ConvertCooldown: 转化冷却时间
+        PartialConvertImmunity: 取消部分转化过程
+    Occultist:
+      RoleName: 巫师
+      Description: 巫师有击杀和诅咒两种模式,两种模式轮流切换或可通过摸宠物自由更改模式.\n\n被巫师诅咒的玩家在会议中会在他的名字后面出现一个十字架. 如果巫师在那个会议没有被投出, 被诅咒的玩家就死了.\n\n一般击杀会触发诱饵效果.\n而诅咒不会触发.
+      Blurb: 画个圈圈诅咒你...
+      Aliases: OCC, 男巫, 巫术师
+      Options:
+        FreelySwitchModes: 自由切换模式
+        SwitchModesAfterAttack: 击杀/诅咒后切换模式
+      CursedMessage: '{0}::0诅咒{1}::1会议结束时死亡.'
+      CursingModeText: 诅咒模式
+      KillingModeText: 击杀模式
+      HexedCauseOfDeath: 诅咒
+      CursedStatusDescription: 你被诅咒了. 被诅咒的玩家将会在会议结束后死亡除非诅咒你的人被投出.
+    Opportunist:
+      RoleName: 投机主义者
+      Description: 不用理会游戏的结果, 投机主义者只要活着就能跟随胜利.
+      Blurb: 你小子不错,跟你干了!
+      Aliases: OPPO, 投机者
+    Pelican:
+      RoleName: 鹈鹕
+      Description: 鹈鹕通过击杀键以吞下其他玩家.被吞的玩家会被传送至地图外并且不能与游戏内任何物品互动(包括破坏).\n\n一旦会议召开,所有被吞下的玩家都会瞬间死亡.如果鹈鹕死了或者断线了,所有被吞下的玩家都会回到鹈鹕所在的地方.
+      Blurb: 兄弟你好香...好饿...
+      Aliases: PEL, 大胃王
+      Options:
+        GulpCooldown: 吞噬冷却时间
+        AllowEscapeFromPelican: 鹈鹕死后可逃出
+      GulpedStatistic: 玩家吞下数
+      DeathName: 活吞
+    Pestilence:
+      RoleName: 万疫之神
+      Description: 万疫之神是瘟疫之源感染完场上所有玩家后的衍生职业.万疫之神不能被直接击杀,并且与其互动的玩家将会被反杀(死因显示被杀).\n\n万疫之神能被票出或者间接击杀(比如术士和傀儡师的咒杀和操控击杀)\n\n根据房主设置,其他种类的击杀也可能能够击杀万疫之神,以及万疫之神的击杀可能为不可阻挡的击杀.
+      Blurb: 神的降临!
+      Aliases: PEST, 巨神兵
+      Options:
+        UnblockableKill: 击杀不可阻挡
+        InvincibilitySettings: 抗性设置
+        ImmuneManipulatorAttackers: 无视操控击杀
+        ImmuneRangedAttacks: 无视远程击杀
+        ImmuneDelayedAttacks: 无视延迟击杀
+        ImmuneArsonistIgnite: 无视点燃
+    Pirate:
+      RoleName: 天命指明者
+      Description: 天命指明者是一个可以进行猜测的独立阵营.如果天命指明者成功猜测了某个玩家的职业,则那名玩家会被刺杀.\n\n在会议中,天命指明者可以通过投票以选择其猜测的目标.他们可以通过指令/r [职业名] (比如/r 吸血鬼)以选择猜测的职业.\n\n如果天命指明者猜对了相应玩家的职业,则那名玩家死亡.天命指明者需要猜对一定玩家的职业(数量取决于设置)才能获胜.
+      Blurb: 让他们明白自己的天命
+      Aliases: PIR, 海盗, 牌皇, 赌徒, 赌神
+      Options:
+        GuessesPerMeeting: 每次会议猜测次数
+        GuessWinAmount: 胜利所需猜测数
+        DieOnMisguess: 天命指明者猜错时死亡
+    PlagueBearer:
+      RoleName: 瘟疫之源
+      Description: 使用击杀键感染所有玩家.一旦所有玩家被感染,则瘟疫之源会变成万疫之神.
+      Blurb: 成神之路....吃个蝙蝠就好了
+      Aliases: PLAG
+      Options:
+        InfectCooldown: 感染冷却时间
+      InfectedHistoryMessage: '{0}::0 感染了 {1}::1.'
+    Postman:
+      RoleName: 邮递员
+      Description: 邮递员的任务是给其他玩家送信.完成任务以获得送信目标(如果设置启用,也许有指向目标的箭头).\n\n一旦获得了目标(标记为黑色名字), 邮递员就必须给其送信(接触目标即为送达).完成其他任务以获得新的目标,但是如果你还没有给前一个目标送信,那么你做完任务就会自杀.\n\n当你给场上所有活着的玩家都送完信了,下一个会议时就会有公告提示其他玩家投出邮递员.如果邮递员在这次会议没有被投出,他们将会获得胜利并结束游戏.
+      Blurb: 无论何时,无论何地,一颗邮递心~
+      Aliases: POS, 快递员
+      Announcement: 邮递员完成了所有信件的派发.投出邮递员,否则游戏将会以邮递员的胜利而结束!
+      Postman:
+        Options:
+          ArrowsToTargets: 拥有指向箭头
+          TargetDies: 当目标死亡时
+    Retributionist:
+      RoleName: 报复者
+      Description: 报复者是独立阵营带刀职业.他们有为自己复仇的能力.\n\n如果其他玩家尝试击杀报复者,那次击杀会被阻挡,并且报复者会被传送至一个随机管道上.报复者会有一段时间找到击杀他的凶手(凶手被标记为橙色名字)并在时间结束前击杀他.\n\n如果他们在时间内击杀了凶手,报复者将会活下来,否则他们会死.
+      Blurb: 不死之身~
+      Aliases: RETR
+      Options:
+        RevengeTimeLimit: 报复时间限制
+        InvisibleRevenge: 报复时隐身
+        TotalRevengeAmount: 报复次数
+    SchrodingersCat:
+      RoleName: 薛定谔的猫
+      Description: 薛定谔的猫在每次有人尝试击杀他的时候就会改变阵营.他们的生命数有上限,在生命数用完或者游戏结束之前他们都能转换阵营.\n\n薛定谔的猫的职业名会反应他当前所属的阵营.他们的工作就是帮助那个阵营获胜,游戏内操作或者帮队友洗清嫌疑.\n\n在游戏结束时,薛定谔的猫会跟随他最后一个击杀他的阵营获胜.比如如果豺狼击杀了薛定谔的猫,那么他的职业名就会变成'豺狼的猫',并且会跟随豺狼胜利(只要在游戏结束前他还是豺狼的猫).\n\n不像复制猫,薛定谔的猫不能击杀.
+      Blurb: 大型纪录片之传奇牛头人,正在播出
+      Aliases: Schrodingers Cat, SC, SCat, S Cat, SchrodingersCat, Schrodinger's Cat, 薛定谔的猫, ntr猫
+      CopycatFactionChangeName: '{0}猫'
+      CatFactionChangeName: '{0}的猫'
+      Options:
+        NumberOfLives: 生命次数
+        KillerKnowsCat: 凶手知道 薛定谔::0 的猫::的存在
+    Survivor:
+      RoleName: 求生者
+      Description: 求生者存活到游戏结束就能胜利.\n\n求生者能使用宠物键以获得一个短时间的护盾.求生者不能跟随小丑或者处刑者胜利.
+      Blurb: 活着啊啊啊啊
+      Aliases: SUR, 幸存者
+      Options:
+        VestDuration: 护盾持续时间
+        VestCooldown: 护盾冷却时间
+        TotalShields: 护盾使用次数
+    Taskrunner:
+      RoleName: 任务大师
+      Description: 任务大师必须完成所有任务才能胜利.他们完成一定数量的任务之前不会死亡(取决于房主设置).\n\n当任务大师将要完成所有任务时,所有人都会得到一个指向任务大师的箭头,并且任务大师的头上会有一个"⚠"标志在他们的名字后面.\n\n在任务大师完成任务前杀掉他们以阻止他们完成任务. 任务大师在任何时候都不能被投出,他们只能被杀.
+      Blurb: 我爱做任务....阿巴阿巴:D
+      Aliases: TAS, 幻影
+      Options:
+        ImmuneToRangedInteractions: 免疫远程互动
+        RemainingTaskWarning: 警告时剩余任务数
+        RemainingTaskTargetable: 可被选为目标时剩余任务数
+    Terrorist:
+      RoleName: 恐怖分子
+      Description: 完成所有任务,然后死亡才能赢.根据房间的设置,恐怖分子也可以被票出胜利.
+      Blurb: 啊哈哈哈, 我滴任务完成啦!
+      Aliases: TER
+      Options:
+        CanWinBySuicide: 可通过自杀胜利
+        CanWinByExiled: 可通过被票出胜利
+    Vulture:
+      RoleName: 秃鹫
+      Description: 使用报告键吃掉尸体,被吃掉的尸体无法报告.秃鹫可以通过宠物键在吞噬模式和正常模式之间切换.\n\n秃鹫在吃掉一定数量的尸体后获胜,由房主设置,他们可能有指向尸体的箭头.
+      Blurb: 感谢款待~
+      Aliases: VUL, 食尸鬼
+      EatingModeText: 吞噬模式
+      ReportingModeText: 报告模式
+      Options:
+        RequiredBodies: 胜利所需吞噬尸体数量
+        HasImpostorVision: 拥有伪装者视野
+        SwitchModes: 可切换模式
+        CanUseVent: 可使用管道
+        HasArrowsToBody: 拥有指向尸体的箭头
+    Werewolf:
+      RoleName: 月下狼人
+      Description: 月下狼人是一个独立阵营带刀职业,通过宠物键开启狂暴,在狂暴时间内他们的的击杀冷却很短.\n\n月下狼人只能在狂暴时击杀.
+      Blurb: 为了你,我变成狼人模样~
+      Aliases: WW, 狼人
+      Rampage: 杀戮时刻!
+      Options:
+        RampageKillCooldown: 狂暴时击杀冷却时间
+        RampageCooldown: 狂暴冷却时间
+        RampageDuration: 狂暴持续时间
+        CanVentNormally: 可使用管道
+        CanVentInRampage: 可在狂暴时使用管道
+    GM:
+      RoleName: 管理员
+      Blurb: 你就是o批
+      Aliases: OP, 神犬, 神犬勾
+      Description: 游戏的"主人"  (就是房主.) 当房主是管理员时, 他们在游戏中不被记作玩家并且一开始游戏就会"趋势". 这样他们就可以观看整场游戏以保证对局正常运行(或者说他们可以离线挂机XD).
+    Bait:
+      RoleName: 诱饵
+      Description: 当诱饵被杀时,凶手会自动报告.
+      Blurb: 性感船员,在线魅惑
+      Aliases: BA, 大奖
+      Options:
+        AnnounceBait: 首次会议时公示诱饵
+      BaitAnnounceMessage: '{0}是诱饵! 当他们死的时候,击杀他们的凶手会自动报告!.'
+    Bewilder:
+      RoleName: 迷幻
+      Description: 当带有迷幻附加的玩家被杀死时,击杀他的玩家的视野将在剩下的对局中变小.
+      Blurb: 我好晕...yue
+      Aliases: BEW, 迷幻者
+      BewilderedStatus: 被迷幻
+      BewilderedDescription: 迷幻状态以特定倍数缩小你的视野.
+      Options:
+        VisionMultiplier: 视野减小倍率
+    Deadly:
+      RoleName: 嗜血
+      Blurb: 杀杀杀,嗷嗷杀.
+      Aliases: DEA, 嗜血者
+      Description: 拥有致命附加的玩家会减少一定时间的击杀冷却.
+      Options:
+        CooldownReduction: 击杀冷却减少时间
+        AssignableToNonKilling: 可分配给无刀玩家
+    Diseased:
+      RoleName: 病人
+      Description: 被杀时增加凶手的击杀冷却.
+      Blurb: 给我板蓝根....咳咳
+      Aliases: DIS, 患病, 患者
+      Options: 
+      CooldownIncrease: 冷却增加倍数
+      DiseasedAffectDescription: 你有"患病" 状态. 这意味着你的击杀冷却时间会增加.
+    Escalation:
+      RoleName: 恐惧者
+      Blurb: 有人死了!快跑!
+      Aliases: EL
+      Description: 带有恐惧者附加的玩家在其他人死亡时增加速度.
+      Options:
+        SpeedGainPerKill: 每次玩家死亡速度增加值
+    Flash:
+      RoleName: 闪电侠
+      Description: 闪电侠附加能使该玩家的移速比其他玩家更快.
+      Blurb: 乐迪加速!!!
+      Aliases: FLA, 闪电
+      Options:
+        SpeedIncrease: 速度增加值
+    Guesser:
+      RoleName: 猜测者
+      Description: >-
+        猜测者附加可以给予任何职业猜测的能力,猜测者可以在会议中猜测其他玩家的职业进行击杀.
+
+
+        在会议中, 猜测者可以通过投票来选择他们想要猜测的玩家. 然后猜测者可以在聊天框里输入指令 /r [职业名](如 /r 医生).如果猜测者猜对了玩家的职业那么那个被猜测的玩家就会死亡.
+
+
+        如果猜对了玩家的职业,那么那个玩家就会被猜测者刺杀,如果猜测者猜错了玩家的职业就会自杀.
+
+
+        要跳过刺杀, 猜测者可以在选择玩家前跳过投票以跳过刺杀技能.
+
+
+        Note: 被揭示的职业(如被神谕者揭示)无法被猜测.
+      Blurb: 放手一搏吧!别顾虑太多!
+      Aliases: GS, 赌怪
+      PickedRoleText: 你猜测 {0} 是 {1}. 如果你确定, 再次给 {0} 投票以确认你的猜测. 或者给其他人投票以切换目标.又或者用 /r [职业名]重新选择要猜测的职业
+      Guesser: 猜测时刻
+      PickedPlayerText: 你正在猜测 {0}的职业. 用 /r [职业名]选择职业.
+      TypeRText: 请用 /r [roleName]以猜测职业.
+      UnknownRole: 未知职业 {0}. 你可以使用 /perc 以查看已启用职业.
+      FinishedGuessingText: 你确认了你的猜测. 如果你没死,那么现在你可以正常投票.
+      ErrorCompletingGuess: 错误的猜测形式. 请再次尝试猜测.
+      GuessAnnouncementMessage: 砰的一声枪响, {0} 死了.
+      Options:
+        GuesserPerMeeting: 每次会议猜测次数
+        CanGuessTeammates: 可猜测队友
+        FactionMaxGuessers: '{0}::0 阵营猜测者最大数'
+        NeutralKillingSetting: 可猜测 独立阵营::0 杀戮型职业::1
+        NeutralPassiveSetting: 可猜测 独立阵营::0 友善型职业::1
+        ImpostorSetting: 可猜测 伪装者::0
+        CrewmateSetting: 可猜测 船员::0
+        MadmateSetting: 可猜测 叛徒::0
+        SubroleSetting: 可猜测 附加职业::0
+        RestrictedToNonVote: 只分配给非投票性职业
+        FollowGuesserSettings: 跟随猜测者设置
+      CantGuessRole: 职业{0}, 被房主设置为不可猜测.请用/r [职业名]尝试其他职业.使用/o以检查你可以猜测的职业.
+      CantGuessRoleBecauseOfRole: 你的职业阻止你以{0}职业猜测这名玩家.使用/m也许能找到原因.
+      CantGuessBecauseOfRole: 你的职业阻止你猜测 {0}!试试猜测其他玩家.
+      CantGuessTeammate: "{0}是你的队友! 你不能猜测那个玩家."
+      CanSeeRole: {0}的职业已经被揭示! 你不能猜测那个玩家.
+    LastResort:
+      RoleName: 逆转者
+      Description: 作为逆转者, 你可以通过自票揭示自己的职业并获得额外选票. 你的自票会在你的投票重置后取消. \n\n缺点是你的职业会向所有人透露
+      Blurb: 将结局大逆转吧!
+      Aliases: LAS, 破釜沉舟, 最后一招, 最终兵器
+      Options:
+        AdditionalVotes: 附加票数
+      RevealText: '{0} 揭示自己的职业是 {1}!'
+      HintText: 自票以揭示自己的职业. 你可以正常给其他人投票.
+    Nimble:
+      RoleName: 灵活
+      Description: 此附加可以授予任何职业跳管的能力,即使他们之前不能跳管.
+      Blurb: 我是液体做的!
+      Aliases: NIM, 灵巧者
+    Oblivious:
+      RoleName: 胆小
+      Description: 有胆小附加职业的玩家不能报告尸体.依赖报告尸体发动技能的职业(比如通灵师)不会分配到该附加.
+      Blurb: 呜呜,怎么有人死了qwq
+      Aliases: OBL, 胆小鬼
+      Options:
+        PassOnDeath: 被杀时效果给予凶手
+    Obvious:
+      RoleName: 广播员
+      Description: 广播员附近有尸体时自动报告.
+      Blurb: 有-人-似-啦-
+      Aliases: OBV, 广播员
+    Rogue:
+      RoleName: 疯子
+      Description: 疯子允许拥有者保持他们主职业能力的同时,还能给予他们击杀的能力.\n\n杀死所有其他玩家以获得胜利.如果一个船员或者伪装者拥有该附加,则他们不能跟随他们各自的阵营获胜.
+      Blurb: 他们都想要害我qmq......
+      Aliases, ROG, 无赖者, 无赖
+      Options:
+        RestrictToCompatbileRoles: 只分配给无刀职业
+    Romantic:
+      RoleName: 浪漫主义者
+      Blurb: 向你的真爱表白吧!
+      Aliases: 浪漫者, 恋人
+      Description: 在第一次会议时,浪漫主义者<color=#9D9D9D>必须</color>投票给一个玩家成为他们的情人(否则他会死).一旦对象被选中,浪漫主义者可以使用他们的宠物键暂时给他的情人一个护盾.\n\n如果浪漫主义者的情人死了,那么他们就会根据设置转变为无情者或复仇者.\n\n根据设置,浪漫主义者可以跟随情人胜利,或者不跟随情人胜利(主职业独自胜利).
+      Options:
+        TargetKnowsRomantic: 目标可知被表白
+        ProtectionCooldown: 保护冷却时间
+        ProtectionDuration: 保护持续时间
+        PartnerCanWin: 情人可跟随浪漫主义者胜利
+        CancelGameWinIfSolo: 无法独自胜利
+      PartnerText: 情人::0 {0} ♥::0
+      RomanticMessage: 你的身份是浪漫主义者.你必须在会议结束前选择一个情人,否则就会自杀!要选择情人,请投票某人两次!之后,你可以正常投票.
+      RomanticSelectMessage: 你选择了 {0} 作为你的对象. 如果确认,再次给他/她投票,或者投给其他玩家.
+      ConfirmedPartnerMessage: 你确认了 {0} 作为你的对象. 你现在可以正常投票.
+      NotifyPartnerMessage: 你被 {0} 他/她表白了! 现在你们是情侣了!恭喜!
+      NoSkipMessage: 你不能跳过,除非你选择了你的情人!
+    RuthlessRomantic:
+      RoleName: 无情者
+       Blurb: 他们无情,那就别怪我无义
+       Aliases: RR, 无情, 无情的浪漫主义者, 无情的恋人
+      Description: "你的心已经碎了…现在是时候伤别人的心了.作为无情者,你现在是一个独立阵营带刀玩家,目标是杀死所有玩家,成为最后一个活着的玩家.如果这个玩家的职业是基于船员的职业,他们的宠物键将会被当成击杀键使用,并且会有一个冷却提示'CD: X秒'".
+    Sleuth:
+      RoleName: 侦探
+      Description: 侦探报告尸体后.在会议中侦探可以得知死者的身份.侦探只能看到他们所报告的玩家尸体的身份.
+      Blurb: 看起来他生前是做这个工作的...
+      Aliases: SLE, 守墓人
+    TieBreaker:
+      RoleName: 破平者
+      Description: 你的投票具有权重,这意味着如果你参与投票则一定不会有平票.
+      Blurb: 打破僵局!
+      Aliases: TB, 破局者
+      TieBreakerMessage: 平局被 {0}打破!
+    Torch:
+      RoleName: 火炬手
+      Description: 火炬手不会受到熄灯的影响.
+      Blurb: 光的化身!
+      Aliases: TOR, 火炬, 火把
+    Unstoppable:
+      RoleName: 不可阻挡
+      Blurb: 战斗!爽!
+      Aliases: UNS, 无法阻挡,
+      Description: 附加为不可阻挡的玩家能够无视大多数类型的保护进行击杀,包括军医的护盾.\n\n根据房主的设置,这甚至可能能够击杀真正意义上'无敌'的职业,如任务大师(无法被选为击杀/技能目标)
+      Options:
+        CanKillUntargetable: 可击杀无法选中的玩家
+    VengefulRomantic:
+      RoleName: 复仇者
+      Blurb: 为了你的真爱复仇吧!
+      Aliases: VR, 愤怒的浪漫主义者, 愤怒的恋人
+      Description: 复仇者是当浪漫主义者的对象被杀后出现的职业.他们的目标变成了击杀杀害他们对象的凶手.复仇者可以用宠物键或者击杀键(如果他们有击杀键)击杀别人,但是如果他们的击杀目标是一个无辜者,则复仇者会死于走火.在成功为他们的对象复仇后,复仇者才可以通过他们本身的主职业获得胜利.
+      Adjective: 愤怒的
+      Options:
+       CanKillBystanders: 可以击杀无辜玩家
+        ArrowToKiller: 指向凶手的箭头
+        SuicideAfterRevenge: 复仇后自杀
+    Watcher:
+      RoleName: 窥视者
+      Description: 可以在会议中看到每个人的投票.在匿名投票关闭时,该职业不会出现(即使启用该职业)
+      Blurb: 我更喜欢偷窥别的东西...
+      Aliases: WAT, 偷窥狂
+    Workhorse:
+      RoleName: 加班狂
+      Description: 给予玩家更多的任务.
+      Blurb: 工作...我要工作...
+      Aliases: WH, 社畜
+      Options:
+        AdditionalShortTasks: 额外短任务数
+        AdditionalLongTasks: 额外长任务数
+    Subroles:
+      Sleuth:
+        SleuthMessage: 你调查出 {0} 的职业数 {1}! 干的漂亮, 大侦探!
+        SleuthTitle: 调查结果 {0}
+    Illegal:
+      RoleName: <Roles.Illegal.RoleName>
+      Blurb: <Roles.Illegal.Blurb>
+    LoversReal:
+      RoleName: <Roles.LoversReal.RoleName>
+      Blurb: <Roles.LoversReal.Blurb>
+    Miscellaneous:
+      PlayerSelector:
+        SelectPlayerString: '你选择了: <b>{0}</b>'
+        UnselectPlayerString: '你取消选择: <b>{0}</b>'
+        ConfirmationString: '你确认了: <b>{0}</b>'
+    Debugger:
+      RoleName: <Roles.Debugger.RoleName>
+      Blurb: <Roles.Debugger.Blurb>
+    Duplicator:
+      Options:
+        DuplicateCooldown: 分身冷却时间
+        DuplicateDuration: 分身持续时间
+        SpawnLocation: 分身放置地点
+        CurrentLocation: 人物位置
+        RandomLocation: 随机位置
+      RoleName: 复制者
+      Blurb: 乐
+    GuesserRoleBase:
+      GuesserRoleBase: 猜测者
+      PickedRoleText: 你猜测 {0} 是 {1}. 如果你确定, 再次给 {0} 投票以确认你的猜测. 或者给其他人投票以切换目标.. 又或者用 /r [rolename]重新选择要猜测的职业
+      PickedPlayerText: 你正在猜测 {0}的职业. 用 /r [rolename]选择职业.
+      TypeRText: 请用 /r [roleName]以猜测职业.
+      UnknownRole: 未知职业 {0}. 你可以使用 /perc 以查看已启用职业.
+      FinishedGuessingText: 你确认了你的猜测. 如果你没死,那么现在你可以正常投票.
+      ErrorCompletingGuess: 错误的猜测形式. 请再次尝试猜测.
+      GuessAnnouncementMessage: 砰的一声枪响, {0} 死了.
+  StaticOptions:
+    EnableGM: 房主管理员模式
+    KillFlashDuration: 击杀闪光持续时间
+    SabotageTimeControl:
+      Enable: 破坏时间设置
+      PolusReactorTime: Polus 反应堆破坏时间限制
+      AirshipReactorTime: Airship 偏离航线破坏时间限制
+    TOSOptions:
+      Enable: TOS设置
+      AttackDefense: 攻击和防御交互显示
+      ResetKillcooldown: 重置击杀冷却显示
+      SkKillsRB: 连环杀手击杀被阻挡玩家显示
+      AutoGameProgress: 自动发送游戏进程
+      RoundReview: 游戏复盘
+      AmnesiacRememberAnnouncement: 失忆者回忆全局提示
+      GAVoteImmunity: 守护天使投票无效
+    LightsPanelSettings:
+      Enable: 熄灯特殊设置
+      AirshipGapRoom: 禁用Airship间隙室旁修灯处
+      AirshipCargoRoom: 禁用 Airship仓库的修灯处
+      AirshipViewingDeck: 禁用 Airship观察甲板的修灯处
+    PlayerAppearanceCommands: 允许玩家使用/name, /color, 和 /level
+    DisableTasks:
+      Enable: 禁用任务设置
+      CardSwipe: 禁用刷卡
+      CardScan: 禁用扫描
+      UnlockSafe: 禁用解锁保险柜
+      UploadData: 禁用上传数据
+      StartReactor: 禁用启用反应堆
+      ResetBreaker: 禁用重置断路器
+    RandomMap:
+      Enable: 随机地图模式
+      Skeld: 添加 The Skeld
+      Mira: 添加 Mira HQ
+      Polus: 添加Polus
+      Airship: 添加Airship
+    RandomSpawn:
+      Enable: 随机出生
+      AirshipExtraSpawn: Airship增加额外出生点
+    SyncButton:
+      Enable: 会议次数共用模式
+      Count: 会议总次数
+    VoteMode:
+      Enable: 投票特殊设置
+      SkipMode: 跳过时
+      Mode:
+        Default: 默认
+        Suicide: 自杀
+        SelfVote: 自票
+        Skip: 跳过
+      SkipFirstMeeting: 跳过投票无视第一次会议
+      IgnoreNoBody: 跳过投票无视无尸体会议
+      IgnoreEmergencyMeeting: 跳过投票无视紧急会议
+      NonVote: 不投票时
+      Tie: 平票设置
+      TieMode:
+        Default: 默认
+        All: 全部票出
+        Random: 随机票出
+    AllAliveMeeting:
+      Enable: 全员存活时会议设置
+      Time: 全员存活时会议时间
+    AdditionalEmergencyCooldown:
+      Enable: 紧急会议冷却增加时间
+    LadderDeath:
+      Enable: 从梯子上摔落启用
+      Chance: 摔死几率
+    FixFirstCooldown: 首刀冷却修正
+    DisableTaskWin: 禁用任务胜利
+   MinMax:
+      MinNeutralKiller: 最小带刀独立阵营数量
+      MaxNeutralKiller: 最大带刀独立阵营数量
+      MinNeutralNonKiller: 最小不带刀独立阵营数量
+      MaxNeutralNonKiller: 最大不带刀独立阵营数量
+    MadMates:
+      MinMadmates: 最小叛徒数量
+      MaxMadmates: 最大叛徒数量
+    NoGameEnd: 游戏不结束
+    GhostsCanSeeRoles: 幽灵可见其他玩家职业
+    GhostsCanSeeVotes: 幽灵可视投票结果
+    GhostIgnoreTasks: 幽灵无视任务
+    CamoComms: 破坏通讯时隐蔽
+    AutoDisplayResult: 自动显示结果
+    SuffixMode: 名字后缀模式
+    ColorNameMode: 将名字改为颜色
+    ChangeNameToRoleInfo: 将名字改为职业信息
+    ShowHistoryTimestamp: 显示游戏内事件复盘
+    MayhemOptions:
+      Enable: 混乱性设置
+      AllRolesVent: 所有人均可使用管道
+    CustomServerMode: N/A
+  Commands:
+    Aliases:
+      Help: 帮助
+    Help:
+      Roles:
+        Usage: 无效使用. 你必须提供一个有效的职业名.
+        RoleNotFound: {0} 职业未找到
+      HelpTitle: 帮助
+      HostSection: '房主指令:'
+      GeneralSection: '主要指令:'
+      LobbySection: '大厅指令:'
+      InGameSection: '游戏内指令:'
+      OtherSection: '其他指令:'
+      MessageParameter: 消息
+      RoleNameParameter: 职业
+      NameParameter: 名字
+      IdCommandDescription: 显示所有玩家的ID
+      SayCommandDescription: 向所有玩家发送消息
+      KickCommandDescription: 踢出玩家
+      BanCommandDescription: 封禁玩家
+      DumpCommandDescription: 创建一个日志文件
+      TemplateHelpCommandDescription: 获取所有"template"指令的描述.
+      MyRoleCommandDescription: 显示你当前职业的描述
+      RoleOptionCommandDescription: 显示你当前职业的设置
+      DescCommandDescription: 显示第一次会议时的文本
+      LastResultCommandDescription: 显示上一把游戏的结果
+      WinnerCommandDescription: 显示上一把游戏的赢家(们)
+      DeathCommandDescription: 显示你的死因. (只能在死亡后或者在大厅时才可使用)
+      DeathOtherCommandDescription: 显示其他玩家的死因. (只能在死亡后或者在大厅时才可使用)
+      RoleInfoCommandDescription: 显示某个职业的描述/设置
+      RolesCommandDescription: 显示模组中的所有职业
+      NowSpecificCommandDescription: 显示某些已启用的职业/设置
+      NowAllCommandDescription: 显示所有启用的职业/设置
+      PercCommandDescription: 显示所有已启用职业以及其出现概率
+      NameCommandDescription: 改变玩家名字
+      ColorCommandDescription: 改变玩家颜色
+      StatsCommandDescription: 显示你这这个房间里的数据
+      StatsOtherCommandDescription: 显示其他玩家在这个房间里的数据
+    Stats:
+      PlayerNotFound: 玩家 "%s" 未找到
+    Color:
+      NotInRange: '{0} 不是有效的颜色.'
+    Winners: 赢家
+    Dump:
+      Success: 成功导出日志. 检查你的"log"文件夹里的 "dump.log!"
+    HostOptions:
+      RoleInfo: ★ 职业信息 ★
+      RoleCategory: ★ {0} 职业
+      CurrentRoles: 实际职业
+    InvalidUsage: ⚠ 无效使用 ⚠
+    NotPermittedTitle: ⚠ 未被允许 ⚠
+    NotPermittedText: 你不被允许使用这个指令.
+    Say:
+      MessageTitle: 至高无上的房主消息
+    Admin:
+      KickMessage: '{0} 被房主踢出.'
+      BanMessage: '{0} 被房主封禁.'
+    Ids:
+       PlayerIdMessage: "{0} 的玩家ID是 {1}"
+    PlayerNotFoundText: 玩家 "{0}" 未找到.
+    CommandError: ⚠ 指令错误 ⚠
+    Friends:
+      NoFriendcodeText: 无法添加{0}.他并没有有效的好友代码.
+      SuccessText: 成功添加{0} ({1})
+      RemoveText: 成功将{0}从好友列表中移除
+      LastKnownAsText: '被称为: {0}'
+    Template:
+      CreatedTemplateText: '成功创建模板文本(ID: {0}).'
+      ErrorRemovingTemplateText: 移除模板文本时错误.
+      SuccessRemovingTemplateText: '成功移除模板文本(ID: {0}).'
+      SuccessTaggingTemplateText: '成功添加标签"{0}"到模板文本(ID: {1}).'
+      ErrorTaggingTemplateText: '添加标签"{0}"到模板文本(ID: {1})时发生错误.'
+      SuccessRemovingTagText: '成功移除模板文本(ID: {0})上的标签.'
+      ErrorPreviewingTemplateText: '预览模板文本(ID: {0})时错误.'
+      ErrorShowingTemplateText: 给{0}展示模板文本时错误.
+      SuccessEditingTemplateText: '成功编辑模板文本(ID: {0}).'
+      ErrorEditingTemplateText: '编辑模板文本(ID: {0})错误.'
+      ReloadTemplatesText: 已重新加载模板文本.
+      ErrorRemovingTagText: '从模板(ID: {0})移除标签时发生错误.'
+    TemplateCommands:
+      TemplateCommandTitle: 模板文本指令
+    LastResults:
+      NoPreviousGameText: 还没有进行过游戏!
+      PlayerResultTitle: "{0}的结果"
+      RoleText: <b>职业:</b> {0}
+      ModifierText: <b>附加职业:</b> {0}
+      WinnerText: 赢家
+      ResultsText: 结果
+      WinResultText: '赢家: {0}'
+      WinReasonText: '胜利原因: {0}'
+    MyDeath:
+      DirectDeathString: '{0}死于{1}之手\n死因: {2}'
+      IndirectDeathString: "{0}的死因是: {1}"
+      CouldNotDetermineDeathText: {0}的死因无法确定.
+      PlayerIsAliveText: '{0}还活着,所以并没有死因.'
+      DeathInfoTitle: 死亡信息
+      CannotViewDeathWhileAlive: 你不能在存活时查看死因!
+    NoPreviousGameText: 还没有进行过游戏!
+    Mods:
+      SomethingWentWrong: 执行命令时发生错误.请检查您的指令参数.
+      SuccessfulMod: '{0}现在是管理员了!他们被允许使用/kick和/ban了!'
+      RemovedMod: '{0}的管理员已被移除.他们不再被允许使用模组相关的指令.'
+      AlreadyMod: '{0}已经是管理员了.无事发生.'
+    BugReports:
+      WaitingOnReport: 之前的报告已经失效,我们正在等待您新的回复.
+      FailedReport: >-
+        在发送请求时出现了问题. 请一分钟后再试.
+
+        Error: {0}
+      ReportingBug: 您的请求已经发出,我们正在向制作组反馈bug.感谢!
+      ReportedBug: bug已向制作组反馈.再次感谢您!
+      ReportSuggest: '{0}建议你报告"{1}"的问题.'
+    Role:
+      AbortSearch: 搜索终止.关于您搜索的职业我们查找到了5个以上的结果.请将职业名称更完整地打出.
+      NoRoles: >-
+        在这个游戏模式内并没有搜索到您所说的职业.
+
+        您是否有多打或错打职业名称?
+  Announcements:
+    SystemMessage: 系统信息
+  OptionShower:
+    ActiveRolesList: 已启用职业的列表
+    NextPage: 按Tab键以翻页...
+  ModUpdater:
+    ModBrokenMessage: 模组已损坏
+    ModUpdateMessage: 模组更新
+    UpdateButton: 更新
+  HistoryEvent:
+    PlayerChangedRole: 职业变化
+    Death:
+      PlayerMurdered: 被杀
+      PlayerSuicide: 自杀
+  PingDisplay:
+    AddonsLoaded: 个插件已载入\n汉化: <color=#02DF82>FATE</color> 
+  Gamemodes:
+    Colorwars:
+      Options:
+        GracePeriod: 开局保护时间
+  Statistics:
+    BodiesReported: 尸体报告次数
+    CommonTasksComplete: 普通任务完成数
+    Deaths: 死亡数
+    FirstDeaths: 第一个死亡次数
+    FirstKills: 首刀数
+    Games: 游玩局数
+    Kills: 击杀数
+    LongTasksComplete: 长任务完成数
+    MeetingsCalled: 召开会议次数
+    MessagesSent: 发送信息数
+    PlayersExiled: 投出玩家数
+    SabotagesCalled: 破坏次数
+    SabotagesFixed: 修理破坏次数
+    Shapeshifts: 变形次数
+    ShortTasksComplete: 短任务完成数
+    TimeAlive: 存活时间
+    TimeDead: 死亡时间
+    TimesExiled: 被票出次数
+    TimesVented: 跳管次数
+    TimesVoteSkipped: 跳票次数
+    TimesVoted: 投票次数
+    TotalTasksComplete: 任务完成数
+    TotalTime: 总计游玩时间
+    TotalVotesFor: 给玩家投票总数
+    CommsSabotaged: 通讯破坏数
+    DoorsSabotaged: 门破坏数
+    LightsSabotaged: 灯光破坏数
+    OxygenSabotaged: 氧气破坏数
+    ReactorSabotaged: 反应堆破坏数
+    Losses: 失败数
+    Wins: 胜利数
+    Statistics: 游戏数据统计
+  Options:
+    Roles:
+      Maximum: 最大
+      SubsequentChance: 职业重复几率
+      CanVent: 可以跳管
+      CanSabotage: 可以破坏
+      KillCooldown: 击杀冷却时间
+      ImpostorVision: 伪装者视野
+    General:
+      OnText: 开
+      OffText: 关
+      EnabledText: 启用
+      DisabledText: 禁用
+      DefaultText: 默认
+      NeverText: 永不
+      ShowText: 显示
+      HideText: 隐藏
+      FriendsText: 好友
+      EveryoneText: 所有人
+      DurationText: 持续时间
+      AllText: 所有人
+      NoOneText: 没有人
+      CommonText: 普通
+      GlobalText: 通用
+      CustomText: 自定义
+      NoneText: 无
+      SecondsSuffix: 秒
+      AlwaysText: 总是
+      Options: 设置
+    RolesNeutral:
+      NeutralPassiveSlots: 独立阵营::0 友善型::1 槽位
+      NeutralKillingSlots: 独立阵营::0 杀戮型::2 槽位
+      MinimumNeutralPassiveRoles: 独立阵营::0 友善型::1职业最小数
+      MaximumNeutralPassiveRoles: 独立阵营::0 友善型::1职业最大数
+      MinimumNeutralKillingRoles: 独立阵营::0 杀戮型::2职业最小数
+      MaximumNeutralKillingRoles: 独立阵营::0 杀戮型::2职业最大数
+      NeutralTeamMode: 独立阵营::0 组队模式
+      SameRoleText: 相同职业
+      KillingAndPassiveText: 杀戮型::2和 友善型::1
+      AlliedKnowRoles: 队友间互通职业
+    Subroles:
+      ModifierMaximumText: 玩家最大 附加职业::0数
+      EvenlyDistributeModifierText: 平均分配 附加职业::0
+      UncappedText: 无限制附加职业
+      NoModifiersText: 无附加职业
+      SubroleOptions: 副职业设置
+    Admin:
+      SectionTitle: 房间设置
+      HostGM: 启用房主管理员
+      AutoKick: 启用语言屏蔽器自动踢出
+      AutoKickNoFriendcode: 踢出无好友代码的玩家
+      AutoKickLevel: 踢出未达设定等级的玩家
+      AutoKickMobile: 踢出移动端玩家
+      AutoStart: 自动开始
+      AutoStartOptionSuffix: 玩家
+      AutoPlayAgain: 自动再次游玩
+      AutoStartPlayerThreshold: 自动开始所需玩家数
+      AutoStartMaxWaitTime: 最大等待时间
+      AutoStartGameCountdown: 游戏开始倒计时时间
+      SpectatorMode: 旁观者模式
+      AutoHauntCooldown: 自动闹鬼冷却
+    Debug:
+      SectionTitle: Debug 设置
+      NoGameEnd: 游戏永不结束
+      NameRoleAssignment: 以名字分配职业
+      AdvancedRoleAssignment: 高级职业分配
+    Gameplay:
+   SectionTitle: 游戏设置
+      OptimizeRoleAmounts: 优化职业分配
+      FixFirstKillCooldown: 修正首刀冷却时间
+      DisableTasks: 禁用任务
+      DisableCardSwipe: 禁用刷卡
+      DisableMedScan: 禁用扫描身体
+      DisableUnlockSafe: 禁用解锁保险箱
+      DisableUploadData: 禁用上传数据
+      DisableStartReactor: 禁用启动反应堆
+      DisableResetBreaker: 禁用复位开关
+      DisableTaskWin: 禁用任务胜利
+      GhostSeeRoles: 幽灵能看到职业
+      GhostSeeInfo: 幽灵能看到信息
+      GhostIgnoreTask: 无视幽灵任务
+      SyncMeetingText: 共享会议次数
+      SyncMeetingNever: 永不
+      ForceNoVenting: 强制禁止跳管
+      FirstKillCooldown: 首次击杀冷却时间
+      TenSecondCooldown: 10秒
+      GlobalCooldown: 通用冷却
+      RoleCooldown: 职业专属冷却
+      SetCooldown: 自定义冷却
+      SetCooldownValue: 设置冷却时间
+      DisableFixWiring: 禁用修复接线任务
+      LadderDeath: 可从梯子上摔死
+      ModifierTextMode: 附加职业显示名称
+      FirstValue: 首轮
+    Mayhem:
+      SectionTitle: 混乱性设置
+      RandomMaps: 启用随机地图
+      RandomSpawn: 随机出生
+      CamoComms: 通讯破坏时隐蔽
+      AllRolesCanVent: 所有职业均可使用管道
+    Miscellaneous:
+      SectionTitle: 其他设置
+      AssignedPet: 固定宠物
+           AllowNameCommand: 允许使用/name
+      AllowColorAndLevelCommand: 允许使用/color和/level
+      AutoDisplayResults: 自动显示结果
+      SuffixMode: 附加模式
+      ColorNames: 颜色代替名字
+      LadderDeath: 可从梯子上摔死
+      AutoDisplayCauseOfDeath: 自动显示死因
+      AllowTeleportCommand: 允许使用/tpin和/tpout
+      BlackscreenResolver: 防止黑屏
+    Sabotage:
+      SectionTitle: 破坏设置
+      DefaultValue: 默认
+      DisableSabotages: 禁用破坏
+      ReactorCountdown: 反应堆破坏倒计时
+      OxygenCountdown: 氧气破坏倒计时
+      DisableReactor: 禁用反应堆破坏
+      DisableOxygen: 禁用氧气破坏
+      DisableLights: 禁用灯光破坏
+      DisableCommunications: 禁用通讯破坏
+      DisableDoors: 禁用门破坏
+      DisableHelicopters: 禁用航线破坏
+      CrashCourseCountdown: 航线破坏倒计时
+    RolesMadmates:
+      MadmatesTakeImpostorSlots: 叛徒::0占用伪装者数量
+    GameMode:
+      GamemodeText: 游戏模式
+      GamemodeSelection: 游戏模式选择
+  GUI:
+    GeneralButton: 主要
+    GraphicsButton: 图像
+    SoundButton: 声音
+    VentLibButton: 其他
+    AddonsButton: 插件
+    ReturnButton: 返回
+    LeaveGameButton: 离开房间
+    ModUpdateMenu:
+      ExitGameText: 退出游戏
+      CloseText: 关闭
+      UpdateText: 更新
+      UpdateAvailableText: 更新可用!
+    LotusButton: 莲花
+    InnerslothButton: 树懒
+  Factions:
+    Crewmates:
+      Name: Crewmates
+      Description: 完成任务&票出所有坏人.
+    Impostors:
+      Name: Impostors
+      Description: 击杀除了伪装者以外的所有玩家.
+    Madmates:
+      Name: Madmates
+      Description: 帮助内鬼胜利.
+    Neutral:
+      Name: Neutrals
+      Description: 活下去并完成你的目标.
+    Modifiers:
+      Name: Modifiers
+      Description: 附加职业/能力给予了你额外的技能.
+    TheUndead:
+      Name: 不死族
+      Description: 击杀所有阻挡不死族的人.
+  Constants:
+    DeathNames:
+      Killed: 被杀
+      Suicide: 自杀
+      Exiled: 驱逐
+      Bombed: 爆炸
+      Bitten: 失血过多
+      Cursed: 咒杀
+      Incinerated: 烧死
+      Misfired: 走火
+      Parried: 反杀
+      Sniped: 狙杀
+  Meetings:
+    RoleRevealText: '{0}是{1}.'
+    RemainingImpostorsText: '剩余{0}个内鬼.'
+    NoImpostorsText: 无剩余内鬼.
+  Internals:
+    FatalErrorHandler:
+      FatalErrorTitle: 致命错误
+      FatalErrorMessage: 在[{0}]时遇到致命错误
+      CheckLogMessage: 检查日志以获得更多信息.
+  PrivacyPolicy:
+    PrivacyPolicyText: 莲花计划有一些功能要求与我们的API分享数据,比如bug即时反馈和大厅信息. 查看我们的<link=https://beta.lotusau.top/privacy/>隐私政策</link> 以获得更多细节. 你想要启用这些功能并与我们分享数据吗?
+    UpdatedPrivacyPolicy: 我们已经修订了<link=https://beta.lotusau.top/privacy/>隐私政策</link>. 因此我们鼓励你查看这些文件并做出你的选择. 你仍然想要启用这些功能并允许我们使用您的数据吗?
+    DisagreeText: 所有非必要的线上需求功能已关闭,你可以在设置菜单中启用你需要的功能.
+    AcceptText: 所有的线上需求功能已开启,你可以在设置菜单中禁用你不需要的功能.
+    CustomizeText: 你的选择已保存. 你可以在设置菜单中随时改变你的选择
+    PrivacyPolicyTitle: '莲花计划隐私政策'
+    ManageData: 管理数据收集
+    CustomizeButtonText: 自定义隐私功能
+    DisagreeButtonText: 不允许
+    AcceptButtonText: 允许
