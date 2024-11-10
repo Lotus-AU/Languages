@@ -1183,7 +1183,7 @@ Translations:
       Blurb: Auto-Report Bodies
     Rogue:
       RoleName: Rogue
-      Description: The Rogue modifier allows the user to keep the ability of their role, while also giving them the ability to kill.\n\nKill all other players to win. If a Crewmate or Impostor has the Rogue modifier, they will not win with with their respective teams.
+      Description: The Rogue modifier allows the user to keep the ability of their role, while also giving them the ability to kill.\n\nKill all other players to win. If a Crewmate or Impostor has the Rogue modifier, they will not win with their respective teams.
       Blurb: Use your ability to kill everyone
       Options:
         RestrictToCompatbileRoles: Restrict to Compatible Roles
@@ -1656,6 +1656,7 @@ Translations:
       LadderDeath: Ladder Death
       AutoDisplayCauseOfDeath: Auto Display Cause of Death
       AllowTeleportCommand: Allow /tpin and /tpout
+      BlackscreenResolver: Blackscreen Resolver
     Sabotage:
       SectionTitle: Sabotage Options
       DefaultValue: Default
@@ -1687,6 +1688,8 @@ Translations:
       CloseText: Close
       UpdateText: Update
       UpdateAvailableText: Updates Available!
+    LotusButton: Lotus
+    InnerslothButton: Innersloth
   Factions:
     Crewmates:
       Name: Crewmates
