@@ -1806,19 +1806,19 @@ Translations:
     InnerslothButton: 树懒
   Factions:
     Crewmates:
-      Name: Crewmates
+      Name: 船员
       Description: 完成任务&票出所有坏人.
     Impostors:
-      Name: Impostors
+      Name: 伪装者
       Description: 击杀除了伪装者以外的所有玩家.
     Madmates:
-      Name: Madmates
+      Name: 叛徒
       Description: 帮助内鬼胜利.
     Neutral:
-      Name: Neutrals
+      Name: 独立阵营
       Description: 活下去并完成你的目标.
     Modifiers:
-      Name: Modifiers
+      Name: 附加职业
       Description: 附加职业/能力给予了你额外的技能.
     TheUndead:
       Name: 不死族
