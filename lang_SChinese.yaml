@@ -1,6 +1,6 @@
 Name: 简体中文
 Authors:
--Fate
+- Fate
 Translations:
   Roles:
     Assassin:
@@ -146,7 +146,7 @@ Translations:
         CleanOnKill: 击杀时清理
         KillCooldownMultiplier: 击杀冷却增加倍数
     Mafioso:
-    Options:
+      Options:
         StartsGameWithGun: 游戏开始时自带枪
         ModifyShopCosts: 商店价格设置
         GunCost: 枪价格
@@ -387,7 +387,7 @@ Translations:
       CraftingPotionText: '正在制作:'
       Potions:
         Death: 瞬间伤害药水
-        Protection: "城堡"啤酒
+        Protection: "城堡啤酒"
         Random: 不稳定的混合物
         Revealing: 吐真剂
         Sabotage: 机械师的密酿
@@ -524,7 +524,7 @@ Translations:
       Aliases: DOC, 科学家
     Engineer:
       RoleName: 工程师
-      Description:工程师可使用通风管在地图中移动. 
+      Description: 工程师可使用通风管在地图中移动. 
       Blurb: 管道是我家,修理去他马
       Aliases: ENG, 机械师
       Options:
@@ -571,7 +571,7 @@ Translations:
         小贴士: 某些带有改变阵营性质的附加职业的玩家会以主职业好坏作为判定标准.比如带有'疯子'附加职业的医生会显示为绿名,但是带有'疯子'附加职业的吸血鬼会显示为红名.
       Blurb: 啊哈哈哈,盒武器来咯!
       Aliases: INV, 预言家, 盒
-       Options:
+      Options:
         InvestigateCooldown: 调查冷却时间
         NeutralKillingRed: 独立阵营::1 杀戮型职业::2 显示为 红名::0
         NeutralPassiveRed: 独立阵营::1 友善型职业::2 显示为 红名::0
@@ -597,8 +597,8 @@ Translations:
       ProtectingMessage: '你选择保护的目标是: {0}'
       VotePlayerInfo: 投票以选择保护目标.
       MedicHelpMessage: 你是随军医师!投票以选择你下回合想要保护的玩家!或者,你可以选择跳票以正常投票.
-      SelectedPlayerMessage: 你选择的目标是: {0}.再次投给他以确认选择,或者弃票以跳过技能发动.
-      ReturnToNormalVoting: 你现在保护的是 {0}. 现在你可以正常投票.
+      SelectedPlayerMessage: "你选择的目标是: {0}.再次投给他以确认选择,或者弃票以跳过技能发动."
+      ReturnToNormalVoting: "你现在保护的是 {0}. 现在你可以正常投票."
       Options:
         ChangeGuardedPlayer: 改变保护目标设置
         OnDeathValue: 目标死亡后
@@ -675,7 +675,7 @@ Translations:
       RoleName: 修理大师
       Description: 修理大师可以更快的修理.\n\n只需轻触一个开关就能修好灯.打开一扇门将会打开所有同区域关闭的门(比如Polus的门).反应堆也可以一个人修复.
       Blurb: 我什么都能修...除了人心
-      Aliases RE, 修理工
+      Aliases: 'RE, 修理工'
       Options:
         RepairmanCanVent: 修理大师::0 可使用管道
         FastFixLights: 可快速修灯
@@ -868,7 +868,7 @@ Translations:
         其他 --> 小丑
       Blurb: 继承死者的意志
       Aliases: AMN
-   AMNOptions:
+      Options:
         StealsExactRole: 偷窃实际职业
         HasArrowsToBody: 拥有指向尸体的箭头
     Archangel:
@@ -1259,7 +1259,7 @@ Translations:
       CantGuessRoleBecauseOfRole: 你的职业阻止你以{0}职业猜测这名玩家.使用/m也许能找到原因.
       CantGuessBecauseOfRole: 你的职业阻止你猜测 {0}!试试猜测其他玩家.
       CantGuessTeammate: "{0}是你的队友! 你不能猜测那个玩家."
-      CanSeeRole: {0}的职业已经被揭示! 你不能猜测那个玩家.
+      CanSeeRole: '{0}的职业已经被揭示! 你不能猜测那个玩家.'
     LastResort:
       RoleName: 逆转者
       Description: 作为逆转者, 你可以通过自票揭示自己的职业并获得额外选票. 你的自票会在你的投票重置后取消. \n\n缺点是你的职业会向所有人透露
@@ -1290,7 +1290,7 @@ Translations:
       RoleName: 疯子
       Description: 疯子允许拥有者保持他们主职业能力的同时,还能给予他们击杀的能力.\n\n杀死所有其他玩家以获得胜利.如果一个船员或者伪装者拥有该附加,则他们不能跟随他们各自的阵营获胜.
       Blurb: 他们都想要害我qmq......
-      Aliases, ROG, 无赖者, 无赖
+      Aliases: ROG, 无赖者, 无赖
       Options:
         RestrictToCompatbileRoles: 只分配给无刀职业
     Romantic:
@@ -1312,9 +1312,9 @@ Translations:
       NoSkipMessage: 你不能跳过,除非你选择了你的情人!
     RuthlessRomantic:
       RoleName: 无情者
-       Blurb: 他们无情,那就别怪我无义
-       Aliases: RR, 无情, 无情的浪漫主义者, 无情的恋人
-      Description: "你的心已经碎了…现在是时候伤别人的心了.作为无情者,你现在是一个独立阵营带刀玩家,目标是杀死所有玩家,成为最后一个活着的玩家.如果这个玩家的职业是基于船员的职业,他们的宠物键将会被当成击杀键使用,并且会有一个冷却提示'CD: X秒'".
+      Blurb: 他们无情,那就别怪我无义
+      Aliases: RR, 无情, 无情的浪漫主义者, 无情的恋人
+      Description: "你的心已经碎了…现在是时候伤别人的心了.作为无情者,你现在是一个独立阵营带刀玩家,目标是杀死所有玩家,成为最后一个活着的玩家.如果这个玩家的职业是基于船员的职业,他们的宠物键将会被当成击杀键使用,并且会有一个冷却提示'CD: X秒'"
     Sleuth:
       RoleName: 侦探
       Description: 侦探报告尸体后.在会议中侦探可以得知死者的身份.侦探只能看到他们所报告的玩家尸体的身份.
@@ -1346,8 +1346,8 @@ Translations:
       Adjective: 愤怒的
       Options:
        CanKillBystanders: 可以击杀无辜玩家
-        ArrowToKiller: 指向凶手的箭头
-        SuicideAfterRevenge: 复仇后自杀
+       ArrowToKiller: 指向凶手的箭头
+       SuicideAfterRevenge: 复仇后自杀
     Watcher:
       RoleName: 窥视者
       Description: 可以在会议中看到每个人的投票.在匿名投票关闭时,该职业不会出现(即使启用该职业)
@@ -1466,7 +1466,7 @@ Translations:
       Chance: 摔死几率
     FixFirstCooldown: 首刀冷却修正
     DisableTaskWin: 禁用任务胜利
-   MinMax:
+    MinMax:
       MinNeutralKiller: 最小带刀独立阵营数量
       MaxNeutralKiller: 最大带刀独立阵营数量
       MinNeutralNonKiller: 最小不带刀独立阵营数量
@@ -1581,7 +1581,7 @@ Translations:
     MyDeath:
       DirectDeathString: '{0}死于{1}之手\n死因: {2}'
       IndirectDeathString: "{0}的死因是: {1}"
-      CouldNotDetermineDeathText: {0}的死因无法确定.
+      CouldNotDetermineDeathText: '{0}的死因无法确定.'
       PlayerIsAliveText: '{0}还活着,所以并没有死因.'
       DeathInfoTitle: 死亡信息
       CannotViewDeathWhileAlive: 你不能在存活时查看死因!
@@ -1726,7 +1726,7 @@ Translations:
       NameRoleAssignment: 以名字分配职业
       AdvancedRoleAssignment: 高级职业分配
     Gameplay:
-   SectionTitle: 游戏设置
+      SectionTitle: 游戏设置
       OptimizeRoleAmounts: 优化职业分配
       FixFirstKillCooldown: 修正首刀冷却时间
       DisableTasks: 禁用任务
@@ -1762,7 +1762,7 @@ Translations:
     Miscellaneous:
       SectionTitle: 其他设置
       AssignedPet: 固定宠物
-           AllowNameCommand: 允许使用/name
+      AllowNameCommand: 允许使用/name
       AllowColorAndLevelCommand: 允许使用/color和/level
       AutoDisplayResults: 自动显示结果
       SuffixMode: 附加模式
