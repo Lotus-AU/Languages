@@ -1,4 +1,4 @@
-Name: 简体中文
+Name: SChinese
 Authors:
 - Fate
 Translations:
@@ -388,7 +388,7 @@ Translations:
       Potions:
         Death: 瞬间伤害药水
         Protection: "城堡啤酒"
-        Random: 不稳定的混合物
+        Random: "不稳定的混合物"
         Revealing: 吐真剂
         Sabotage: 机械师的密酿
         Sight: 光之药水
@@ -597,8 +597,8 @@ Translations:
       ProtectingMessage: '你选择保护的目标是: {0}'
       VotePlayerInfo: 投票以选择保护目标.
       MedicHelpMessage: 你是随军医师!投票以选择你下回合想要保护的玩家!或者,你可以选择跳票以正常投票.
-      SelectedPlayerMessage: "你选择的目标是: {0}.再次投给他以确认选择,或者弃票以跳过技能发动."
-      ReturnToNormalVoting: "你现在保护的是 {0}. 现在你可以正常投票."
+      SelectedPlayerMessage: '你选择的目标是: {0}.再次投给他以确认选择,或者弃票以跳过技能发动.'
+      ReturnToNormalVoting: '你现在保护的是 {0}. 现在你可以正常投票.'
       Options:
         ChangeGuardedPlayer: 改变保护目标设置
         OnDeathValue: 目标死亡后
@@ -675,7 +675,7 @@ Translations:
       RoleName: 修理大师
       Description: 修理大师可以更快的修理.\n\n只需轻触一个开关就能修好灯.打开一扇门将会打开所有同区域关闭的门(比如Polus的门).反应堆也可以一个人修复.
       Blurb: 我什么都能修...除了人心
-      Aliases: 'RE, 修理工'
+      Aliases: RE, 修理工
       Options:
         RepairmanCanVent: 修理大师::0 可使用管道
         FastFixLights: 可快速修灯
@@ -750,7 +750,7 @@ Translations:
       SwapperSelectMessage2: 你选择了 {0}. {1} 和 {0} 的得票将会被交换.
       SwapperUnselectMessage: 你取消选择 {0}.
       SwapperPublicMessage: 换票师交换了 {0} 和 {1} 的投票!
-      SwapperAbility: !票数交换!
+      SwapperAbility: '!票数交换!'
       Options:
         SwapsPerGame: 总交换::0次数
     Tracker:
@@ -1494,7 +1494,7 @@ Translations:
     Help:
       Roles:
         Usage: 无效使用. 你必须提供一个有效的职业名.
-        RoleNotFound: {0} 职业未找到
+        RoleNotFound: '{0} 职业未找到'
       HelpTitle: 帮助
       HostSection: '房主指令:'
       GeneralSection: '主要指令:'
@@ -1621,7 +1621,7 @@ Translations:
       PlayerMurdered: 被杀
       PlayerSuicide: 自杀
   PingDisplay:
-    AddonsLoaded: 个插件已载入\n汉化: <color=#02DF82>FATE</color> 
+    AddonsLoaded: "个插件已载入\n汉化: <color=#02DF82>FATE</color>" 
   Gamemodes:
     Colorwars:
       Options:
