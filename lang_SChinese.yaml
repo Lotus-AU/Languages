@@ -1536,7 +1536,7 @@ Translations:
     HostOptions:
       RoleInfo: ★ 职业信息 ★
       RoleCategory: ★ {0} 职业
-      CurrentRoles: 实际职业
+      CurrentRoles: 已启用职业
     InvalidUsage: ⚠ 无效使用 ⚠
     NotPermittedTitle: ⚠ 未被允许 ⚠
     NotPermittedText: 你不被允许使用这个指令.
