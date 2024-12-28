@@ -575,6 +575,9 @@ Translations:
       NoAnswer: no
       OutOfMeditates: You are out of meditates. Your connection to the ghost has closed.
       OutOfMeditatesGhost: Your connection to the Medium has closed. Your answers are no longer heard.
+      Mutable:
+        HasArrowstoBodies: You can see arrows that lead to bodies when they die.
+        AmountofMeditates: You can ask {0} questions before your connection is closed.
     Mystic:
       RoleName: Mystic
       Description: When a player is killed, the Mystic receives a single flash and alert. It is very similar to when the reactor is sabotaged.\n\nUse this alert to estimate time of death.
@@ -989,7 +992,6 @@ Translations:
       Description: The Pirate is a Neutral Guesser that can kill players by guessing their roles. If the Pirate is able to successfully guess a player's role, then that player will be eliminated.\n\nWhile in meeting, the Pirate can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat.\n\nIf the Pirate correctly guesses both the player and their role, then that player will die. The Pirate will need to guess a certain number of players (depending on settings) correctly in order to win.
       Blurb: Guess Players' Roles
       Options:
-        GuessesPerMeeting: Guesses Per Meeting
         GuessWinAmount: Pirate Guess Win Amount
         DieOnMisguess: Pirate Dies on Misguess
     PlagueBearer:
@@ -1271,8 +1273,13 @@ Translations:
         SpawnLocation: Spawn Location
         CurrentLocation: Current
         RandomLocation: Random
-      RoleName: <Roles.Duplicator.RoleName>
-      Blurb: <Roles.Duplicator.Blurb>
+        KillRadius: Kill Radius
+      RoleName: Duplicator
+      Blurb: Duplicate yourself
+      TrickedCauseOfDeath: Tricked
+      Description: Use the pet button to create a clone of yourself. Clones are deleted on meeting, death, or disconnect. Depending on the host's options, clones can appear on top of you or in a random room. You cannot place clones next to people.
+      Mutable:
+        KillRadius: Anyone who walks within a {0} distance of your clone will be killed.
     GuesserRoleBase:
       GuesserRoleBase: Guesser
       PickedRoleText: You are about to guess {0} as {1}. If you are certain about this, vote {0} again to finalize your guess. Otherwise you can pick another player by voting a different player.. OR pick a different role by typing /r [rolename]
@@ -1282,6 +1289,29 @@ Translations:
       FinishedGuessingText: You have confirmed your guess. If you are not dead, you may now vote normally.
       ErrorCompletingGuess: Error completing guess. You may try and guess again.
       GuessAnnouncementMessage: The guesser has made a guess. {0} died.
+    Genie:
+      RoleName: Genie
+      Options:
+        SuccessChance: Success Chance
+        MaxGifts: Max Wishes
+      WishFailed: You tried to wish {0} the {1} modifier, but it failed.
+      WishGranted: You wished {0} the {1} modifier, and suceeded! They were granted the modifier!
+      MeetingMessage: Vote a player twice to wish them a gift! Or skip to go to regular voting.
+      OutOfWishes: You have ran out of wishes. You will no longer be given the option to vote for someone at the start of the meeting.
+      Blurb: Give Players Modifiers
+      AlreadyWished: You've already wished {0} a modifier. Try another player!
+      Description: In meetings, you have a chance to select a player to be given a modifer. The Genie can only grant positive modifiers that the host has enabled. The chance is not guaranteed, it may fail and you will lose a wish. You can't grant a wish to the same player twice.
+    Painter:
+      GracePeriodText: 'No-Kill Grace Period: {0}'
+      RoleName: Painter
+      Blurb: Kill the opposing colors
+      Description: Get rid of players with different colors. Depending on the host's settings, you will either kill other players or change their color to yours.
+    Striker:
+      ReviveCooldown: 'Reviving In: {0}'
+      GrabbedFlag: You grabbed the flag! The opposing team has arrows to your location!
+      RoleName: Striker
+      Blurb: Protect Your Flag
+      Description: Use the pet button on the opposing teams flag to pick it up. All players will recieve an arrow pointing to your location when you have the flag.\nDepending on the host's settings, you may also be slower or no longer be able to vent. When someone uses their kill button on you, you won't die. Instead, you will be teleported away for a few seconds. After the revive duration is finished, you will be teleported back to home base.
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
@@ -1412,6 +1442,9 @@ Translations:
       ColorCommandDescription: Change player color
       StatsCommandDescription: Show your stats for the lobby
       StatsOtherCommandDescription: Show another player's stats for the lobby
+      ModCommandDescription: Mod a player and give them the ability to kick or ban players!
+      AdminCommandDescription: Admin another player and give them the abilities of a Mod. However, admins can mod and unmod other players.
+      StartCommandDescription: Forcefully starts the game immediately. Added for admins to start the game without host.
     Stats:
       PlayerNotFound: Player "%s" not found
     Color:
@@ -1471,6 +1504,9 @@ Translations:
       PlayerIsAliveText: '{0} is still alive and does not have a cause of death.'
       DeathInfoTitle: Death Info
       CannotViewDeathWhileAlive: You cannot view deaths while alive!
+      ListExtension: list
+      ListMessageStart: >
+        Below is a list of everyone and their death reasons:
     NoPreviousGameText: No game played yet!
     Mods:
       SomethingWentWrong: Something went wrong executing that command. Please check your parameters.
@@ -1645,6 +1681,10 @@ Translations:
       RandomSpawn: Random Spawn
       CamoComms: Camo Comms
       AllRolesCanVent: All Roles Can Vent
+      Skeld: Skeld
+      Mira: Mira
+      Polus: Polus
+      Airship: Airship
     Miscellaneous:
       SectionTitle: Miscellaneous Options
       AssignedPet: Assigned Pet
@@ -1675,6 +1715,41 @@ Translations:
     GameMode:
       GamemodeText: GameMode
       GamemodeSelection: Gamemode Selection
+      Standard:
+        Name: Standard
+        ButtonText: Lotus Settings
+        Description: Modify all the Standard settings here!
+        ImpostorTab: Impostor Settings
+        CrewmateTab: Crewmate Settings
+        NeutralTab: Neutral Settings
+        MiscTab: Misc Settings
+        HiddenTab: Hidden
+        GamemodeDescription: This text is shown to players when they join to explain the current gamemode.
+      CaptureTheFlag:
+        Name: Capture The Flag
+        ButtonText: CTF Settings
+        Description: Change anything about CTF here!
+        GamemodeDescription: This text is shown to players when they join to explain the current gamemode.
+      Colorwars:
+        Name: Colorwars
+        ButtonText: Colorwars Settings
+        Description: Modify the Colorwars settings here!
+        GamemodeDescription: This text is shown to players when they join to explain the current gamemode.
+    CaptureTheFlag:
+      SectionTitle: CTF Settings
+      GameLength: Game Duration
+      ReviveDuration: Revive Timeout
+      CarryingSpeedMultiplier: Carrying Speed Multiplier
+      CarryingCanVent: Carrying Can Vent
+    Colorwars:
+      SectionTitle: Colorwars Settings
+      TeamSize: Team Size
+      PreferSmall: Prefer Smaller Teams
+      ConvertColorMode: Convert Color Mode
+      GracePeriod: Grace Period
+      CustomTeams: Custom Teams
+      TeamOption: Team {0}
+      CustomTeamTitle: Custom Teams
   GUI:
     GeneralButton: General
     GraphicsButton: Graphics
@@ -1709,6 +1784,9 @@ Translations:
     TheUndead:
       Name: The Undead
       Description: Kill everyone who oppose the Undead.
+    ColorTeam:
+      Name: Color Team
+      Description: A team that is allies of everyone with the same color.
   Constants:
     DeathNames:
       Killed: Killed
