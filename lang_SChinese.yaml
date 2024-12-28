@@ -623,6 +623,9 @@ Translations:
       NoAnswer: 不是
       OutOfMeditates: 你的通灵时间结束了.你与灵魂的连接通道关闭了.
       OutOfMeditatesGhost: 你与通灵师的连接已关闭.他无法再听到你的回答.
+      Mutable:
+        HasArrowstoBodies: 当其他人死亡时,你能看到指向其尸体的箭头.
+        AmountofMeditates: 在连接关闭前,你还能询问{0}个问题.
     Mystic:
       RoleName: 灵媒
       Description: 当玩家被杀时,灵媒会收到类似反应堆破坏的闪光警告.\n\n用这个警告来估计死亡时间.
@@ -1387,7 +1390,11 @@ Translations:
         CurrentLocation: 人物位置
         RandomLocation: 随机位置
       RoleName: 复制者
-      Blurb: 乐
+      Blurb: 影分身之术!
+      TrickedCauseOfDeath: 被诈骗
+      Description: 使用宠物键以生成一个自己的克隆体.克隆体将会在会议时,你死亡时或掉线时消失.根据房主设置,克隆体可以被生成在你上面,或生成在一个随机的房间.你不能把克隆体放在其他人旁边.
+      Mutable:
+        KillRadius: 任何人走进你的克隆体的一定范围内时都会被击杀 范围:{0}
     GuesserRoleBase:
       GuesserRoleBase: 猜测者
       PickedRoleText: 你猜测 {0} 是 {1}. 如果你确定, 再次给 {0} 投票以确认你的猜测. 或者给其他人投票以切换目标.. 又或者用 /r [rolename]重新选择要猜测的职业
@@ -1397,6 +1404,23 @@ Translations:
       FinishedGuessingText: 你确认了你的猜测. 如果你没死,那么现在你可以正常投票.
       ErrorCompletingGuess: 错误的猜测形式. 请再次尝试猜测.
       GuessAnnouncementMessage: 砰的一声枪响, {0} 死了.
+    Genie:
+      RoleName: 精灵
+      Options:
+        SuccessChance: 祝福成功概率
+        MaxGifts: 最大祝福数量
+      WishFailed: 你尝试祝福{0}获得{1}附加职业,但是失败了:(
+      WishGranted: 你祝福{0}获得{1}附加职业,并且成功了:D!他成功得到了那个附加职业!
+      MeetingMessage: 投票一名玩家两次以祝福他们!或者点跳过投票以正常投票.
+      OutOfWishes: 你的祝福次数用完了.你不再会在会议开始时看到投票技能提示.
+      Blurb: 我恭喜你发财!我恭喜你精彩!
+      AlreadyWished: 你已经祝福了{0}.试试其他玩家!
+      Description: 在会议时,你能选择一个玩家并给予他一个附加职业.精灵只能给予房主启用了的附加职业.祝福并不是必定生效的,它也许会失败并且失去一次祝福机会.你不能多次祝福同一名玩家.
+    Painter:
+      GracePeriodText: '护盾冷却时间:{0}'
+      RoleName: 油漆工
+      Blurb: 干掉其他不同的颜色!
+      Description: 与颜色不同的玩家竞争.根据设置,你可以杀掉其他玩家或者把他们转变为你的队友
   StaticOptions:
     EnableGM: 房主管理员模式
     KillFlashDuration: 击杀闪光持续时间
