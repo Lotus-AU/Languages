@@ -1861,7 +1861,7 @@ Translations:
       ConvertColorMode: 颜色转化模式
       GracePeriod: 上色冷却时间
       CustomTeams: 自定义队伍
-      TeamOption: {0}队伍
+      TeamOption: 队伍{0}
       CustomTeamTitle: 自定义队伍
   GUI:
     GeneralButton: 主要
