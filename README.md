@@ -1,5 +1,5 @@
-# 语言文件
-用于路特斯计划（Project：Lotus）的翻译文件.
+# Languages
+Translation files that Project Lotus uses.
 
 
 ## How to translate and add your own language!
