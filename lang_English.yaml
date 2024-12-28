@@ -992,7 +992,6 @@ Translations:
       Description: The Pirate is a Neutral Guesser that can kill players by guessing their roles. If the Pirate is able to successfully guess a player's role, then that player will be eliminated.\n\nWhile in meeting, the Pirate can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat.\n\nIf the Pirate correctly guesses both the player and their role, then that player will die. The Pirate will need to guess a certain number of players (depending on settings) correctly in order to win.
       Blurb: Guess Players' Roles
       Options:
-        GuessesPerMeeting: Guesses Per Meeting
         GuessWinAmount: Pirate Guess Win Amount
         DieOnMisguess: Pirate Dies on Misguess
     PlagueBearer:
@@ -1506,7 +1505,8 @@ Translations:
       DeathInfoTitle: Death Info
       CannotViewDeathWhileAlive: You cannot view deaths while alive!
       ListExtension: list
-      ListMessageStart: "Below is a list of everyone and their death reasons:\n"
+      ListMessageStart: >
+        Below is a list of everyone and their death reasons:
     NoPreviousGameText: No game played yet!
     Mods:
       SomethingWentWrong: Something went wrong executing that command. Please check your parameters.
@@ -1681,6 +1681,10 @@ Translations:
       RandomSpawn: Random Spawn
       CamoComms: Camo Comms
       AllRolesCanVent: All Roles Can Vent
+      Skeld: Skeld
+      Mira: Mira
+      Polus: Polus
+      Airship: Airship
     Miscellaneous:
       SectionTitle: Miscellaneous Options
       AssignedPet: Assigned Pet
