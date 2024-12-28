@@ -623,6 +623,9 @@ Translations:
       NoAnswer: 不是
       OutOfMeditates: 你的通灵时间结束了.你与灵魂的连接通道关闭了.
       OutOfMeditatesGhost: 你与通灵师的连接已关闭.他无法再听到你的回答.
+      Mutable:
+        HasArrowstoBodies: 当其他人死亡时,你能看到指向其尸体的箭头.
+        AmountofMeditates: 在连接关闭前,你还能询问{0}个问题.
     Mystic:
       RoleName: 灵媒
       Description: 当玩家被杀时,灵媒会收到类似反应堆破坏的闪光警告.\n\n用这个警告来估计死亡时间.
@@ -1074,7 +1077,6 @@ Translations:
       Blurb: 让他们明白自己的天命
       Aliases: PIR, 海盗, 牌皇, 赌徒, 赌神
       Options:
-        GuessesPerMeeting: 每次会议猜测次数
         GuessWinAmount: 胜利所需猜测数
         DieOnMisguess: 天命指明者猜错时死亡
     PlagueBearer:
@@ -1387,7 +1389,11 @@ Translations:
         CurrentLocation: 人物位置
         RandomLocation: 随机位置
       RoleName: 复制者
-      Blurb: 乐
+      Blurb: 影分身之术!
+      TrickedCauseOfDeath: 被诈骗
+      Description: 使用宠物键以生成一个自己的克隆体.克隆体将会在会议时,你死亡时或掉线时消失.根据房主设置,克隆体可以被生成在你上面,或生成在一个随机的房间.你不能把克隆体放在其他人旁边.
+      Mutable:
+        KillRadius: 任何人走进你的克隆体的一定范围内时都会被击杀 范围:{0}
     GuesserRoleBase:
       GuesserRoleBase: 猜测者
       PickedRoleText: 你猜测 {0} 是 {1}. 如果你确定, 再次给 {0} 投票以确认你的猜测. 或者给其他人投票以切换目标.. 又或者用 /r [rolename]重新选择要猜测的职业
@@ -1397,6 +1403,29 @@ Translations:
       FinishedGuessingText: 你确认了你的猜测. 如果你没死,那么现在你可以正常投票.
       ErrorCompletingGuess: 错误的猜测形式. 请再次尝试猜测.
       GuessAnnouncementMessage: 砰的一声枪响, {0} 死了.
+    Genie:
+      RoleName: 精灵
+      Options:
+        SuccessChance: 祝福成功概率
+        MaxGifts: 最大祝福数量
+      WishFailed: 你尝试祝福{0}获得{1}附加职业,但是失败了:(
+      WishGranted: 你祝福{0}获得{1}附加职业,并且成功了:D!他成功得到了那个附加职业!
+      MeetingMessage: 投票一名玩家两次以祝福他们!或者点跳过投票以正常投票.
+      OutOfWishes: 你的祝福次数用完了.你不再会在会议开始时看到投票技能提示.
+      Blurb: 我恭喜你发财!我恭喜你精彩!
+      AlreadyWished: 你已经祝福了{0}.试试其他玩家!
+      Description: 在会议时,你能选择一个玩家并给予他一个附加职业.精灵只能给予房主启用了的附加职业.祝福并不是必定生效的,它也许会失败并且失去一次祝福机会.你不能多次祝福同一名玩家.
+    Painter:
+      GracePeriodText: '护盾冷却时间:{0}'
+      RoleName: 油漆工
+      Blurb: 干掉其他不同的颜色!
+      Description: 与颜色不同的玩家竞争.根据设置,你可以杀掉其他玩家或者把他们转变为你的队友.
+    Striker:
+      ReviveCooldown: '重生时间:{0}'
+      GrabbedFlag: 你拿到了旗帜!敌方队伍将会有指向你的箭头
+      RoleName: 夺旗者
+      Blurb: 保护你的旗帜!
+      Description: 在敌方旗帜上使用宠物键以捡起.当你拥有旗帜时所有玩家将会拥有指向你位置的箭头.\n根据设置,你也许可能会走的更慢或不再能够跳管.当有人对你使用击杀键,你不会死.而是会被传送出图几秒.重生时间结束后,你会被传送回到基地
   StaticOptions:
     EnableGM: 房主管理员模式
     KillFlashDuration: 击杀闪光持续时间
@@ -1526,6 +1555,9 @@ Translations:
       ColorCommandDescription: 改变玩家颜色
       StatsCommandDescription: 显示你这这个房间里的数据
       StatsOtherCommandDescription: 显示其他玩家在这个房间里的数据
+      ModCommandDescription: 给予其他玩家踢出和禁止的能力(助理)
+      AdminCommandDescription: 给予其他玩家与助理一样的功能,且能够设置助理人(协管)
+      StartCommandDescription: 立刻强制开始游戏.使房主不在线时也可以让协管开始游戏
     Stats:
       PlayerNotFound: 玩家 "%s" 未找到
     Color:
@@ -1536,7 +1568,7 @@ Translations:
     HostOptions:
       RoleInfo: ★ 职业信息 ★
       RoleCategory: ★ {0} 职业
-      CurrentRoles: 实际职业
+      CurrentRoles: 已启用职业
     InvalidUsage: ⚠ 无效使用 ⚠
     NotPermittedTitle: ⚠ 未被允许 ⚠
     NotPermittedText: 你不被允许使用这个指令.
@@ -1585,6 +1617,9 @@ Translations:
       PlayerIsAliveText: '{0}还活着,所以并没有死因.'
       DeathInfoTitle: 死亡信息
       CannotViewDeathWhileAlive: 你不能在存活时查看死因!
+      ListExtension: 死亡信息列表
+      ListMessageStart: >
+        下列是每个人的死因的列表:
     NoPreviousGameText: 还没有进行过游戏!
     Mods:
       SomethingWentWrong: 执行命令时发生错误.请检查您的指令参数.
@@ -1674,12 +1709,12 @@ Translations:
       DisabledText: 禁用
       DefaultText: 默认
       NeverText: 永不
-      ShowText: 显示
+      ShowText: 开启
       HideText: 隐藏
       FriendsText: 好友
       EveryoneText: 所有人
       DurationText: 持续时间
-      AllText: 所有人
+      AllText: 所有
       NoOneText: 没有人
       CommonText: 普通
       GlobalText: 通用
@@ -1759,6 +1794,10 @@ Translations:
       RandomSpawn: 随机出生
       CamoComms: 通讯破坏时隐蔽
       AllRolesCanVent: 所有职业均可使用管道
+      Skeld: 骷髅舰
+      Mira: 米拉总部
+      Polus: 实验室
+      Airship: 礼帽帮飞艇
     Miscellaneous:
       SectionTitle: 其他设置
       AssignedPet: 固定宠物
@@ -1789,6 +1828,41 @@ Translations:
     GameMode:
       GamemodeText: 游戏模式
       GamemodeSelection: 游戏模式选择
+      Standard:
+        Name: 基础模式
+        ButtonText: 模组设置
+        Description: 所有的基础设置都在这里!
+        ImpostorTab: 伪装者设置
+        CrewmateTab: 船员设置
+        NeutralTab: 独立阵营设置
+        MiscTab: 其他设置
+        HiddenTab: 隐藏设置
+        GamemodeDescription: 这一段文本是当玩家进入时显示给玩家看当前为什么游戏模式.
+      CaptureTheFlag:
+        Name: 夺旗模式
+        ButtonText: 夺旗模式设置
+        Description: 夺旗模式的所有设置都在这里!
+        GamemodeDescription: 这一段文本是当玩家进入时显示给玩家看当前为什么游戏模式.
+      Colorwars:
+        Name: 色彩战争
+        ButtonText: 色彩战争设置
+        Description: 色彩战争的所有设置都在这里!
+        GamemodeDescription: 这一段文本是当玩家进入时显示给玩家看当前为什么游戏模式.
+    CaptureTheFlag:
+      SectionTitle: 夺旗模式设置
+      GameLength: 游戏时间
+      ReviveDuration: 复活所需时间
+      CarryingSpeedMultiplier: 带旗时移动速度倍率
+      CarryingCanVent: 带旗时可使用管道
+    Colorwars:
+      SectionTitle: 色彩战争设置
+      TeamSize: 各队伍人数
+      PreferSmall: 各队伍人数尽量少
+      ConvertColorMode: 颜色转化模式
+      GracePeriod: 上色冷却时间
+      CustomTeams: 自定义队伍
+      TeamOption: 队伍{0}
+      CustomTeamTitle: 自定义队伍
   GUI:
     GeneralButton: 主要
     GraphicsButton: 图像
@@ -1802,7 +1876,7 @@ Translations:
       CloseText: 关闭
       UpdateText: 更新
       UpdateAvailableText: 更新可用!
-    LotusButton: 莲花
+    LotusButton: 隐私政策
     InnerslothButton: 树懒
   Factions:
     Crewmates:
@@ -1823,6 +1897,9 @@ Translations:
     TheUndead:
       Name: 不死族
       Description: 击杀所有阻挡不死族的人.
+    Colorteam:
+      Name: 颜色队伍
+      Description: 一个颜色统一的阵营.
   Constants:
     DeathNames:
       Killed: 被杀
