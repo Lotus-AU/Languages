@@ -85,7 +85,7 @@ Translations:
     FireWorks:
       RoleName: FireWorks
       Description: >-
-        Use your Pet button to plant a fireworks (i.e. bombs) around the map. Shapeshift to detonate all of the Fireworks, killing everyone within radius of each one.
+        Use your Shapeshift button to plant a firework (i.e. bomb) around the map. You can then use your Pet Button at any time to detonate the fireworks, killing anyone within the radius of a firework.
 
 
         Note: The explosion goes through walls. The FireWorks can also kill normally between placing fireworks.
@@ -97,6 +97,8 @@ Translations:
         AbleToDetonateEarly: Detonate Only When Last Impostor::0
       AbleToDetonateEarly: Only Detonate When Last Impostor::0
       AbleToDetonateText: Detonations Ready!
+      Mutable:
+        DetonateOnlyWhenLastImpostor: You can only detonate when you are the last impostor, instead of any time.
     Freezer:
       RoleName: Freezer
       Description: The Freezer can freeze a player in place by shapeshifting into them. The player will be frozen until the Freezer unshapeshifts. The Freezer may kill normally shifted or unshifted.
@@ -1445,6 +1447,7 @@ Translations:
       ModCommandDescription: Mod a player and give them the ability to kick or ban players!
       AdminCommandDescription: Admin another player and give them the abilities of a Mod. However, admins can mod and unmod other players.
       StartCommandDescription: Forcefully starts the game immediately. Added for admins to start the game without host.
+      InfoCommandDescription: Resend information that your role displayed in chat at the start of the round.
     Stats:
       PlayerNotFound: Player "%s" not found
     Color:
@@ -1528,6 +1531,8 @@ Translations:
         No roles for this gamemode matched your search.
 
         Did you accidentally insert a character?
+    Info:
+      NoInfoMessage: Your role has no information to display.
   Announcements:
     SystemMessage: System Message
   OptionShower:
@@ -1642,6 +1647,7 @@ Translations:
       AutoStartGameCountdown: Game Countdown
       SpectatorMode: Spectator Mode
       AutoHauntCooldown: Auto Haunt Cooldown
+      EnableWhitelist: Enable Whitelist via Friendcode
     Debug:
       SectionTitle: Debug Options
       NoGameEnd: Prevent Game Over
@@ -1819,3 +1825,5 @@ Translations:
     CustomizeButtonText: Customize
     DisagreeButtonText: No
     AcceptButtonText: Yes
+  Whitelist:
+    WhitelistBan: "{0} was kicked because they weren't on the whitelist."
