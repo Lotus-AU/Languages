@@ -8,4 +8,4 @@ Translation files that Project Lotus uses.
 3. Copy the strings from another file (like English) into your file and begin translating!
 4. Once you're done translating, you can make a pull request with your file (by going to the pull request tab of your fork and pressing **New**)
 
-Comgrats, if it gets accepted then you've successfully added a language to Project: Lotus, thank you so much for helping us!
+Congrats, if it gets accepted then you've successfully added a language to Project: Lotus, thank you so much for helping us!
