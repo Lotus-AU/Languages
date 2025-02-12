@@ -858,7 +858,7 @@ Translations:
       CopyCatFactionChangeName: '{0}cat'
     Deathknight:
       RoleName: Deathknight
-      Description: The Deathknight is a Secondary Role of the Necromancer who must help them convert players to the Undead.\nConvert players by using your Pet button near someone who the Necromancer had used their Kill button on (indicated by circle next to their name). There can only be one Deathknight at a time, and if the Necromancer dies, the Deathknight may become the new Necromancer (depending on the host's settings).\n\nThe Deathknight is assigned by being the first person the Necromancer converts.
+      Description: The Deathknight is a Secondary Role of the Necromancer who must help them convert players to the Undead.\nThe Deathknight must start the conversion by using their pet button on a player, once done, the Necromancer must finish the conversion by using their kill button on the same player.You can see the status of a conversion via the circle next to someone's name.\nThere can only be one Deathknight at a time, and if the Necromancer dies, the Deathknight will become the new Necromancer.\n\nThe Deathknight is assigned by being the first person the Necromancer converts.
       Blurb: Help Convert Roles to The Undead
       Options:
         CanBecomeNecromancer: Can Become Necromancer
@@ -948,7 +948,7 @@ Translations:
         StartingKillDistance: Starting Kill Distance
     Necromancer:
       RoleName: Necromancer
-      Description: The Necromancer is the main recruiter for the Undead faction. The first person it recruits (uses Kill button on) will become a Deathknight. With the help of the Deathknight, they must work together to convert others to the Undead.\n\nThe Necromancer can partially convert players by using their Kill button, and the Deathknight can finish converting.\n\nConverted/partially-converted players will have a circle next to their name. A full circle indicates full conversion.
+      Description: The Necromancer is the main recruiter for the Undead faction. The first person it recruits (uses Kill button on) will become a Deathknight. With the help of the Deathknight, they must work together to convert others to the Undead. The Necromancer can convert people by using their kill button on someone who the Deathknight has already started converting.\n\nConverted/partially-converted players will have a circle next to their name. A full circle indicates full conversion. If you try to convert a player who isn't already being converted by the Deathknight, you will be blocked.
       Blurb: Convert Roles to the Undead
       Options:
         ConvertCooldown: Convert Cooldown
