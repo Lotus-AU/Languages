@@ -429,7 +429,7 @@ Translations:
         AbilityButton: Ability Button
         KillButton: Kill Button
         PetButton: Pet Button
-        TasksPerAbility: Tasks Needed for Ability
+        TasksPerAbility: Tasks Needed to Recharge Ability
         CharmingCooldown: Charming Cooldown
         CharmedPlayersWinWithCrew: Charmed Players Win with Crew
         BreakCharmOnDeath: Break Charm on Charmer::0 Death
