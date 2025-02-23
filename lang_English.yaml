@@ -1448,6 +1448,8 @@ Translations:
       AdminCommandDescription: Admin another player and give them the abilities of a Mod. However, admins can mod and unmod other players.
       StartCommandDescription: Forcefully starts the game immediately. Added for admins to start the game without host.
       InfoCommandDescription: Resend information that your role displayed in chat at the start of the round.
+      StatusCommandDescription: Check what an icon means on you or another player's name.
+      HistoryCommandDescription: View the entire log of the last game with timestamps from the start.
     Stats:
       PlayerNotFound: Player "%s" not found
     Color:
@@ -1703,6 +1705,8 @@ Translations:
       AutoDisplayCauseOfDeath: Auto Display Cause of Death
       AllowTeleportCommand: Allow /tpin and /tpout
       BlackscreenResolver: Blackscreen Resolver
+      EventLog: Log Events
+      KillsOnly: Only Kills
     Sabotage:
       SectionTitle: Sabotage Options
       DefaultValue: Default
