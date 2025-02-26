@@ -613,10 +613,10 @@ Translations:
       Blurb: Reveal A Role Upon Death
       SelectRole: 'You have selected: {0}'
       UnselectRole: 'You have unselected: {0}'
-      VotePlayerInfo: Vote to select a player to reveal on your death. You can re-vote a player to unselect them.\n\nAfter confirming, your target cannot be changed.
+      VotePlayerInfo: Vote to select a player to reveal on your death. You can re-vote a player to confirm your selection of them.\n\nAfter confirming, your target cannot be changed.
       OracleMessageTitle: Oracle Ability
       VoteNormallyMessage: You may now vote normally
-      SkipMessage: Press "Skip Vote" to continue.
+      SkipMessage: Vote them again to confirm your selection.
       RevealMessage: The Oracle has revealed to all that {0} is the {1}
     Psychic:
       RoleName: Psychic
