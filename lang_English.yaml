@@ -1314,6 +1314,21 @@ Translations:
       RoleName: Striker
       Blurb: Protect Your Flag
       Description: Use the pet button on the opposing teams flag to pick it up. All players will recieve an arrow pointing to your location when you have the flag.\nDepending on the host's settings, you may also be slower or no longer be able to vent. When someone uses their kill button on you, you won't die. Instead, you will be teleported away for a few seconds. After the revive duration is finished, you will be teleported back to home base.
+    Jailor:
+      Options:
+        JailCooldown: Jail Cooldown
+        JailorActionButton: Jailor Action Button
+        MaxExecutionTimes: Max Execution Times
+        JailedPlayersVoteCounts: Jailed Player's Vote Counts for Jailor
+        JailedShowsToAll: Jailed Player is Shown to All
+      JailedText: JAILED
+      JailorMessage: Vote the jailed player to execute them. Depending on settings, you may die if they are crewmate. They may also be forced to vote the same person as you. No one can vote the Jailee, and they cannot be killed unless by you.
+      JailedMessage: You are Jailed. You cannot vote or guess. However, players cannot vote you either. You can hope the Jailor does not execute you.
+      PublicExecuteMessage: The Jailed Player ({0}) was executed.
+      CannotVote: You cannot vote the Jailed Player!
+      RoleName: Jailor
+      Blurb: Jail and Execute Killers
+      Description: Use pet/kill button to select a player to Jail on meeting. In meeting, the jailed player may be shown to everyone depending on settings. The jailed player cannot vote or use any of their role's abilties in meeting. However, other players cannot vote the jailed player either.\nYou can execute the player by voting them. Depending on settings, you might suicide if they are a crewmate. You have a limited number of executes.\nDepending on settings, the jailed player may "vote" with you, meaning if you vote someone, they will be forced to vote the same player.
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
@@ -1809,6 +1824,7 @@ Translations:
       Misfired: Misfired
       Parried: Parried
       Sniped: Sniped
+      Executed: Executed
   Meetings:
     RoleRevealText: '{0} was the {1}.'
     RemainingImpostorsText: '{0} impostors remaining.'
