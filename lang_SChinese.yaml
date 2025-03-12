@@ -1680,10 +1680,7 @@ Translations:
       PlayerMurdered: 被杀
       PlayerSuicide: 自杀
   PingDisplay:
-    AddonsLoaded: >-
-      个插件已载入
-
-      汉化: <color=#02DF82>FATE</color> 汉化组:<color=#009900>USB translation department</color>
+    AddonsLoaded: "个插件已载入"
   Gamemodes:
     Colorwars:
       Options:
