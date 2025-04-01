@@ -31,9 +31,11 @@ Translations:
       Options:
         WarningsUntilDeath: Warnings Until Death
         ShowBlackmailedToAll: Show Blackmailed to All
+        BlackmailerIsSSBased: Blackmailer Uses Shapeshifter
       BlackmailedMessage: You have been blackmailed! Sending a chat message will kill you.
       WarningMessage: You are not allowed to speak! If you speak again you may be killed.
       BlackmailedText: BLACKMAILED
+      BlackmailingMode: Blackmailing
     BountyHunter:
       RoleName: Bounty Hunter
       Description: The Bounty Hunter will receive a target player to kill (marked by a black name). If the Bounty Hunter kills their target, their kill cooldown is significantly reduced for their next kill.\n\nThe time it takes for the target to change, the kill cooldown after killing their target, and kill cooldown after killing a non-target are predetermined by host in settings.
@@ -613,10 +615,10 @@ Translations:
       Blurb: Reveal A Role Upon Death
       SelectRole: 'You have selected: {0}'
       UnselectRole: 'You have unselected: {0}'
-      VotePlayerInfo: Vote to select a player to reveal on your death. You can re-vote a player to confirm your selection of them.\n\nAfter confirming, your target cannot be changed.
+      VotePlayerInfo: Vote to select a player to reveal on your death. You can re-vote a player to unselect them.\n\nAfter confirming, your target cannot be changed.
       OracleMessageTitle: Oracle Ability
       VoteNormallyMessage: You may now vote normally
-      SkipMessage: Vote them again to confirm your selection.
+      SkipMessage: Press "Skip Vote" to continue.
       RevealMessage: The Oracle has revealed to all that {0} is the {1}
     Psychic:
       RoleName: Psychic
@@ -923,6 +925,17 @@ Translations:
       RoleName: Jackal
       Description: The Jackal can kill everyone including Impostors. They must be the last player standing to win.
       Blurb: Kill Everyone
+      Options:
+        CanRecruit: Can Recruit
+        OnNonCrewRecruit: On Non-Crewmate Recruited
+        KillsUntilRecruit: Kills Until Recruit
+        SidekickBecomesJackal: Sidekick becomes Jackal on Jackal Death
+        NewJackalCanRecruit: New Jackal Can Recruit
+      NextKillIsRecruit: >-
+        <size=1.5>You have enough kills for Recruit.
+
+        Your next kill will recruit the player.</size>
+      Recruit: Recruit
     Jester:
       RoleName: Jester
       Description: The Jester needs to be voted out to win. If the Jester is voted out the game will immediately end with it as the winner.\n\nDepending on the host's settings, Jester may not be able to call meetings, or may need a minimum amount of meetings before it can win.
@@ -1191,6 +1204,7 @@ Translations:
       Blurb: Use your ability to kill everyone
       Options:
         RestrictToCompatbileRoles: Restrict to Compatible Roles
+        FactionMaxRogues: '{0}::0 Faction Max Rogues'
     Romantic:
       RoleName: Romantic
       Blurb: Pick a partner to spend your life with
@@ -1329,6 +1343,10 @@ Translations:
       RoleName: Jailor
       Blurb: Jail and Execute Killers
       Description: Use pet/kill button to select a player to Jail on meeting. In meeting, the jailed player may be shown to everyone depending on settings. The jailed player cannot vote or use any of their role's abilties in meeting. However, other players cannot vote the jailed player either.\nYou can execute the player by voting them. Depending on settings, you might suicide if they are a crewmate. You have a limited number of executes.\nDepending on settings, the jailed player may "vote" with you, meaning if you vote someone, they will be forced to vote the same player.
+    Sidekick:
+      RoleName: Sidekick
+      Blurb: Help the Jackal kill Everyone
+      Description: The Jackal can recruit a player to be a Sidekick if the setting is on. The Sidekick will lose their previous role and abilties, but will become allies with the Jackal and gain the abilitiy to kill. The Sidekick will not be able to vent or sabotage like the Jackal. If the Jackal dies, the Sidekick may be promoted if the setting is on, and you may be able to recruit another sidekick.
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
@@ -1542,6 +1560,7 @@ Translations:
       ReportingBug: Your request has went through and we are now reporting your bug. Thanks!
       ReportedBug: Your bug has been successfully report. Again, thank you!
       ReportSuggest: '{0} suggests you to report "{1}".'
+      UploadingLog: Uploading log file... (Chunk {0}/{1})
     Role:
       AbortSearch: Search aborted. More than 5 roles were found with your search. Please be more specific.
       NoRoles: >-
@@ -1632,6 +1651,9 @@ Translations:
       SecondsSuffix: s
       AlwaysText: Always
       Options: Options
+      Kill: Kill
+      Vent: Vent
+      Pet: Pet
     RolesNeutral:
       NeutralPassiveSlots: Neutral::0 Passive::1 Slots
       NeutralKillingSlots: Neutral::0 Killing::2 Slots
@@ -1847,3 +1869,10 @@ Translations:
     AcceptButtonText: Yes
   Whitelist:
     WhitelistBan: "{0} was kicked because they weren't on the whitelist."
+  PetWarning:
+    WarningToHost: >-
+      The following players do not have pets: {0}
+
+      The following enabled roles require pet: {1}
+    WarningToPlayer: There are roles enabled that have pets. Please equip one in the cosmetics area.
+    WarningTitle: ⚠ WARNING ⚠
