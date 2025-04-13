@@ -123,6 +123,7 @@ Translations:
         BlindDuration: Blind Duration
         BlindRadius: Blind Effect Radius
         CanBlindAllies: Can Blind Allies
+      ButtonText: Grenade
     IdentityThief:
       RoleName: Identity Thief
       Description: The Identity Thief shapeshifts into whoever they kill. The disguise lasts until they are ready to kill again, or, optionally, until they kill another player and shift into their next victim.
