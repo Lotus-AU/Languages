@@ -36,6 +36,7 @@ Translations:
       WarningMessage: You are not allowed to speak! If you speak again you may be killed.
       BlackmailedText: BLACKMAILED
       BlackmailingMode: Blackmailing
+      BlackmailButtonText: Blackmail
     BountyHunter:
       RoleName: Bounty Hunter
       Description: The Bounty Hunter will receive a target player to kill (marked by a black name). If the Bounty Hunter kills their target, their kill cooldown is significantly reduced for their next kill.\n\nThe time it takes for the target to change, the kill cooldown after killing their target, and kill cooldown after killing a non-target are predetermined by host in settings.
@@ -51,6 +52,7 @@ Translations:
       Options:
         CamouflageCooldown: Camouflage Cooldown
         CamouflageDuration: Camouflage Duration
+      ButtonText: Camouflage
     Consort:
       RoleName: Consort
       Description: Use the Pet button to alternate between Role-Blocking and Killing.\n\nRole-Blocking a player prevents them from killing, reporting dead bodies, calling meetings, shapeshifting, and venting.
@@ -76,6 +78,7 @@ Translations:
       Options:
         DisperseCooldown: Disperse Cooldown
         DisperserGetsDispersed: Disperser::0 Gets Dispersed
+      ButtonText: Disperse
     Escapist:
       RoleName: Escapist
       Description: The first time you use your Pet button will mark your current location.\n\nAfter a set cooldown, you can use the Pet button again to teleport back to the location you marked. This will then put the mark ability back on cooldown.
@@ -84,6 +87,8 @@ Translations:
         MarkCooldown: Cooldown After Mark
         EscapeCooldown: Cooldown After Escape
         ClearAfterMeeting: Clear Mark After Meeting
+      MarkButtonText: Mark
+      EscapeButtonText: Escape
     FireWorks:
       RoleName: FireWorks
       Description: >-
@@ -190,12 +195,14 @@ Translations:
         You <b>MUST</b> Kill Someone In {0}
 
         (Use either your Kill or Pet button!)
+      ManipulateButtonText: Manipulate
     Miner:
       RoleName: Miner
       Description: Use the Pet button to teleport to the last vent used. Kill, vent, and sabotage like any other Impostor role.
       Blurb: Use Pet To Teleport to Vents
       Options:
         AbilityCooldown: Miner Ability Cooldown
+      ButtonText: Mine
     Ninja:
       RoleName: Ninja
       Description: Use the Pet or Shapeshift button (depending on host's settings) to switch between Hunting and Killing mode.\n\nWhile in Hunting mode, use the Kill button to mark a target, then use the Pet button (or unshift) to teleport the player to you (or you to the player depending on settings) and execute the kill.
@@ -203,6 +210,7 @@ Translations:
       Options:
         TeleportToNinja: Players Teleport to Ninja
         AbilityActiviation: Ninja Ability Activation
+      HuntButtonText: Hunt
     Phantom:
       RoleName: Phantom
       Description: The Phantom can turn invisible for a certain period of time. While invisible, they may vent but they may not kill. This is a vanilla Impostor role.
@@ -224,6 +232,7 @@ Translations:
       RoleName: Puppeteer
       Description: Use the Kill button next to a player to gain control over them. The controlled player will then be forced to kill the next non-Impostor they come near.\n\nIf the killed player has an ability that activates upon death, the effect will land on the controlled player instead of the Puppeteer. The Puppeteer cannot kill normally.
       Blurb: Use Players As Your Puppets
+      ButtonText: Puppet
     SerialKiller:
       RoleName: Serial Killer
       Description: >-
@@ -265,6 +274,7 @@ Translations:
         ReturnLocation: Return Location on Invisibility End
         CurrentLocation: Current
         StartLocation: Start
+      ButtonText: Swoop
     TimeThief:
       RoleName: Time Thief
       Description: For every kill the Time Thief gets, it will reduce the total meeting time by a certain amount.\n\nDepending on host's settings, the meeting time may be restored back to normal once the Time Thief dies.
@@ -302,6 +312,8 @@ Translations:
       KillingModeText: Killing
       HexedCauseOfDeath: Hexed
       CursedStatusDescription: You have been hexed. Hexed players will die after the meeting unless the source of the hex (the Witch) is voted out.
+      CursingButtonText: Hex
+      KillButtonText: Kill
     YinYanger:
       RoleName: Yin Yanger
       Description: The Yin Yanger is an Impostor with the ability to make two players kill each other. Use the Kill button to tag two players. When they come within kill distance, they will kill each other.\n\nYin Yanger can also kill normally once 2 targets have been set.
@@ -384,6 +396,7 @@ Translations:
       Options:
         PlantBombCooldown: Plant Bomb Cooldown
         BombsPerRound: Bombs per Round
+      ButtonText: Bomb
     Bodyguard:
       RoleName: Bodyguard
       Description: >-
@@ -439,6 +452,7 @@ Translations:
       CharmedText: Charmed
       CharmedStatistic: Charmed Players
       CharmedDescription: You have been Charmed. So long as you are charmed, you cannot kill Crewmates and are considered allies with them.
+      ButtonText: Charm
     Crewmate:
       RoleName: Crewmate
       Description: A normal, vanilla Crewmate. Win by completing all your tasks with your fellow crewmates, or be the last faction left standing.
@@ -535,6 +549,7 @@ Translations:
         NeutralKillingRed: Neutral::1 Killing::2 Are Red::0
         NeutralPassiveRed: Neutral::1 Passive::2 Are Red::0
         MadmateRed: Madmates::1 Are Red::0
+      ButtonText: Investigate
     Mayor:
       RoleName: Mayor
       Description: The Mayor's vote is counted multiple times.\n\nDepending on the settings, they may be able to call emergency meetings by using their Pet button.\n\nAdditionally, there's an option where Mayor has to reveal their role before being able to gain additional votes (reveal by voting yourself).
@@ -547,6 +562,7 @@ Translations:
         NumberOfUses: Number of Uses
       MayorRevealTitle: Mayor Reveal
       MayorRevealMessage: '{0} revealed themself as mayor!'
+      ButtonText: Button
     Medic:
       RoleName: Medic
       Description: The Medic is able to vote for a player they want to protect. This player will be protected from attacks as long as the Medic remains alive.\n\nVoting for a player to protect them does not count as a vote, and once the Medic has selected a player to protect they will be able to vote/skip freely.\n\nBased on host's settings, the Medic may be able to change their protected player during following meetings.
@@ -719,6 +735,7 @@ Translations:
       Options:
         TotalTransports: Number of Transports
         TransportCooldown: Transport Cooldown
+      ButtonText: Transport
     Trapster:
       RoleName: Trapster
       Description: When the Trapster is killed, the killer will be frozen in place for a set duration.\n\nThe trapped killer will not be able to report the body while they are trapped.
@@ -876,6 +893,7 @@ Translations:
         DamagePerAttack: Damage Per Attack
         HealthHealedOnKill: Health Regained From Kills
         DamageTakenOnAttack: Damage Taken Per Attack
+      ButtonText: Attack
     Egoist:
       RoleName: Egoist
       Description: The Egoist is a neutral killer that can see who the Impostors are, but cannot kill them.\n\nTheir job is to betray the Impostors and try to get them voted out, while also killing other players to achieve a solo win. Impostors can kill but cannot see that there's an Egoist.
@@ -1051,6 +1069,7 @@ Translations:
         VestDuration: Shield Duration
         VestCooldown: Shield Cooldown
         TotalShields: Number of Shields
+      ButtonText: Shield
     Taskrunner:
       RoleName: Taskrunner
       Description: The Taskrunner must complete all of their tasks to win. They cannot die until a set number of tasks (depending on host's settings) have been completed.\n\nWhen the Taskrunner is close to finishing all their tasks, everyone gets an arrow pointing straight toward them and the Taskrunner will have a "⚠" indicator next to their name.\n\nKill the Taskrunner before they finish tasks to stop them. The Taskrunner cannot be voted out at any time, they must be killed.
@@ -1078,6 +1097,8 @@ Translations:
         SwitchModes: Can Switch between Eat and Report
         CanUseVent: Can Use Vents
         HasArrowsToBody: Has Arrows to Bodies
+      EatButtonText: Devour
+      ReportButtonText: Report
     Werewolf:
       RoleName: Werewolf
       Description: The Werewolf is a neutral killer that can use Pet button to begin a rampage and kill with a shorter Kill Cooldown.\n\nThe Werewolf can only kill during a rampage.
@@ -1089,6 +1110,8 @@ Translations:
         RampageDuration: Rampage Duration
         CanVentNormally: Can Vent Normally
         CanVentInRampage: Can Vent in Rampage
+      PetButtonText: Rampage
+      KillButtonText: Maul
     GM:
       RoleName: GM
       Blurb: You're the Game Master
@@ -1343,6 +1366,7 @@ Translations:
       RoleName: Jailor
       Blurb: Jail and Execute Killers
       Description: Use pet/kill button to select a player to Jail on meeting. In meeting, the jailed player may be shown to everyone depending on settings. The jailed player cannot vote or use any of their role's abilties in meeting. However, other players cannot vote the jailed player either.\nYou can execute the player by voting them. Depending on settings, you might suicide if they are a crewmate. You have a limited number of executes.\nDepending on settings, the jailed player may "vote" with you, meaning if you vote someone, they will be forced to vote the same player.
+      ButtonText: Jail
     Sidekick:
       RoleName: Sidekick
       Blurb: Help the Jackal kill Everyone
@@ -1630,6 +1654,7 @@ Translations:
       CanSabotage: Can Sabotage
       KillCooldown: Kill Cooldown
       ImpostorVision: Impostor Vision
+      Switch: Switch
     General:
       OnText: ON
       OffText: OFF
