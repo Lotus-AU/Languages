@@ -171,6 +171,8 @@ Translations:
       RoleName: Mafioso
       Blurb: Gain cash by completing tasks
       Description: The Mafioso is a unique impostor role, who cannot kill off the bat. Instead the Mafioso must complete tasks in order to gain cash. During meetings, the Mafioso can use their cash to purchase a couple of different items.\n\nTommy Gun - Allows the Mafioso to kill (one time purchase)\n\nBullet - Required to use with the Tommy Gun\n\nBulletproof Vest - Gives the Mafioso one-time use invincibility for next round\n\nRole Revealer - Allows the Mafioso to reveal the role of one other player\n\nType /o to see how much each item costs. Only items you are able to use/buy will show up in the shop.
+      CanVoteOtherPlayers: You can now vote regularly as you voted someone other than you and didn't skip.
+      CanVoteOtherPlayersOnSkip: You can now vote regularly as you skipped before selecting something to buy from the shop.
     Mare:
       RoleName: Mare
       Description: 'Mare gains special powers during certain sabotages (determined by host). These powers may include: Increased Speed and decreased kill-cooldown.\n\nBe careful! If enabled in settings, your name will appear purple while your ability is active.'
@@ -1372,6 +1374,30 @@ Translations:
       RoleName: Sidekick
       Blurb: Help the Jackal kill Everyone
       Description: The Jackal can recruit a player to be a Sidekick if the setting is on. The Sidekick will lose their previous role and abilties, but will become allies with the Jackal and gain the abilitiy to kill. The Sidekick will not be able to vent or sabotage like the Jackal. If the Jackal dies, the Sidekick may be promoted if the setting is on, and you may be able to recruit another sidekick.
+    Turncoat:
+      Options:
+        RevealedTurncoatWincon: 'Revealed Turncoat wincon Is:'
+        RevealedTurncoatAllies: Revealed Turncoat Learns Allies
+        TurncoatLearns: Turncoat Learns When
+        MustBeAlive: Turncoat must be Alive to Win
+        AfterReveal: After Revealing
+        BeforeReveal: Before Revealing
+        ImpFaction: Impostor
+        NeutralFaction: NK / Undead
+        NonCrewFaction: Non-Crew
+        Immediately: Immediately
+        NextMeeting: Next Meeting
+      NoTarget: You cannot reveal until you have selected a target with your kill button.
+      BetrayReveal: >-
+        {0} is the {1} and they have chosen to betray the crew!
+
+        However, the {1} has cursed someone! If the {1} dies, they take the cursed player with them.
+      TurncoatHint: Vote yourself to betray the crew. But remember, it will reveal your identity to the rest of the crew.
+      BetrayedTeamPlayers: "You sided with the '{0}' faction(s). These players are on the same team: {1}"
+      NoPlayersOnBetrayedTeam: There are no players on the team you betrayed for.
+      RoleName: Turncoat
+      Blurb: "Betray the Crew... or don't"
+      Description: The Turncoat is a neutral role that is initially on the crewmate team. They will win with the crew at the end of the game. However, they can choose to betray the crew by voting themselves in the meeting. As a result, their role will be revealed to everyone else. In order to prevent the crew from instantly voting the Turncoat, you can mark a player with your kill button before revealing. This player will die if you die, so you can use this person as leverage to keep yourself alive. The player doesn't even know that they are the sacrifice, so you can lie and blame someone entirely diffrent (like the Doctor).
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
@@ -1860,6 +1886,9 @@ Translations:
     ColorTeam:
       Name: Color Team
       Description: A team that is allies of everyone with the same color.
+    NeutralKillers:
+      Name: Neutral Killers
+      Description: Kill everyone else and be the last one standing.
   Constants:
     DeathNames:
       Killed: Killed
