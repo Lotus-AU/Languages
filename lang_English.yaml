@@ -60,6 +60,7 @@ Translations:
       Options:
         roleblockCooldown: Role-Block Cooldown
         roleblockDuration: Role-Block Duration
+      ButtonText: Roleblock
     Creeper:
       RoleName: Creeper
       Description: The Creeper's only job is to cause as much devastation as possible. Use either your Pet or Shapeshift button (determined by host) to kill yourself and any player within a specified radius.\n\nYou might find yourself lucky and be protected from your bombs with a shield (ex. Medic shield) and live to see another day. If the option is off however, not even the Medic shield will protect you.
@@ -71,6 +72,7 @@ Translations:
         CreeperGracePeriod: Grace Period
         CanKillNormal: Can Kill Normally
       ExplosionGracePeriod: 'Explosion Grace Period: {0}'
+      ButtonText: Detonate
     Disperser:
       RoleName: Disperser
       Description: The Disperser can use their Pet button to teleport everyone to a random vent.
@@ -106,6 +108,7 @@ Translations:
       AbleToDetonateText: Detonations Ready!
       Mutable:
         DetonateOnlyWhenLastImpostor: You can only detonate when you are the last impostor, instead of any time.
+      ButtonText: Plant
     Freezer:
       RoleName: Freezer
       Description: The Freezer can freeze a player in place by shapeshifting into them. The player will be frozen until the Freezer unshapeshifts. The Freezer may kill normally shifted or unshifted.
@@ -145,6 +148,7 @@ Translations:
       Options:
         CleanOnKill: Clean On Kill
         KillCooldownMultiplier: Kill Cooldown Multiplier
+      ButtonText: Clean
     Mafioso:
       Options:
         StartsGameWithGun: Starts Game With Gun
@@ -264,6 +268,7 @@ Translations:
         RefundBulletOnKill: Refund Bullet on Kills
         PreciseShooting: Precise Shooting
         PlayerPiercing: Player Piercing
+      ButtonText: Aim
     Swooper:
       RoleName: Swooper
       Description: The Swooper can turn invisible by jumping into a vent. While invisible, the Swooper can do all normal things (kill, sabotage, vent).\n\nBe careful! Depending on the host's options you may be revealed when killing another player.
@@ -392,6 +397,7 @@ Translations:
         InstantText: Instant
         KillerArrow: Killer Gets Arrow to Revived Player
         PortableVitals: Has Portable Vitals
+      ButtonText: Revive
     Bastion:
       RoleName: Bastion
       Description: Use the Vent button to plant a bomb in that vent. This will kill the next player who uses that vent. Bombs last for one round only, and vents will be reset after each meeting.\n\nBe careful! The Bastion can bomb themself by using a vent they've already planted a bomb in.
@@ -429,6 +435,7 @@ Translations:
         InvisibilityCooldown: Invisibility Cooldown
       HiddenText: Hidden::0 {0}
       TimesInvisibleStatistic: Times Invisible
+      ButtonText: Conceal
     Charmer:
       RoleName: Charmer
       Description: >-
@@ -472,6 +479,7 @@ Translations:
       Options:
         BeneficialInteractionProtection: Protect against Beneficial::0 Interactions
         NeutralInteractionProtection: Protect against Neutral::0 Interactions
+      ButtonText: Protect
     Demolitionist:
       RoleName: Demolitionist
       Description: When the Demolitionist is killed, they bomb the ground, giving the killer a few seconds to find a vent. If the killer does not vent in time, they are bombed.\n\nThe killer is notified that they have killed the Demolitionist with a text indicator above their name.
@@ -805,6 +813,7 @@ Translations:
       HoldingBombLevel1: Holding Bomb!
       HoldingBombLevel2: Holding Bomb!!!
       HoldingBombLevel3: Holding Bomb!!!!!
+      ButtonText: Pass
     Amalgamation:
       RoleName: Amalgamation
       Description: Every time Amalgamation reports a body, they acquire the abiltiies of that role. The Amalgamation's win condition is determined by the first body they report, other bodies will continue to power up the Amalgamation. Amalgamation is a hidden role that can occasionally spawn instead of Amnesiac.
@@ -852,6 +861,7 @@ Translations:
         Neutral: Neutral
         Fatal: Fatal
         Hostile: Hostile
+      ButtonText: Protect
     Arsonist:
       RoleName: Arsonist
       Description: Spam the Kill button while next to a player to douse oil onto them. The player is fully doused when they are marked by a full orange circle.\n\nDouse all players and ignite them by using the Pet button to win.
@@ -864,6 +874,7 @@ Translations:
       PressIgniteToWinMessage: Press Ignite to Win
       DousedPlayerStatistic: Doused Players
       IncineratedPlayerStatistic: Incinerated Players
+      ButtonText: Douse
     BloodKnight:
       RoleName: Blood Knight
       Description: The Blood Knight is a neutral killer where every time they kill a player, they will be protected from attacks for a few seconds.
@@ -1012,6 +1023,7 @@ Translations:
         AllowEscapeFromPelican: Allow Escape from Pelican
       GulpedStatistic: Players Gulped
       DeathName: Swallowed
+      ButtonText: Swallow
     Pestilence:
       RoleName: Pestilence
       Description: The Pestilence is a Secondary Role of the Plague Bearer once they finish infecting everyone. The Pestilence cannot be directly killed, and anyone who interacts with it will be parried (killed instead).\n\nThe Pestilence can be voted off or indirectly killed (ex. Warlocked or Puppeted players).\n\nDepending on the host's settings, other types of attacks may also be able to kill Pestilence, and Pestilence attacks may be unblockable.
@@ -1322,6 +1334,7 @@ Translations:
       Description: Use the pet button to create a clone of yourself. Clones are deleted on meeting, death, or disconnect. Depending on the host's options, clones can appear on top of you or in a random room. You cannot place clones next to people.
       Mutable:
         KillRadius: Anyone who walks within a {0} distance of your clone will be killed.
+      ButtonText: Duplicate
     GuesserRoleBase:
       GuesserRoleBase: Guesser
       PickedRoleText: You are about to guess {0} as {1}. If you are certain about this, vote {0} again to finalize your guess. Otherwise you can pick another player by voting a different player.. OR pick a different role by typing /r [rolename]
@@ -1396,7 +1409,7 @@ Translations:
       BetrayedTeamPlayers: "You sided with the '{0}' faction(s). These players are on the same team: {1}"
       NoPlayersOnBetrayedTeam: There are no players on the team you betrayed for.
       RoleName: Turncoat
-      Blurb: "Betray the Crew... or don't"
+      Blurb: Betray the Crew... or don't
       Description: The Turncoat is a neutral role that is initially on the crewmate team. They will win with the crew at the end of the game. However, they can choose to betray the crew by voting themselves in the meeting. As a result, their role will be revealed to everyone else. In order to prevent the crew from instantly voting the Turncoat, you can mark a player with your kill button before revealing. This player will die if you die, so you can use this person as leverage to keep yourself alive. The player doesn't even know that they are the sacrifice, so you can lie and blame someone entirely diffrent (like the Doctor).
   StaticOptions:
     AutoKick: AutoKick
