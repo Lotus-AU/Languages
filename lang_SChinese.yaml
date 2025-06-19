@@ -1765,8 +1765,6 @@ Translations:
   PingDisplay:
     AddonsLoaded: >-
       个插件已载入
-
-      汉化: <color=#02DF82>FATE</color> 汉化组:<color=#009900>USB translation department</color>
   Gamemodes:
     Colorwars:
       Options:
