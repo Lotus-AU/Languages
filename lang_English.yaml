@@ -550,10 +550,10 @@ Translations:
         Use the Pet button to investigate if the player is good or bad. Investigated player's names will show as either green or red. In general, red is bad and green is good.
 
 
-        Be careful, some Crewmate-sided roles (ex. Sheriff) might show up as bad!
+        Be careful, depending on the host settings, some Crewmate-sided roles (ex. Sheriff) might show up as bad!
 
 
-        Note: Players with the Rogue Modifier will be judged based on their main role. Ex. Doctor with the Rogue modifier will show up as green, but a Vampire with the Rogue modifier will show up as red.
+        Players with the Rogue modifier will only show up red if the Neutral Killing setting is set to All.
       Blurb: Investigate Players
       Options:
         InvestigateCooldown: Investigate Cooldown
@@ -1878,70 +1878,68 @@ Translations:
       UpdateAvailableText: Updates Available!
     LotusButton: Lotus
     InnerslothButton: Innersloth
-  HistoryMenu:
+    HistoryMenu:
       ButtonText: History
-  ComboMenu:
-    ButtonText: Edit Combo
-    DeleteArea:
-      TitleText: >-
-        Are you sure you want
+    ComboMenu:
+      ButtonText: Edit Combo
+      DeleteArea:
+        TitleText: >-
+          Are you sure you want
 
-        to delete this combo?
-    ChooseComboTypeArea:
-      ForceComboTitleText: Forced Combo Type
-      BanComboTitleText: Banned Combo Type
-      TitleText: Choose the type of combo.
-      ForcedRoleModifierComboText: >-
-        A player will always have the modifier, {1},
+          delete this combo?
+      ChooseComboTypeArea:
+        ForceComboTitleText: Forced Combo Type
+        BanComboTitleText: Banned Combo Type
+        TitleText: Choose the type of combo.
+        ForcedRoleModifierComboText: >-
+          A player will always have the modifier, {1},
 
-        if their main role is {0}.
-      ForcedModifierModifierComboText: >-
-        A player with one of the modifiers, {0} or {1},
+          if their main role is {0}
+        ForcedModifierModifierComboText: >-
+          A player with one of the modifiers, {0} or {1},
 
-        will always have the other one.
-      ForcedRoleRoleComboText: >-
-        {1} will always spawn when {0} spawns.
+          will always have the other one.
+        ForcedRoleRoleComboText: >-
+          {1} will always spawn when {0} spawns.
 
-        If there aren't enough players for {1},
+          If there aren't enough players for {1}, then {0} will be skipped.
+        BannedRoleRoleComboText: >-
+          {0} and {1} cannot spawn
 
-        then {0} will be skipped.
-      BannedRoleRoleComboText: >-
-        {0} and {1} cannot spawn
+          in the same game together.
+        BannedRoleModifierComboText: >-
+          A player with the role {0}
 
-        in the same game together.
-      BannedRoleModifierComboText: >-
-        A player with the role {0}
+          cannot have the modifier {1}.
+        BannedModifierModifierComboText: >-
+          A player cannot have the modifiers
 
-        cannot have the modifier {1}.
-      BannedModifierModifierComboText: >-
-        A player cannot have the modifiers
+          {0} and {1} at the same time.
+      CreateComboArea:
+        NothingFound: >-
+          There are no roles that have the name you inputted.
 
-        {0} and {1} at the same time.
-    CreateComboArea:
-      NothingFound: >-
-        There are no roles that have the name you inputted.
+          Did you make a typo?
+        SelectRolesText: >-
+          Select the roles for your combo,
 
-        Did you make a typo?
-      SelectRolesText: >-
-        Select the roles for your combo,
+          then click the next button.
+        SearchTooVague: >-
+          Your search is too vague!
 
-        then click the next button.
-      SearchTooVague: >-
-        Your search is too vague!
-
-        Type more of the rolename.
-      SelectedRoles: 'Selected Roles:'
-      ReturnText: Return
-      NextText: Next
-    FinalizeArea:
-      TitleText: Are you sure this information is correct?
-      CreateComboText: Create Combo
-    MainArea:
-      TitleText: Edit Combo Menu
-      AddComboText: Add Combo
-      CycleUpText: Scroll Up
-      CycleDownText: Scroll Down
-      PresetText: Preset {0}
+          Type more of the rolename.
+        SelectedRoles: 'Selected Roles:'
+        ReturnText: Return
+        NextText: Next
+      FinalizeArea:
+        TitleText: Are you sure this information is correct?
+        CreateComboText: Create Combo
+      MainArea:
+        TitleText: Edit Combo Menu
+        AddComboText: Add Combo
+        CycleUpText: Scroll Up
+        CycleDownText: Scroll Down
+        PresetText: Preset {0}
   Factions:
     Crewmates:
       Name: Crewmates

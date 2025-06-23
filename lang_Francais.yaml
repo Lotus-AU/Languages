@@ -145,6 +145,10 @@ Translations:
       RoleName: Mineur
       Description: Mineur (Imposteur):\nLe Mineur peut se téléporter au dernier conduit qu'il a pris en utilisant le bouton caresser.\nSi aucun n'a été pris, rien ne se passe.
       Blurb: transpotez vous au dernier conduit que vous avez pris
+    Shapeshifter:
+      RoleName: Muteur
+      Description: Le muteur (Imposteur):\nJuste un métamorphe\nCe role n'est que pour ajouter le support des roles de base dans le mode.
+      Blurb: Déguisez vous en un coéquipier
     Ninja:
       RoleName: Ninja
       Description: Le ninja (Imposteur):\nLe Ninja a deux modes de frag.\nLe premier est de tuer normalement, le deuxième consiste à selectionner une cible et de se téléporter vers elle et la tuer\nLes modes se changent en utilisant le bouton caresser\nPour selectionner une cible utilisez le bouton tuer sur un joueur(il sera protégé par un bouclier), puis utilisez le bouton caresser de nouveau pour se télépoter à lui(ou se joueur se téléportera à vous selon les options) et le tuer.
@@ -164,10 +168,6 @@ Translations:
       RoleName: Traitre acolyte
       Description: Le Traitre Acolyte (Immposteur):\nYoupie, Un imposteur vous à choisis comme acolyte en se métamorphosant à coté de vous.\nVous devez faire en sorte que les imposteurs gagnent coûte que coûte\nL'équipe des traitres ne compte pas comme un imposteur au yeux du jeu ce qui veut dire que si les imposteurs sont mort la partie se terminera et les coéquipiers et/ou neutral gagnerons\nCela semble bête mais les imposteurs ne vous connaissent pas et vous ne les connaissez pas non plus
       Blurb: Les imposteurs vous ont choisis pour être leur coéquipier\nQuelle honeur!
-    Shapeshifter:
-      RoleName: Muteur
-      Description: Le muteur (Imposteur):\nJuste un métamorphe\nCe role n'est que pour ajouter le support des roles de base dans le mode.
-      Blurb: Déguisez vous en un coéquipier
     Sniper:
       RoleName: Sniper
       Description: Le Sniper (imposteur):\nLe Sniper tue des joueurs en les snippant\nPour cela, métamorphosé vous 2 fois les deux positions d'où vous vous êtes métamorphosé feront la trajectoire de la balle\nSi quelqu'un se retrouve dans cette trajectoire(aussi vos aliés),il mourra.\nUne seule persone ne peut être tué par balle.\Après ET SEULEMENT après avoir utilisé toutes les balles, vous pourrez tuér normalement.\nNote- vous ne pouvez pas utiliser le bouton tuer avant d'avoir fini toutes les balles\nNote2- Les balles traversent les murs

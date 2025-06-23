@@ -1,11 +1,6 @@
-Name: Português (Brasil)
+Name: Brazilian
 Authors:
-- Essence
-- Theta
-- Dechis
-- Eur Mom
-- Discussions
-- Shiftyrose
+- Dx
 Translations:
   Roles:
     Assassin:
@@ -64,7 +59,11 @@ Translations:
       ButtonText: Bloquear Função
     Creeper:
       RoleName: Creeper
-      Description: O único trabalho do Creeper é causar o máximo de devastação possível. Use o botão de usar o pet ou Metamorfo (determinado pelo anfitrião) para se matar e qualquer jogador dentro de um raio especificado.\n\nVocê pode ter sorte e ser protegido de suas bombas com um escudo (ex: escudo de Médico) e viver para ver outro dia. Se a opção estiver desativada, nem mesmo o escudo de Médico o protegerá.
+      Description: >-
+        O único trabalho do Creeper é causar o máximo de devastação possível. Use o botão de usar o pet ou Metamorfo (determinado pelo anfitrião) para se matar e qualquer jogador dentro de um raio especificado.
+
+
+        Você pode ter sorte e ser protegido de suas bombas com um escudo (ex: escudo de Médico) e viver para ver outro dia. Se a opção estiver desativada, nem mesmo o escudo de Médico o protegerá.
       Blurb: Bombardear Jogadores
       Options:
         BomberProtection: Bombardeiro Protegido por Escudo
@@ -270,7 +269,7 @@ Translations:
         PreciseShooting: Tiro Preciso
         PlayerPiercing: Perfurar Jogadores
       ButtonText: Mirar
-    Sombra:
+    Swooper:
       RoleName: Sombra
       Description: O Sombra pode ficar invisível saltando em uma ventilação. Enquanto invisível, o Sombra pode fazer todas as coisas normais (matar, sabotar, dutar).\n\nCuidado! Dependendo das opções do anfitrião, você pode ser revelado ao matar outro jogador.
       Blurb: Dute para Ficar Invisível
@@ -847,7 +846,14 @@ Translations:
         HasArrowsToBody: Tem Flechas para Corpos
     Archangel:
       RoleName: Arcanjo
-      Description: O Arcanjo recebe um alvo no início do jogo como um indicador de texto sob seu nome. Ele pode usar seu botão de usar o pet para proteger temporariamente seu alvo de certos tipos de interações com base nas configurações do anfitrião.\n\nO Arcanjo vence se seu alvo vencer (mesmo que o Arcanjo esteja morto).\n\nSe o seu alvo morrer, o Arcanjo pode mudar de função (dependendo das configurações do anfitrião), ou pode manter sua função e ainda pode vencer se a equipe de seu alvo vencer (ex: um alvo Tripulante ainda pode vencer com os Tripulantes mesmo que esteja morto).
+      Description: >-
+        O Arcanjo recebe um alvo no início do jogo como um indicador de texto sob seu nome. Ele pode usar seu botão de usar o pet para proteger temporariamente seu alvo de certos tipos de interações com base nas configurações do anfitrião.
+
+
+        O Arcanjo vence se seu alvo vencer (mesmo que o Arcanjo esteja morto).
+
+
+        Se o seu alvo morrer, o Arcanjo pode mudar de função (dependendo das configurações do anfitrião), ou pode manter sua função e ainda pode vencer se a equipe de seu alvo vencer (ex: um alvo Tripulante ainda pode vencer com os Tripulantes mesmo que esteja morto).
       Blurb: Proteja Seu Alvo da Morte
       Options:
         ProtectDuration: Duração da Proteção
@@ -1028,7 +1034,14 @@ Translations:
       ButtonText: Engolir
     Pestilence:
       RoleName: Pestilência
-      Description: A Pestilência é uma Função Secundário do Portador da Praga, uma vez que ele termina de infectar a todos. A Pestilência não pode ser morta diretamente, e qualquer um que interagir com ela será repelido (morto em vez disso).\n\nA Pestilência pode ser votada ou morta indiretamente (ex: jogadores Amaldiçoados ou Marionetados).\n\nDependendo das configurações do anfitrião, outros tipos de ataques também podem matar a Pestilência, e os ataques da Pestilência podem ser inbloqueáveis.
+      Description: >-
+        A Pestilência é uma Função Secundário do Portador da Praga, uma vez que ele termina de infectar a todos. A Pestilência não pode ser morta diretamente, e qualquer um que interagir com ela será repelido (morto em vez disso).
+
+
+        A Pestilência pode ser votada ou morta indiretamente (ex: jogadores Amaldiçoados ou Marionetados).
+
+
+        Dependendo das configurações do anfitrião, outros tipos de ataques também podem matar a Pestilência, e os ataques da Pestilência podem ser inbloqueáveis.
       Blurb: Mate Todos e Vença Sozinho
       Options:
         UnblockableKill: Morte Inbloqueável
@@ -1070,7 +1083,17 @@ Translations:
         TotalRevengeAmount: Número de Vinganças
     SchrodingersCat:
       RoleName: Gato de Schrödinger
-      Description: O Gato de Schrödinger muda de time toda vez que alguém tenta matá-lo. Ele tem um número máximo de vidas e continuará mudando de time até ficar sem vidas ou o jogo terminar.\n\nO nome da função do Gato de Schrödinger mudará para refletir o time em que ele está atualmente. Seu trabalho é ajudar esse time a vencer, defendendo-o no jogo ou desviando a suspeita de seu companheiro de equipe.\n\nO Gato de Schrödinger vencerá com o time em que estiver quando o jogo terminar. Ex: Se o Chacal matar o Gato de Schrödinger, o nome de sua função mudará para "Chacalcat", e o Gato de Schrödinger vencerá com o Chacal (assumindo que ele ainda seja Chacalcat até o final do jogo). \n\nAo contrário do Copycat, o Gato de Schrödinger não pode matar.
+      Description: >-
+        O Gato de Schrödinger muda de time toda vez que alguém tenta matá-lo. Ele tem um número máximo de vidas e continuará mudando de time até ficar sem vidas ou o jogo terminar.
+
+
+        O nome da função do Gato de Schrödinger mudará para refletir o time em que ele está atualmente. Seu trabalho é ajudar esse time a vencer, defendendo-o no jogo ou desviando a suspeita de seu companheiro de equipe.
+
+
+        O Gato de Schrödinger vencerá com o time em que estiver quando o jogo terminar. Ex: Se o Chacal matar o Gato de Schrödinger, o nome de sua função mudará para 'Chacalcat', e o Gato de Schrödinger vencerá com o Chacal (assumindo que ele ainda seja Chacalcat até o final do jogo). 
+
+
+        Ao contrário do Copycat, o Gato de Schrödinger não pode matar.
       Blurb: Mude de Equipe a Cada Tentativa em Sua Vida
       Aliases: Gato de Schrödinger, SC, SCat, Gato S, GatoSchrodinger, Gato de Schrödinger
       CopycatFactionChangeName: '{0}cat'
@@ -1214,7 +1237,7 @@ Translations:
       CantGuessRole: A função, {0}, foi desabilitada pelo Anfitrião para ser adivinhada. Por favor, use /r [nome da função] em uma função diferente. Use /o para verificar quais funções você pode adivinhar.
       CantGuessRoleBecauseOfRole: Sua função impediu que você adivinhasse um jogador como {0}. Você pode descobrir o porquê usando /m.
       CantGuessBecauseOfRole: Sua função impediu que você adivinhasse {0}! Tente um jogador diferente.
-      CantGuessTeammate: "{0} é seu companheiro de equipe! Você não pode adivinhar esse jogador."
+      CantGuessTeammate: '{0} é seu companheiro de equipe! Você não pode adivinhar esse jogador.'
       CanSeeRole: Você pode ver a função de {0}! Você não pode adivinhar esse jogador.
     LastResort:
       RoleName: Último Recurso
@@ -1569,7 +1592,7 @@ Translations:
       KickMessage: '{0} foi expulso pelo anfitrião.'
       BanMessage: '{0} foi banido pelo anfitrião.'
     Ids:
-      PlayerIdMessage: "O ID do jogador {0} é {1}"
+      PlayerIdMessage: O ID do jogador {0} é {1}
     PlayerNotFoundText: Jogador "{0}" não encontrado.
     CommandError: ⚠ Erro de Comando ⚠
     Friends:
@@ -1594,7 +1617,7 @@ Translations:
       TemplateCommandTitle: Comandos de Modelo
     LastResults:
       NoPreviousGameText: Nenhum jogo jogado ainda!
-      PlayerResultTitle: "Resultados de {0}"
+      PlayerResultTitle: Resultados de {0}
       RoleText: <b>Função:</b> {0}
       ModifierText: <b>Mods:</b> {0}
       WinnerText: Vencedor
@@ -1603,7 +1626,7 @@ Translations:
       WinReasonText: 'Razão: {0}'
     MyDeath:
       DirectDeathString: '{0} morreu para {1}\nCausa da Morte: {2}'
-      IndirectDeathString: "Causa da morte de {0}: {1}"
+      IndirectDeathString: 'Causa da morte de {0}: {1}'
       CouldNotDetermineDeathText: A causa da morte de {0} não pôde ser determinada.
       PlayerIsAliveText: '{0} ainda está vivo e não tem uma causa de morte.'
       DeathInfoTitle: Informações da Morte
@@ -1864,6 +1887,8 @@ Translations:
       CustomTeams: Equipes Personalizadas
       TeamOption: Equipe {0}
       CustomTeamTitle: Equipes Personalizadas
+    RolesMadmates:
+      MadmatesTakeImpostorSlots: Madmates::0 Take Impostor Slots
   GUI:
     GeneralButton: Geral
     GraphicsButton: Gráficos
@@ -1879,12 +1904,75 @@ Translations:
       UpdateAvailableText: Atualizações Disponíveis!
     LotusButton: Lotus
     InnerslothButton: Innersloth
-  HistoryMenu:
+    HistoryMenu:
+      ButtonText: History
+    ComboMenu:
+      ButtonText: Edit Combo
+      DeleteArea:
+        TitleText: >-
+          Are you sure you want
+
+          to delete this combo?
+      ChooseComboTypeArea:
+        ForceComboTitleText: Forced Combo Type
+        BanComboTitleText: Banned Combo Type
+        TitleText: Choose the type of combo.
+        ForcedRoleModifierComboText: >-
+          A player will always have the modifier, {1},
+
+          if their main role is {0}.
+        ForcedModifierModifierComboText: >-
+          A player with one of the modifiers, {0} or {1},
+
+          will always have the other one.
+        ForcedRoleRoleComboText: >-
+          {1} will always spawn when {0} spawns.
+
+          If there aren't enough players for {1},
+
+          then {0} will be skipped.
+        BannedRoleRoleComboText: >-
+          {0} and {1} cannot spawn
+
+          in the same game together.
+        BannedRoleModifierComboText: >-
+          A player with the role {0}
+
+          cannot have the modifier {1}.
+        BannedModifierModifierComboText: >-
+          A player cannot have the modifiers
+
+          {0} and {1} at the same time.
+      CreateComboArea:
+        NothingFound: >-
+          There are no roles that have the name you inputted.
+
+          Did you make a typo?
+        SelectRolesText: >-
+          Select the roles for your combo,
+
+          then click the next button.
+        SearchTooVague: >-
+          Your search is too vague!
+
+          Type more of the rolename.
+        SelectedRoles: 'Selected Roles:'
+        ReturnText: Return
+        NextText: Next
+      FinalizeArea:
+        TitleText: Are you sure this information is correct?
+        CreateComboText: Create Combo
+      MainArea:
+        TitleText: Edit Combo Menu
+        AddComboText: Add Combo
+        CycleUpText: Scroll Up
+        CycleDownText: Scroll Down
+        PresetText: Preset {0}
+  HistoryMenu: 
   Add commentMore actions: Adicionar comentárioMais ações
   ButtonText: Histórico
-
   ComboMenu:
-  ButtonText: Editar Combinação
+    ButtonText: Editar Combinação
   DeleteArea:
     TitleText: >-
       Você tem certeza de que quer
@@ -1933,7 +2021,7 @@ Translations:
       Sua pesquisa está muito vaga!
 
       Digite mais do nome da função.
-    SelectedRoles: Funções Selecionadas:
+    SelectedRoles: 'Funções Selecionadas:'
     ReturnText: Voltar
     NextText: Próximo
   FinalizeArea:
@@ -1970,6 +2058,9 @@ Translations:
     NeutralKillers:
       Name: Neutros Assassinos
       Description: Matem todos os outros e sejam os últimos a permanecer em pé.
+    Madmates:
+      Name: Madmates
+      Description: Help the impostors win.
   Constants:
     DeathNames:
       Killed: Morto
@@ -2004,7 +2095,7 @@ Translations:
     DisagreeButtonText: Não
     AcceptButtonText: Sim
   Whitelist:
-    WhitelistBan: "{0} foi expulso porque não estava na lista branca."
+    WhitelistBan: '{0} foi expulso porque não estava na lista branca.'
   PetWarning:
     WarningToHost: >-
       Os seguintes jogadores não têm pets: {0}
