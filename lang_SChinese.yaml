@@ -605,6 +605,7 @@ Translations:
         NeutralKillingRed: 独立阵营::1 杀戮型职业::2 显示为 红名::0
         NeutralPassiveRed: 独立阵营::1 友善型职业::2 显示为 红名::0
         MadmateRed: 叛徒::1 显示为 红名::0
+        CrewKillingRed: 船员带刀职业::1 显示为 红名::0
       ButtonText: 调查
     Mayor:
       RoleName: 市长
@@ -1763,8 +1764,7 @@ Translations:
       PlayerMurdered: 被杀
       PlayerSuicide: 自杀
   PingDisplay:
-    AddonsLoaded: >-
-      个插件已载入
+    AddonsLoaded: 个插件已载入
   Gamemodes:
     Colorwars:
       Options:
@@ -1993,6 +1993,70 @@ Translations:
       UpdateAvailableText: 更新可用!
     LotusButton: 隐私政策
     InnerslothButton: 树懒
+    HistoryMenu:
+      ButtonText: 历史记录
+    ComboMenu:
+      ButtonText: 编辑职业组合
+      DeleteArea:
+        TitleText: >-
+          你确定要
+
+          删除这个组合吗?
+      ChooseComboTypeArea:
+        ForceComboTitleText: 绑定组合类型
+        BanComboTitleText: 互斥组合类型
+        TitleText: 选择组合类型.
+        ForcedRoleModifierComboText: >-
+          玩家将会分配{1}附加职业,
+
+          如果他们的主职业为{0}.
+        ForcedModifierModifierComboText: >-
+          如果玩家拥有{0}或{1}附加职业,
+
+          则他们也将同时拥有另一个附加职业.
+        ForcedRoleRoleComboText: >-
+          {1}将会与{0}一起生成.
+
+          如果没有分配足够数量的{1},
+
+          则{0}不会生成.
+        BannedRoleRoleComboText: >-
+          {0}和{1}不可
+
+          在同一局游戏内生成.
+        BannedRoleModifierComboText: >-
+          如果玩家是{0}
+
+          则他们不能拥有附加职业{1}.
+        BannedModifierModifierComboText: >-
+          一个玩家不能同时拥有
+
+          {0}和{1}附加职业.
+      CreateComboArea:
+        NothingFound: >-
+          你所搜索的职业不存在.
+
+          你使用简写或打错了吗?\n(简中特供,这个搜索框可能无法使用中文,如果无法打出字,请使用英文进行搜索)
+        SelectRolesText: >-
+          选择组合内的职业,
+
+          然后点击继续按钮.
+        SearchTooVague: >-
+          你搜索的范围太广了!
+
+          请打出更详细的职业名.
+        SelectedRoles: '选择的职业:'
+        ReturnText: 返回
+        NextText: 继续
+      FinalizeArea:
+        TitleText: 你确定该信息正确吗?
+        CreateComboText: 创建组合
+      MainArea:
+        TitleText: 编辑组合菜单
+        AddComboText: 添加组合
+        CycleUpText: 向上翻页
+        CycleDownText: 向下翻页
+        PresetText: 预设{0}
   Factions:
     Crewmates:
       Name: 船员
