@@ -605,7 +605,7 @@ Translations:
         NeutralKillingRed: 独立阵营::1 杀戮型职业::2 显示为 红名::0
         NeutralPassiveRed: 独立阵营::1 友善型职业::2 显示为 红名::0
         MadmateRed: 叛徒::1 显示为 红名::0
-        CrewKillingRed: Crewmate Killing::1 Are Red::0
+        CrewKillingRed: 船员带刀职业::1 显示为 红名::0
       ButtonText: 调查
     Mayor:
       RoleName: 市长
