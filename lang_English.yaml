@@ -560,6 +560,7 @@ Translations:
         NeutralKillingRed: Neutral::1 Killing::2 Are Red::0
         NeutralPassiveRed: Neutral::1 Passive::2 Are Red::0
         MadmateRed: Madmates::1 Are Red::0
+        CrewKillingRed: Crewmate Killing::1 Are Red::0
       ButtonText: Investigate
     Mayor:
       RoleName: Mayor
@@ -1877,6 +1878,70 @@ Translations:
       UpdateAvailableText: Updates Available!
     LotusButton: Lotus
     InnerslothButton: Innersloth
+  HistoryMenu:
+      ButtonText: History
+  ComboMenu:
+    ButtonText: Edit Combo
+    DeleteArea:
+      TitleText: >-
+        Are you sure you want
+
+        to delete this combo?
+    ChooseComboTypeArea:
+      ForceComboTitleText: Forced Combo Type
+      BanComboTitleText: Banned Combo Type
+      TitleText: Choose the type of combo.
+      ForcedRoleModifierComboText: >-
+        A player will always have the modifier, {1},
+
+        if their main role is {0}.
+      ForcedModifierModifierComboText: >-
+        A player with one of the modifiers, {0} or {1},
+
+        will always have the other one.
+      ForcedRoleRoleComboText: >-
+        {1} will always spawn when {0} spawns.
+
+        If there aren't enough players for {1},
+
+        then {0} will be skipped.
+      BannedRoleRoleComboText: >-
+        {0} and {1} cannot spawn
+
+        in the same game together.
+      BannedRoleModifierComboText: >-
+        A player with the role {0}
+
+        cannot have the modifier {1}.
+      BannedModifierModifierComboText: >-
+        A player cannot have the modifiers
+
+        {0} and {1} at the same time.
+    CreateComboArea:
+      NothingFound: >-
+        There are no roles that have the name you inputted.
+
+        Did you make a typo?
+      SelectRolesText: >-
+        Select the roles for your combo,
+
+        then click the next button.
+      SearchTooVague: >-
+        Your search is too vague!
+
+        Type more of the rolename.
+      SelectedRoles: 'Selected Roles:'
+      ReturnText: Return
+      NextText: Next
+    FinalizeArea:
+      TitleText: Are you sure this information is correct?
+      CreateComboText: Create Combo
+    MainArea:
+      TitleText: Edit Combo Menu
+      AddComboText: Add Combo
+      CycleUpText: Scroll Up
+      CycleDownText: Scroll Down
+      PresetText: Preset {0}
   Factions:
     Crewmates:
       Name: Crewmates
