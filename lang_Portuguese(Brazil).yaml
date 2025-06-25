@@ -1905,7 +1905,7 @@ Translations:
     LotusButton: Lotus
     InnerslothButton: Innersloth
     HistoryMenu:
-      ButtonText: History
+      ButtonText: Histórico
     ComboMenu:
       ButtonText: Editar Combo
       DeleteArea:
