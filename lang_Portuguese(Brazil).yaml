@@ -4,39 +4,39 @@ Authors:
 Translations:
   Roles:
     Assassin:
-      RoleName: Assassino
+      RoleName: Apostador
       Description: >-
-        O Assassino é um Impostor que também pode matar outros jogadores adivinhando suas funções. Se o Assassino conseguir adivinhar com sucesso a função de um jogador, esse jogador será eliminado.
+        O Apostador é um Impostor que também pode matar outros jogadores adivinhando suas funções. Se o Apostador conseguir adivinhar com sucesso a função de um jogador, esse jogador será eliminado.
 
 
-        Durante a reunião, o Assassino pode selecionar um jogador que deseja adivinhar votando nele. Em seguida, eles podem tentar adivinhar a função desse jogador usando o comando /r [função] (por exemplo, /r Doutor) no chat. Se o Assassino adivinhar corretamente o jogador e sua função, esse jogador morrerá.
+        Durante a reunião, o Apostador pode selecionar um jogador que deseja adivinhar votando nele. Em seguida, eles podem tentar adivinhar a função desse jogador usando o comando /r [função] (por exemplo, /r Doutor) no chat. Se o Apostador adivinhar corretamente o jogador e sua função, esse jogador morrerá.
 
 
-        Se o Assassino errar a adivinhação, ele cometerá suicídio.
+        Se o Apostador errar a adivinhação, ele cometerá suicídio.
 
 
         Para pular a adivinhação, você pode pular primeiro antes de votar em um jogador.
 
 
         Nota: Funções reveladas (por exemplo, do Oráculo) não podem ser adivinhadas.
-      Blurb: Matar e Adivinhar Funções de Jogadores
+      Blurb: Mate e Adivinhe as Funções dos Jogadores
     Blackmailer:
       RoleName: Chantagista
       Description: Transforme-se em um jogador para chantageá-lo. Durante a reunião, o jogador chantageado terá o texto "CHANTAGEADO" exibido, que pode ser visto por todos os jogadores.\n\nSe um jogador tentar falar enquanto chantageado, ele pode receber um aviso lembrando-o de ficar quieto. Uma vez que ele atinja o limite máximo de avisos (determinado pelo anfitrião), ele será executado.
-      Blurb: Chantagear Jogadores Para Fazer Eles Ficar Quieto
+      Blurb: Chantageie Jogadores Para Fazer Eles Ficar Quieto
       Options:
         WarningsUntilDeath: Avisos Até a Morte
         ShowBlackmailedToAll: Mostrar Chantageado Para Todos
-        BlackmailerIsSSBased: Chantagista Usa Metamorfo
+        BlackmailerIsSSBased: Chantagista Usa Metamorfo como Base
       BlackmailedMessage: Você foi chantageado! Enviar uma mensagem de chat irá matá-lo.
-      WarningMessage: Você não tem permissão para falar! Se você falar novamente, poderá ser morto.
+      WarningMessage: Você não tem permissão para falar! Se você falar novamente, você poderá ser morto.
       BlackmailedText: CHANTAGEADO
       BlackmailingMode: Chantagem
       BlackmailButtonText: Chantagear
     BountyHunter:
       RoleName: Caçador de Recompensas
-      Description: O Caçador de Recompensas receberá um jogador alvo para matar (marcado por um nome preto). Se o Caçador de Recompensas matar seu alvo, seu tempo de recarga de abate será significativamente reduzido para o próximo abate.\n\nO tempo para o alvo mudar, o tempo de recarga após matar o alvo e o tempo de recarga após matar um não-alvo são predeterminados pelo anfitrião nas configurações.
-      Blurb: Mate Recompensas para Reduzir o Tempo de Recarga
+      Description: O Caçador de Recompensas receberá um jogador alvo para matar (marcado por um nome preto). Se o Caçador de Recompensas matar seu alvo, seu tempo de recarga de abate será significativamente reduzido (apenas para o próximo abate).\n\nO tempo de recarga para o alvo mudar, o tempo de recarga após matar o alvo e o tempo de recarga após matar um não-alvo são predeterminados pelo anfitrião nas configurações.
+      Blurb: Recolha Recompensas para Reduzir seu Tempo de Recarga
       Options:
         TimeUntilNewTarget: Tempo Até Novo Alvo
         AfterKillingTarget: Tempo de Recarga Após Matar Alvo
@@ -44,7 +44,7 @@ Translations:
     Camouflager:
       RoleName: Camuflador
       Description: Transforme-se em um jogador e faça com que todos os jogadores vivos se transformem no mesmo jogador por um curto período de tempo. Quando a duração terminar, ou se uma reunião for convocada, todos os jogadores retornam à sua forma normal.
-      Blurb: Disfarçar Todos
+      Blurb: Disfarce Todos
       Options:
         CamouflageCooldown: Tempo de Recarga da Camuflagem
         CamouflageDuration: Duração da Camuflagem
@@ -52,22 +52,22 @@ Translations:
     Consort:
       RoleName: Consorte
       Description: Use o botão de usar o pet para alternar entre Bloqueio de Função e Abate.\n\nBloquear a função de um jogador o impede de matar, reportar corpos mortos, convocar reuniões, metamorfosear e dutar.
-      Blurb: Bloquear Funções de Jogadores
+      Blurb: Bloqueie as Funções dos Jogadores
       Options:
         roleblockCooldown: Tempo de Recarga do Bloqueio de Função
         roleblockDuration: Duração do Bloqueio de Função
-      ButtonText: Bloquear Função
+      ButtonText: Bloquear
     Creeper:
       RoleName: Creeper
       Description: >-
-        O único trabalho do Creeper é causar o máximo de devastação possível. Use o botão de usar o pet ou Metamorfo (determinado pelo anfitrião) para se matar e qualquer jogador dentro de um raio especificado.
+        O único trabalho do Creeper é causar o máximo de destruição possível. Use o botão de usar o pet ou Metamorfo (determinado pelo anfitrião) para se matar e matar qualquer jogador dentro de um raio especificado.
 
 
         Você pode ter sorte e ser protegido de suas bombas com um escudo (ex: escudo de Médico) e viver para ver outro dia. Se a opção estiver desativada, nem mesmo o escudo de Médico o protegerá.
-      Blurb: Bombardear Jogadores
+      Blurb: Bombardeie os Jogadores
       Options:
-        BomberProtection: Bombardeiro Protegido por Escudo
-        ExplosionRadius: Raio de Explosão
+        BomberProtection: Bombardeiro pode ser Protegido por um Escudo
+        ExplosionRadius: Raio da Explosão
         CreeperProtection: Protegido por Escudo
         CreeperGracePeriod: Período de Graça
         CanKillNormal: Pode Matar Normalmente
@@ -76,10 +76,10 @@ Translations:
     Disperser:
       RoleName: Dispersor
       Description: O Dispersor pode usar seu botão de usar o pet para teleportar todos para uma ventilação aleatória.
-      Blurb: Teleportar Jogadores
+      Blurb: Teleporte os Jogadores
       Options:
         DisperseCooldown: Tempo de Recarga de Dispersão
-        DisperserGetsDispersed: Dispersor::0 é Disperso
+        DisperserGetsDispersed: Dispersor::0 foi Disperso
       ButtonText: Dispersar
     Escapist:
       RoleName: Escapista
@@ -92,12 +92,12 @@ Translations:
       MarkButtonText: Marcar
       EscapeButtonText: Escapar
     FireWorks:
-      RoleName: Fogos de Artifício
+      RoleName: Artilheiro
       Description: >-
-        Use seu botão Metamorfo para plantar um fogo de artifício (ou seja, bomba) pelo mapa. Você pode então usar seu botão de usar o pet a qualquer momento para detonar os fogos de artifício, matando qualquer um dentro do raio de um fogo de artifício.
+        Use seu botão de Metamorfo para plantar fogos de artifício (ou seja, bomba) pelo mapa. Você pode então usar seu botão de usar o pet a qualquer momento para detonar os fogos de artifício, matando qualquer um dentro do raio de um fogo de artifício.
 
 
-        Nota: A explosão atravessa paredes. O Fogos de Artifício também pode matar normalmente entre a colocação dos fogos de artifício.
+        Nota: A explosão atravessa paredes. O Artilheiro também pode matar normalmente entre a colocação dos fogos de artifício.
       Blurb: Plante Fogos de Artifício para Explodir Jogadores
       Options:
         PlantFireworkCooldown: Tempo de Recarga para Plantar Fogo de Artifício
@@ -119,7 +119,7 @@ Translations:
     Grenadier:
       RoleName: Granadeiro
       Description: Use o botão de usar o pet para disparar uma bomba que cegará jogadores próximos em uma distância fixa. Também pode cegar Impostores aliados, dependendo das configurações do anfitrião. Durante este tempo, o Granadeiro pode matar sem ser detectado.
-      Blurb: Cegar Jogadores Próximos
+      Blurb: Cegue os Jogadores Próximos
       Options:
         AmountOfGrenades: Quantidade de Granadas
         BlindCooldown: Tempo de Recarga de Cegueira
@@ -128,8 +128,8 @@ Translations:
         CanBlindAllies: Pode Cegar Aliados
       ButtonText: Granada
     IdentityThief:
-      RoleName: Ladrão de Identidade
-      Description: O Ladrão de Identidade se transforma em quem ele mata. O disfarce dura até que ele esteja pronto para matar novamente, ou, opcionalmente, até que ele mate outro jogador e se transforme em sua próxima vítima.
+      RoleName: Sósia
+      Description: O Sósia se transforma em quem ele mata. O disfarce dura até que ele esteja pronto para matar novamente, ou, opcionalmente, até que ele mate outro jogador e se transforme em sua próxima vítima.
       Blurb: Transforme-se em Sua Vítima
       Options:
         DisguiseSettings: Configurações de Disfarce
@@ -143,7 +143,7 @@ Translations:
       Description: Um impostor comum. Mate todos os outros jogadores, menos seus aliados, e seja a última facção a permanecer de pé.
     Janitor:
       RoleName: Faxineiro
-      Description: O Faxineiro pode escolher entre matar e limpar no final do seu tempo de recarga de abate.\n\nUm Faxineiro pode limpar um corpo usando o botão de relatório e torná-lo não-relatável, ou usar o botão de matar para matar jogadores.\n\nO Faxineiro só pode reportar corpos normalmente enquanto estiver em tempo de recarga.
+      Description: O Faxineiro pode escolher entre matar e limpar no final do seu tempo de recarga de abate.\n\nUm Faxineiro pode limpar um corpo usando o botão de reporte e torná-lo irreportável, ou usar o botão de matar para matar jogadores.\n\nO Faxineiro só pode reportar corpos normalmente enquanto estiver em tempo de recarga.
       Blurb: Limpe Corpos Para Torná-los Não-Reportáveis.
       Options:
         CleanOnKill: Limpar ao Matar
@@ -189,9 +189,9 @@ Translations:
         SabotageKillCooldown: Tempo de Recarga de Abate Durante Sabotagem
         SabotageSettings: Configurações de Sabotagem Específicas
     Mastermind:
-      RoleName: Mente Mestra
-      Description: O Mente Mestra marca um jogador com o botão de matar.\n\nApós um atraso, esse jogador receberá um texto dizendo que foi Manipulado, e uma contagem regressiva começará. Esse jogador deve matar outro jogador antes que sua contagem regressiva termine (usando Pet ou Abate), caso contrário, ele cometerá suicídio.\n\nO Mente Mestra não pode matar normalmente.
-      Blurb: Manipular e Controlar Outros
+      RoleName: Manipulador
+      Description: O Manipulador pode marcar um jogador com o botão de matar.\n\nApós um atraso, esse jogador receberá um texto dizendo que foi Manipulado, e uma contagem regressiva começará. Esse jogador deve matar outro jogador antes que sua contagem regressiva termine (usando o Pet ou o botão de matar), caso contrário, ele cometerá suicídio.\n\nO Manipulador não pode matar normalmente.
+      Blurb: Manipule e Controle os Outros
       Options:
         ManipulatedPlayerLimit: Limite de Jogadores Manipulados
         ImpostorsCanSeeManipulated: Impostores::0 Podem Ver Manipulados
@@ -206,22 +206,22 @@ Translations:
     Miner:
       RoleName: Minerador
       Description: Use o botão de usar o pet para teleportar para a última ventilação usada. Mate, use ventilação e sabote como qualquer outra função de Impostor.
-      Blurb: Use Pet para Teleportar para Vents
+      Blurb: Use o Pet para Teleportar para os Dutos
       Options:
         AbilityCooldown: Tempo de Recarga da Habilidade do Minerador
       ButtonText: Minerar
     Ninja:
       RoleName: Ninja
-      Description: Use o botão de usar o pet ou Metamorfo (dependendo das configurações do anfitrião) para alternar entre os modos de Caça e Morte.\n\nNo modo de Caça, use o botão de Morte para marcar um alvo, em seguida, use o botão de usar o pet (ou desative o Metamorfo) para teleportar o jogador até você (ou você até o jogador, dependendo das configurações) e executar a morte.
+      Description: Use o botão de usar o pet ou Metamorfo (dependendo das configurações do anfitrião) para alternar entre os modos de Caça e Morte.\n\nNo modo de Caça, use o botão de Matar para marcar um alvo, em seguida, use o botão de usar o pet (ou desative o Metamorfo) para teleportar o jogador até você (ou você até o jogador, dependendo das configurações) e executar a morte.
       Blurb: Mate Suas Vítimas Discretamente
       Options:
         TeleportToNinja: Jogadores Teleportam para o Ninja
-        AbilityActiviation: Ativação da Habilidade Ninja
+        AbilityActiviation: Ativação da Habilidade do Ninja
       HuntButtonText: Caçar
     Phantom:
       RoleName: Fantasma
       Description: O Fantasma pode ficar invisível por um certo período de tempo. Enquanto invisível, ele pode usar as ventilações, mas não pode matar. Este é uma função de Impostor comum.
-      Blurb: Ficar Invisível
+      Blurb: Torne-se Invisível
       Options:
         VanishCooldown: Tempo de Recarga de Desaparecimento
         VanishDuration: Duração de Desaparecimento
@@ -229,9 +229,9 @@ Translations:
         RemainingTaskWarning: Aviso de Tarefas Restantes
         RemainingTaskTargetable: Tarefas Restantes para Ser Alvo
     PickPocket:
-      RoleName: Batedor de Carteiras
-      Description: O Batedor de Carteiras é um Impostor que ganha um voto extra para cada jogador que mata. Esses votos se acumulam e podem tornar o Batedor de Carteiras muito poderoso.
-      Blurb: Roube Votos de Suas Mortes
+      RoleName: Rouba-Votos
+      Description: O Rouba-Votos é um Impostor que ganha um voto extra para cada jogador que mata. Esses votos se acumulam e podem tornar o Rouba-Votos muito poderoso.
+      Blurb: Roube Votos de Suas Vítimas
       Options:
         MaximumAdditionalVotes: Máximo de Votos Adicionais
         ResetVotesAfterMeeting: Redefinir Votos Após Reuniões
@@ -239,7 +239,7 @@ Translations:
       RoleName: Marionetista
       Description: Use o botão de matar ao lado de um jogador para obter controle sobre ele. O jogador controlado será forçado a matar a próxima pessoa não-impostora que se aproximar.\n\nSe o jogador morto tiver uma habilidade que ativa ao morrer, o efeito cairá sobre o jogador controlado em vez do Marionetista. O Marionetista não pode matar normalmente.
       Blurb: Use Jogadores Como Suas Marionetes
-      ButtonText: Marionete
+      ButtonText: Controlar
     SerialKiller:
       RoleName: Assassino em Série
       Description: >-
@@ -271,7 +271,7 @@ Translations:
       ButtonText: Mirar
     Swooper:
       RoleName: Sombra
-      Description: O Sombra pode ficar invisível saltando em uma ventilação. Enquanto invisível, o Sombra pode fazer todas as coisas normais (matar, sabotar, dutar).\n\nCuidado! Dependendo das opções do anfitrião, você pode ser revelado ao matar outro jogador.
+      Description: O Sombra pode ficar invisível entrando em uma ventilação. Enquanto invisível, o Sombra pode fazer todas as coisas normais (matar, sabotar, dutar).\n\nCuidado! Dependendo das opções do anfitrião, você pode ser revelado ao matar outro jogador.
       Blurb: Dute para Ficar Invisível
       Options:
         InvisibilityCooldown: Tempo de Recarga de Invisibilidade
@@ -279,28 +279,28 @@ Translations:
         SeenByAllies: Pode Ser Visto por Aliados
         VentDuringCooldown: Pode Dutar Durante o Tempo de Recarga
         InvisibleOnKill: Permanecer Invisível ao Matar
-        ReturnLocation: Retornar Localização ao Fim da Invisibilidade
+        ReturnLocation: Retornar a Localização ao Fim da Invisibilidade
         CurrentLocation: Atual
         StartLocation: Início
       ButtonText: Invisivel
     TimeThief:
       RoleName: Ladrão de Tempo
       Description: Para cada morte que o Ladrão de Tempo conseguir, o tempo total da reunião será reduzido em uma certa quantidade.\n\nDependendo das configurações do anfitrião, o tempo da reunião pode ser restaurado ao normal assim que o Ladrão de Tempo morrer.
-      Blurb: Roube Tempo de Reuniões
+      Blurb: Roube Tempo das Reuniões
       Options:
         MeetingTimeStolen: Tempo de Reunião Roubado
         MinVotingTime: Tempo Mínimo de Votação
         ReturnTimeAfterDeath: Retornar Tempo Roubado Após a Morte
     Vampire:
       RoleName: Vampiro
-      Description: O Vampiro morde seus alvos, resultando em uma morte atrasada. O jogador mordido morrerá após alguns segundos ou quando a próxima reunião for convocada. Se o Vampiro morder a Armador, o Vampiro se auto-reportará após o atraso da morte.
+      Description: O Vampiro morde seus alvos, resultando em uma morte atrasada. O jogador mordido morrerá após alguns segundos ou quando a próxima reunião for convocada. Se o Vampiro morder o Armador, o Vampiro auto-reportará o corpo após o atraso da morte.
       Blurb: Mortes Atrasadas
       Options:
         KillDelay: Atraso de Abate
     Vampiress:
       RoleName: Vampira
-      Description: Assim como o Vampiro, a Vampira pode morder jogadores que morrerão após um certo tempo (determinado pelo anfitrião), no entanto, ela também pode fazer mortes diretas como impostores regulares. Use o botão de usar o pet para alternar entre Mordidas e Mortes. A Vampira é uma função oculta que pode ocasionalmente aparecer *em vez* do Vampiro.
-      Blurb: Mortes Atrasadas e Normais
+      Description: Assim como o Vampiro, a Vampira pode morder jogadores que morrerão após um certo tempo (determinado pelo anfitrião), no entanto, ela também pode fazer abates diretos como impostores regulares. Use o botão de usar o pet para alternar entre Mordida e Abate. A Vampira é uma função oculta que pode ocasionalmente aparecer *em vez* do Vampiro.
+      Blurb: Faça Abates Atrasados ou Normais
     Warlock:
       RoleName: Bruxo
       Description: Use o botão de matar para amaldiçoar um jogador. Na próxima vez que o Bruxo se transformar, o jogador amaldiçoado matará a pessoa mais próxima a ele.\n\nO Bruxo pode matar normalmente enquanto transformado. Se a configuração estiver ativada, os jogadores amaldiçoados matarão um jogador aleatório imediatamente após serem amaldiçoados.\n\nCuidado! Jogadores amaldiçoados podem matar Impostores (e até mesmo o próprio Bruxo!).
@@ -310,11 +310,11 @@ Translations:
         LimitedCurseKillRange: Alcance Limitado de Morte Amaldiçoada
     Witch:
       RoleName: Bruxa
-      Description: O Botão de matar/amaldiçoar da Bruxa alterna entre amaldiçoar e matar jogadores.\n\nOs jogadores que forem amaldiçoados pela bruxa serão vistos com uma cruz ao lado de seus nomes durante a reunião. Se a Bruxa não for votada durante esta reunião, o jogador amaldiçoado morrerá.\n\nMortes regulares auto-reportam o Armador.\nAmaldiçoar não auto-reporta a Armador.
+      Description: O Botão de matar/amaldiçoar da Bruxa alterna entre amaldiçoar e matar jogadores.\n\nOs jogadores que forem amaldiçoados pela bruxa serão vistos com uma cruz ao lado de seus nomes durante a reunião. Se a Bruxa não for votada durante esta reunião, o jogador amaldiçoado morrerá.\n\nMortes regulares auto-reportam o Armador.\nAmaldiçoar não auto-reporta o Armador.
       Blurb: Mate e Amaldiçoe Jogadores
       Options:
-        FreelySwitchModes: Alternar Modos Livremente
-        SwitchModesAfterAttack: Alternar Modos Após Ataque
+        FreelySwitchModes: Alternar entre Modos Livremente
+        SwitchModesAfterAttack: Alternar entre Modos Após Ataque
       CursedMessage: '{0}::0 amaldiçoou {1}::1 para morrer no final da próxima reunião.'
       CursingModeText: Amaldiçoar
       KillingModeText: Matar
@@ -338,16 +338,16 @@ Translations:
         RefreshTasks: Atualizar Tarefas Quando Todas Concluídas
     MadGuardian:
       RoleName: Guardião Louco
-      Description: O Guardião Louco é um Tripulante do lado do Impostor onde, uma vez que ele termina todas as suas tarefas, ele se torna imune a mortes.\n\nO Guardião Louco não sabe quem são os Impostores e os Impostores não conseguem distingui-lo dos outros Tripulantes.
+      Description: O Guardião Louco é um Tripulante do lado do Impostor onde, uma vez que ele termina todas as suas tarefas, ele se torna imune.\n\nO Guardião Louco não sabe quem são os Impostores e os Impostores não conseguem distingui-lo dos outros Tripulantes.
       Blurb: Conclua Tarefas para se Tornar Imortal
     MadSnitch:
       RoleName: Agente Louco
       Description: O Agente Louco é um Tripulante do lado do Impostor onde, uma vez que ele termina todas as suas tarefas, ele poderá ver quem são os Impostores para que possa ajudar a desviar a suspeita deles.\n\nOs Impostores não conseguem distinguir o Agente Louco dos outros Tripulantes.
       Blurb: Conclua Tarefas Para Ver Impostores
     Madmate:
-      RoleName: Madmate
-      Description: O Madmate é um Tripulante do lado do Impostor. Ele não pode matar nem tem tarefas.\n\nEle não sabe quem são os Impostores, e os Impostores não conseguem distingui-lo dos outros Tripulantes.\n\nSeu único trabalho é tentar descobrir quem são os Impostores e tirar a suspeita deles.
-      Blurb: Trair os Tripulantes
+      RoleName: Cúmplice
+      Description: O Cúmplice é um Tripulante do lado do Impostor. Ele não pode matar e nem tem tarefas.\n\nEle não sabe quem são os Impostores, e os Impostores não conseguem distingui-lo dos outros Tripulantes.\n\nSeu único trabalho é tentar descobrir quem são os Impostores e tirar a suspeita deles.
+      Blurb: Traia os Tripulantes
     Parasite:
       RoleName: Parasita
       Description: O Parasita é um assassino do lado do Impostor que pode matar, mas não sabe quem são os Impostores e vice-versa.\n\nO Parasita é capaz de fazer tudo o que um Metamorfo pode fazer, e deve trabalhar com os Impostores para vencerem juntos.
@@ -391,7 +391,7 @@ Translations:
     Altruist:
       RoleName: Altruísta
       Description: Reporte um corpo para reviver o jogador ao custo de sua própria vida. Dependendo das configurações, a revivificação pode ser atrasada. Se uma reunião for convocada durante esse tempo, a revivificação será cancelada e nada acontecerá.
-      Blurb: Reviver Jogadores
+      Blurb: Reviva os Jogadores
       Options:
         ReviveDelay: Atraso de Revivificação
         InstantText: Instantâneo
@@ -399,27 +399,27 @@ Translations:
         PortableVitals: Possui Vitais Portáteis
       ButtonText: Reviver
     Bastion:
-      RoleName: Bastião
-      Description: Use o botão de Ventilação para plantar uma bomba nessa ventilação. Isso matará o próximo jogador que usar essa ventilação. As bombas duram apenas uma rodada, e as ventilações serão reiniciadas após cada reunião.\n\nCuidado! O Bastião pode se bombardear usando uma ventilação na qual já plantou uma bomba.
-      Blurb: Bombardear Vents
+      RoleName: Mestre das Bombas
+      Description: Dute em alguma ventilação para plantar uma bomba nessa ventilação. Isso matará o próximo jogador que usar essa ventilação. As bombas duram apenas uma rodada, e as ventilações serão reiniciadas após cada reunião.\n\nCuidado! O Mestre das Bombas pode se matar usando uma ventilação na qual já plantou uma bomba.
+      Blurb: Bombardeie os Dutos
       Options:
         PlantBombCooldown: Tempo de Recarga para Plantar Bomba
         BombsPerRound: Bombas por Rodada
-      ButtonText: Bomba
+      ButtonText: Plantar
     Bodyguard:
       RoleName: Guarda-costas
       Description: >-
         Como Guarda-costas, você deve selecionar um jogador que deseja proteger.
 
 
-        O Guarda-costas deve selecionar um jogador votando nele em uma reunião (isso não contará como um voto). Quando o alvo do Guarda-costas é atacado, o atacante é morto junto com o Guarda-costas, e seu alvo permanecerá vivo.
+        O Guarda-costas deve selecionar um jogador votando nele em uma reunião (isso não contará como um voto). Quando o alvo do Guarda-costas é atacado, quem atacou o alvo é morto junto com o Guarda-costas, e seu alvo permanecerá vivo.
 
 
         Depois que um Guarda-costas vota em seu alvo, ele pode votar ou pular livremente.
 
 
-        Nota: Depois que o Guarda-costas protege seu alvo, 2 corpos aparecerão ao lado do jogador protegido (o do Guarda-costas e o do atacante).
-      Blurb: Sacrifica a Vida Para Proteger Outro
+        Nota: Depois que o Guarda-costas protege seu alvo, 2 corpos aparecerão ao lado do jogador protegido (o do Guarda-costas e o de quem tentou matar o alvo).
+      Blurb: Sacrifique a Vida Para Proteger a de Outro
       ProtectingMessage: 'Você está atualmente protegendo:'
       VotePlayerInfo: Vote para selecionar um jogador para proteger.
       Options:
@@ -435,7 +435,7 @@ Translations:
         InvisibilityCooldown: Tempo de Recarga da Invisibilidade
       HiddenText: Escondido::0 {0}
       TimesInvisibleStatistic: Vezes Invisível
-      ButtonText: Esconder
+      ButtonText: Camuflar
     Charmer:
       RoleName: Encantador
       Description: >-
@@ -475,14 +475,14 @@ Translations:
     Crusader:
       RoleName: Cruzado
       Description: Use o botão de Matar para selecionar um alvo.\n\nEste alvo será protegido de ataques e você matará automaticamente qualquer um que interagir com seu alvo.
-      Blurb: Proteger Jogadores de Ataques
+      Blurb: Proteja os Jogadores de Ataques
       Options:
         BeneficialInteractionProtection: Proteger contra Interações Benéficas::0
         NeutralInteractionProtection: Proteger contra Interações Neutras::0
       ButtonText: Proteger
     Demolitionist:
-      RoleName: Demolidor
-      Description: Quando o Demolidor é morto, ele bombardeia o chão, dando ao assassino alguns segundos para encontrar uma ventilação. Se o assassino não dutar a tempo, ele é bombardeado.\n\nO assassino é notificado de que matou o Demolidor com um indicador de texto acima de seu nome.
+      RoleName: Explosivo
+      Description: Quando o Explosivo é morto, ele bombardeia o chão, dando ao assassino alguns segundos para encontrar uma ventilação. Se o assassino não dutar a tempo, ele é bombardeado.\n\nO assassino é notificado de que matou o Explosivo com um indicador de texto acima de seu nome.
       Blurb: Exploda Seu Assassino
       YouKilledDemoMessage: Você Matou o {0}! Dute para permanecer vivo!
     Dictator:
@@ -501,7 +501,7 @@ Translations:
         Nota: Nada acontece se o ditador pular.
       Blurb: Dite Quem Deve Ser Ejetado
       Options:
-        NumberOfDictates: Número de Ditadções
+        NumberOfDictates: Número de Ditações
         SuicideIfVoteCrewmate: Suicídio se Tripulante for::0 Executado
         ShowDictatorVoteAtMeetingEnd: Mostrar Voto do Ditador no Fim da Reunião
       LynchEventMessage: '{0}::0 linchou {1}::1.'
@@ -513,7 +513,7 @@ Translations:
       Blurb: Veja Como os Jogadores Morreram
     Engineer:
       RoleName: Engenheiro
-      Description: O Engenheiro pode usar as ventilações para viajar pelo mapa. Este é uma função comum do Among Us.
+      Description: O Engenheiro pode usar as ventilações para viajar pelo mapa. Esta é uma função comum do Among Us.
       Blurb: Use os Dutos Pelo Mapa
       Options:
         VentCooldown: Tempo de Recarga da Para Usar os Dutos
@@ -521,7 +521,7 @@ Translations:
     Escort:
       RoleName: Escolta
       Description: O Escolta pode usar seu botão de usar o pet para bloquear a função de outros jogadores.\n\nBloquear a função de um jogador o impede de matar, reportar corpos mortos, convocar reuniões, metamorfosear e dutar.
-      Blurb: Bloquear Funções de Jogadores
+      Blurb: Bloqueie as Funções dos Jogadores
       Options:
         RoleblockCooldown: Tempo de Recarga do Bloqueio de Função
         RoleblockDuration: Duração do Bloqueio de Função
@@ -749,8 +749,8 @@ Translations:
         TransportCooldown: Tempo de Recarga do Transporte
       ButtonText: Transportar
     Trapster:
-      RoleName: Armadilheiro
-      Description: Quando o Armadilheiro é morto, o assassino ficará congelado no lugar por uma duração definida.\n\nO assassino preso não poderá reportar o corpo enquanto estiver preso.
+      RoleName: Imobilizador
+      Description: Quando o Imobilizador é morto, o assassino ficará congelado no lugar por uma duração definida.\n\nO assassino preso não poderá reportar o corpo enquanto estiver preso.
       Blurb: Congelar Impostores Quando Mortos
       Options:
         TrapsOnIndirectKills: Armadilhas em Mortes Indiretas
@@ -789,9 +789,9 @@ Translations:
       SkipToContinue: Pressione "Pular Voto" para continuar.
       VoteRoleInfo: Para selecionar uma função, vote em um jogador com a função sobre o nome dele. Se ele tiver várias funções sobre o nome, votar no mesmo jogador novamente selecionará a próxima função exibida.
     AgiTater:
-      RoleName: AgiTater
+      RoleName: Demolidor
       Description: >-
-        O AgiTater pode iniciar um jogo mortal de 'batata quente'.
+        O Demolidor pode iniciar um jogo mortal de 'batata quente'.
 
 
         Use o botão de matar para passar uma bomba para um jogador que deve passar a bomba para outro jogador antes que ela exploda (pode ser após uma duração ou quando a próxima reunião for convocada).
@@ -816,19 +816,19 @@ Translations:
       HoldingBombLevel3: Segurando a Bomba!!!!!
       ButtonText: Passar
     Amalgamation:
-      RoleName: Amálgama
-      Description: Toda vez que o Amálgama reporta um corpo, ele adquire as habilidades daquela função. A condição de vitória do Amálgama é determinada pelo primeiro corpo que ele reporta, outros corpos continuarão a fortalecer o Amálgama. O Amálgama é uma função oculto que pode ocasionalmente surgir em vez do Amnésico.
-      Blurb: Torne-se TODOS as funções
+      RoleName: Amálgamo
+      Description: Toda vez que o Amálgamo reporta um corpo, ele adquire as habilidades daquela função. A condição de vitória do Amálgamo é determinada pelo primeiro corpo que ele reporta, outros corpos continuarão a fortalecer o Amálgamo. O Amálgamo é uma função oculta que pode ocasionalmente surgir em vez do Amnésico.
+      Blurb: Torne-se TODAS as funções
       Options:
         WinConditionDeterminer: Determinador de Condição de Vitória
-        OldestRoleValue: Função Mais Antigo
+        OldestRoleValue: Função Mais Antiga
         NewestRoleValue: Função Mais Recente
-        MaxAbsorbedRoles: Máximo de Funções Absorvidos
+        MaxAbsorbedRoles: Máximo de Funções Absorvidas
         AbsorbModifiers: Absorver Modificadores
     Amnesiac:
       RoleName: Amnésico
       Description: >-
-        Quando o Amnésico reporta um corpo pela primeira vez, ele se juntará à equipe do jogador morto. Se habilitado, o Amnésico, em vez disso, roubará a função exato do jogador.
+        Quando o Amnésico reporta um corpo pela primeira vez, ele se juntará à equipe do jogador morto. Se habilitado, o Amnésico, em vez disso, roubará a função exata do jogador.
 
 
         Se o Amnésico reportar --> Então ele se torna:
@@ -839,7 +839,7 @@ Translations:
 
         Tripulante --> Xerife
 
-        Outro --> Bobo da Corte
+        Outro --> Palhaço
       Blurb: Reporte um Corpo e Junte-se à Equipe Dele
       Options:
         StealsExactRole: Rouba Função Exato
@@ -871,21 +871,21 @@ Translations:
         Hostile: Hostil
       ButtonText: Proteger
     Arsonist:
-      RoleName: Incendiário
-      Description: Pressione o botão de Matar repetidamente ao lado de um jogador para derramar óleo sobre ele. O jogador é completamente encharcado quando marcado por um círculo laranja completo.\n\nEncharque todos os jogadores e os incendeie usando o botão de usar o pet para vencer.
+      RoleName: Pirômano
+      Description: Pressione o botão de Matar repetidamente ao lado de um jogador para derramar óleo sobre ele. O jogador é completamente molhado quando marcado por um círculo laranja completo.\n\nMolhe todos os jogadores e os incendeie usando o botão de usar o pet para vencer.
       Blurb: Derrame e Incendeie Todos os Jogadores Para Vencer
       Options:
-        AttacksToCompleteDouse: Ataques para Completar o Encharcamento
+        AttacksToCompleteDouse: Ataques para Completar o Molhamento
         CanIgniteAnytime: Pode Incendiar a Qualquer Momento
       IncineratedDeathName: Incinerado
       DouseEventMessage: '{0} encharcou {1}.'
       PressIgniteToWinMessage: Pressione Incendiar para Vencer
       DousedPlayerStatistic: Jogadores Encharcados
       IncineratedPlayerStatistic: Jogadores Incinerados
-      ButtonText: Encharcar
+      ButtonText: Molhar
     BloodKnight:
-      RoleName: Cavaleiro de Sangue
-      Description: O Cavaleiro de Sangue é um Neutro Assassino onde, toda vez que ele mata um jogador, ele será protegido de ataques por alguns segundos.
+      RoleName: Cavaleiro Sangrento
+      Description: O Cavaleiro Sangrento é um Neutro Assassino onde, toda vez que ele mata um jogador, ele será protegido de ataques por alguns segundos.
       Blurb: Ganhe um Escudo Para Cada Morte
       Options:
         ProtectDuration: Duração da Proteção
@@ -923,22 +923,22 @@ Translations:
       Options:
         IsShapeshifter: Egoísta é um Metamorfo
     Executioner:
-      RoleName: Carrasco
-      Description: O Carrasco recebe um alvo no início do jogo. O alvo é marcado com um nome colorido (mesma cor do Carrasco) e o Carrasco vence se seu alvo for votado.\n\nSe o alvo morrer antes de ser votado, o Carrasco muda sua Função e se torna Tripulante, Bobo da Corte ou Oportunista, de acordo com as configurações do anfitrião. Se o alvo for o Bobo da Corte, o Carrasco pode ser um vencedor adicional.
+      RoleName: Executor
+      Description: O Executor recebe um alvo no início do jogo. O alvo é marcado com um nome colorido (mesma cor do Executor) e o Executor vence se seu alvo for votado.\n\nSe o alvo morrer antes de ser votado, o Executor muda sua Função e se torna Tripulante, Palhaço ou Oportunista, de acordo com as configurações do anfitrião. Se o alvo for o Palhaço, o Executor pode ser um vencedor adicional.
       Blurb: Faça o Alvo Ser Votado Para Vencer
       Options:
         TargetImpostors: Pode Alvo Impostores
         TargetNeutrals: Pode Alvo Neutros
         RoleChange: Mudança de Função Quando o Alvo Morre
     Glitch:
-      RoleName: O Glitch
+      RoleName: Glitch
       Description: Use o botão de matar para bloquear funções ou matar jogadores. o botão de usar o pet pode ser usado para alternar entre hackear (bloquear funções) e matar.\n\nHackear um jogador o impede de matar, reportar corpos mortos, convocar reuniões, metamorfosear e dutar.
       Blurb: Bloquear Funções e Matar Jogadores
-      ModeHacking: Hackeando
-      ModeKilling: Matando
+      ModeHacking: Hackear
+      ModeKilling: Matar
       Glitch:
         Options:
-          HackingDuration: Duração do Hacking
+          HackingDuration: Duração do Hackeamento
     Hacker:
       RoleName: Hacker
       Description: O Hacker deve consertar sabotagens para ganhar pontos. Cada conserto de sabotagem equivale a um ponto, e o Hacker precisa de um certo número de pontos (determinado pelo anfitrião) para vencer. Assim como o Reparador, o Hacker pode consertar sabotagens mais rapidamente e sozinho.
@@ -954,13 +954,13 @@ Translations:
         RitualCirclesUntilWin: Círculos Rituais Até a Vitória
       Blurb: <Roles.Harbinger.Blurb>
     Hitman:
-      RoleName: Atirador de Elite
-      Description: Fique Vivo! O Atirador de Elite é um Neutro Assassino que pode vencer com a maioria das equipes, desde que esteja vivo no final do jogo.\n\nO anfitrião pode escolher se o Atirador de Elite vence com o Carrasco/Bobo da Corte.
+      RoleName: Hitman
+      Description: Fique Vivo! O Hitman é um Neutro Assassino que pode vencer com a maioria das equipes, desde que esteja vivo no final do jogo.\n\nO anfitrião pode escolher se o Hitman vence com o Executor/Palhaço.
       Blurb: Mate Jogadores e Permaneça Vivo
       Options:
         WinWithAbsolutes: Vence com Vencedores Absolutos
-        Executioner: Carrasco
-        Jester: Bobo da Corte
+        Executioner: Executor
+        Jester: Palhaço
     Jackal:
       RoleName: Chacal
       Description: O Chacal pode matar todos, incluindo Impostores. Ele deve ser o último jogador a permanecer em pé para vencer.
@@ -972,20 +972,20 @@ Translations:
         SidekickBecomesJackal: Parceiro se Torna Chacal na Morte do Chacal
         NewJackalCanRecruit: Novo Chacal Pode Recrutar
       NextKillIsRecruit: >-
-        <size=1.5>Você tem mortes suficientes para Recrutar.
+        <size=1.5>Você matou o suficiente para poder Recrutar.
 
-        Sua próxima morte recrutará o jogador.</size>
+        Sua próxima tentativa de matar recrutará o jogador.</size>
       Recruit: Recrutar
     Jester:
-      RoleName: Bobo da Corte
-      Description: O Bobo da Corte precisa ser votado para vencer. Se o Bobo da Corte for votado, o jogo terminará imediatamente com ele como vencedor.\n\nDependendo das configurações do anfitrião, o Bobo da Corte pode não ser capaz de convocar reuniões, ou pode precisar de um número mínimo de reuniões antes que possa vencer.
+      RoleName: Palhaço
+      Description: O Palhaço precisa ser votado para vencer. Se o Palhaço for votado, o jogo terminará imediatamente com ele como vencedor.\n\nDependendo das configurações do anfitrião, o Palhaço pode não ser capaz de convocar reuniões, ou pode precisar de um número mínimo de reuniões antes que possa vencer.
       Blurb: Seja Votado Fora
       Options:
         ImpostorVision: Tem Visão de Impostor
-        CanUseVents: Pode Usar Vents
+        CanUseVents: Pode Usar Dutos
         CantCallEmergencyMeetings: Não Pode Chamar Reuniões de Emergência
-        MeetingsBeforeWinning: Mínimo de Reuniões Antes da Habilidade de Vencer
-      WinConditionName: Bobo da Corte::0 Exilado
+        MeetingsBeforeWinning: Mínimo de Reuniões Para Poder Vencer
+      WinConditionName: Palhaço::0 Expulso
     Juggernaut:
       RoleName: Juggernaut
       Description: O Juggernaut começa com um tempo de recarga de abate mais alto, mas a cada abate, seu tempo de recarga diminui.\n\nEle deve matar a todos, incluindo Impostores, e ser a última pessoa em pé.
@@ -993,31 +993,31 @@ Translations:
       Options:
         CooldownReductionPerKill: Redução de Tempo de Recarga por Abate
     Marksman:
-      RoleName: Atirador de Elite
-      Description: O Atirador de Elite pode matar jogadores para obter uma distância de abate maior. A quantidade de mortes necessárias para obter um aumento de distância é determinada pelo anfitrião.
-      Blurb: Consiga Mortes Para Obter uma Distância de Abate Maior
+      RoleName: Franco-Atirador
+      Description: O Franco-Atirador pode matar jogadores para obter uma distância de abate maior. A quantidade de mortes necessárias para obter um aumento de distância é determinada pelo anfitrião.
+      Blurb: Mate Para Obter uma Distância de Abate Maior
       Options:
-        KillsBeforeIncrease: Abates Antes do Aumento
+        KillsBeforeIncrease: Matar Antes do Aumento
         StartingKillDistance: Distância de Abate Inicial
     Necromancer:
       RoleName: Necromante
       Description: O Necromante é o principal recrutador da facção dos Mortos-Vivos. A primeira pessoa que ele recrutar (usar o botão de Matar) se tornará um Cavaleiro da Morte. Com a ajuda do Cavaleiro da Morte, eles devem trabalhar juntos para converter outros aos Mortos-Vivos. O Necromante pode converter pessoas usando o botão de matar em alguém que o Cavaleiro da Morte já começou a converter.\n\nJogadores convertidos/parcialmente convertidos terão um círculo ao lado de seus nomes. Um círculo completo indica conversão total. Se você tentar converter um jogador que ainda não está sendo convertido pelo Cavaleiro da Morte, você será bloqueado.
-      Blurb: Converter Funções para os Mortos-Vivos
+      Blurb: Converta Funções para os Mortos-Vivos
       Options:
         ConvertCooldown: Tempo de Recarga de Conversão
         PartialConvertImmunity: Imune a Parcialmente Convertidos
     Occultist:
       RoleName: Ocultista
-      Description: O botão de matar/Hex do Ocultista alterna entre hexing e matança de jogadores.\n\nOs jogadores que forem hexed pelo Ocultista serão vistos com uma cruz durante a reunião. Se o Ocultista não for votado durante esta reunião, o jogador hexed morrerá.\n\nMortes regulares auto-reportam a Armador.\nHex não auto-reporta a Armador.
-      Blurb: Hex e Mate Jogadores
+      Description: O botão de matar/Amaldiçoar do Ocultista alterna entre Amaldiçoar e matar jogadores.\n\nOs jogadores que forem amaldiçoados pelo Ocultista serão vistos com uma cruz durante a reunião. Se o Ocultista não for votado durante esta reunião, o jogador amaldiçoado morrerá.\n\nMortes regulares auto-reportam o Armador.\nMatar amaldiçoando não auto-reporta o Armador.
+      Blurb: Amaldiçoe e Mate Jogadores
       Options:
         FreelySwitchModes: Alternar Modos Livremente
         SwitchModesAfterAttack: Alternar Modos Após Ataque
       CursedMessage: '{0}::0 hexou {1}::1 para morrer no final da próxima reunião.'
-      CursingModeText: Hexando
+      CursingModeText: Amaldiçoando
       KillingModeText: Matando
-      HexedCauseOfDeath: Hexado
-      CursedStatusDescription: Você foi hexed. Jogadores hexed morrerão após a reunião, a menos que a fonte do hex seja votada.
+      HexedCauseOfDeath: Amaldiçoado
+      CursedStatusDescription: Você foi amaldiçoado. Jogadores amaldiçoados morrerão após a reunião, a menos que a fonte da maldição seja votada.
     Opportunist:
       RoleName: Oportunista
       Description: Independentemente do resultado do jogo, o Oportunista vence se sobreviver até o final da partida.
@@ -1033,15 +1033,15 @@ Translations:
       DeathName: Engolido
       ButtonText: Engolir
     Pestilence:
-      RoleName: Pestilência
+      RoleName: Peste
       Description: >-
-        A Pestilência é uma Função Secundário do Portador da Praga, uma vez que ele termina de infectar a todos. A Pestilência não pode ser morta diretamente, e qualquer um que interagir com ela será repelido (morto em vez disso).
+        A Peste é uma Função Secundária do Porta-Pragas, uma vez que ele termina de infectar a todos. A Peste não pode ser morta diretamente, e qualquer um que interagir com ela será repelido (morto em vez disso).
 
 
-        A Pestilência pode ser votada ou morta indiretamente (ex: jogadores Amaldiçoados ou Marionetados).
+        A Peste pode ser votada ou morta indiretamente (ex: jogadores Amaldiçoados ou Marionetados).
 
 
-        Dependendo das configurações do anfitrião, outros tipos de ataques também podem matar a Pestilência, e os ataques da Pestilência podem ser inbloqueáveis.
+        Dependendo das configurações do anfitrião, outros tipos de ataques também podem matar a Peste, e os ataques da Peste podem ser inbloqueáveis.
       Blurb: Mate Todos e Vença Sozinho
       Options:
         UnblockableKill: Morte Inbloqueável
@@ -1058,9 +1058,9 @@ Translations:
         GuessWinAmount: Quantidade de Vitórias por Adivinhação do Pirata
         DieOnMisguess: Pirata Morre em Erro de Adivinhação
     PlagueBearer:
-      RoleName: Portador da Praga
-      Description: Use o botão de matar para infectar a todos. Uma vez que todos estejam infectados, o Portador da Praga se transforma em Pestilência.
-      Blurb: Infecte a Todos e Torne-se Pestilência
+      RoleName: Porta-Pragas
+      Description: Use o botão de matar para infectar a todos. Uma vez que todos estejam infectados, o Porta-Pragas se transforma em Peste.
+      Blurb: Infecte a Todos e Torne-se a Peste
       Options:
         InfectCooldown: Tempo de Recarga de Infecção
       InfectedHistoryMessage: '{0}::0 infectou {1}::1.'
@@ -1103,7 +1103,7 @@ Translations:
         KillerKnowsCat: Assassino Sabe Gato de Schrödinger::0 Cat::1
     Survivor:
       RoleName: Sobrevivente
-      Description: Sobreviva até o final do jogo para vencer.\n\nO Sobrevivente pode usar seu botão de usar o pet para se proteger de ataques por um curto período de tempo. O Sobrevivente não pode vencer com o Carrasco ou o Bobo da Corte.
+      Description: Sobreviva até o final do jogo para vencer.\n\nO Sobrevivente pode usar seu botão de usar o pet para se proteger de ataques por um curto período de tempo. O Sobrevivente não pode vencer com o Carrasco ou o Palhaço.
       Blurb: Sobreviva Até o Fim Para Vencer
       Options:
         VestDuration: Duração do Escudo
@@ -1142,7 +1142,7 @@ Translations:
     Werewolf:
       RoleName: Lobisomem
       Description: O Lobisomem é um Neutro Assassino que pode usar o botão de usar o pet para iniciar um frenesi e matar com um tempo de recarga de abate mais curto.\n\nO Lobisomem só pode matar durante um frenesi.
-      Blurb: Frenesi e Mate Todos
+      Blurb: Entre em um Frenesi e Mate Todos
       Rampage: Matar Todos
       Options:
         RampageKillCooldown: Tempo de Recarga de Abate do Frenesi
@@ -1221,10 +1221,10 @@ Translations:
       UnknownRole: Função {0} não encontrada. Você pode usar /perc para ver todas as funções habilitadas.
       FinishedGuessingText: Você confirmou sua adivinhação. Se você não estiver morto, pode votar normalmente agora.
       ErrorCompletingGuess: Erro ao completar a adivinhação. Você pode tentar adivinhar novamente.
-      GuessAnnouncementMessage: O adivinhador fez uma adivinhação. {0} morreu.
+      GuessAnnouncementMessage: O adivinhador fez uma adivinhação. o {0} morreu.
       Options:
         GuesserPerMeeting: Adivinhações por Reunião
-        CanGuessTeammates: Pode Adivinhar Colegas de Equipe
+        CanGuessTeammates: Pode Adivinhar Parceiros de Equipe
         FactionMaxGuessers: '{0}::0 Máximo de Adivinhadores da Facção'
         NeutralKillingSetting: Pode Adivinhar Neutro::0 Assassino::1
         NeutralPassiveSetting: Pode Adivinhar Neutro::0 Passivo::1
@@ -1237,10 +1237,10 @@ Translations:
       CantGuessRole: A função, {0}, foi desabilitada pelo Anfitrião para ser adivinhada. Por favor, use /r [nome da função] em uma função diferente. Use /o para verificar quais funções você pode adivinhar.
       CantGuessRoleBecauseOfRole: Sua função impediu que você adivinhasse um jogador como {0}. Você pode descobrir o porquê usando /m.
       CantGuessBecauseOfRole: Sua função impediu que você adivinhasse {0}! Tente um jogador diferente.
-      CantGuessTeammate: '{0} é seu companheiro de equipe! Você não pode adivinhar esse jogador.'
+      CantGuessTeammate: '{0} é seu parceiro de equipe! Você não pode adivinhar esse jogador.'
       CanSeeRole: Você pode ver a função de {0}! Você não pode adivinhar esse jogador.
     LastResort:
-      RoleName: Último Recurso
+      RoleName: Último-Recurso
       Description: Como Último Recurso, você pode votar em si mesmo para ganhar votos extras pelo resto da partida. Este voto é cancelado e você pode votar em qualquer outra pessoa depois disso.\n\nA desvantagem é que sua função agora é revelada ao público para que todos vejam.
       Blurb: Ganhe votos extras no último segundo
       Options:
@@ -1293,9 +1293,9 @@ Translations:
       Description: Use o botão de relatório para reportar um corpo. No chat da reunião, o Detetive receberá uma mensagem revelando a função do jogador morto.\n\nO Detetive só pode ver a função do jogador morto se ele mesmo reportar o corpo.
       Blurb: Conheça as Funções dos Jogadores Mortos
     TieBreaker:
-      RoleName: Desempate
-      Description: Se houver um empate de votos entre dois jogadores em uma reunião, o voto do Desempate decidirá quem será ejetado ou se a votação será pulada.
-      Blurb: Desempate
+      RoleName: Desempatador
+      Description: Se houver um empate de votos entre dois jogadores em uma reunião, o voto do Desempatador decidirá quem será ejetado ou se a votação será pulada.
+      Blurb: Desempate votos
       TieBreakerMessage: O empate foi desfeito por {0}!
     Torch:
       RoleName: Tocha
@@ -1368,7 +1368,7 @@ Translations:
       UnknownRole: Função {0} não encontrada. Você pode usar /perc para ver todas as funções habilitadas.
       FinishedGuessingText: Você confirmou sua adivinhação. Se você não estiver morto, pode votar normalmente agora.
       ErrorCompletingGuess: Erro ao completar a adivinhação. Você pode tentar adivinhar novamente.
-      GuessAnnouncementMessage: O adivinhador fez uma adivinhação. {0} morreu.
+      GuessAnnouncementMessage: O adivinhador fez uma adivinhação. o {0} morreu.
     Genie:
       RoleName: Gênio
       Options:
@@ -1409,15 +1409,15 @@ Translations:
       Description: Use o botão de usar o pet/matar para selecionar um jogador para prender na reunião. Na reunião, o jogador preso pode ser mostrado a todos, dependendo das configurações. O jogador preso não pode votar ou usar nenhuma das habilidades de sua função na reunião. No entanto, outros jogadores também não podem votar no jogador preso.\nVocê pode executar o jogador votando nele. Dependendo das configurações, você pode cometer suicídio se ele for um tripulante. Você tem um número limitado de execuções.\nDependendo das configurações, o jogador preso pode "votar" com você, o que significa que se você votar em alguém, ele será forçado a votar na mesma pessoa.
       ButtonText: Prender
     Sidekick:
-      RoleName: Parceiro
+      RoleName: Ajudante
       Blurb: Ajude o Chacal a matar a todos
-      Description: O Chacal pode recrutar um jogador para ser um Parceiro se a configuração estiver ativada. O Parceiro perderá sua função e habilidades anteriores, mas se tornará aliado do Chacal e ganhará a habilidade de matar. O Parceiro não poderá usar ventilações ou sabotar como o Chacal. Se o Chacal morrer, o Parceiro poderá ser promovido se a configuração estiver ativada, e você poderá recrutar outro parceiro.
+      Description: O Chacal pode recrutar um jogador para ser um Ajudante se a configuração estiver ativada. O Ajudante perderá sua função e habilidades anteriores, mas se tornará aliado do Chacal e ganhará a habilidade de matar. O Ajudante não poderá usar ventilações ou sabotar como o Chacal. Se o Chacal morrer, o Ajudante poderá ser promovido se a configuração estiver ativada, e você poderá recrutar outro Ajudante.
     Turncoat:
       Options:
-        RevealedTurncoatWincon: 'Condição de Vitória do Turncoat Revelado É:'
-        RevealedTurncoatAllies: Turncoat Revelado Aprende Aliados
-        TurncoatLearns: Turncoat Aprende Quando
-        MustBeAlive: Turncoat deve Estar Vivo para Vencer
+        RevealedTurncoatWincon: 'Condição de Vitória do Vira-Casaca Revelado É:'
+        RevealedTurncoatAllies: Vira-Casaca Revelado Aprende Aliados
+        TurncoatLearns: Vira-Casaca Aprende Quando
+        MustBeAlive: Vira-Casaca deve Estar Vivo para Vencer
         AfterReveal: Depois de Revelar
         BeforeReveal: Antes de Revelar
         ImpFaction: Facção Impostor
@@ -1435,7 +1435,7 @@ Translations:
       NoPlayersOnBetrayedTeam: Não há jogadores na equipe pela qual você traiu.
       RoleName: Vira-Casaca
       Blurb: Traia a Tripulação... ou não
-      Description: O Vira-Casaca é uma função neutro que inicialmente está na equipe dos tripulantes. Ele vencerá com a tripulação no final do jogo. No entanto, ele pode escolher trair a tripulação votando em si mesmo na reunião. Como resultado, sua função será revelado a todos os outros. Para evitar que a tripulação vote instantaneamente no Vira-Casaca, você pode marcar um jogador com o botão de matar antes de revelar. Este jogador morrerá se você morrer, então você pode usar essa pessoa como alavanca para se manter vivo. O jogador nem sabe que é o sacrifício, então você pode mentir e culpar alguém completamente diferente (como o Doutor).
+      Description: O Vira-Casaca é uma função neutra que inicialmente está na equipe dos tripulantes. Ele vencerá com a tripulação no final do jogo. No entanto, ele pode escolher trair a tripulação votando em si mesmo na reunião. Como resultado, sua função será revelado a todos os outros. Para evitar que a tripulação vote instantaneamente no Vira-Casaca, você pode marcar um jogador com o botão de matar antes de revelar. Este jogador morrerá se você morrer, então você pode usar essa pessoa como alavanca para se manter vivo. O jogador nem sabe que é o sacrifício, então você pode mentir e culpar alguém completamente diferente (como o Doutor).
   StaticOptions:
     AutoKick: Kick Automático
     EnableGM: Anfitrião GM
@@ -1472,10 +1472,10 @@ Translations:
       Skeld: Adicionar The Skeld
       Mira: Adicionar Mira HQ
       Polus: Adicionar Polus
-      Airship: Adicionar Dirigível
+      Airship: Adicionar Airship
     RandomSpawn:
-      Enable: Geração Aleatória
-      AirshipExtraSpawn: Geração Extra do Dirigível
+      Enable: Spawns Aleatórios
+      AirshipExtraSpawn: Spawns Extra no Airship
     SyncButton:
       Enable: Modo de Botão de Sincronização
       Count: Contagem do Botão de Sincronização
@@ -1518,7 +1518,7 @@ Translations:
     GhostsCanSeeRoles: Fantasmas Podem Ver Outras Funções
     GhostsCanSeeVotes: Fantasmas Podem Ver Votos
     GhostIgnoreTasks: Fantasmas Ignoram Tarefas
-    CamoComms: Comunicações de Camuflagem
+    CamoComms: Camuflagem ao Sabotar as Comunicações
     AutoDisplayResult: Exibir Resultado Automaticamente
     SuffixMode: Modo Sufixo
     ColorNameMode: Modo de Cor do Nome
@@ -1548,7 +1548,7 @@ Translations:
       SayCommandDescription: Mostrar mensagem a TODOS os jogadores
       KickCommandDescription: Expulsar um jogador dado
       BanCommandDescription: Banir um jogador dado
-      DumpCommandDescription: Criar um despejo de log
+      DumpCommandDescription: Criar uma saída de log
       TemplateHelpCommandDescription: Obter informações para todos os comandos de modelo.
       MyRoleCommandDescription: Mostrar a descrição da sua função atual
       RoleOptionCommandDescription: Mostrar as opções da sua função atual
@@ -1578,7 +1578,7 @@ Translations:
       NotInRange: '{0} não está no intervalo de cores válidas.'
     Winners: Vencedores
     Dump:
-      Success: Log despejado com sucesso. Verifique sua pasta de logs para um "dump.log!"
+      Success: Log feito com sucesso. Verifique sua pasta de logs para um "dump.log!"
     HostOptions:
       RoleInfo: ★ Informações de Função ★
       RoleCategory: ★ Funções {0}
@@ -1641,14 +1641,14 @@ Translations:
       RemovedMod: '{0} foi removido(a). Ele(a) não tem mais acesso aos comandos relacionados a mods.'
       AlreadyMod: '{0} já é um mod. Nada aconteceu.'
     BugReports:
-      WaitingOnReport: Este relatório foi anulado, pois estamos aguardando uma resposta para seu relatório anterior.
+      WaitingOnReport: Este reporte foi anulado, pois estamos aguardando uma resposta para seu reporte anterior.
       FailedReport: >-
         Ocorreu um erro ao enviar a solicitação. Tente novamente em um minuto.
 
         Erro: {0}
-      ReportingBug: Sua solicitação foi enviada e estamos relatando seu bug. Obrigado!
-      ReportedBug: Seu bug foi relatado com sucesso. Mais uma vez, obrigado!
-      ReportSuggest: '{0} sugere que você relate "{1}".'
+      ReportingBug: Sua solicitação foi enviada e estamos reportando seu bug. Obrigado!
+      ReportedBug: Seu bug foi reportado com sucesso. Mais uma vez, obrigado!
+      ReportSuggest: '{0} sugere que você reporte "{1}".'
       UploadingLog: Carregando arquivo de log... (Parte {0}/{1})
     Role:
       AbortSearch: Busca abortada. Mais de 5 funções foram encontradas com sua pesquisa. Por favor, seja mais específico.
@@ -1721,8 +1721,8 @@ Translations:
       ImpostorVision: Visão do Impostor
       Switch: Alternar
     General:
-      OnText: LIGADO
-      OffText: DESLIGADO
+      OnText: LIG.
+      OffText: DESL.
       EnabledText: Ativado
       DisabledText: Desativado
       DefaultText: Padrão
@@ -1767,7 +1767,7 @@ Translations:
       AutoKick: Kick Automático no Chat
       AutoKickNoFriendcode: Expulsar Jogadores sem Código de Amigo
       AutoKickLevel: Expulsar Jogadores Abaixo do Nível
-      AutoKickMobile: Expulsar Jogadores Móveis
+      AutoKickMobile: Expulsar Jogadores que Jogam no Celular
       AutoStart: Início Automático
       AutoStartOptionSuffix: Jogadores
       AutoPlayAgain: Jogar Novamente Automaticamente
@@ -1788,7 +1788,7 @@ Translations:
       FixFirstKillCooldown: Consertar Primeiro Tempo de Recarga de Abate
       DisableTasks: Desabilitar Tarefas
       DisableCardSwipe: Desabilitar Passar Cartão
-      DisableMedScan: Desabilitar Escaneamento Médico
+      DisableMedScan: Desabilitar Eviar Scan
       DisableUnlockSafe: Desabilitar Desbloquear Cofre
       DisableUploadData: Desabilitar Upload de Dados
       DisableStartReactor: Desabilitar Iniciar Reator
@@ -1863,7 +1863,7 @@ Translations:
         HiddenTab: Oculto
         GamemodeDescription: Este texto é mostrado aos jogadores quando eles entram para explicar o modo de jogo atual.
       CaptureTheFlag:
-        Name: Capturar a Bandeira
+        Name: Capture a Bandeira
         ButtonText: Configurações CTF
         Description: Mude qualquer coisa sobre CTF aqui!
         GamemodeDescription: Este texto é mostrado aos jogadores quando eles entram para explicar o modo de jogo atual.
@@ -1873,7 +1873,7 @@ Translations:
         Description: Modifique as configurações de Guerras de Cores aqui!
         GamemodeDescription: Este texto é mostrado aos jogadores quando eles entram para explicar o modo de jogo atual.
     CaptureTheFlag:
-      SectionTitle: Configurações CTF
+      SectionTitle: Configurações CAB
       GameLength: Duração do Jogo
       ReviveDuration: Tempo Limite de Reviver
       CarryingSpeedMultiplier: Multiplicador de Velocidade de Carregamento
@@ -1888,7 +1888,7 @@ Translations:
       TeamOption: Equipe {0}
       CustomTeamTitle: Equipes Personalizadas
     RolesMadmates:
-      MadmatesTakeImpostorSlots: Madmates::0 Take Impostor Slots
+      MadmatesTakeImpostorSlots: Cúmplices::0 pegam espaços dos Impostores normais
   GUI:
     GeneralButton: Geral
     GraphicsButton: Gráficos
@@ -1905,71 +1905,71 @@ Translations:
     LotusButton: Lotus
     InnerslothButton: Innersloth
     HistoryMenu:
-      ButtonText: History
+      ButtonText: Histórico
     ComboMenu:
-      ButtonText: Edit Combo
+      ButtonText: Editar Combo
       DeleteArea:
         TitleText: >-
-          Are you sure you want
+          Você tem certeza de que quer
 
-          to delete this combo?
+          excluir este combo?
       ChooseComboTypeArea:
-        ForceComboTitleText: Forced Combo Type
-        BanComboTitleText: Banned Combo Type
-        TitleText: Choose the type of combo.
+        ForceComboTitleText: Forçar Tipo de Combo
+        BanComboTitleText: Banir Tipo de Combo
+        TitleText: Escolha o tipo de combo.
         ForcedRoleModifierComboText: >-
-          A player will always have the modifier, {1},
+          Um jogador sempre terá o modificador, {1},
 
-          if their main role is {0}.
+          se sua função principal for {0}.
         ForcedModifierModifierComboText: >-
-          A player with one of the modifiers, {0} or {1},
+          Um jogador com um desses modificadores, {0} ou {1},
 
-          will always have the other one.
+          sempre terá o outro.
         ForcedRoleRoleComboText: >-
-          {1} will always spawn when {0} spawns.
+          {1} sempre aparecerá quando {0} aparecer.
 
-          If there aren't enough players for {1},
+          se não tiver jogadores suficientes para {1},
 
-          then {0} will be skipped.
+          então {0} será pulado.
         BannedRoleRoleComboText: >-
-          {0} and {1} cannot spawn
+          {0} não {1} não podem aparecer
 
-          in the same game together.
+          no mesmo jogo juntos.
         BannedRoleModifierComboText: >-
-          A player with the role {0}
+          Um jogador com a função {0}
 
-          cannot have the modifier {1}.
+          não poderá ter o modificador {1}.
         BannedModifierModifierComboText: >-
-          A player cannot have the modifiers
+          Um jogador não pode ter os modificadores
 
-          {0} and {1} at the same time.
+          {0} e {1} ao mesmo tempo.
       CreateComboArea:
         NothingFound: >-
-          There are no roles that have the name you inputted.
+          Não há funções com o nome que você inseriu.
 
-          Did you make a typo?
+          Você cometeu algum erro de digitação?
         SelectRolesText: >-
-          Select the roles for your combo,
+          Selecione as funções para o seu combo,
 
-          then click the next button.
+          e então clique no próximo botão.
         SearchTooVague: >-
-          Your search is too vague!
+          Sua pesquisa foi tão vagua!
 
-          Type more of the rolename.
-        SelectedRoles: 'Selected Roles:'
-        ReturnText: Return
-        NextText: Next
+          Digite mais do nome da função.
+        SelectedRoles: 'Funções Selecionadas:'
+        ReturnText: Voltar
+        NextText: Próximo
       FinalizeArea:
-        TitleText: Are you sure this information is correct?
-        CreateComboText: Create Combo
+        TitleText: Você tem certeza de que esta informação está correta?
+        CreateComboText: Criar Combo
       MainArea:
-        TitleText: Edit Combo Menu
-        AddComboText: Add Combo
-        CycleUpText: Scroll Up
-        CycleDownText: Scroll Down
-        PresetText: Preset {0}
+        TitleText: Menu de Edição de Combos
+        AddComboText: Adicionar Combo
+        CycleUpText: Rolar para Cima
+        CycleDownText: Rolar para Baixo
+        PresetText: Predefinição {0}
   HistoryMenu: 
-  Add commentMore actions: Adicionar comentárioMais ações
+  Add commentMore actions: Adicionar comentário Mais ações
   ButtonText: Histórico
   ComboMenu:
     ButtonText: Editar Combinação
@@ -2059,8 +2059,8 @@ Translations:
       Name: Neutros Assassinos
       Description: Matem todos os outros e sejam os últimos a permanecer em pé.
     Madmates:
-      Name: Madmates
-      Description: Help the impostors win.
+      Name: Cúmplice
+      Description: Ajude os impostores a vencer.
   Constants:
     DeathNames:
       Killed: Morto
@@ -2076,7 +2076,7 @@ Translations:
       Executed: Executado
   Meetings:
     RoleRevealText: '{0} era o {1}.'
-    RemainingImpostorsText: '{0} impostores restantes.'
+    RemainingImpostorsText: '{0} Impostores restantes.'
     NoImpostorsText: Nenhum impostor restante.
   Internals:
     FatalErrorHandler:
@@ -2084,7 +2084,7 @@ Translations:
       FatalErrorMessage: Erro fatal encontrado durante [{0}]
       CheckLogMessage: Verifique os logs para mais informações.
   PrivacyPolicy:
-    PrivacyPolicyText: O Project Lotus possui alguns recursos opcionais que exigem o compartilhamento de dados com nossa API. Como relatórios de bugs e informações de lobby. Verifique nossa <link=https://beta.lotusau.top/privacy/>Política de Privacidade</link> para mais detalhes. Você deseja habilitar esses recursos extras e nos permitir processar seus dados?
+    PrivacyPolicyText: O Project Lotus possui alguns recursos opcionais que exigem o compartilhamento de dados com nossa API. Como reporte de bugs e informações da sala. Verifique nossa <link=https://beta.lotusau.top/privacy/>Política de Privacidade</link> para mais detalhes. Você deseja habilitar esses recursos extras e nos permitir processar seus dados?
     UpdatedPrivacyPolicy: Revisamos nossa <link=https://beta.lotusau.top/privacy/>Política de Privacidade</link>. Encorajamos você a revisá-la e atualizar suas preferências de acordo. Você ainda deseja que os recursos sejam habilitados e nos permite processar seus dados?
     DisagreeText: Todas as solicitações online não essenciais foram desativadas. Você pode habilitar as específicas através do menu de Configurações.
     AcceptText: Todas as solicitações online foram ativadas. Você pode desabilitar as específicas através do menu de Configurações.
