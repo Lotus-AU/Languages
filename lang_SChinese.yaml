@@ -462,7 +462,7 @@ Translations:
       BodyguardHelpMessage: '你是个保镖! 你的职责是: 保护重要人物! 投票以选择你下回合要保护的人! 或者你可以选择跳票然后进行正常的投票.'
     Chameleon:
       RoleName: 变色龙
-      Description: 变帅了可以通过跳管以进入短时间的隐身.\n\n变色龙的隐身持续时间将会显示在他们的名字底下,过一段时间后他们才会现形.
+      Description: 变色龙可以通过跳管以进入短时间的隐身.\n\n变色龙的隐身持续时间将会显示在他们的名字底下,过一段时间后他们才会现形.
       Blurb: 光学迷彩,小子!
       Aliases: CH, 研究员, 正义的隐身人
       Options:
@@ -2227,3 +2227,4 @@ Translations:
       以下职业需要装配宠物: {1}
     WarningToPlayer: 这个模组中的某些职业要求装配宠物. 请去更衣室装配一个宠物!.
     WarningTitle: ⚠ 警告 ⚠
+
