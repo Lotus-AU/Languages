@@ -286,7 +286,7 @@ Translations:
         RefundBulletOnKill: 击杀时回复子弹数
         PreciseShooting: 穿透射击
         PlayerPiercing: 可穿透玩家数
-      ButtonText: Aim
+      ButtonText: 瞄准
     Swooper:
       RoleName: 隐身人
       Description: 隐身人可以通过跳进管道以隐身. 隐身时,隐身人可以做所有伪装者都能做的事(击杀,破坏,跳管).\n\n小心点! 取决于房主设置,隐身人在击杀时可能会现形!
@@ -429,7 +429,7 @@ Translations:
         InstantText: 立即
         KillerArrow: 凶手有指向复活玩家箭头
         PortableVitals: 拥有便携式生命检测仪
-      ButtonText: Revive
+      ButtonText: 复活
     Bastion:
       RoleName: 埋雷兵
       Description: 跳管埋雷.下一个跳这个管道的人会被炸死.\n注意! 埋雷兵可以被自己炸死.\n炸弹只存在一回合. 下一回合管道会被重置.
@@ -461,16 +461,16 @@ Translations:
         NeutralInteractionProtection: 抵挡 中立型::0 的互动
       BodyguardHelpMessage: '你是个保镖! 你的职责是: 保护重要人物! 投票以选择你下回合要保护的人! 或者你可以选择跳票然后进行正常的投票.'
     Chameleon:
-      RoleName: 研究员
-      Description: 研究员可以通过跳管以进入短时间的隐身.\n\n研究员的隐身持续时间将会显示在他们的名字底下,过一段时间后他们才会现形.
+      RoleName: 变色龙
+      Description: 变帅了可以通过跳管以进入短时间的隐身.\n\n变色龙的隐身持续时间将会显示在他们的名字底下,过一段时间后他们才会现形.
       Blurb: 光学迷彩,小子!
-      Aliases: CH, 变色龙, 正义的隐身人
+      Aliases: CH, 研究员, 正义的隐身人
       Options:
         InvisibilityDuration: 隐身持续时间
         InvisibilityCooldown: 隐身冷却时间
       HiddenText: 隐身中::0 {0}
       TimesInvisibleStatistic: 隐身次数
-      ButtonText: Conceal
+      ButtonText: 隐身
     Charmer:
       RoleName: 谈判家
       Description: >-
@@ -516,7 +516,7 @@ Translations:
       Options:
         BeneficialInteractionProtection: 抵挡 增益型::0 的互动
         NeutralInteractionProtection: 抵挡 中立型::0 的互动
-      ButtonText: Protect
+      ButtonText: 十字守护
     Demolitionist:
       RoleName: 同命爆手
       Description: 同命爆手被杀后,会留下炸弹,如果凶手没有及时进入管道,则会被炸死.\n\n凶手击杀同命爆手后会在他们的名字下面提示他们刚刚击杀了同命爆手.
@@ -597,7 +597,8 @@ Translations:
         注意,某些船员职业 (比如警长)也会显示为红名(邪恶阵营)!
 
 
-        小贴士: 某些带有改变阵营性质的附加职业的玩家会以主职业好坏作为判定标准.比如带有'疯子'附加职业的医生会显示为绿名,但是带有'疯子'附加职业的吸血鬼会显示为红名.
+        小贴士: 某些带有改变阵营性质的附加职业的玩家会根据设置来决定他们是不是红名,如果一个玩家具有'疯子'附加职业,且此时'独立阵营杀戮性职业显示为红名'开启,
+        那么那个玩家将会显示为红名,否则为绿名
       Blurb: 啊哈哈哈,盒武器来咯!
       Aliases: INV, 预言家, 盒
       Options:
@@ -605,7 +606,7 @@ Translations:
         NeutralKillingRed: 独立阵营::1 杀戮型职业::2 显示为 红名::0
         NeutralPassiveRed: 独立阵营::1 友善型职业::2 显示为 红名::0
         MadmateRed: 叛徒::1 显示为 红名::0
-        CrewKillingRed: 船员带刀职业::1 显示为 红名::0
+        CrewKillingRed: 船员击杀型职业::1 显示为 红名::0
       ButtonText: 调查
     Mayor:
       RoleName: 市长
@@ -636,6 +637,8 @@ Translations:
         OnDeathValue: 目标死亡后
         MeetingsValue: 会议后
         NeverValue: 永不
+        CanProtectSamePlayer: 可以连续保护同一个玩家
+      MustSelectNewTarget: 你上一轮保护过了{0}.这个回合你必须选其他人保护
     Medium:
       RoleName: 通灵师
       Description: 当通灵师报告尸体时,他们将会在会议中得知杀死该玩家的凶手的职业.\n\n只有在通灵师亲自报告尸体时才能看见凶手职业.\n\n根据设置,他们可能还有指向尸体的箭头.\n\n报告尸体后,通灵师也许能与报告的尸体所属玩家的灵魂交流.在会议开始时,通灵师和被报告的尸体的灵魂将会被提示他们能够对话.\n\n通灵师可以问问题,死亡的玩家只能回答'是'或'不是'.
@@ -827,6 +830,7 @@ Translations:
         KillCrewmates: 可反杀船员
         KillWhileTransported: 传送时反杀
         KillRangedAttackers: 可反杀远距离互动
+      ButtonText: 警戒
     Vigilante:
       RoleName: 侠客
       Blurb: 能力越大,责任越大!
@@ -876,7 +880,7 @@ Translations:
       HoldingBombLevel1: 你手上有炸弹!
       HoldingBombLevel2: 你手上有炸弹啊!!!
       HoldingBombLevel3: 你手上有炸弹啊啊啊!!!!!
-      ButtonText: Pass
+      ButtonText: 传递
     Amalgamation:
       RoleName: 窃忆者
       Description: 窃忆者每报告一个尸体,他们就会获得那个职业的能力.窃忆者的胜利条件以其第一个报告的尸体职业为准(或最后一个报告的尸体),而其他尸体仅给窃忆者提供能力.窃忆者作为一个隐藏职业,会小概率代替失忆者出现.
@@ -1057,10 +1061,10 @@ Translations:
         MeetingsBeforeWinning: 胜利前所需会议数
       WinConditionName: 小丑::0被票出
     Juggernaut:
-      RoleName: 天地启明者
-      Description: 天地启明者一开始有较高的击杀冷却时间,但每进行一次击杀,他们的冷却时间就会减少.\n\n他们必须杀死所有人,包括伪装者,并成为最后一个活着的人.
+      RoleName: 剑圣
+      Description: 剑圣一开始有较高的击杀冷却时间,但每进行一次击杀,他们的冷却时间就会减少.\n\n他们必须杀死所有人,包括伪装者,并成为最后一个活着的人.
       Blurb: 我就是即将到来的风暴!
-      Aliases: JUG, 天启, 剑圣, 宇宙之主
+      Aliases: JUG, 天启, 宇宙之主
       Options:
         CooldownReductionPerKill: 每次击杀减少冷却时间
     Marksman:
@@ -1121,13 +1125,13 @@ Translations:
         ImmuneDelayedAttacks: 无视延迟击杀
         ImmuneArsonistIgnite: 无视点燃
     Pirate:
-      RoleName: 天命指明者
-      Description: 天命指明者是一个可以进行猜测的独立阵营.如果天命指明者成功猜测了某个玩家的职业,则那名玩家会被刺杀.\n\n在会议中,天命指明者可以通过投票以选择其猜测的目标.他们可以通过指令/r [职业名] (比如/r 吸血鬼)以选择猜测的职业.\n\n如果天命指明者猜对了相应玩家的职业,则那名玩家死亡.天命指明者需要猜对一定玩家的职业(数量取决于设置)才能获胜.
-      Blurb: 让他们明白自己的天命
-      Aliases: PIR, 海盗, 牌皇, 赌徒, 赌神
+      RoleName: 海盗
+      Description: 海盗是一个可以进行猜测的独立阵营.如果海盗成功猜测了某个玩家的职业,则那名玩家会被刺杀.\n\n在会议中,海盗可以通过投票以选择其猜测的目标.他们可以通过指令/r [职业名] (比如/r 吸血鬼)以选择猜测的职业.\n\n如果海盗猜对了相应玩家的职业,则那名玩家死亡.海盗需要猜对一定玩家的职业(数量取决于设置)才能获胜.
+      Blurb: 嘎哈哈哈哈!!
+      Aliases: PIR, 牌皇, 赌徒, 赌神
       Options:
         GuessWinAmount: 胜利所需猜测数
-        DieOnMisguess: 天命指明者猜错时死亡
+        DieOnMisguess: 海盗猜错时死亡
     PlagueBearer:
       RoleName: 瘟疫之源
       Description: 使用击杀键感染所有玩家.一旦所有玩家被感染,则瘟疫之源会变成万疫之神.
@@ -1349,7 +1353,7 @@ Translations:
       Aliases: ROG, 无赖者, 无赖
       Options:
         RestrictToCompatbileRoles: 只分配给无刀职业
-        FactionMaxRogues: '{0}::0 Faction Max Rogues'
+        FactionMaxRogues: '{0}::0 阵营最大疯子数'
     Romantic:
       RoleName: 浪漫主义者
       Blurb: 向你的真爱表白吧!
@@ -1526,8 +1530,16 @@ Translations:
       BetrayedTeamPlayers: "你现在是'{0}'阵营的. 这些玩家是你的队友: {1}"
       NoPlayersOnBetrayedTeam: 你所处在的阵营没有其他玩家.
       RoleName: 变节者
-      Description: 官方没有给这个职业做介绍,我就自己乱写一点了owo,总之你是个墙头草,船员要没了你就会议里自票,跑路去其他阵营,你应该会有把刀,用这玩意去拼刀吧:)
+      Description: 变节者是一个初始阵营为船员的独立阵营职业,游戏结束时他将跟随船员胜利.然而,他可以在会议中自票以背叛船员.作为报应,他的职业将会展示给所有人.为了防止变节者马上被船员票出,他在自爆之前可以通过击杀键标记一名玩家.这名玩家会在你死时一起死,所以你可以通过这名玩家以要挟船员保你一命.其他玩家甚至不知道自己是你的祭品,所以你可以骗其他人说自己的目标是其他人(比如警长)
       Blurb: 我受够了!
+    Rebellious:
+      Options:
+        AssignToNK: 可分配给独立阵营带刀职业
+        AssignToNP: 可分配给独立阵营不带刀职业
+        FactionMaxRogues: '{0}::0 阵营最大叛乱者数量'
+      RoleName: 叛乱者
+      Blurb: 自由万岁!
+      Description: 叛乱者附加会保留玩家的原本能力,但是他们会变成叛徒阵营(伪装者阵营).\n\n这意味着这些玩家是与伪装者共阵营的玩家并且与船员为敌,所以类似于告密者的职业可能不会获得此附加
   StaticOptions:
     EnableGM: 房主管理员模式
     KillFlashDuration: 击杀闪光持续时间
@@ -1668,6 +1680,7 @@ Translations:
     Color:
       NotInRange: '{0} 不是有效的颜色.'
     Winners: 赢家
+    
     Dump:
       Success: 成功导出日志. 检查你的"log"文件夹里的 "dump.log!"
     HostOptions:
@@ -1749,8 +1762,36 @@ Translations:
         您是否有多打或错打职业名称?
     Info:
       NoInfoMessage: 你的职业没有可显示的信息.
+    Poll:
+      PollStarted: >-
+        游戏模式投票池开启了!
+
+
+        请使用/gmpoll vote (id)为你中意的游戏模式投票
+
+
+        投票池将会在{0}秒后结束
+      PollEnded: 投票结束!{0}模式以{1}票获胜.
+      PollEndedTie: >-
+        投票池结束了!
+
+        多个游戏模式获得相同票数,所以游戏模式将随机定为{0},其票数为{1}票.
+      VoteMessage: 你已经投给了{0}!
+      NoVotes: 投票池结束,没有人进行投票.
+      NoPollActive: 现在没有开启投票池.
+      PollActive: 现在有正开启的投票池.
+      InvalidID: '无效的游戏模式id.这有一个可用id:'
+      NoIdInCommand: '请提供你所要投票的游戏模式id.这有一个可用id:'
+      CurrentStandings: >-
+        {0}
+
+        剩余{1}秒.
+      Hint: 现在有一个正开启的投票池, 你可以通过<b>/gmpoll vote</b>指令进行投票.
+      AvailableModesTitle: 可用的游戏模式
+      CurrentStandingsTitle: 现在的游戏模式
   Announcements:
     SystemMessage: 系统信息
+    CannotSabotageMessage: 房主禁止了玩家死后进行破坏
   OptionShower:
     ActiveRolesList: 已启用职业的列表
     NextPage: 按Tab键以翻页...
@@ -1901,6 +1942,63 @@ Translations:
       LadderDeath: 可从梯子上摔死
       ModifierTextMode: 附加职业显示名称
       FirstValue: 首轮
+      DisabledTasks:
+        DisableCardSwipe: 禁用刷卡
+        DisableFixWiring: 禁用修理电线
+        DisableIdCode: 禁用输入识别码
+        DisableScanBoardingPass: 禁用扫描登船证
+        DisableInsertKeys: 禁用插入钥匙
+        DisableAlignTelescope: 禁用调整望远镜
+        DisableAssembleArtifact: 禁用组装文物
+        DisableBuyBeverage: 禁用购买商品
+        DisableCalibrateDistributor: 禁用校准分电器
+        DisableChartCourse: 禁用标出航线
+        DisableCleanO2Filter: 禁用清理氧气过滤器
+        DisableCleanToilet: 禁用清理马桶
+        DisableCleanVent: 禁用清理管道
+        DisableClearAsteroids: 禁用清除小行星
+        DisableDecontaminate: 禁用去污
+        DisableDivertPower: 禁用转移电力
+        DisableDressMannequin: 禁用装饰假人
+        DisableFixShower: 禁用修理淋浴
+        DisableMakeBurger: 禁用制作汉堡
+        DisableMeasureWeather: 禁用测量气候
+        DisableMonitorOxygen: 禁用监视树木
+        DisablePickUpTowels: 禁用捡起毛巾
+        DisablePolishRuby: 禁用抛光红宝石
+        DisablePrimeShields: 禁用开启护盾
+        DisableProcessData: 禁用处理数据
+        DisablePutAwayPistols: 禁用存放手枪
+        DisablePutAwayRifles: 禁用存放步枪
+        DisableRecordTemperature: 禁用记录温度
+        DisableRepairDrill: 禁用修理钻头
+        DisableRunDiagnostics: 禁用进行诊断
+        DisableSortRecords: 禁用整理档案
+        DisableSortSamples: 禁用整理样本
+        DisableStabilizeSteering: 禁用稳定航向
+        DisableStartReactor: 禁用启动反应堆
+        DisableStoreArtifacts: 禁用存放文物
+        DisableSubmitScan: 禁用送出扫描报告
+        DisableUnlockManifolds: 禁用解锁歧管
+        DisableAlignEngineOutput: 禁用调整引擎输出
+        DisableDevelopPhotos: 禁用冲洗照片
+        DisableEmptyGarbage: 禁用清空垃圾桶
+        DisableFuelEngines: 禁用为引擎添加燃料
+        DisableInspectSample: 禁用调查样本
+        DisableRebootWifi: 禁用重启WIFI
+        DisableOpenWaterways: 禁用开启水闸
+        DisableReplaceWaterJug: 禁用更换水壶
+        DisableResetBreaker: 禁用重置断路器
+        DisableRewindTapes: 禁用倒带
+        DisableStartFans: 禁用开启风扇
+        DisableUnlockSafe: 禁用解锁保险箱
+        DisableUploadData: 禁用上传数据
+        DisableWaterPlants: 禁用给植物浇水
+      DisableCommonTasks: 禁用普通任务
+      DisableShortTasks: 禁用短任务
+      DisableLongTasks: 禁用长任务
+      BlockDeadFromSabotaging: 死后无法破坏
+      BlockDoorsWhenAllSabotagersAreDead: 所有能破坏的玩家死亡后无法关门
     Mayhem:
       SectionTitle: 混乱性设置
       RandomMaps: 启用随机地图
@@ -2036,7 +2134,9 @@ Translations:
         NothingFound: >-
           你所搜索的职业不存在.
 
-          你使用简写或打错了吗?\n(简中特供,这个搜索框可能无法使用中文,如果无法打出字,请使用英文进行搜索)
+          你使用简写或打错了吗?
+
+          (简中特供,这个搜索框可能无法使用中文, 如果无法打出字,请使用英文进行搜索)
         SelectRolesText: >-
           选择组合内的职业,
 
