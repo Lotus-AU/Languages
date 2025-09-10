@@ -1455,6 +1455,18 @@ Translations:
       RoleName: Turncoat
       Blurb: Betray the Crew... or don't
       Description: The Turncoat is a neutral role that is initially on the crewmate team. They will win with the crew at the end of the game. However, they can choose to betray the crew by voting themselves in the meeting. As a result, their role will be revealed to everyone else. In order to prevent the crew from instantly voting the Turncoat, you can mark a player with your kill button before revealing. This player will die if you die, so you can use this person as leverage to keep yourself alive. The player doesn't even know that they are the sacrifice, so you can lie and blame someone entirely diffrent (like the Doctor).
+    Detective:
+      Options:
+        SuspectsPerCase: Suspects per Case
+      RoleName: Detective
+      Blurb: Gather info. Solve murders.
+      Description: The Detective is a crewmate role that investigates bodies to find the killer. In meetings, they are able to use clues from the reporter to determine where the body is and what impostor role the killer is. In rounds, they can investigate players to figure out where they were at the time the body was killed.
+    Viper:
+      Options:
+        DissolveTime: Dissolve Time
+      RoleName: Viper
+      Blurb: Kill to dissolve bodies
+      Description: The Viper is an Impostor role that dissolves players' bodies after killing them. Once a certain amount of time has passed the body will disappear completely and can no longer be reported. There are 3 stages of dissolution, and the time it takes to completely disappear is determined by host.
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
