@@ -13,7 +13,7 @@ Translations:
         The Assassin is an Impostor that can also kill other players by guessing their roles. If the Assassin is able to successfully guess a player's role, then that player will be eliminated.
 
 
-        While in meeting, the Assassin can select a player they want to guess by voting for them. After voting, the Guesser must use their Shapeshift Menu to select the role they wish to guess. 
+        While in meeting, the Assassin can select a player they want to guess by voting for them. After voting, the Guesser must use their Shapeshift Menu to select the role they wish to guess. If the Assassin correctly guesses both the player and their role, then that player will die.
 
         Due to limitations, some of the available guessing options will be sent in the chat.
         
@@ -782,7 +782,7 @@ Translations:
         The Vigilante is a Crewmate that can kill Impostors and Neutrals by guessing the players and their roles. If the Vigilante is able to successfully guess a non-Crewmate's role, then that player will be eliminated.
 
 
-        While in meeting, the Vigilante can select a player they want to guess by voting for them. After voting, the Vigilante must use their Shapeshift Menu to select the role they wish to guess. 
+        While in meeting, the Vigilante can select a player they want to guess by voting for them. After voting, the Vigilante must use their Shapeshift Menu to select the role they wish to guess. If the Vigilante correctly guesses both the player and their role, then that player will die.
 
         Due to limitations, some of the available guessing options will be sent in the chat.
 
@@ -2156,4 +2156,5 @@ Translations:
       The following enabled roles require pet: {1}
     WarningToPlayer: There are roles enabled that have pets. Please equip one in the cosmetics area.
     WarningTitle: ⚠ WARNING ⚠
+
 
