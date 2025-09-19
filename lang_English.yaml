@@ -1392,7 +1392,7 @@ Translations:
         MaxGifts: Max Wishes
       WishFailed: You tried to wish {0} the {1} modifier, but it failed.
       WishGranted: You wished {0} the {1} modifier, and succeeded! They were granted the modifier!
-      MeetingMessage: Vote a player twice to wish them a succeeded! Or skip to go to regular voting.
+      MeetingMessage: Vote a player twice to wish them a gift! Or skip to go to regular voting.
       OutOfWishes: You have ran out of wishes. You will no longer be given the option to vote for someone at the start of the meeting.
       Blurb: Give Players Modifiers
       AlreadyWished: You've already wished {0} a modifier. Try another player!
@@ -2156,6 +2156,7 @@ Translations:
       The following enabled roles require pet: {1}
     WarningToPlayer: There are roles enabled that have pets. Please equip one in the cosmetics area.
     WarningTitle: ⚠ WARNING ⚠
+
 
 
 
