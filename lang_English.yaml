@@ -17,7 +17,7 @@ Translations:
 
         Due to limitations, some of the available guessing options will be sent in the chat.
         
-        If the Assassin misguesseses they will suicide. 
+        If the Assassin misguesses they will suicide. 
 
 
         To skip guessing, you may skip first before voting for a player.
@@ -432,7 +432,7 @@ Translations:
       BodyguardHelpMessage: 'You are a Bodyguard! Your duty: to protect the innocent! Vote a player to protect next round! Alternatively, you can skip here to return to normal voting.'
     Chameleon:
       RoleName: Chameleon
-      Description: The Chameleon can vent to temporarily turn invisible.\n\nTheir invisiblility countdown is displayed below their name, and they will re-appear after a certain amount of time.
+      Description: The Chameleon can vent to temporarily turn invisible.\n\nTheir invisibility countdown is displayed below their name, and they will re-appear after a certain amount of time.
       Blurb: Camouflage With Your Environment
       Options:
         InvisibilityDuration: Invisibility Duration
@@ -704,7 +704,7 @@ Translations:
         ActionPetButton: Pet Button
     Snitch:
       RoleName: Snitch
-      Description: The Snitch is a Crewmate who must complete their taks to see who the Impostors are (may also see neutral killers depending on settings).\n\nWhen the Snitch has a certain number of tasks left, they will be revealed to the killers with a ⚠ indicator.\n\nDepending on the settings and when their tasks are completed, the Snitch may also see arrows pointed in the direction of each player they're tracking and vice versa.
+      Description: The Snitch is a Crewmate who must complete their tasks to see who the Impostors are (may also see neutral killers depending on settings).\n\nWhen the Snitch has a certain number of tasks left, they will be revealed to the killers with a ⚠ indicator.\n\nDepending on the settings and when their tasks are completed, the Snitch may also see arrows pointed in the direction of each player they're tracking and vice versa.
       Blurb: Finish Tasks To See Killers
       Options:
         RemainingTaskWarning: Remaining Task Warning
@@ -724,7 +724,7 @@ Translations:
         FinalSpeedBoost: Final Speed
     Swapper:
       RoleName: Swapper
-      Description: The first two players you vote each meeting will have the number of votes against them swapped.\n\nAfter voting those players, you may vote as normal. Alternatively, you can skip at the start and continue to normal voting.\n\nAfter you have chosen one player to swap, you may revote them to cancel the selection. Once you have selected two players to swap you may not change your selections
+      Description: The first two players you vote each meeting will have the number of votes against them swapped.\n\nAfter voting those players, you may vote as normal. Alternatively, you can skip at the start and continue to normal voting.\n\nAfter you have chosen one player to swap, you may re-vote them to cancel the selection. Once you have selected two players to swap you may not change your selections
       Blurb: Swap Players' Votes
       SwapperInfoMessage: >-
         You are Swapper. To swap the votes received by two players, vote two separate players.
@@ -826,7 +826,7 @@ Translations:
       ButtonText: Pass
     Amalgamation:
       RoleName: Amalgamation
-      Description: Every time Amalgamation reports a body, they acquire the abiltiies of that role. The Amalgamation's win condition is determined by the first body they report, other bodies will continue to power up the Amalgamation. Amalgamation is a hidden role that can occasionally spawn instead of Amnesiac.
+      Description: Every time Amalgamation reports a body, they acquire the abilities of that role. The Amalgamation's win condition is determined by the first body they report, other bodies will continue to power up the Amalgamation. Amalgamation is a hidden role that can occasionally spawn instead of Amnesiac.
       Blurb: Become ALL the roles
       Options:
         WinConditionDeterminer: Win Condition Determiner
@@ -1391,12 +1391,12 @@ Translations:
         SuccessChance: Success Chance
         MaxGifts: Max Wishes
       WishFailed: You tried to wish {0} the {1} modifier, but it failed.
-      WishGranted: You wished {0} the {1} modifier, and suceeded! They were granted the modifier!
-      MeetingMessage: Vote a player twice to wish them a gift! Or skip to go to regular voting.
+      WishGranted: You wished {0} the {1} modifier, and succeeded! They were granted the modifier!
+      MeetingMessage: Vote a player twice to wish them a succeeded! Or skip to go to regular voting.
       OutOfWishes: You have ran out of wishes. You will no longer be given the option to vote for someone at the start of the meeting.
       Blurb: Give Players Modifiers
       AlreadyWished: You've already wished {0} a modifier. Try another player!
-      Description: In meetings, you have a chance to select a player to be given a modifer. The Genie can only grant positive modifiers that the host has enabled. The chance is not guaranteed, it may fail and you will lose a wish. You can't grant a wish to the same player twice.
+      Description: In meetings, you have a chance to select a player to be given a modifier. The Genie can only grant positive modifiers that the host has enabled. The chance is not guaranteed, it may fail and you will lose a wish. You can't grant a wish to the same player twice.
     Painter:
       GracePeriodText: 'No-Kill Grace Period: {0}'
       RoleName: Painter
@@ -1407,7 +1407,7 @@ Translations:
       GrabbedFlag: You grabbed the flag! The opposing team has arrows to your location!
       RoleName: Striker
       Blurb: Protect Your Flag
-      Description: Use the pet button on the opposing teams flag to pick it up. All players will recieve an arrow pointing to your location when you have the flag.\nDepending on the host's settings, you may also be slower or no longer be able to vent. When someone uses their kill button on you, you won't die. Instead, you will be teleported away for a few seconds. After the revive duration is finished, you will be teleported back to home base.
+      Description: Use the pet button on the opposing teams flag to pick it up. All players will receive an arrow pointing to your location when you have the flag.\nDepending on the host's settings, you may also be slower or no longer be able to vent. When someone uses their kill button on you, you won't die. Instead, you will be teleported away for a few seconds. After the revive duration is finished, you will be teleported back to home base.
       OvertimeTitle: <b>OVERTIME</b>
       OvertimeDeathMessage: The host has enabled <b>'Sudden Death'</b> on Overtime, which means that respawning is disabled.
       CaptureButtonText: Capture
@@ -1426,12 +1426,12 @@ Translations:
       CannotVote: You cannot vote the Jailed Player!
       RoleName: Jailor
       Blurb: Jail and Execute Killers
-      Description: Use pet/kill button to select a player to Jail on meeting. In meeting, the jailed player may be shown to everyone depending on settings. The jailed player cannot vote or use any of their role's abilties in meeting. However, other players cannot vote the jailed player either.\nYou can execute the player by voting them. Depending on settings, you might suicide if they are a crewmate. You have a limited number of executes.\nDepending on settings, the jailed player may "vote" with you, meaning if you vote someone, they will be forced to vote the same player.
+      Description: Use pet/kill button to select a player to Jail on meeting. In meeting, the jailed player may be shown to everyone depending on settings. The jailed player cannot vote or use any of their role's abilities in meeting. However, other players cannot vote the jailed player either.\nYou can execute the player by voting them. Depending on settings, you might suicide if they are a crewmate. You have a limited number of executes.\nDepending on settings, the jailed player may "vote" with you, meaning if you vote someone, they will be forced to vote the same player.
       ButtonText: Jail
     Sidekick:
       RoleName: Sidekick
       Blurb: Help the Jackal kill Everyone
-      Description: The Jackal can recruit a player to be a Sidekick if the setting is on. The Sidekick will lose their previous role and abilties, but will become allies with the Jackal and gain the abilitiy to kill. The Sidekick will not be able to vent or sabotage like the Jackal. If the Jackal dies, the Sidekick may be promoted if the setting is on, and you may be able to recruit another sidekick.
+      Description: The Jackal can recruit a player to be a Sidekick if the setting is on. The Sidekick will lose their previous role and abilities, but will become allies with the Jackal and gain the ability to kill. The Sidekick will not be able to vent or sabotage like the Jackal. If the Jackal dies, the Sidekick may be promoted if the setting is on, and you may be able to recruit another sidekick.
     Turncoat:
       Options:
         RevealedTurncoatWincon: 'Revealed Turncoat wincon Is:'
@@ -1455,7 +1455,7 @@ Translations:
       NoPlayersOnBetrayedTeam: There are no players on the team you betrayed for.
       RoleName: Turncoat
       Blurb: Betray the Crew... or don't
-      Description: The Turncoat is a neutral role that is initially on the crewmate team. They will win with the crew at the end of the game. However, they can choose to betray the crew by voting themselves in the meeting. As a result, their role will be revealed to everyone else. In order to prevent the crew from instantly voting the Turncoat, you can mark a player with your kill button before revealing. This player will die if you die, so you can use this person as leverage to keep yourself alive. The player doesn't even know that they are the sacrifice, so you can lie and blame someone entirely diffrent (like the Doctor).
+      Description: The Turncoat is a neutral role that is initially on the crewmate team. They will win with the crew at the end of the game. However, they can choose to betray the crew by voting themselves in the meeting. As a result, their role will be revealed to everyone else. In order to prevent the crew from instantly voting the Turncoat, you can mark a player with your kill button before revealing. This player will die if you die, so you can use this person as leverage to keep yourself alive. The player doesn't even know that they are the sacrifice, so you can lie and blame someone entirely different (like the Doctor).
     Detective:
       Options:
         SuspectsPerCase: Suspects per Case
@@ -1550,7 +1550,7 @@ Translations:
     GhostsCanSeeRoles: Ghosts Can See Other Roles
     GhostsCanSeeVotes: Ghosts Can See Votes
     GhostIgnoreTasks: Ghosts Ignore Tasks
-    CamoComms: Camoflauge Comms
+    CamoComms: Camouflage Comms
     AutoDisplayResult: Auto Display Last Result
     SuffixMode: Suffix Mode
     ColorNameMode: Color Name Mode
@@ -1671,11 +1671,11 @@ Translations:
       SomethingWentWrong: Something went wrong executing that command. Please check your parameters.
       SuccessfulMod: '{0} is now a mod! They have access to the /kick and /ban commands now!'
       RemovedMod: '{0} was removed. They no longer have access to mod-related commands.'
-      AlreadyMod: '{0} is already a mod. Nothing happenend.'
+      AlreadyMod: '{0} is already a mod. Nothing happened.'
     BugReports:
       WaitingOnReport: This report has been voided as we are waiting on a response for your previous report.
       FailedReport: >-
-        An error occured while sending the request. Please try again in a minute.
+        An error occurred while sending the request. Please try again in a minute.
 
         Error: {0}
       ReportingBug: Your request has went through and we are now reporting your bug. Thanks!
