@@ -291,7 +291,7 @@ Translations:
         RefundBulletOnKill: 击杀时回复子弹数
         PreciseShooting: 穿透射击
         PlayerPiercing: 可穿透玩家数
-      ButtonText: Aim
+      ButtonText: 瞄准
     Swooper:
       RoleName: 隐身人
       Description: 隐身人可以通过跳进管道以隐身. 隐身时,隐身人可以做所有伪装者都能做的事(击杀,破坏,跳管).\n\n小心点! 取决于房主设置,隐身人在击杀时可能会现形!
@@ -436,7 +436,7 @@ Translations:
         InstantText: 立即
         KillerArrow: 凶手有指向复活玩家箭头
         PortableVitals: 拥有便携式生命检测仪
-      ButtonText: Revive
+      ButtonText: 复活
     Bastion:
       RoleName: 埋雷兵
       Description: 跳管埋雷.下一个跳这个管道的人会被炸死.\n注意! 埋雷兵可以被自己炸死.\n炸弹只存在一回合. 下一回合管道会被重置.
@@ -468,16 +468,16 @@ Translations:
         NeutralInteractionProtection: 抵挡 中立型::0 的互动
       BodyguardHelpMessage: '你是个保镖! 你的职责是: 保护重要人物! 投票以选择你下回合要保护的人! 或者你可以选择跳票然后进行正常的投票.'
     Chameleon:
-      RoleName: 研究员
-      Description: 研究员可以通过跳管以进入短时间的隐身.\n\n研究员的隐身持续时间将会显示在他们的名字底下,过一段时间后他们才会现形.
+      RoleName: 变色龙
+      Description: 变色龙可以通过跳管以进入短时间的隐身.\n\n变色龙的隐身持续时间将会显示在他们的名字底下,过一段时间后他们才会现形.
       Blurb: 光学迷彩,小子!
-      Aliases: CH, 变色龙, 正义的隐身人
+      Aliases: CH, 研究员, 正义的隐身人
       Options:
         InvisibilityDuration: 隐身持续时间
         InvisibilityCooldown: 隐身冷却时间
       HiddenText: 隐身中::0 {0}
       TimesInvisibleStatistic: 隐身次数
-      ButtonText: Conceal
+      ButtonText: 隐身
     Charmer:
       RoleName: 谈判家
       Description: >-
@@ -523,7 +523,7 @@ Translations:
       Options:
         BeneficialInteractionProtection: 抵挡 增益型::0 的互动
         NeutralInteractionProtection: 抵挡 中立型::0 的互动
-      ButtonText: Protect
+      ButtonText: 十字守护
     Demolitionist:
       RoleName: 同命爆手
       Description: 同命爆手被杀后,会留下炸弹,如果凶手没有及时进入管道,则会被炸死.\n\n凶手击杀同命爆手后会在他们的名字下面提示他们刚刚击杀了同命爆手.
@@ -604,8 +604,7 @@ Translations:
 
         注意,某些船员职业 (比如警长)也会显示为红名(邪恶阵营)!
 
-
-        小贴士: 某些带有改变阵营性质的附加职业的玩家会以主职业好坏作为判定标准.比如带有'疯子'附加职业的医生会显示为绿名,但是带有'疯子'附加职业的吸血鬼会显示为红名.
+小贴士: 某些带有改变阵营性质的附加职业的玩家会根据设置来决定他们是不是红名,如果一个玩家具有疯子附加职业,且此时'独立阵营杀戮性职业显示为红名'开启,那么那个玩家将会显示为红名,否则为绿名.如果为叛乱者附加职业,则视为伪装者
       Blurb: 啊哈哈哈,盒武器来咯!
       Aliases: INV, 预言家, 盒
       Options:
@@ -613,7 +612,7 @@ Translations:
         NeutralKillingRed: 独立阵营::1 杀戮型职业::2 显示为 红名::0
         NeutralPassiveRed: 独立阵营::1 友善型职业::2 显示为 红名::0
         MadmateRed: 叛徒::1 显示为 红名::0
-        CrewKillingRed: 船员带刀职业::1 显示为 红名::0
+        CrewKillingRed: 船员击杀型职业::1 显示为 红名::0
       ButtonText: 调查
     Mayor:
       RoleName: 市长
@@ -886,7 +885,7 @@ Translations:
       HoldingBombLevel1: 你手上有炸弹!
       HoldingBombLevel2: 你手上有炸弹啊!!!
       HoldingBombLevel3: 你手上有炸弹啊啊啊!!!!!
-      ButtonText: Pass
+      ButtonText: 传递
     Amalgamation:
       RoleName: 窃忆者
       Description: 窃忆者每报告一个尸体,他们就会获得那个职业的能力.窃忆者的胜利条件以其第一个报告的尸体职业为准(或最后一个报告的尸体),而其他尸体仅给窃忆者提供能力.窃忆者作为一个隐藏职业,会小概率代替失忆者出现.
@@ -1384,7 +1383,7 @@ Translations:
       Aliases: ROG, 无赖者, 无赖
       Options:
         RestrictToCompatbileRoles: 只分配给无刀职业
-        FactionMaxRogues: '{0}::0 Faction Max Rogues'
+        FactionMaxRogues: '{0}::0 阵营最大疯子数'
     Romantic:
       RoleName: 浪漫主义者
       Blurb: 向你的真爱表白吧!
@@ -1455,7 +1454,7 @@ Translations:
         AdditionalLongTasks: 额外长任务数
     Subroles:
       Sleuth:
-        SleuthMessage: 你调查出 {0} 的职业数 {1}! 干的漂亮, 大侦探!
+        SleuthMessage: 你调查出 {0} 的职业数 {1}! 干的漂亮, 墓碑吞噬者!
         SleuthTitle: 调查结果 {0}
     Illegal:
       RoleName: <Roles.Illegal.RoleName>
@@ -1835,6 +1834,7 @@ Translations:
       CurrentStandingsTitle: 现在的游戏模式
   Announcements:
     SystemMessage: 系统信息
+    CannotSabotageMessage: 房主禁止了玩家死后进行破坏
   OptionShower:
     ActiveRolesList: 已启用职业的列表
     NextPage: 按Tab键以翻页...
@@ -1988,49 +1988,49 @@ Translations:
       DisabledTasks:
         DisableCardSwipe: 禁用刷卡
         DisableFixWiring: 禁用修理电线
-        DisableIdCode: 禁用输入ID码
+        DisableIdCode: 禁用输入识别码
         DisableScanBoardingPass: 禁用扫描登船证
         DisableInsertKeys: 禁用插入钥匙
         DisableAlignTelescope: 禁用调整望远镜
-        DisableAssembleArtifact: 禁用复原文物
+        DisableAssembleArtifact: 禁用组装文物
         DisableBuyBeverage: 禁用购买商品
-        DisableCalibrateDistributor: 禁用校准配电箱
-        DisableChartCourse: 禁用绘制航线
-        DisableCleanO2Filter: 禁用清理排风管
-        DisableCleanToilet: 禁用清理厕所
+        DisableCalibrateDistributor: 禁用校准分电器
+        DisableChartCourse: 禁用标出航线
+        DisableCleanO2Filter: 禁用清理氧气过滤器
+        DisableCleanToilet: 禁用清理马桶
         DisableCleanVent: 禁用清理管道
         DisableClearAsteroids: 禁用清除小行星
-        DisableDecontaminate: 禁用消毒
+        DisableDecontaminate: 禁用去污
         DisableDivertPower: 禁用转移电力
         DisableDressMannequin: 禁用装饰假人
-        DisableFixShower: 禁用修理淋浴器
+        DisableFixShower: 禁用修理淋浴
         DisableMakeBurger: 禁用制作汉堡
-        DisableMeasureWeather: 禁用预测天气
-        DisableMonitorOxygen: 禁用监视氧气
+        DisableMeasureWeather: 禁用测量气候
+        DisableMonitorOxygen: 禁用监视树木
         DisablePickUpTowels: 禁用捡起毛巾
         DisablePolishRuby: 禁用抛光红宝石
-        DisablePrimeShields: 禁用启动防护罩
+        DisablePrimeShields: 禁用开启护盾
         DisableProcessData: 禁用处理数据
         DisablePutAwayPistols: 禁用存放手枪
         DisablePutAwayRifles: 禁用存放步枪
         DisableRecordTemperature: 禁用记录温度
         DisableRepairDrill: 禁用修理钻头
-        DisableRunDiagnostics: 禁用诊断问题
-        DisableSortRecords: 禁用分类记录
-        DisableSortSamples: 禁用给样品分类
+        DisableRunDiagnostics: 禁用进行诊断
+        DisableSortRecords: 禁用整理档案
+        DisableSortSamples: 禁用整理样本
         DisableStabilizeSteering: 禁用稳定航向
         DisableStartReactor: 禁用启动反应堆
         DisableStoreArtifacts: 禁用存放文物
-        DisableSubmitScan: 禁用上传扫描结果
+        DisableSubmitScan: 禁用送出扫描报告
         DisableUnlockManifolds: 禁用解锁歧管
         DisableAlignEngineOutput: 禁用调整引擎输出
         DisableDevelopPhotos: 禁用冲洗照片
         DisableEmptyGarbage: 禁用清空垃圾桶
-        DisableFuelEngines: 禁用给引擎加油
-        DisableInspectSample: 禁用检查样本
+        DisableFuelEngines: 禁用给引擎添加燃料
+        DisableInspectSample: 禁用调查样本
         DisableRebootWifi: 禁用重启WiFi
         DisableOpenWaterways: 禁用开启水闸
-        DisableReplaceWaterJug: 禁用替换水壶
+        DisableReplaceWaterJug: 禁用更换水壶
         DisableResetBreaker: 禁用重置断路器
         DisableRewindTapes: 禁用倒放磁带
         DisableStartFans: 禁用开启风扇
@@ -2184,7 +2184,9 @@ Translations:
         NothingFound: >-
           你所搜索的职业不存在.
 
-          你使用简写或打错了吗?\n(简中特供,这个搜索框可能无法使用中文,如果无法打出字,请使用英文进行搜索)
+          你使用简写或打错了吗?
+          
+          (简中特供,这个搜索框可能无法使用中文,如果无法打出字,请使用英文进行搜索)
         SelectRolesText: >-
           选择组合内的职业,
 
