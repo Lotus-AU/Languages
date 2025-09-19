@@ -13,9 +13,10 @@ Translations:
         The Assassin is an Impostor that can also kill other players by guessing their roles. If the Assassin is able to successfully guess a player's role, then that player will be eliminated.
 
 
-        While in meeting, the Assassin can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Doctor) in the chat. If the Assassin correctly guesses both the player and their role, then that player will die.
+        While in meeting, the Assassin can select a player they want to guess by voting for them. After voting, the Guesser must use their Shapeshift Menu to select the role they wish to guess. If the Assassin correctly guesses both the player and their role, then that player will die.
 
-
+        Due to limitations, some of the available guessing options will be sent in the chat.
+        
         If the Assassin misguesseses they will suicide. 
 
 
@@ -116,6 +117,7 @@ Translations:
       Options:
         FreezeCooldown: Freeze Cooldown
         FreezeDuration: Freeze Duration
+      ButtonText: Freeze
     Grenadier:
       RoleName: Grenadier
       Description: Use the Pet button to set off a bomb that will blind nearby players in a fixed-distance. It may also blind allied-Impostors depending on host's settings. During this time the Grenadier may kill undetected.
@@ -297,6 +299,7 @@ Translations:
       Blurb: Delayed Kills
       Options:
         KillDelay: Kill Delay
+      ButtonText: Bite
     Vampiress:
       RoleName: Vampiress
       Description: Like the Vampire, the Vampiress can bite players who will then die after a certain amount of time (determined by host), however, it can also make direct kills like regular impostors. Use the Pet Button to switch between Bites and Kills. The Vampiress is a hidden role that can occasionally spawn *instead* of the Vampire.
@@ -308,6 +311,7 @@ Translations:
       Options:
         CursedKillImmediately: Cursed Players Kill Immediately
         LimitedCurseKillRange: Limited Cursed Kill Range
+      ButtonText: Curse
     Witch:
       RoleName: Witch
       Description: The Witch's Kill/Hex Button alternates between hexing and killing players.\n\nPlayers will who are hexed by the witch will be seen with a cross next to their name during the meeting. If the Witch is not voted off during this meeting, the hexed player dies.\n\nRegular kill self-reports Bait.\nHex does not self-report Bait.
@@ -544,6 +548,7 @@ Translations:
         RevealOnBloom: Reveal on Bloom
       BloomsGrownStatistic: Blooms Grown
       RolesRevealedStatistic: Roles Revealed
+      ButtonText: Plant
     Investigator:
       RoleName: Investigator
       Description: >-
@@ -777,8 +782,9 @@ Translations:
         The Vigilante is a Crewmate that can kill Impostors and Neutrals by guessing the players and their roles. If the Vigilante is able to successfully guess a non-Crewmate's role, then that player will be eliminated.
 
 
-        While in meeting, the Vigilante can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat. If the Vigilante correctly guesses both the player and their role, then that player will die.
+        While in meeting, the Vigilante can select a player they want to guess by voting for them. After voting, the Vigilante must use their Shapeshift Menu to select the role they wish to guess. If the Vigilante correctly guesses both the player and their role, then that player will die.
 
+        Due to limitations, some of the available guessing options will be sent in the chat.
 
         If the Vigilante misguesses, they will suicide. The Vigilante is not able to guess Crewmate roles. 
 
@@ -847,6 +853,7 @@ Translations:
       Options:
         StealsExactRole: Steals Exact Role
         HasArrowsToBody: Has Arrows to Bodies
+      ButtonText: Remember
     Archangel:
       RoleName: Archangel
       Description: The Archangel is given a target at the beginning of the game as a text indicator under their name. They can use their Pet button to temporarily protect their target from certain types of interactions based on the host settings.\n\nThe Archangel wins if their target wins (even if the Archangel is dead).\n\nIf the their target dies, the Archangel may change roles (depending on host's settings), or they may keep their role and can still win if their target's team wins (ex. a Crewmate target can still win with Crewmates even if they're dead).
@@ -873,12 +880,16 @@ Translations:
       Options:
         AttacksToCompleteDouse: Attacks to Complete Douse
         CanIgniteAnytime: Can Ignite Anytime
+        DouseCooldown: Douse Cooldown
+        IgniteCooldown: Ignite Cooldown
+        ShareSameCooldown: Can't Douse/Ignite when other is on Cooldown
       IncineratedDeathName: Incinerated
       DouseEventMessage: '{0} doused {1}.'
       PressIgniteToWinMessage: Press Ignite to Win
       DousedPlayerStatistic: Doused Players
       IncineratedPlayerStatistic: Incinerated Players
       ButtonText: Douse
+      IgniteButtonText: Ignite
     BloodKnight:
       RoleName: Blood Knight
       Description: The Blood Knight is a neutral killer where every time they kill a player, they will be protected from attacks for a few seconds.
@@ -902,6 +913,7 @@ Translations:
         InfluenceCooldown: Influence Cooldown
         InfluenceRange: Influence Range
         InfluenceMany: Influence Many
+      ButtonText: Convert
     Demon:
       RoleName: Demon
       Description: When there is a Demon in the game, all players spawn in with a green health bar over their heads (only visible to the Demon).\n\nWhen the Demon attacks a player, their health bar will drop some health points. After fully reducing a player's health bar, that player will die.\n\nWhen the Demon gets attacked, their health bar also decreases. The Demon can slightly heal themself by killing players.
@@ -1002,6 +1014,7 @@ Translations:
       Options:
         ConvertCooldown: Convert Cooldown
         PartialConvertImmunity: Immune to Partially Converted
+      ButtonText: Convert
     Occultist:
       RoleName: Occultist
       Description: The Occultist's Kill/Hex Button alternates between hexing and killing players.\n\nPlayers who are hexed by the Occultist will be seen with a cross during the meeting. If the Occultist is not voted off during this meeting, the hexed player dies.\n\nRegular kill self-reports Bait.\nHex does not self-report Bait.
@@ -1039,9 +1052,10 @@ Translations:
         ImmuneRangedAttacks: Immune to Ranged Attacks
         ImmuneDelayedAttacks: Immune to Delayed Attacks
         ImmuneArsonistIgnite: Immune to Arsonist Ignite
+      ButtonText: Kill
     Pirate:
       RoleName: Pirate
-      Description: The Pirate is a Neutral Guesser that can kill players by guessing their roles. If the Pirate is able to successfully guess a player's role, then that player will be eliminated.\n\nWhile in meeting, the Pirate can select a player they want to guess by voting for them. They can then try to guess that player's role by using the /r [role] command (e.g. /r Vampire) in the chat.\n\nIf the Pirate correctly guesses both the player and their role, then that player will die. The Pirate will need to guess a certain number of players (depending on settings) correctly in order to win.
+      Description: The Pirate is a Neutral Guesser that can kill players by guessing their roles. If the Pirate is able to successfully guess a player's role, then that player will be eliminated.\n\nWhile in meeting, the Pirate can select a player they want to guess by voting for them. They can then select a role to guess by opening the Shapeshifter Menu. Note that due to limitations, some role options may not be shown in the menu, but will be sent in the chat.\n\nIf the Pirate correctly guesses both the player and their role, then that player will die. The Pirate will need to guess a certain number of players (depending on settings) correctly in order to win.
       Blurb: Guess Players' Roles
       Options:
         GuessWinAmount: Pirate Guess Win Amount
@@ -1053,6 +1067,7 @@ Translations:
       Options:
         InfectCooldown: Infect Cooldown
       InfectedHistoryMessage: '{0}::0 infected {1}::1.'
+      ButtonText: Infect
     Postman:
       RoleName: Postman
       Description: The Postman must deliver letters to other players. Complete tasks to receive a target player to deliver mail to (may have arrows pointing to target if enabled).\n\nOnce the target is obtained (indicated by black name), the Postman must deliver a letter (touch the target). Complete another task to get a new target, however if you do this without delivering mail to the first target, the Postman will suicide.\n\nOnce deliveries have been made to all living players, a message will be sent at the next meeting notifying other players they must vote out the Postman. If the Postman is not voted out during this meeting, then they will win and the game will end.
@@ -1181,26 +1196,17 @@ Translations:
       Description: >-
         Gives any role the ability to guess. Guessers have the ability to guess players' roles to eliminate them.
 
+ 
+        While in meeting, a guesser can select a player they want to guess by voting for them. After voting, the Guesser must use their Shapeshift Menu to select the role they wish to guess. 
 
-        While in meeting, a guesser can select a player they want to guess by voting for them. They can guess that player's role by typing /r [rolename] in chat (e.g. /r Vampire).
-
+        Due to limitations, some of the available guessing options will be sent in the chat.
 
         If the guess is correct, the guessed player will die, otherwise the guesser will die on misguess.
 
-
         To skip guessing, you may skip first before voting for a player.
-
 
         Note: Revealed roles (e.g. from Oracle) are unable to be guessed.
       Blurb: Guess Players' Roles
-      PickedRoleText: You are about to guess {0} as {1}. If you are certain about this, vote {0} again to finalize your guess. Otherwise you can pick another player by voting a different player.. OR pick a different role by typing /r [rolename]
-      Guesser: Guesser
-      PickedPlayerText: You are guessing {0}'s role. To guess their role type /r [rolename].
-      TypeRText: Please type /r [roleName] to guess that role.
-      UnknownRole: Unknown role {0}. You can use /perc to view all enabled roles.
-      FinishedGuessingText: You have confirmed your guess. If you are not dead, you may now vote normally.
-      ErrorCompletingGuess: Error completing guess. You may try and guess again.
-      GuessAnnouncementMessage: The guesser has made a guess. {0} died.
       Options:
         GuesserPerMeeting: Guesses per Meeting
         CanGuessTeammates: Can Guess Teammates
@@ -1213,11 +1219,34 @@ Translations:
         SubroleSetting: Can Guess Subroles::0
         RestrictedToNonVote: Restricted to Non Vote-Related Roles
         FollowGuesserSettings: Follow Guesser Settings
-      CantGuessRole: The role, {0}, was disabled by Host to be guessed. Please use /r [rolename] on a different role. Use /o to check which roles you can guess.
-      CantGuessRoleBecauseOfRole: Your role prevented you from guessing a player as {0}. You might be able to find out why using /m.
+      HintMessage: You have {0} guess(es) left. Vote the player you want to try to guess.
+      NoGuessesLeft: You have ran out of guesses. Your next vote now acts as normal.
+      SkippedGuessing: You have exited guessing mode. Your next vote now acts as normal.
+      KickedFromGuessing: You took too long to make a choice. You have been kicked from guessing.
+      MoreTimeGiven: You made a choice. The timer has been reset.
+      PageIndex: Page {0}/{1}
+      RowText: 'Row {0}: '
+      ShifterMenuHelpText: >-
+        The extra options on the Shapeshifter menu appear as another player.
+
+        Below is the correct text that should be displayed:
+      GuessDeathAnnouncement: >-
+        A guesser has made a guess.
+
+        {0} has died.
       CantGuessBecauseOfRole: Your role prevented you from guessing {0}! Try a different player.
+      CantGuessKnownRole: You can see {0}'s role! You can't guess that player.
       CantGuessTeammate: "{0} is your teammate! You can't guess that player."
-      CanSeeRole: You can see {0}'s role! You can't guess that player.
+      PickedRoleText: >-
+        You are attempting to guess {0} as {1}. To confirm this guess, vote that player again.
+
+        Otherwise, vote another player to reset the process.
+      PickedPlayerText: >-
+        You have selected to guess {0}. You have now been given the shapeshift menu. The roles in the menu are alphabetical order and roles you cannot guess have already been filtered out.
+
+        If you cannot find a role, the host has disabled it or your role is preventing you from guessing it.
+
+        If you take too long to click a button in the menu, the shapeshifter menu will be taken away and you'll have to vote the player again.
     LastResort:
       RoleName: Last Resort
       Description: As the Last Resort, you can vote yourself to gain extra votes for the rest of the match. This vote is canceled and you are able to vote anyone else after this.\n\nThe drawback is that your role is now revealed to the public for everyone to see.
@@ -1379,6 +1408,10 @@ Translations:
       RoleName: Striker
       Blurb: Protect Your Flag
       Description: Use the pet button on the opposing teams flag to pick it up. All players will recieve an arrow pointing to your location when you have the flag.\nDepending on the host's settings, you may also be slower or no longer be able to vent. When someone uses their kill button on you, you won't die. Instead, you will be teleported away for a few seconds. After the revive duration is finished, you will be teleported back to home base.
+      OvertimeTitle: <b>OVERTIME</b>
+      OvertimeDeathMessage: The host has enabled <b>'Sudden Death'</b> on Overtime, which means that respawning is disabled.
+      CaptureButtonText: Capture
+      TakeButtonText: Take
     Jailor:
       Options:
         JailCooldown: Jail Cooldown
@@ -1423,6 +1456,18 @@ Translations:
       RoleName: Turncoat
       Blurb: Betray the Crew... or don't
       Description: The Turncoat is a neutral role that is initially on the crewmate team. They will win with the crew at the end of the game. However, they can choose to betray the crew by voting themselves in the meeting. As a result, their role will be revealed to everyone else. In order to prevent the crew from instantly voting the Turncoat, you can mark a player with your kill button before revealing. This player will die if you die, so you can use this person as leverage to keep yourself alive. The player doesn't even know that they are the sacrifice, so you can lie and blame someone entirely diffrent (like the Doctor).
+    Detective:
+      Options:
+        SuspectsPerCase: Suspects per Case
+      RoleName: Detective
+      Blurb: Gather info. Solve murders.
+      Description: The Detective is a crewmate role that investigates bodies to find the killer. In meetings, they are able to use clues from the reporter to determine where the body is and what impostor role the killer is. In rounds, they can investigate players to figure out where they were at the time the body was killed.
+    Viper:
+      Options:
+        DissolveTime: Dissolve Time
+      RoleName: Viper
+      Blurb: Kill to dissolve bodies
+      Description: The Viper is an Impostor role that dissolves players' bodies after killing them. Once a certain amount of time has passed the body will disappear completely and can no longer be reported. There are 3 stages of dissolution, and the time it takes to completely disappear is determined by host.
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
@@ -1827,6 +1872,62 @@ Translations:
       FirstValue: First
       BlockDeadFromSabotaging: Block Dead From Sabotaging
       BlockDoorsWhenAllSabotagersAreDead: Block Closing Doors When All Sabotagers Are Dead
+      DisabledTasks:
+        DisableCardSwipe: Disable Card Swipe
+        DisableFixWiring: Disable Fix Wiring
+        DisableIdCode: Disable Enter ID Code
+        DisableScanBoardingPass: Disable Scan Boarding Pass
+        DisableInsertKeys: Disable Insert Keys
+        DisableAlignTelescope: Disable Align Telescope
+        DisableAssembleArtifact: Disable Assemble Artifact
+        DisableBuyBeverage: Disable Buy Beverage
+        DisableCalibrateDistributor: Disable Calibrate Distributor
+        DisableChartCourse: Disable Chart Course
+        DisableCleanO2Filter: Disable Clean O2 Filter
+        DisableCleanToilet: Disable Clean Toilet
+        DisableCleanVent: Disable Clean Vent
+        DisableClearAsteroids: Disable Clear Asteroids
+        DisableDecontaminate: Disable Decontaminate
+        DisableDivertPower: Disable Divert Power
+        DisableDressMannequin: Disable Dress Mannequin
+        DisableFixShower: Disable Fix Shower
+        DisableMakeBurger: Disable Make Burger
+        DisableMeasureWeather: Disable Measure Weather
+        DisableMonitorOxygen: Disable Monitor Oxygen
+        DisablePickUpTowels: Disable Pick Up Towels
+        DisablePolishRuby: Disable Polish Ruby
+        DisablePrimeShields: Disable Prime Shields
+        DisableProcessData: Disable Process Data
+        DisablePutAwayPistols: Disable Put Away Pistols
+        DisablePutAwayRifles: Disable Put Away Rifles
+        DisableRecordTemperature: Disable Record Temperature
+        DisableRepairDrill: Disable Repair Drill
+        DisableRunDiagnostics: Disable Run Diagnostics
+        DisableSortRecords: Disable Sort Records
+        DisableSortSamples: Disable Sort Samples
+        DisableStabilizeSteering: Disable Stabilize Steering
+        DisableStartReactor: Disable Start Reactor
+        DisableStoreArtifacts: Disable Store Artifacts
+        DisableSubmitScan: Disable Submit Scan
+        DisableUnlockManifolds: Disable Unlock Manifolds
+        DisableAlignEngineOutput: Disable Align Engine Output
+        DisableDevelopPhotos: Disable Develop Photos
+        DisableEmptyGarbage: Disable Empty Garbage
+        DisableFuelEngines: Disable Fuel Engines
+        DisableInspectSample: Disable Inspect Sample
+        DisableRebootWifi: Disable Reboot Wifi
+        DisableOpenWaterways: Disable Open Waterways
+        DisableReplaceWaterJug: Disable Replace Water Jug
+        DisableResetBreaker: Disable Reset Breaker
+        DisableRewindTapes: Disable Rewind Tapes
+        DisableStartFans: Disable Start Fans
+        DisableUnlockSafe: Disable Unlock Safe
+        DisableUploadData: Disable Upload Data
+        DisableWaterPlants: Disable Water Plants
+      DisableCommonTasks: Disable Common Tasks
+      DisableShortTasks: Disable Short Tasks
+      DisableLongTasks: Disable Long Tasks
+      CrewCanSoloKillers: Killing Crew Can 1v1 Imp/NK
     Mayhem:
       SectionTitle: Mayhem Options
       RandomMaps: Enable Random Maps
@@ -1895,6 +1996,9 @@ Translations:
       ReviveDuration: Revive Timeout
       CarryingSpeedMultiplier: Carrying Speed Multiplier
       CarryingCanVent: Carrying Can Vent
+      OvertimeOnTies: Overtime on Ties
+      OvertimeLength: Overtime Duration
+      SuddenDeath: Sudden Death
     Colorwars:
       SectionTitle: Colorwars Settings
       TeamSize: Team Size
@@ -1904,6 +2008,9 @@ Translations:
       CustomTeams: Custom Teams
       TeamOption: Team {0}
       CustomTeamTitle: Custom Teams
+      EnablesWithXTeamsLeft: 'Enables at # Teams Remaining'
+      DisableVents: Disable Vents
+      EnableArrows: Reveal Locations of Alive Players
   GUI:
     GeneralButton: General
     GraphicsButton: Graphics
@@ -2019,6 +2126,7 @@ Translations:
       Parried: Parried
       Sniped: Sniped
       Executed: Executed
+      Guessed: Guessed
   Meetings:
     RoleRevealText: '{0} was the {1}.'
     RemainingImpostorsText: '{0} impostors remaining.'
@@ -2048,3 +2156,5 @@ Translations:
       The following enabled roles require pet: {1}
     WarningToPlayer: There are roles enabled that have pets. Please equip one in the cosmetics area.
     WarningTitle: ⚠ WARNING ⚠
+
+
