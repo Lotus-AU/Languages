@@ -1271,7 +1271,7 @@ Translations:
       Blurb: Auto-Report Bodies
     Rebellious:
       RoleName: Rebellious
-      Description: The Rebllious modifier allows the user to keep the ability of their role, while becoming a madmate.\n\nThis means the player is sided with the Impostors and is considered an enemy to the crew, so roles such as Snitch might out the Rebellious.
+      Description: The Rebellious modifier allows the user to keep the ability of their role, while becoming a madmate.\n\nThis means the player is sided with the Impostors and is considered an enemy to the crew, so roles such as Snitch might out the Rebellious.
       Blurb: Gain the trust of the crew
       Options:
         AssignToNK: Assign to NK
@@ -2156,5 +2156,6 @@ Translations:
       The following enabled roles require pet: {1}
     WarningToPlayer: There are roles enabled that have pets. Please equip one in the cosmetics area.
     WarningTitle: ⚠ WARNING ⚠
+
 
 
