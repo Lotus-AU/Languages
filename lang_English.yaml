@@ -237,8 +237,8 @@ Translations:
                 with the Tommy Gun\n\nBulletproof Vest - Gives the Mafioso 
                 one-time use invincibility for next round\n\nRole Revealer - 
                 Allows the Mafioso to reveal the role of one other 
-                player\n\nType /o to see how much each item costs. Only items 
-                you are able to use/buy will show up in the shop.
+                player\n\nType /cmd o to see how much each item costs. Only 
+                items you are able to use/buy will show up in the shop.
             CanVoteOtherPlayers: You can now vote regularly as you voted someone
                 other than you and didn't skip.
             CanVoteOtherPlayersOnSkip: You can now vote regularly as you skipped
@@ -1931,12 +1931,12 @@ Translations:
             PickedRoleText: You are about to guess {0} as {1}. If you are 
                 certain about this, vote {0} again to finalize your guess. 
                 Otherwise you can pick another player by voting a different 
-                player.. OR pick a different role by typing /r [rolename]
+                player.. OR pick a different role by typing /cmd [rolename]
             PickedPlayerText: You are guessing {0}'s role. To guess their role 
-                type /r [rolename].
-            TypeRText: Please type /r [roleName] to guess that role.
-            UnknownRole: Unknown role {0}. You can use /perc to view all enabled
-                roles.
+                type /cmd [rolename].
+            TypeRText: Please type /cmd [roleName] to guess that role.
+            UnknownRole: Unknown role {0}. You can use /cmd available to view 
+                all available roles that you can guess.
             FinishedGuessingText: You have confirmed your guess. If you are not 
                 dead, you may now vote normally.
             ErrorCompletingGuess: Error completing guess. You may try and guess 
@@ -2119,8 +2119,8 @@ Translations:
             AirshipGapRoom: Disable Airship Gap Room Lights Panel
             AirshipCargoRoom: Disable Airship Cargo Lights Panel
             AirshipViewingDeck: Disable Airship Viewing Deck Lights Panel
-        PlayerAppearanceCommands: Players have access to /name, /color, and 
-            /level
+        PlayerAppearanceCommands: Players have access to /cmd name, /cmd color, 
+            and /cmd level
         DisableTasks:
             Enable: Disable Tasks
             CardSwipe: Disable Swipe Card Tasks
@@ -2316,8 +2316,8 @@ Translations:
         Mods:
             SomethingWentWrong: Something went wrong executing that command. 
                 Please check your parameters.
-            SuccessfulMod: '{0} is now a mod! They have access to the /kick and /ban
-                commands now!'
+            SuccessfulMod: '{0} is now a mod! They have access to the /cmd kick and
+                /cmd ban commands now!'
             RemovedMod: '{0} was removed. They no longer have access to mod-related
                 commands.'
             AlreadyMod: '{0} is already a mod. Nothing happened.'
@@ -2349,8 +2349,8 @@ Translations:
                 A poll to change the current gamemode has started!
 
 
-                Please vote for your desired game mode using the command /gmpoll vote
-                (id)
+                Please vote for your desired game mode using the command /cmd gmpoll
+                vote (id)
 
 
                 This poll will expire in {0}s
@@ -2372,8 +2372,8 @@ Translations:
                 {0}
 
                 There are {1} seconds left.
-            Hint: There is currently an active poll, you can vote using 
-                <b>/gmpoll vote</b>.
+            Hint: There is currently an active poll, you can vote using <b>/cmd 
+                gmpoll vote</b>.
             AvailableModesTitle: Available Gamemodes
             CurrentStandingsTitle: Current Standings
         OldCommandWarning: >-
@@ -2611,14 +2611,14 @@ Translations:
         Miscellaneous:
             SectionTitle: Miscellaneous Options
             AssignedPet: Assigned Pet
-            AllowNameCommand: Allow /name
-            AllowColorAndLevelCommand: Allow /color and /level
+            AllowNameCommand: Allow /cmd name
+            AllowColorAndLevelCommand: Allow /cmd color and /cmd level
             AutoDisplayResults: Auto Display Results
             SuffixMode: Suffix Mode
             ColorNames: Color Names
             LadderDeath: Ladder Death
             AutoDisplayCauseOfDeath: Auto Display Cause of Death
-            AllowTeleportCommand: Allow /tpin and /tpout
+            AllowTeleportCommand: Allow /cmd tpin and /cmd tpout
             BlackscreenResolver: Blackscreen Resolver
             EventLog: Log Events
             KillsOnly: Only Kills
@@ -2868,12 +2868,11 @@ Translations:
     PrivacyPolicy:
         PrivacyPolicyText: Project Lotus has a few optional features that 
             require sharing data with our API. Like bug reports and lobby 
-            information. Check our 
-            <link=https://beta.lotusau.top/privacy/>Privacy Policy</link> for 
-            more details. Do you want to enable these extra features and allow 
-            us to process your data?
+            information. Check our <link=https://lotusau.top/privacy/>Privacy 
+            Policy</link> for more details. Do you want to enable these extra 
+            features and allow us to process your data?
         UpdatedPrivacyPolicy: We have revised our 
-            <link=https://beta.lotusau.top/privacy/>Privacy Policy</link>. We 
+            <link=https://lotusau.top/privacy/>Privacy Policy</link>. We 
             encourage you to review it and update your preferences accordingly. 
             Do you still want the features enabled and allow us to process your 
             data?
