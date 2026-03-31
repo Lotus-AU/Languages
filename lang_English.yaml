@@ -108,7 +108,7 @@ Translations:
     Freezer:
       RoleName: Freezer
       Description: The Freezer can freeze a player in place by shapeshifting into them. The player will be frozen until the Freezer unshapeshifts. The Freezer may kill normally shifted or unshifted.
-      Blurb: Shapeshift Into A Player To Freeze Them In Place
+      Blurb: Freeze a Player by Shapeshifting
       Options:
         FreezeCooldown: Freeze Cooldown
         FreezeDuration: Freeze Duration
@@ -171,7 +171,7 @@ Translations:
       PurchaseItemMessage: 'You have purchased: {0}. You now have {1} cash leftover.'
       RoleName: Mafioso
       Blurb: Gain cash by completing tasks
-      Description: The Mafioso is a unique impostor role, who cannot kill off the bat. Instead the Mafioso must complete tasks in order to gain cash. During meetings, the Mafioso can use their cash to purchase a couple of different items.\n\nTommy Gun - Allows the Mafioso to kill (one time purchase)\n\nBullet - Required to use with the Tommy Gun\n\nBulletproof Vest - Gives the Mafioso one-time use invincibility for next round\n\nRole Revealer - Allows the Mafioso to reveal the role of one other player\n\nType /o to see how much each item costs. Only items you are able to use/buy will show up in the shop.
+      Description: The Mafioso is a unique impostor role, who cannot kill off the bat. Instead the Mafioso must complete tasks in order to gain cash. During meetings, the Mafioso can use their cash to purchase a couple of different items.\n\nTommy Gun - Allows the Mafioso to kill (one time purchase)\n\nBullet - Required to use with the Tommy Gun\n\nBulletproof Vest - Gives the Mafioso one-time use invincibility for next round\n\nRole Revealer - Allows the Mafioso to reveal the role of one other player\n\nType /cmd o to see how much each item costs. Only items you are able to use/buy will show up in the shop.
       CanVoteOtherPlayers: You can now vote regularly as you voted someone other than you and didn't skip.
       CanVoteOtherPlayersOnSkip: You can now vote regularly as you skipped before selecting something to buy from the shop.
     Mare:
@@ -362,7 +362,8 @@ Translations:
         Alchemist is a jack-of-all-trades crewmate role that collects "ingredients". Ingredients can be found in the following ways:
           • Catalyst - Found by completing tasks
           • Essence of Sight - Found when helping fix lights
-          • Fragment of Discussions - Found randomly in groups of 3 or more players
+          • Fragment of Discussions - Found randomly in groups of 3 or more
+        players
           • Shifting Rose - Found after a player shapeshifts
           • Theta Rift - Found randomly
           • Vial of Decay - Found off dead bodies
@@ -514,6 +515,8 @@ Translations:
       RoleName: Doctor
       Description: The Doctor has a portable vitals panel just like the vanilla role, Scientist. Check this regularly to get an approximated time of death.\n\nWhile in meeting (and by closing the chat), the Doctor can see a player's cause of death in brackets under their name.
       Blurb: See How Players Died
+      Options:
+        DoctorIsModifier: Doctor is a Modifier
     Engineer:
       RoleName: Engineer
       Description: The Engineer can use vents to travel around the map. This is a vanilla Among Us role.
@@ -1372,10 +1375,10 @@ Translations:
       ButtonText: Duplicate
     GuesserRoleBase:
       GuesserRoleBase: Guesser
-      PickedRoleText: You are about to guess {0} as {1}. If you are certain about this, vote {0} again to finalize your guess. Otherwise you can pick another player by voting a different player.. OR pick a different role by typing /r [rolename]
-      PickedPlayerText: You are guessing {0}'s role. To guess their role type /r [rolename].
-      TypeRText: Please type /r [roleName] to guess that role.
-      UnknownRole: Unknown role {0}. You can use /perc to view all enabled roles.
+      PickedRoleText: You are about to guess {0} as {1}. If you are certain about this, vote {0} again to finalize your guess. Otherwise you can pick another player by voting a different player.. OR pick a different role by typing /cmd [rolename]
+      PickedPlayerText: You are guessing {0}'s role. To guess their role type /cmd [rolename].
+      TypeRText: Please type /cmd [roleName] to guess that role.
+      UnknownRole: Unknown role {0}. You can use /cmd available to view all available roles that you can guess.
       FinishedGuessingText: You have confirmed your guess. If you are not dead, you may now vote normally.
       ErrorCompletingGuess: Error completing guess. You may try and guess again.
       GuessAnnouncementMessage: The guesser has made a guess. {0} died.
@@ -1470,6 +1473,36 @@ Translations:
       RoleName: Drafter
       Blurb: Choose your next role
       Description: At the start of the game, the Drafter can choose their role from a selection of roles. This role only spawns in the Draft gamemode.
+    Seeker:
+      RoleName: Seeker
+      Blurb: Kill all hiders before the timer ends.
+      Description: This is a vanilla Among Us role. Kill everyone before the time runs out to win.
+    Hider:
+      RoleName: Hider
+      Blurb: Hide from the Seeker
+      Description: This is a vanilla Among Us role. Avoid getting killed by the Seeker until the timer runs out to win. Use vents to your advantage.
+    Child:
+      EarDamageReason: Ear Damage
+      ScreamedDeathReason: Screamed
+      RoleName: Child
+      Blurb: Get Killed to Instantly Win
+      Description: This is an April Fools role. It will only appear in the settings and spawn from April 1st to 7th.\nThe Child is a crewmate role that wins instantly and by themselves when they are killed <b>during a round</b>. If the child is killed during a meeting (e.g. guessing), then they will not win.
+    Drunk:
+      RoleName: Drunk
+      Blurb: Inverts Controls
+      Description: This is an April Fools role. It will only appear in the settings and spawn from April 1st to 7th.\nThis subrole inverts the player's controls while they are alive. Up goes down, and left goes right.
+    Lagger:
+      RoleName: Lagger
+      Blurb: Random Freezes
+      Description: This is an April Fools role. It will only appear in the settings and spawn from April 1st to 7th.\nEvery 0.1-20 seconds the player will be forced to stop in place for 0.05-4 seconds, making it harder to move around the map. If the player dies, this will stop happening.
+    Slowpoke:
+      RoleName: Slowpoke
+      Blurb: Very very Slow
+      Description: This is an April Fools role. It will only appear in the settings and spawn from April 1st to 7th.\nThe player's speed is significant reduced (specifically a fourth). When the player dies, their speed will go back to normal.
+    Sneezer:
+      RoleName: Sneezer
+      Blurb: Calls Meetings Accidentally
+      Description: This is an April Fools role. It will only appear in the settings and spawn from April 1st to 7th.\nEvery round after the first, the player will be forced to call an emergency meeting 30-120 seconds into the round. If the player dies between this time, a meeting will not be called.
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
@@ -1492,7 +1525,7 @@ Translations:
       AirshipGapRoom: Disable Airship Gap Room Lights Panel
       AirshipCargoRoom: Disable Airship Cargo Lights Panel
       AirshipViewingDeck: Disable Airship Viewing Deck Lights Panel
-    PlayerAppearanceCommands: Players have access to /name, /color, and /level
+    PlayerAppearanceCommands: Players have access to /cmd name, /cmd color, and /cmd level
     DisableTasks:
       Enable: Disable Tasks
       CardSwipe: Disable Swipe Card Tasks
@@ -1671,7 +1704,7 @@ Translations:
     NoPreviousGameText: No game played yet!
     Mods:
       SomethingWentWrong: Something went wrong executing that command. Please check your parameters.
-      SuccessfulMod: '{0} is now a mod! They have access to the /kick and /ban commands now!'
+      SuccessfulMod: '{0} is now a mod! They have access to the /cmd kick and /cmd ban commands now!'
       RemovedMod: '{0} was removed. They no longer have access to mod-related commands.'
       AlreadyMod: '{0} is already a mod. Nothing happened.'
     BugReports:
@@ -1681,7 +1714,7 @@ Translations:
 
         Error: {0}
       ReportingBug: Your request has went through and we are now reporting your bug. Thanks!
-      ReportedBug: Your bug has been successfully report. Again, thank you!
+      ReportedBug: Your bug has been successfully reported. Again, thank you!
       ReportSuggest: '{0} suggests you to report "{1}".'
       UploadingLog: Uploading log file... (Chunk {0}/{1})
     Role:
@@ -1697,7 +1730,7 @@ Translations:
         A poll to change the current gamemode has started!
 
 
-        Please vote for your desired game mode using the command /gmpoll vote (id)
+        Please vote for your desired game mode using the command /cmd gmpoll vote (id)
 
 
         This poll will expire in {0}s
@@ -1716,7 +1749,7 @@ Translations:
         {0}
 
         There are {1} seconds left.
-      Hint: There is currently an active poll, you can vote using <b>/gmpoll vote</b>.
+      Hint: There is currently an active poll, you can vote using <b>/cmd gmpoll vote</b>.
       AvailableModesTitle: Available Gamemodes
       CurrentStandingsTitle: Current Standings
     OldCommandWarning: >-
@@ -1743,6 +1776,8 @@ Translations:
   PingDisplay:
     AddonsLoaded: Addons Loaded
     AddonsFailed: '{0} Addon(s) Failed to Load: {1}'
+  DisconncetReasons:
+    FreeChatOnly: Project Lotus only works correctly when using Free Chat mode. Please switch to Free Chat and rejoin the game.
   Gamemodes:
     Colorwars:
       Options:
@@ -1789,6 +1824,8 @@ Translations:
       KillCooldown: Kill Cooldown
       ImpostorVision: Impostor Vision
       Switch: Switch
+      Command: Command
+      Vote: Vote
     General:
       OnText: ON
       OffText: OFF
@@ -1950,14 +1987,14 @@ Translations:
     Miscellaneous:
       SectionTitle: Miscellaneous Options
       AssignedPet: Assigned Pet
-      AllowNameCommand: Allow /name
-      AllowColorAndLevelCommand: Allow /color and /level
+      AllowNameCommand: Allow /cmd name
+      AllowColorAndLevelCommand: Allow /cmd color and /cmd level
       AutoDisplayResults: Auto Display Results
       SuffixMode: Suffix Mode
       ColorNames: Color Names
       LadderDeath: Ladder Death
       AutoDisplayCauseOfDeath: Auto Display Cause of Death
-      AllowTeleportCommand: Allow /tpin and /tpout
+      AllowTeleportCommand: Allow /cmd tpin and /cmd tpout
       BlackscreenResolver: Blackscreen Resolver
       EventLog: Log Events
       KillsOnly: Only Kills
@@ -2017,6 +2054,9 @@ Translations:
         DecisionTime: Decision Time
         StartingInText: Starting In {0}...
         PlayerIdText: Your ID is {0}. Wait for your turn.
+      HNSStandard:
+        Name: Standard
+        GamemodeDescription: The standard Hide & Seek Gameplay. Hiders complete tasks to reduce time and hide in vents when necessary. The Seeker must kill all players before time runs out or the hiders win.
     CaptureTheFlag:
       SectionTitle: CTF Settings
       GameLength: Game Duration
@@ -2165,8 +2205,8 @@ Translations:
       FatalErrorMessage: Encountered fatal error during [{0}]
       CheckLogMessage: Check logs for more info.
   PrivacyPolicy:
-    PrivacyPolicyText: Project Lotus has a few optional features that require sharing data with our API. Like bug reports and lobby information. Check our <link=https://beta.lotusau.top/privacy/>Privacy Policy</link> for more details. Do you want to enable these extra features and allow us to process your data?
-    UpdatedPrivacyPolicy: We have revised our <link=https://beta.lotusau.top/privacy/>Privacy Policy</link>. We encourage you to review it and update your preferences accordingly. Do you still want the features enabled and allow us to process your data?
+    PrivacyPolicyText: Project Lotus has a few optional features that require sharing data with our API. Like bug reports and lobby information. Check our <link=https://lotusau.top/privacy/>Privacy Policy</link> for more details. Do you want to enable these extra features and allow us to process your data?
+    UpdatedPrivacyPolicy: We have revised our <link=https://lotusau.top/privacy/>Privacy Policy</link>. We encourage you to review it and update your preferences accordingly. Do you still want the features enabled and allow us to process your data?
     DisagreeText: All non-essential online requests have been turned off. You can enable specific ones through the Settings menu.
     AcceptText: All online requests have been turned on. You can disable specific ones through the Settings menu.
     CustomizeText: Your preferences have been saved. You can edit them any time through the Settings menu.
@@ -2184,3 +2224,9 @@ Translations:
       The following enabled roles require pet: {1}
     WarningToPlayer: There are roles enabled that have pets. Please equip one in the cosmetics area.
     WarningTitle: ⚠ WARNING ⚠
+  RoleOptionsWarning:
+    WarningTitle: ⚠ WARNING ⚠
+    WarningToHost: >-
+      Automatically set {0} to {1} due to {2} being enabled.
+
+      To manually set your own amounts, change them in the Lotus Settings.
