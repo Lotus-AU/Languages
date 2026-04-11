@@ -2342,5 +2342,7 @@ Translations:
       Automatically set {0} to {1} due to {2} being enabled.
       To manually set your own amounts, change them in the Lotus Settings.
   TranslationUpdate:
-    Title: Translation Update
-    Message: The translation files have been downloaded. Please restart the game for them to apply and take effect correctly.
+    UpdateTitle: Translation Update
+    UpdateMessage: The translation files have been downloaded. Please restart the game for them to apply and take effect correctly.
+    ErrorTitle: Translation Update Error
+    ErrorMessage: An error occurred while downloading the translation files. A fallback file has been used. It will try to redownload the files again on next launch.
