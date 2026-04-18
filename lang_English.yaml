@@ -2333,7 +2333,7 @@ Translations:
     WarningToHost: >-
       The following players do not have pets: {0}
 
-      The following enabled roles require pet: {1}
+      The following enabled roles require a pet: {1}
     WarningToPlayer: There are roles enabled that have pets. Please equip one in the cosmetics area.
     WarningTitle: ⚠ WARNING ⚠
   RoleOptionsWarning:
