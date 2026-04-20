@@ -2327,6 +2327,8 @@ Translations:
     CustomizeButtonText: Customize
     DisagreeButtonText: No
     AcceptButtonText: Yes
+  Messages:
+    BanedByBanList: "{0} was banned because they are on the host's banlist."
   Whitelist:
     WhitelistBan: "{0} was kicked because they weren't on the whitelist."
   PetWarning:
