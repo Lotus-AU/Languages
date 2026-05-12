@@ -1645,7 +1645,7 @@ Translations:
     Color:
       NotInRange: '{0} не входит в диапазон допустимых цветов.'
     Winners: Победители
-    
+
     Dump:
       Success: Журнал успешно сохранён. Проверьте папку с журналами — там будет «dump.log»!
     HostOptions:

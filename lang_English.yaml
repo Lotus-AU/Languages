@@ -1859,13 +1859,11 @@ Translations:
       AvailableModesTitle: Available Gamemodes
       CurrentStandingsTitle: Current Standings
     OldCommandWarning: >-
-      You are using a deprecated command!
+      You are trying to use the deprecated command format!
 
-      Every command has changed to use '/cmd' in front. For example, you typed:
-      '/{0}'. The correct command should be '/cmd {0}'.
+      Every command has changed to use '/cmd' in front. For example, you typed: '/{0}'. The correct command should be '/cmd {0}'.
 
-      You have been warned for now, but this deprecated command will stop working
-      sometime in March.
+      This warning is here to remind you about this change, so make sure to adapt!
   Announcements:
     SystemMessage: System Message
     CannotSabotageMessage: The host has disabled dead players from sabotaging.
