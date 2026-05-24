@@ -479,21 +479,16 @@ Translations:
     Charmer:
       RoleName: Charmer
       Description: >-
-        The Charmer can use their Pet/Kill button to charm Impostors or Neutral
-        Killers to join the Crewmate's team.
+        The Charmer can use their Pet/Kill button to charm Impostors or Neutral Killers to join the Crewmate's team.
 
 
-        Charmed players will know they've been charmed, and lose the ability
-        to kill other players.
+        Charmed players will know they've been charmed and lose the ability to kill other crewmates; however, they can still kill other evils.
 
 
         If the Charmer tries to charm a Crewmate, they misfire and die.
 
 
-        Note: If the Charmer is set to activate their ability using the Pet
-        button, then the host may decide to require them to do tasks before
-        they can activate their ability. This option is not available if 'Ability
-        Button' is set to Kill Button.
+        Note: If the Charmer is set to activate their ability using the Pet button, then the host may decide to require them to do tasks before they can activate their ability. This option is not available if 'Ability Button' is set to Kill Button.
       Blurb: Charm Enemies to Join Your Team
       Options:
         AbilityButton: Ability Button
