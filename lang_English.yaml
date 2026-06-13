@@ -2140,7 +2140,7 @@ Translations:
         Name: Colorwars
         ButtonText: Colorwars Settings
         Description: Modify the Colorwars settings here!
-        GamemodeDescription: Players are divded into teams and are assigned random colors.\nIf Convert Color Mode is enabled, trying to kill a player will change their color to yours. The game will end when there is only one color remaining. If Sudden Death is one, once the number of colors remaining dips to a number decided by the host, players will start killing each other instead of converting them.\n\nIf Convert Color Mode is disabled, players must kill players of other colors to eliminate them. The game will end when only one color remains.
+        GamemodeDescription: Players are divded into teams and are assigned random colors.\nIf Convert Color Mode is enabled, trying to kill a player will change their color to yours. The game will end when there is only one color remaining. If Sudden Death is on, once the number of colors remaining dips to a number decided by the host, players will start killing each other instead of converting them.\n\nIf Convert Color Mode is disabled, players must kill players of other colors to eliminate them. The game will end when only one color remains.
       Draft:
         Name: Draft
         ButtonText: Draft Settings
