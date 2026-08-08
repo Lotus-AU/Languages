@@ -479,21 +479,16 @@ Translations:
     Charmer:
       RoleName: Charmer
       Description: >-
-        The Charmer can use their Pet/Kill button to charm Impostors or Neutral
-        Killers to join the Crewmate's team.
+        The Charmer can use their Pet/Kill button to charm Impostors or Neutral Killers to join the Crewmate's team.
 
 
-        Charmed players will know they've been charmed, and lose the ability
-        to kill other players.
+        Charmed players will know they've been charmed and lose the ability to kill other crewmates; however, they can still kill other evils.
 
 
         If the Charmer tries to charm a Crewmate, they misfire and die.
 
 
-        Note: If the Charmer is set to activate their ability using the Pet
-        button, then the host may decide to require them to do tasks before
-        they can activate their ability. This option is not available if 'Ability
-        Button' is set to Kill Button.
+        Note: If the Charmer is set to activate their ability using the Pet button, then the host may decide to require them to do tasks before they can activate their ability. This option is not available if 'Ability Button' is set to Kill Button.
       Blurb: Charm Enemies to Join Your Team
       Options:
         AbilityButton: Ability Button
@@ -1859,13 +1854,11 @@ Translations:
       AvailableModesTitle: Available Gamemodes
       CurrentStandingsTitle: Current Standings
     OldCommandWarning: >-
-      You are using a deprecated command!
+      You are trying to use the deprecated command format!
 
-      Every command has changed to use '/cmd' in front. For example, you typed:
-      '/{0}'. The correct command should be '/cmd {0}'.
+      Every command has changed to use '/cmd' in front. For example, you typed: '/{0}'. The correct command should be '/cmd {0}'.
 
-      You have been warned for now, but this deprecated command will stop working
-      sometime in March.
+      This warning is here to remind you about this change, so make sure to adapt!
   Announcements:
     SystemMessage: System Message
     CannotSabotageMessage: The host has disabled dead players from sabotaging.
@@ -2147,7 +2140,7 @@ Translations:
         Name: Colorwars
         ButtonText: Colorwars Settings
         Description: Modify the Colorwars settings here!
-        GamemodeDescription: Players are divded into teams and are assigned random colors.\nIf Convert Color Mode is enabled, trying to kill a player will change their color to yours. The game will end when there is only one color remaining. If Sudden Death is one, once the number of colors remaining dips to a number decided by the host, players will start killing each other instead of converting them.\n\nIf Convert Color Mode is disabled, players must kill players of other colors to eliminate them. The game will end when only one color remains.
+        GamemodeDescription: Players are divded into teams and are assigned random colors.\nIf Convert Color Mode is enabled, trying to kill a player will change their color to yours. The game will end when there is only one color remaining. If Sudden Death is on, once the number of colors remaining dips to a number decided by the host, players will start killing each other instead of converting them.\n\nIf Convert Color Mode is disabled, players must kill players of other colors to eliminate them. The game will end when only one color remains.
       Draft:
         Name: Draft
         ButtonText: Draft Settings
