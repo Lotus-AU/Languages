@@ -1,0 +1,2219 @@
+Name: Japanese
+Authors:
+- mitsuya
+Translations:
+  Roles:
+    Assassin:
+      RoleName: アサシン
+      Description: >-
+        アサシンは、役職を推測することでインポスター以外のプレイヤーもキルできるインポスターです。インポスター役職は推測できません。
+
+        会議中、推測したいプレイヤーに投票すると対象を選択できます。投票後、チャットコマンド（/cmd [rolename]）で推測する役職を選択できます。
+
+        推測を確定するには、同じプレイヤーにもう一度投票してください。推測が正しければ対象のプレイヤーが死亡し、間違っていればアサシンが死亡します。
+
+        推測をキャンセルするには、いつでもスキップできます。次の投票は通常通り扱われます。
+
+        注: オラクルなどによって判明している役職は推測できません。
+      Blurb: 役職を推測してキルする
+    Blackmailer:
+      RoleName: ブラックメイラー
+      Description: プレイヤーに変身して、その相手を脅迫します。会議中、脅迫されたプレイヤーには「脅迫中」と表示され、設定によっては全員に見える場合があります。\n\n脅迫中に発言しようとすると、黙っているよう警告を受けることがあります。警告回数がホストの設定した上限に達すると、そのプレイヤーは処刑されます。
+      Blurb: プレイヤーを脅迫して黙らせる
+      Options:
+        WarningsUntilDeath: 死亡までの警告回数
+        ShowBlackmailedToAll: 脅迫中を全員に表示
+        BlackmailerIsSSBased: ブラックメイラーが変身能力を使う
+      BlackmailedMessage: あなたは脅迫されています！チャットで発言すると死亡します。
+      WarningMessage: 発言は禁止されています！もう一度発言すると死亡する可能性があります。
+      BlackmailedText: 脅迫中
+      BlackmailingMode: 脅迫中
+      BlackmailButtonText: 脅迫
+    BountyHunter:
+      RoleName: バウンティハンター
+      Description: バウンティハンターにはキル対象のプレイヤーが指定されます（対象は名前が黒く表示されます）。対象をキルすると、次のキルクールダウンが大幅に短縮されます。\n\n対象が変わるまでの時間、対象をキルした後のキルクールダウン、対象以外をキルした後のキルクールダウンは、ホストが設定します。
+      Blurb: 標的をキルしてキルクールダウンを短縮する
+      Options:
+        TimeUntilNewTarget: 新しい標的までの時間
+        AfterKillingTarget: 標的キル後のキルクールダウン
+        AfterKillingNonTarget: 標的以外をキルした後のキルクールダウン
+    Camouflager:
+      RoleName: カモフラージャー
+      Description: プレイヤーに変身すると、短時間だけ生存者全員を同じ姿に変身させます。持続時間が終わるか会議が開かれると、全員が元の姿に戻ります。
+      Blurb: 全員を同じ姿に偽装する
+      Options:
+        CamouflageCooldown: カモフラージュクールダウン
+        CamouflageDuration: カモフラージュ持続時間
+      ButtonText: カモフラージュ
+    Consort:
+      RoleName: コンソート
+      Description: ペットボタンで、能力妨害モードとキルモードを切り替えます。\n\n能力妨害を受けたプレイヤーは、キル、死体通報、会議招集、変身、ベント使用ができなくなります。
+      Blurb: プレイヤーの能力を妨害する
+      Options:
+        roleblockCooldown: 能力妨害クールダウン
+        roleblockDuration: 能力妨害持続時間
+      ButtonText: 能力妨害
+    Creeper:
+      RoleName: クリーパー
+      Description: クリーパーの目的は、できる限り大きな被害を出すことです。ペットボタン、または変身ボタン（どちらを使うかはホスト設定で決まります）を使うと、自分自身と指定範囲内のプレイヤーをキルします。\n\n運が良ければ、メディックのシールドなどで爆発から守られて生き残れることがあります。ただし、設定がオフの場合はメディックのシールドでも守られません。
+      Blurb: プレイヤーを爆破する
+      Options:
+        BomberProtection: 爆破者がシールドで保護される
+        ExplosionRadius: 爆発範囲
+        CreeperProtection: シールドで保護される
+        CreeperGracePeriod: 猶予時間
+        CanKillNormal: 通常キル可能
+      ExplosionGracePeriod: '爆発猶予時間: {0}'
+      ButtonText: 起爆
+    Disperser:
+      RoleName: ディスパーサー
+      Description: ディスパーサーはペットボタンを使い、全員をランダムなベントへテレポートさせることができます。
+      Blurb: プレイヤーをテレポートさせる
+      Options:
+        DisperseCooldown: 分散クールダウン
+        DisperserGetsDispersed: ディスパーサー::0も分散対象になる
+      ButtonText: 分散
+    Escapist:
+      RoleName: エスケーピスト
+      Description: 最初にペットボタンを使うと、現在地をマークします。\n\n一定のクールダウン後、もう一度ペットボタンを使うとマークした地点へ戻れます。その後、マーク能力は再びクールダウンに入ります。
+      Blurb: 場所を記録して戦略的に逃げる
+      Options:
+        MarkCooldown: マーク後のクールダウン
+        EscapeCooldown: 逃走後のクールダウン
+        ClearAfterMeeting: 会議後にマークを消去
+      MarkButtonText: マーク
+      EscapeButtonText: 逃走
+    FireWorks:
+      RoleName: 花火師
+      Description: >-
+        変身ボタンを使って、マップ上に花火（爆弾）を設置します。その後、好きなタイミングでペットボタンを使って花火を起爆し、花火の爆発範囲内にいるプレイヤーをキルできます。
+
+
+        注: 爆発は壁を貫通します。花火師は花火を設置している間も通常キルできます。
+      Blurb: 花火を仕掛けてプレイヤーを爆破する
+      Options:
+        PlantFireworkCooldown: 花火設置クールダウン
+        TotalFireworks: 花火の総設置回数
+        AbleToDetonateText: 最後のインポスター::0の時だけ起爆可能
+        AbleToDetonateEarly: 最後のインポスター::0の時だけ起爆可能
+      AbleToDetonateEarly: 最後のインポスター::0の時だけ起爆可能
+      AbleToDetonateText: 起爆準備完了！
+      Mutable:
+        DetonateOnlyWhenLastImpostor: いつでも起爆できるのではなく、あなたが最後のインポスターになった時だけ起爆できます。
+      ButtonText: 設置
+    Freezer:
+      RoleName: フリーザー
+      Description: フリーザーは対象に変身することで、そのプレイヤーをその場に凍結させます。対象はフリーザーが変身を解除するまで動けません。フリーザーは変身中でも未変身でも通常キルできます。
+      Blurb: 変身してプレイヤーを凍結させる
+      Options:
+        FreezeCooldown: 凍結クールダウン
+        FreezeDuration: 凍結持続時間
+      ButtonText: 凍結
+    Grenadier:
+      RoleName: グレネーダー
+      Description: ペットボタンで爆弾を起動し、一定範囲内の近くのプレイヤーの視界を奪います。ホスト設定によっては味方のインポスターも目くらましの対象になります。この間、グレネーダーは気づかれずにキルできます。
+      Blurb: 近くのプレイヤーの視界を奪う
+      Options:
+        AmountOfGrenades: グレネード数
+        BlindCooldown: 目くらましクールダウン
+        BlindDuration: 目くらまし持続時間
+        BlindRadius: 目くらまし効果範囲
+        CanBlindAllies: 味方にも目くらまし可能
+      ButtonText: グレネード
+    IdentityThief:
+      RoleName: アイデンティティシーフ
+      Description: アイデンティティシーフは、キルした相手の姿に変身します。変装は次にキルできるようになるまで、または設定によっては別のプレイヤーをキルして次の犠牲者に変身するまで続きます。
+      Blurb: 犠牲者の姿に変身する
+      Options:
+        DisguiseSettings: 変装設定
+        UntilKillCooldown: キルクールダウンまで
+        UntilNextKill: 次のキルまで
+        TotallySwapIdentity: 完全に身元を入れ替える
+        UntilMeeting: 会議まで
+    Impostor:
+      RoleName: インポスター
+      Blurb: クルーメイトとニュートラルをキルする
+      Description: バニラのインポスターです。味方以外のプレイヤーを全員キルし、最後に残った陣営になることを目指します。
+    Janitor:
+      RoleName: ジャニター
+      Description: ジャニターはキルクールダウン終了時に、キルするか死体を清掃するかを選べます。\n\nジャニターはレポートボタンで死体を片付け、通報できない状態にできます。また、キルボタンでプレイヤーをキルできます。\n\nジャニターが通常通り死体を通報できるのは、クールダウン中だけです。
+      Blurb: 死体を片付けて通報できなくする
+      Options:
+        CleanOnKill: キル時に清掃
+        KillCooldownMultiplier: キルクールダウン倍率
+      ButtonText: 清掃
+    Mafioso:
+      Options:
+        StartsGameWithGun: 銃を持ってゲーム開始
+        ModifyShopCosts: ショップ価格を変更
+        GunCost: 銃の価格
+        BulletCost: 弾丸の価格
+        VestCost: ベストの価格
+        RoleRevealerCost: 役職公開アイテムの価格
+        GunCooldown: 銃のクールダウン
+        CashFromReporting: 死体通報で得る所持金
+        RefreshTasks: 全タスク完了時にタスクを更新
+      CashText: '所持金::0: {0}'
+      GunItem: トミーガン
+      VestItem: 防弾ベスト
+      BulletItem: 弾丸
+      RevealerItem: 役職公開アイテム
+      RevealerReady: 役職公開アイテム使用可能
+      ShopMessage: >-
+        あなたはマフィアの一員です！会議中にアイテムを購入できます。アイテムを購入するには、まず自分に投票して購入したいアイテムを選択します。その後、スキップすると購入を続行します。
+
+        自分以外のプレイヤーに投票すると、そのプレイヤーへの通常投票として扱われます。それ以外の場合はショップモードのままです。
+      SelectedItemMessage: '{0} を購入対象に選択しました。購入後の所持金は {1} になります。購入を続けるにはスキップ投票を押してください。'
+      PurchaseItemMessage: '{0} を購入しました。残りの所持金は {1} です。'
+      RoleName: マフィオーソ
+      Blurb: タスクを完了して所持金を得る
+      Description: マフィオーソは特殊なインポスター役職で、最初からキルはできません。代わりに、タスクを完了して所持金を得る必要があります。会議中、マフィオーソは所持金を使って複数のアイテムを購入できます。\n\nトミーガン - マフィオーソがキルできるようになります（一度だけ購入可能）\n\n弾丸 - トミーガンを使うために必要です\n\n防弾ベスト - 次のラウンドで一度だけ無敵になります\n\n役職公開アイテム - 他のプレイヤー1人の役職を公開できます\n\n各アイテムの価格を確認するには /cmd o と入力してください。ショップには、使用または購入できるアイテムだけが表示されます。
+      CanVoteOtherPlayers: 自分以外のプレイヤーに投票し、スキップしなかったため、通常通り投票できるようになりました。
+      CanVoteOtherPlayersOnSkip: ショップで購入するものを選ぶ前にスキップしたため、通常通り投票できるようになりました。
+    Mare:
+      RoleName: メアー
+      Description: 'メアーは、特定のサボタージュ中（対象はホスト設定で決まります）に特殊な力を得ます。効果には、移動速度上昇やキルクールダウン短縮などがあります。\n\n注意！設定が有効な場合、能力発動中はあなたの名前が紫色で表示されます。'
+      Blurb: サボタージュで力を解放する
+      Options:
+        SpeedDuringSabotage: サボタージュ中の速度補正
+        KillWithoutSabotage: サボタージュなしでキル可能
+        KillCooldown: 通常キルクールダウン
+        ColoredName: サボタージュ中に名前を色付き表示
+        SabotageKillCooldown: サボタージュ中のキルクールダウン
+        SabotageSettings: 個別サボタージュ設定
+    Mastermind:
+      RoleName: マスターマインド
+      Description: マスターマインドはキルボタンでプレイヤーをマークします。\n\n少し時間が経つと、そのプレイヤーには「操られている」と表示され、カウントダウンが始まります。そのプレイヤーはカウントダウンが終わる前に、ペットボタンまたはキルボタンで他のプレイヤーをキルしなければなりません。失敗すると自殺します。\n\nマスターマインドは通常キルできません。
+      Blurb: 他人を操り、支配する
+      Options:
+        ManipulatedPlayerLimit: 操れるプレイヤー数の上限
+        ImpostorsCanSeeManipulated: インポスター::0が操られた相手を見られる
+        TimeUntilSuicide: 自殺までの時間
+        ManipulationCooldown: 操作クールダウン
+        KillerCDAfterManipulate: 操作後のキラーのクールダウン
+      ManipulatedText: 操られている
+      KillImploredText: >-
+        {0}以内に誰かを<b>必ず</b>キルしてください
+
+        （キルボタンまたはペットボタンを使ってください！）
+      ManipulateButtonText: 操る
+    Miner:
+      RoleName: マイナー
+      Description: ペットボタンを使うと、最後に使用したベントへテレポートできます。他のインポスター役職と同じように、キル、ベント使用、サボタージュができます。
+      Blurb: ペットボタンでベントへテレポートする
+      Options:
+        AbilityCooldown: マイナー能力クールダウン
+      ButtonText: 採掘
+    Ninja:
+      RoleName: 忍者
+      Description: ペットボタンまたは変身ボタン（どちらを使うかはホスト設定で決まります）で、狩猟モードとキルモードを切り替えます。\n\n狩猟モード中は、キルボタンで対象をマークします。その後、ペットボタンを使うか変身を解除すると、対象を自分の元へテレポートさせる、または設定によっては自分が対象の元へテレポートし、キルを実行します。
+      Blurb: 獲物を静かに仕留める
+      Options:
+        TeleportToNinja: プレイヤーを忍者の元へテレポート
+        AbilityActiviation: 忍者能力の発動方法
+      HuntButtonText: 狩猟
+    Phantom:
+      RoleName: ファントム
+      Description: ファントムは一定時間透明になれます。透明化中はベントを使えますが、キルはできません。これはバニラのインポスター役職です。
+      Blurb: 透明になる
+      Options:
+        VanishCooldown: 透明化クールダウン
+        VanishDuration: 透明化持続時間
+        ImmuneToRangedInteractions: 遠距離干渉に免疫
+        RemainingTaskWarning: 残りタスク警告
+        RemainingTaskTargetable: ターゲット可能になる残りタスク数
+    PickPocket:
+      RoleName: スリ
+      Description: スリは、プレイヤーをキルするたびに追加票を得るインポスターです。この票は蓄積されるため、スリは非常に強力になることがあります。
+      Blurb: キルした相手から票を盗む
+      Options:
+        MaximumAdditionalVotes: 最大追加票数
+        ResetVotesAfterMeeting: 会議後に追加票をリセット
+    Puppeteer:
+      RoleName: 人形遣い
+      Description: プレイヤーの近くでキルボタンを使うと、そのプレイヤーを操ります。操られたプレイヤーは、次に近づいたインポスター以外のプレイヤーを強制的にキルします。\n\nキルされたプレイヤーが死亡時に発動する能力を持っている場合、その効果は人形遣いではなく操られたプレイヤーに向かいます。人形遣いは通常キルできません。
+      Blurb: プレイヤーを人形として操る
+      ButtonText: 操る
+      Options:
+        PuppetCooldown: 操作クールダウン
+        KillerCDAfterPuppet: 操作後のキラーのクールダウン
+    SerialKiller:
+      RoleName: シリアルキラー
+      Description: >-
+        シリアルキラーはキルクールダウンが大幅に短くなります（値はホスト設定で決まります）。ただし、名前の横にタイマーが表示されます。シリアルキラーがキルするたびにタイマーはリセットされ、タイマーが0になるとシリアルキラーは死亡します。
+
+
+        注: 「初回キル後にタイマー開始」がオフの場合、自殺タイマーはゲームプレイ設定の「初回キルクールダウン」と同じ分だけ延長されます。
+      Blurb: 素早くキルして生き延びる
+      Options:
+        TimeUntilSuicide: 自殺までの時間
+        TimerAfterFirstKill: 初回キル後にタイマー開始
+    Shapeshifter:
+      RoleName: シェイプシフター
+      Description: シェイプシフターは、前回の会議終了時点で生存していた任意のプレイヤーに変身できます。これはバニラのインポスター役職です。
+      Blurb: 自分を偽装する
+      Options:
+        ShapeshiftCooldown: 変身クールダウン
+        ShapeshiftDuration: 変身持続時間
+    Sniper:
+      RoleName: スナイパー
+      Description: 変身ボタンで他のプレイヤーに変身します。撃ちたい方向へ1〜2歩進み、変身を解除すると発砲します。その方向へ弾が飛び、射線上のプレイヤーをキルします。スナイパーは弾を使い切るまで通常キルできません。
+      Blurb: 遠距離からキルする
+      Options:
+        SniperBulletCount: スナイパーの弾数
+        SnipingCooldown: 狙撃クールダウン
+        RefundBulletOnKill: キル時に弾を回復
+        PreciseShooting: 精密射撃
+        PlayerPiercing: プレイヤーを貫通
+      ButtonText: 照準
+    Swooper:
+      RoleName: スウーパー
+      Description: スウーパーはベントに入ることで透明になれます。透明化中も、通常通りキル、サボタージュ、ベント使用ができます。\n\n注意！ホスト設定によっては、他のプレイヤーをキルした時に透明化が解除される場合があります。
+      Blurb: ベントで透明になる
+      Options:
+        InvisibilityCooldown: 透明化クールダウン
+        SwoopingDuration: 透明化持続時間
+        SeenByAllies: 味方から見える
+        VentDuringCooldown: クールダウン中にベント使用可能
+        InvisibleOnKill: キル後も透明化を維持
+        ReturnLocation: 透明化終了時の帰還先
+        CurrentLocation: 現在地
+        StartLocation: 開始地点
+      ButtonText: 透明化
+    TimeThief:
+      RoleName: タイムシーフ
+      Description: タイムシーフがキルするたびに、会議時間の合計が一定量短くなります。\n\nホスト設定によっては、タイムシーフが死亡すると会議時間が元に戻る場合があります。
+      Blurb: 会議時間を奪う
+      Options:
+        MeetingTimeStolen: 奪う会議時間
+        MinVotingTime: 最小投票時間
+        ReturnTimeAfterDeath: 死亡後に奪った時間を戻す
+    Vampire:
+      RoleName: ヴァンパイア
+      Description: ヴァンパイアは対象に噛みつき、遅延キルを行います。噛まれたプレイヤーは数秒後、または次の会議が開かれた時に死亡します。ヴァンパイアがベイトを噛んだ場合、キル遅延後にヴァンパイアがセルフレポートします。
+      Blurb: 遅れて発生するキル
+      Options:
+        KillDelay: キル遅延
+      ButtonText: 噛む
+    Vampiress:
+      RoleName: ヴァンパイアレス
+      Description: ヴァンパイアレスはヴァンパイアと同じようにプレイヤーに噛みつき、ホスト設定で決められた時間の後に死亡させることができます。ただし、通常のインポスターのように直接キルすることもできます。ペットボタンで噛みつきとキルを切り替えます。ヴァンパイアレスは隠し役職で、ヴァンパイアの代わりにまれに出現します。
+      Blurb: 遅延キルと通常キル
+    Warlock:
+      RoleName: ウォーロック
+      Description: キルボタンでプレイヤーに呪いをかけます。次にウォーロックが変身すると、呪われたプレイヤーは最も近くにいる相手をキルします。\n\nウォーロックは変身中に通常キルできます。設定がオンの場合、呪われたプレイヤーは呪われた直後にランダムなプレイヤーをキルします。\n\n注意！呪われたプレイヤーはインポスターをキルすることがあります（ウォーロック自身をキルすることすらあります）。
+      Blurb: プレイヤーを呪い、他人をキルさせる
+      Options:
+        CursedKillImmediately: 呪われたプレイヤーが即時キル
+        LimitedCurseKillRange: 呪いキル範囲を制限
+      ButtonText: 呪い
+    Witch:
+      RoleName: ウィッチ
+      Description: ウィッチのキル/呪いボタンは、プレイヤーを呪う効果とキルする効果が交互に切り替わります。\n\nウィッチに呪われたプレイヤーは、会議中に名前の横へ十字の印が表示されます。その会議でウィッチが追放されなかった場合、呪われたプレイヤーは死亡します。\n\n通常キルではベイトのセルフレポートが発動します。\n呪いではベイトのセルフレポートは発動しません。
+      Blurb: キルと呪いを使い分ける
+      Options:
+        FreelySwitchModes: モードを自由に切り替え
+        SwitchModesAfterAttack: 攻撃後にモードを切り替え
+      CursedMessage: '{0}::0 が {1}::1 に呪いをかけ、次の会議終了時に死亡するようにしました。'
+      CursingModeText: 呪い
+      KillingModeText: キル
+      HexedCauseOfDeath: 呪殺
+      CursedStatusDescription: あなたは呪いを受けています。呪いをかけた相手（ウィッチ）が追放されない限り、呪われたプレイヤーは会議後に死亡します。
+      CursingButtonText: 呪い
+      KillButtonText: キル
+    YinYanger:
+      RoleName: 陰陽師
+      Description: 陰陽師は、2人のプレイヤーを互いにキルさせる能力を持つインポスターです。キルボタンで2人のプレイヤーをタグ付けします。その2人がキル距離内に近づくと、互いにキルし合います。\n\n2人の対象を設定した後は、陰陽師も通常キルできます。
+      Blurb: プレイヤー同士を争わせる
+      Options:
+        YinYangCooldown: 陰陽クールダウン
+    CrewPostor:
+      RoleName: クルーポスター
+      Description: タスクを完了すると、最も近くにいるプレイヤーを即座にキルします（インポスターや他のキル役職も対象になります）。クルーポスターはインポスターと一緒に勝利します。
+      Blurb: タスクでプレイヤーをキルする
+      Options:
+        CanKillAllies: 味方をキル可能
+        WarpToTarget: 対象へワープ
+        RefreshTasks: 全タスク完了時にタスクを更新
+    MadGuardian:
+      RoleName: マッドガーディアン
+      Description: マッドガーディアンはインポスター陣営のクルーメイトです。すべてのタスクを完了すると、キルに対して免疫を得ます。\n\nマッドガーディアンはインポスターが誰か分からず、インポスター側からも他のクルーメイトと見分けられません。
+      Blurb: タスクを終えてキルされなくなる
+    MadSnitch:
+      RoleName: マッドスニッチ
+      Description: マッドスニッチはインポスター陣営のクルーメイトです。すべてのタスクを完了するとインポスターが誰か分かるようになり、インポスターへの疑いをそらす手助けができます。\n\nインポスター側からは、マッドスニッチを他のクルーメイトと見分けられません。
+      Blurb: タスクを終えてインポスターを見る
+    Madmate:
+      RoleName: マッドメイト
+      Description: マッドメイトはインポスター陣営のクルーメイトです。キルはできず、タスクもありません。\n\nマッドメイトはインポスターが誰か分からず、インポスター側からも他のクルーメイトと見分けられません。\n\n目的は、インポスターが誰かを見つけ出し、インポスターへの疑いをそらすことです。
+      Blurb: クルーメイトを裏切る
+    Parasite:
+      RoleName: パラサイト
+      Description: パラサイトはインポスター陣営のキラーです。キルはできますが、インポスターが誰か分からず、インポスター側からもパラサイトが誰か分かりません。\n\nパラサイトはシェイプシフターと同じ行動ができ、インポスターと協力して勝利を目指します。
+      Blurb: インポスターと協力して勝利する
+    Alchemist:
+      RoleName: 錬金術師
+      Blurb: 素材を集めて完璧なポーションを作る
+      Description: >
+        錬金術師は「素材」を集める、万能型のクルーメイト役職です。素材は次の方法で見つかります。
+          • 触媒 - タスク完了で発見
+          • 視界のエッセンス - 停電修理を手伝うと発見
+          • 議論の欠片 - 3人以上の集団内でランダムに発見
+          • 変幻のバラ - プレイヤーが変身した後に発見
+          • シータの裂け目 - ランダムに発見
+          • 腐敗の小瓶 - 死体から発見
+        錬金術師はペットボタンでこれらの素材を拾えます。拾った時は、名前の下に「発見: [素材名]」と表示されます。
+
+        錬金術師は素材を使ってポーションを作ります。「作成モード」に切り替えるには、ペットボタンを長押しします。作成モード中は、ペットボタンで次に作るポーションを切り替えられます。
+
+        作成メニュー中にペットボタンを長押しすると、メニューを閉じられます。現在選択中のポーションに必要な素材がすべて揃っている場合は、ペットボタンを長押ししている間に作成が始まります。
+
+        ポーションを所持している場合、ペットボタンを長押しするとそのポーションを使用し、消費します。
+      Ingredients:
+        Catalyst: 触媒
+        Chaos: シータの裂け目
+        Death: 腐敗の小瓶
+        Purity: 変幻のバラ
+        Sight: 視界のエッセンス
+        Tinkering: 議論の欠片
+      CraftingPotionText: '作成中:'
+      Potions:
+        Death: 死のポーション
+        Protection: 入れ替えの調合薬
+        Random: 不安定な調合薬
+        Revealing: 静穏の恩寵
+        Sabotage: メカニックミックス
+        Sight: 視界のポーション
+        Teleportation: ワープポーション
+        Voting: リーダーポーション
+      FoundIngredientText: '発見:'
+    Altruist:
+      RoleName: 利他主義者
+      Description: 死体を通報すると、自分の命と引き換えにそのプレイヤーを復活させます。設定によっては復活までに時間がかかる場合があります。その間に会議が開かれると復活はキャンセルされ、何も起こりません。
+      Blurb: プレイヤーを復活させる
+      Options:
+        ReviveDelay: 復活までの遅延
+        InstantText: 即時
+        KillerArrow: キラーに復活したプレイヤーへの矢印を表示
+        PortableVitals: 携帯バイタルを持つ
+      ButtonText: 復活
+    Bastion:
+      RoleName: バスティオン
+      Description: ベントボタンを使うと、そのベントに爆弾を仕掛けます。次にそのベントを使ったプレイヤーはキルされます。爆弾は1ラウンドだけ有効で、会議後にベントはリセットされます。\n\n注意！バスティオン自身も、すでに爆弾を仕掛けたベントを使うと爆死します。
+      Blurb: ベントに爆弾を仕掛ける
+      Options:
+        PlantBombCooldown: 爆弾設置クールダウン
+        BombsPerRound: ラウンドごとの爆弾数
+      ButtonText: 爆弾
+    Bodyguard:
+      RoleName: ボディガード
+      Description: >-
+        ボディガードは、守りたいプレイヤーを選択する必要があります。
+
+
+        ボディガードは会議中に対象へ投票して、守るプレイヤーを選択します（この投票は通常の投票としては数えられません）。ボディガードの対象が攻撃されると、攻撃者はボディガードと一緒に死亡し、対象は生き残ります。
+
+
+        ボディガードが対象へ投票した後は、自由に投票またはスキップできます。
+
+
+        注: ボディガードが対象を守った後、守られたプレイヤーの近くに2つの死体（ボディガードと攻撃者）が表示されます。
+      Blurb: 命を犠牲にして他者を守る
+      ProtectingMessage: '現在保護中:'
+      VotePlayerInfo: 守るプレイヤーを選ぶには投票してください。
+      Options:
+        BeneficialInteractionProtection: 有利な::0干渉から保護
+        NeutralInteractionProtection: ニュートラル::0の干渉から保護
+      BodyguardHelpMessage: 'あなたはボディガードです！任務は無実の人を守ることです！次のラウンドで守るプレイヤーに投票してください。通常投票に戻るには、ここでスキップできます。'
+    Chameleon:
+      RoleName: カメレオン
+      Description: カメレオンはベントを使うことで一時的に透明になれます。\n\n透明化の残り時間は名前の下に表示され、一定時間が経つと再び姿が見えるようになります。
+      Blurb: 周囲に溶け込んで姿を隠す
+      Options:
+        InvisibilityDuration: 透明化持続時間
+        InvisibilityCooldown: 透明化クールダウン
+      HiddenText: 隠密::0 {0}
+      TimesInvisibleStatistic: 透明化回数
+      ButtonText: 隠れる
+    Charmer:
+      RoleName: 魅了者
+      Description: >-
+        魅了者はペット/キルボタンを使い、インポスターやニュートラルキラーを魅了してクルーメイトチームに引き入れることができます。
+
+
+        魅了されたプレイヤーは自分が魅了されたことを知り、他のプレイヤーをキルできなくなります。
+
+
+        魅了者がクルーメイトを魅了しようとすると、誤爆して死亡します。
+
+
+        注: 魅了者の能力ボタンがペットボタンに設定されている場合、ホストは能力発動前にタスク完了を必要にできます。この設定は「能力ボタン」がキルボタンの場合は使用できません。
+      Blurb: 敵を魅了して味方にする
+      Options:
+        AbilityButton: 能力ボタン
+        KillButton: キルボタン
+        PetButton: ペットボタン
+        TasksPerAbility: 能力回復に必要なタスク数
+        CharmingCooldown: 魅了クールダウン
+        CharmedPlayersWinWithCrew: 魅了されたプレイヤーがクルーと勝利
+        BreakCharmOnDeath: 魅了者::0の死亡時に魅了を解除
+        MaxCharmedPlayers: 最大魅了人数
+      CharmedText: 魅了済み
+      CharmedStatistic: 魅了したプレイヤー数
+      CharmedDescription: あなたは魅了されています。魅了されている間はクルーメイトをキルできず、クルーメイトの味方として扱われます。
+      ButtonText: 魅了
+    Crewmate:
+      RoleName: クルーメイト
+      Description: 通常のバニラクルーメイトです。仲間のクルーメイトと一緒にすべてのタスクを完了するか、最後に残った陣営になることで勝利します。
+      Blurb: インポスターを見つけ、タスクを終わらせる
+      Options:
+        OverrideRoleTasks: '{0} のタスクを上書き'
+        AllowCommonTasks: 共通タスクを許可
+        CustomLongTasks: '{0} のロングタスク'
+        CustomShortTasks: '{0} のショートタスク'
+    Crusader:
+      RoleName: クルセイダー
+      Description: キルボタンで対象を選択します。\n\nその対象は攻撃から守られます。対象に干渉したプレイヤーは、あなたによって自動的にキルされます。
+      Blurb: プレイヤーを攻撃から守る
+      Options:
+        BeneficialInteractionProtection: 有利な::0干渉から保護
+        NeutralInteractionProtection: ニュートラル::0の干渉から保護
+      ButtonText: 保護
+    Demolitionist:
+      RoleName: 爆破技師
+      Description: 爆破技師がキルされると地面に爆弾を仕掛け、キラーにはベントを探すための数秒が与えられます。時間内にベントに入れなかった場合、キラーは爆死します。\n\nキラーには、爆破技師をキルしたことを知らせるテキストが名前の上に表示されます。
+      Blurb: 自分をキルした相手を爆破する
+      YouKilledDemoMessage: '{0} をキルしました！生き残るにはベントに入ってください！'
+    Dictator:
+      RoleName: ディクテーター
+      Description: >-
+        ディクテーターが会議中に誰かへ投票すると、次の3つが起こります。
+
+
+        1. 会議を強制終了します。
+
+        2. 投票されたプレイヤーが追放されます。
+
+        3. 独裁投票が残っていない場合、自分を犠牲にして死亡します。
+
+
+        注: ディクテーターがスキップした場合、何も起こりません。
+      Blurb: 会議を支配する
+      Options:
+        NumberOfDictates: 独裁投票回数
+        SuicideIfVoteCrewmate: クルーメイト::0を処刑した場合に自殺
+        ShowDictatorVoteAtMeetingEnd: 会議終了時に独裁投票を表示
+      LynchEventMessage: '{0}::0 が {1}::1 を処刑しました。'
+      DictateMessage: '{0} は {1}::0 によって追放されました'
+      PlayersEjectedStat: 追放したプレイヤー数
+    Doctor:
+      RoleName: ドクター
+      Description: ドクターは、バニラ役職の科学者と同じように携帯バイタルパネルを持っています。定期的に確認することで、おおよその死亡時刻を把握できます。\n\n会議中（チャットを閉じると）、ドクターはプレイヤー名の下に括弧付きで死因を見ることができます。
+      Blurb: プレイヤーの死因を見る
+      Options:
+        DoctorIsModifier: ドクターをモディファイアにする
+    Engineer:
+      RoleName: エンジニア
+      Description: エンジニアはベントを使ってマップ内を移動できます。これはバニラのAmong Usに存在する役職です。
+      Blurb: ベントでマップを移動する
+      Options:
+        VentCooldown: ベントクールダウン
+        VentDuration: ベント持続時間
+    Escort:
+      RoleName: エスコート
+      Description: エスコートはペットボタンで他のプレイヤーの能力を妨害できます。\n\n能力妨害を受けたプレイヤーは、キル、死体通報、会議招集、変身、ベント使用ができなくなります。
+      Blurb: プレイヤーの能力を妨害する
+      Options:
+        RoleblockCooldown: 能力妨害クールダウン
+        RoleblockDuration: 能力妨害持続時間
+    ExConvict:
+      RoleName: 元囚人
+      Description: 最初にペットボタンを使うと、現在地をマークします。\n\n一定のクールダウン後、もう一度ペットボタンを使うとマークした地点へ戻れます。その後、マーク能力は再びクールダウンに入ります。
+      Blurb: 場所を準備してから逃げる
+      Options:
+        MarkCooldown: マーク後のクールダウン
+        EscapeCooldown: 逃走後のクールダウン
+        ClearAfterMeeting: 会議後にマークを消去
+    Herbalist:
+      RoleName: 薬草師
+      Description: ペットボタンを使ってプレイヤーに種を植えます。一定時間が経つと、そのプレイヤーの「開花カウンター」が増加します。\n\n同じプレイヤーを何度も開花させると、その名前の下に花のアイコンが表示されます。その後、ペットボタンを使うことで、そのプレイヤーの役職を確認できます。\n\nさらに同じプレイヤーにペットボタンを使い続けると、その役職を他のプレイヤーにも公開できます。
+      Blurb: 種を植えて少しずつ情報を集める
+      Options:
+        TimeUntilBloom: 開花までの時間
+        BloomsUntilRoleReveal: 役職確認に必要な開花回数
+        PlantBloomCooldown: 種植えクールダウン
+        RevealOnBloom: 開花時に公開
+      BloomsGrownStatistic: 開花回数
+      RolesRevealedStatistic: 公開した役職数
+      ButtonText: 植える
+    Investigator:
+      RoleName: 調査官
+      Description: >-
+        ペットボタンを使って、プレイヤーが善側か悪側かを調査します。調査されたプレイヤーの名前は緑色または赤色で表示されます。基本的に、赤は悪側、緑は善側を表します。
+
+
+        注意してください。ホスト設定によっては、シェリフなど一部のクルーメイト陣営の役職が悪側として表示される場合があります。
+
+
+        ローグのモディファイアを持つプレイヤーは、ニュートラルキラー設定が「すべて」の場合にのみ赤く表示されます。
+      Blurb: プレイヤーを調査する
+      Options:
+        InvestigateCooldown: 調査クールダウン
+        NeutralKillingRed: ニュートラル::1キラー::2を赤::0で表示
+        NeutralPassiveRed: ニュートラル::1パッシブ::2を赤::0で表示
+        MadmateRed: マッドメイト::1を赤::0で表示
+        CrewKillingRed: キル可能なクルーメイト::1を赤::0で表示
+      ButtonText: 調査
+    Mayor:
+      RoleName: メイヤー
+      Description: メイヤーの投票は複数票として数えられます。\n\n設定によっては、ペットボタンで緊急会議を招集できます。\n\nまた、追加票を得る前にメイヤーが自分の役職を公開しなければならない設定もあります（自分に投票すると公開されます）。
+      Blurb: あなたの一票はより重い
+      RevealMessage: メイヤーは追加票を得るために正体を公開する必要があります。今は通常通り投票できますが、自分に投票すると役職が全員に公開され、追加票を得ます！
+      Options:
+        MayorReveal: 公開して追加票を得る
+        MayorAdditionalVotes: メイヤーの追加票
+        PocketMeeting: 携帯会議ボタン
+        NumberOfUses: 使用回数
+      MayorRevealTitle: メイヤー公開
+      MayorRevealMessage: '{0} がメイヤーだと公開しました！'
+      ButtonText: ボタン
+    Medic:
+      RoleName: メディック
+      Description: メディックは、守りたいプレイヤーに投票できます。そのプレイヤーはメディックが生存している限り、攻撃から守られます。\n\n保護対象を選ぶための投票は通常の投票として数えられません。メディックが保護対象を選んだ後は、自由に投票またはスキップできます。\n\nホスト設定によっては、以降の会議で保護対象を変更できる場合があります。
+      Blurb: プレイヤーにシールドを付与する
+      ProtectingMessage: '現在保護中: {0}'
+      VotePlayerInfo: 守るプレイヤーを選ぶには投票してください。
+      MedicHelpMessage: あなたはメディックです！次のラウンドで守りたいプレイヤーに投票してください。通常投票に戻るには、ここでスキップできます。
+      SelectedPlayerMessage: '{0} を保護対象に選びました。確定するにはもう一度そのプレイヤーに投票してください。通常投票に戻るにはスキップしてください。'
+      ReturnToNormalVoting: '{0} を保護しています。次の投票は通常通り扱われます。'
+      Options:
+        ChangeGuardedPlayer: 保護対象を変更
+        OnDeathValue: 死亡後
+        MeetingsValue: 会議
+        NeverValue: なし
+        CanProtectSamePlayer: 同じプレイヤーを連続で保護可能
+      MustSelectNewTarget: 前回のラウンドで {0} を保護しました。このラウンドでは別の対象を選んでください。
+    Medium:
+      RoleName: 霊媒師
+      Description: 霊媒師が死体を通報すると、会議チャットでその死体のキラーの役職を知らせるメッセージを受け取ります。\n\n霊媒師がキラーの役職を見られるのは、自分でその死体を通報した場合だけです。\n\nホスト設定によっては、死体の方向を示す矢印が表示される場合もあります。\n\n死体を通報した後、霊媒師は通報されたプレイヤーと会話できる場合があります。会議開始時、霊媒師と通報されたプレイヤーには会話相手として接続されたことが通知されます。\n\n霊媒師は質問できますが、死亡したプレイヤーは「はい」または「いいえ」でしか答えられません。
+      Blurb: 通報時にキラーの役職を知る
+      MediumMessage: 死体を通報し、その魂との対話を経て、キラーの役職が {0} だったと突き止めました。
+      Options:
+        HasArrowsToBody: 死体への矢印を表示
+        CanSeeChatOfReportedPlayer: 通報されたプレイヤーの幽霊と会話可能
+        IsClairvoyant: 死者と会話可能
+        ShownToEveryone: 返答を全員に表示
+        AmountOfMeditates: 交霊回数
+      MediumTitle: 交霊
+      MediumConnection: '{0} の幽霊と会話できるようになりました。質問に対して、相手は「はい」または「いいえ」で答えられます。残り交霊回数: {1}回。'
+      MediumConnectionGhost: 霊媒師 {0} があなたとつながりました。質問には「はい」または「いいえ」だけで答えてください。
+      YesAnswer: はい
+      NoAnswer: いいえ
+      OutOfMeditates: 交霊回数を使い切りました。幽霊との接続は閉じられました。
+      OutOfMeditatesGhost: 霊媒師との接続が閉じられました。あなたの返答はもう届きません。
+      Mutable:
+        HasArrowstoBodies: プレイヤーが死亡した時、死体へ向かう矢印を見ることができます。
+        AmountofMeditates: 接続が閉じるまでに {0} 回質問できます。
+    Mystic:
+      RoleName: ミスティック
+      Description: プレイヤーがキルされると、ミスティックには一度だけフラッシュと警報が届きます。リアクターサボタージュ時の通知にかなり似ています。\n\nこの通知を使って死亡時刻を推測できます。
+      Blurb: プレイヤーがキルされた時に通知を受ける
+      Options:
+        MysticIsModifier: ミスティックをモディファイアにする
+        FlashDuration: フラッシュ持続時間
+        SendAudioAlert: 音声警報を送る
+        RestrictedToCrewmates: クルーメイト::0に限定
+    Noisemaker:
+      RoleName: ノイズメーカー
+      Description: ノイズメーカーがキルされると、死体の方向を示す矢印とともに、短時間の視覚・音声警報が発生します。これはバニラのAmong Usに存在する役職です。
+      Blurb: キルされた時に警報を出す
+      Options:
+        ImpostorsGetAlert: インポスターにも警報を出す
+        AlertDuration: 警報持続時間
+    Observer:
+      RoleName: オブザーバー
+      Description: タスクを完了すると視界が広がります。ホスト設定によって、タスクを1つ完了するたびに少しずつ視界が広がる場合や、すべてのタスク完了時に大きく視界が広がる場合があります。
+      Blurb: タスクで視界を広げる
+      Options:
+        SlowlyGainsVision: 視界が少しずつ広がる
+        VisionGain: タスク完了時の視界増加
+        OverrideVision: 初期視界を上書き
+        StartingVision: 初期視界補正
+        FinalVision: タスク完了後の視界
+        LightsImmunity: タスク完了後に停電耐性
+    Oracle:
+      RoleName: オラクル
+      Description: オラクルは会議中にプレイヤーへ投票して対象を選べます（この投票は通常の投票としては数えられません）。オラクルが死亡すると、対象の役職が全員に公開されます。\n\n対象を選ぶ前なら通常通りスキップできます。対象を確定した後は自由に投票またはスキップできます。自分に投票すると、必要に応じて自分の役職を公開できます。
+      Blurb: 死亡時に役職を公開する
+      SelectRole: '選択しました: {0}'
+      UnselectRole: '選択を解除しました: {0}'
+      VotePlayerInfo: 死亡時に役職を公開するプレイヤーを選ぶには投票してください。同じプレイヤーにもう一度投票すると選択を解除できます。\n\n確定後は対象を変更できません。
+      OracleMessageTitle: オラクル能力
+      VoteNormallyMessage: 通常通り投票できます。
+      SkipMessage: 確定するにはもう一度そのプレイヤーに投票してください。
+      RevealMessage: オラクルにより、{0} が {1} であることが全員に公開されました。
+    Psychic:
+      RoleName: サイキック
+      Description: サイキックは会議中に、悪側の可能性があるプレイヤーを見ることができます。\n\n3人の名前が赤く強調表示され、そのうち少なくとも1人は悪側です。強調表示される人数はホストが調整できます。
+      Blurb: 悪側候補を見る
+      Options:
+        MaxHighlightedPlayers: 最大強調表示人数
+        AllKillingRolesAreEvil: すべてのキル役職::0を悪側扱い
+    Repairman:
+      RoleName: 修理屋
+      Description: 修理屋は、通常2人必要なサボタージュ（例：リアクター）を1人で素早く修理できます。\n\n停電はレバーを1つ触るだけで修理できます。手動で開けられるドア（例：ポーラス）を開けると、関連するドアがすべて開きます。
+      Blurb: サボタージュを素早く修理する
+      Options:
+        RepairmanCanVent: 修理屋::0がベント使用可能
+        FastFixLights: 停電を高速修理
+        FastFixReactor: リアクターを高速修理
+        FastFixOxygen: 酸素を高速修理
+        FastFixComms: 通信妨害を高速修理
+        FastFixDoors: ドアを高速修理
+        FastFixHelicopter: 衝突回避を高速修理
+      RepairmanFixMessage: '{0} が {1} を修理しました。'
+    Scientist:
+      RoleName: 科学者
+      Description: 科学者は、マップ上のどこからでも確認できる携帯バイタルモニターを持っています。これはバニラのAmong Usに存在する役職です。
+      Blurb: いつでもバイタルを確認する
+      Options:
+        VitalsCooldown: バイタルクールダウン
+        VitalsBatteryCharge: バイタルバッテリー残量
+    Sheriff:
+      RoleName: シェリフ
+      Description: >-
+        シェリフはインポスターとニュートラルをキルできます。注意！クルーメイトや、ホストが許可していないニュートラルを撃とうとすると、シェリフは誤爆して自分が死亡します。
+
+
+        注: シェリフの「アクションボタン」がキルに設定されている場合、シェリフには完了するタスクが与えられません。
+      Blurb: インポスターを撃つ
+      MisfireStat: 誤爆回数
+      NeutralKillingSetting: ニュートラル::0キラー::1をキル可能
+      NeutralPassiveSetting: ニュートラル::0パッシブ::1をキル可能
+      MadmateSetting: マッドメイト::0をキル可能
+      Options:
+        SheriffActionButton: シェリフのアクションボタン
+        OneShotPerRound: ラウンドごとに1発
+        KillOnMisfire: 誤爆時に対象もキル
+        KillCooldown: 射撃クールダウン
+        TotalShots: 総射撃回数
+        ActionKillButton: キルボタン（旧式）
+        ActionPetButton: ペットボタン
+    Snitch:
+      RoleName: スニッチ
+      Description: スニッチはクルーメイト役職で、タスクを完了するとインポスターが誰か見えるようになります（設定によってはニュートラルキラーも見える場合があります）。\n\nスニッチの残りタスクが一定数になると、キラー側にスニッチが「⚠」表示付きで明かされます。\n\n設定やタスク完了のタイミングによっては、スニッチが追跡している各プレイヤーの方向を示す矢印を見られる場合があり、その逆もあります。
+      Blurb: タスクを終えてキラーを見る
+      Options:
+        RemainingTaskWarning: 残りタスク警告
+        EvilArrowToSnitch: 悪側にスニッチ::0への矢印を表示
+        SnitchArrow: スニッチ::0用の矢印を有効化
+        ColoredArrow: 色付き矢印
+        SnitchTracksAllKillers: スニッチ::0がすべてのキル役職を追跡可能
+    Speedrunner:
+      RoleName: スピードランナー
+      Description: スピードランナーはタスクを完了することで速度が上がります。\n\nホスト設定によって、タスクを1つ完了するたびに小さな速度上昇を得る場合があります（設定によっては一時的な効果です）。また、残りタスク数が一定以下になった時に大きな速度上昇を得る場合もあります。
+      Blurb: タスクを完了して速度を上げる
+      Options:
+        TempBoostOnTaskFinish: タスク完了時に一時的な速度上昇
+        TempBoostDuration: 一時的な速度上昇の持続時間
+        PermanentSpeedGain: タスクごとの永続速度上昇
+        TaskUntilLargeSpeedBoost: 最終速度上昇までの残りタスク数
+        FinalSpeedBoost: 最終速度
+    Swapper:
+      RoleName: スワッパー
+      Description: 各会議で最初に投票した2人のプレイヤーは、受けている票数が入れ替わります。\n\nその2人に投票した後は、通常通り投票できます。最初にスキップすると、この能力を使わず通常投票に進めます。\n\n入れ替え対象を1人選んだ後、そのプレイヤーにもう一度投票すると選択を解除できます。2人を選び終えると、選択は変更できません。
+      Blurb: プレイヤー同士の票数を入れ替える
+      SwapperInfoMessage: >-
+        あなたはスワッパーです。2人のプレイヤーが受けている票数を入れ替えるには、別々の2人に投票してください。
+
+        最初に選んだ対象は、もう一度投票すると選択を解除できます。
+
+        また、最初にスキップするとこの能力を使わずに通常投票へ進めます。
+      SwapperSelectMessage1: '{0} の票数を入れ替え対象に選びました。'
+      SwapperSelectMessage2: '{0} の票数を入れ替え対象に選びました。これで {1} と {0} が受けている票数が入れ替わります。'
+      SwapperUnselectMessage: '{0} の選択を解除しました。'
+      SwapperPublicMessage: スワッパーが {0} と {1} の受けた票数を入れ替えました！
+      SwapperAbility: スワッパー能力
+      Options:
+        SwapsPerGame: 1ゲームあたりのスワップ::0回数
+    Tracker:
+      RoleName: トラッカー
+      Description: トラッカーは追跡ボタンをプレイヤーに使い、その位置をマークして、マップ上でそのプレイヤーの移動を追跡できます。\n\nさらに、ホスト設定が有効な場合、ペットボタンを使ってマップ内の死体の方向を示す矢印を表示できます。
+      Blurb: 他のプレイヤーを追跡する
+      Options:
+        TrackerCooldown: 追跡クールダウン
+        TrackerDuration: 追跡持続時間
+        TrackerDelay: 追跡更新間隔
+    Transporter:
+      RoleName: トランスポーター
+      Description: トランスポーターはペットボタンを使い、ランダムな2人のプレイヤーの位置を入れ替えます。
+      Blurb: プレイヤーを移送する
+      Options:
+        TotalTransports: 移送回数
+        TransportCooldown: 移送クールダウン
+      ButtonText: 移送
+    Trapster:
+      RoleName: トラップスター
+      Description: トラップスターがキルされると、キラーは一定時間その場に凍結されます。\n\n罠にかかったキラーは、その間死体を通報できません。
+      Blurb: キルされた時にインポスターを凍結させる
+      Options:
+        TrapsOnIndirectKills: 間接キルでも罠を発動
+        TrappedDuration: 罠の持続時間
+        BlockReportWhileTrapped: 罠中の通報を禁止
+    Veteran:
+      RoleName: ベテラン
+      Description: ベテランはペットボタンを使って警戒状態になれます。\n\n警戒状態のベテランにプレイヤーが干渉すると、その攻撃は受け流され、攻撃者が死亡します。
+      Blurb: 正当防衛で相手をキルする
+      Options:
+        TotalAlerts: 警戒回数
+        AlertCooldown: 警戒クールダウン
+        AlertDuration: 警戒持続時間
+        KillCrewmates: クルーメイトをキル
+        KillWhileTransported: 移送中にキル
+        KillRangedAttackers: 遠距離攻撃者をキル
+      ButtonText: 警戒
+    Vigilante:
+      RoleName: ヴィジランテ
+      Blurb: インポスター役職を推測してキルする
+      Description: >-
+        ヴィジランテは、プレイヤーとその役職を推測することでインポスターやニュートラルをキルできるクルーメイトです。クルーメイト役職は推測できません。
+
+        会議中、推測したいプレイヤーに投票すると対象を選択できます。投票後、ヴィジランテはチャットコマンド（/cmd [rolename]）で推測する役職を選択できます。
+
+        推測を確定するには、同じプレイヤーにもう一度投票してください。推測が正しければ対象のプレイヤーが死亡し、間違っていればヴィジランテが死亡します。
+
+        推測をキャンセルするには、いつでもスキップできます。次の投票は通常通り扱われます。
+
+        注: オラクルなどによって判明している役職は推測できません。
+      SelectPlayer: 'キル対象を選択しました:'
+      SelectRole: '推測中:'
+      SkipToContinue: 続けるには「スキップ投票」を押してください。
+      VoteRoleInfo: 役職を選ぶには、名前の上にその役職が表示されているプレイヤーに投票してください。名前の上に複数の役職が表示されている場合、同じプレイヤーにもう一度投票すると次の役職を選択できます。
+    AgiTater:
+      RoleName: アジテーター
+      Description: >-
+        アジテーターは、命がけの「ホットポテト」を始めることができます。
+
+
+        キルボタンを使ってプレイヤーに爆弾を渡します。爆弾を持ったプレイヤーは、爆発する前に別のプレイヤーへ爆弾を渡さなければなりません（爆発は一定時間後、または次の会議開始時に起こる場合があります）。
+
+
+        爆弾を持っているプレイヤーは、他のプレイヤーの近くを通ることで爆弾を渡せます。爆弾を持っているプレイヤーには「爆弾所持中！」という表示が出ます。
+
+
+        注: 爆弾が一定時間後に爆発する設定の場合、爆発が近づくにつれて表示の色が緑、黄、赤へ変わります。
+      Blurb: 爆弾を渡す（ホットポテト）
+      Options:
+        PlaceBombCooldown: 爆弾設置クールダウン
+        ExplodeOnMeetings: 会議時に爆発
+        ExplodeAfterDuration: 一定時間後に爆発
+        ExplodeDoubleBombed: 2個目の爆弾を受け取ると爆発
+        BombDuration: 爆弾の持続時間
+        BombsPerRound: ラウンドごとの爆弾数
+        BombTransferRate: 爆弾の受け渡し速度
+      PassTheBombText: 爆弾を渡せ
+      HoldingBombLevel1: 爆弾所持中！
+      HoldingBombLevel2: 爆弾所持中！！！
+      HoldingBombLevel3: 爆弾所持中！！！！！
+      ButtonText: 渡す
+    Amalgamation:
+      RoleName: 融合体
+      Description: 融合体は死体を通報するたびに、その役職の能力を獲得します。融合体の勝利条件は最初に通報した死体によって決まり、それ以降の死体は融合体をさらに強化します。融合体は隠し役職で、アムネシアックの代わりにまれに出現します。
+      Blurb: すべての役職になる
+      Options:
+        WinConditionDeterminer: 勝利条件の決定方法
+        OldestRoleValue: 最初の役職
+        NewestRoleValue: 最新の役職
+        MaxAbsorbedRoles: 最大吸収役職数
+        AbsorbModifiers: モディファイアを吸収
+    Amnesiac:
+      RoleName: アムネシアック
+      Description: >-
+        アムネシアックが最初に死体を通報すると、その死亡したプレイヤーのチームに加わります。設定が有効な場合は、チームではなくそのプレイヤーの役職そのものを奪います。
+
+
+        アムネシアックが通報した相手 --> 変化先:
+
+        ニュートラルキラー --> ヒットマン
+
+        ニュートラルパッシブ --> 機会主義者
+
+        クルーメイト --> シェリフ
+
+        その他 --> ジェスター
+      Blurb: 死体を通報してそのチームに加わる
+      Options:
+        StealsExactRole: 役職そのものを奪う
+        HasArrowsToBody: 死体への矢印を表示
+      ButtonText: 思い出す
+    Archangel:
+      RoleName: 大天使
+      Description: 大天使にはゲーム開始時に対象が与えられ、名前の下に表示されます。大天使はペットボタンを使い、ホスト設定に応じて特定の干渉から対象を一時的に守ることができます。\n\n大天使は、対象が勝利すれば自分が死亡していても勝利します。\n\n対象が死亡した場合、大天使はホスト設定に応じて役職が変わることがあります。役職が変わらない場合でも、対象のチームが勝利すれば大天使も勝利できます（例：対象がクルーメイトなら、死亡後でもクルーメイト勝利に含まれます）。
+      Blurb: 対象を死から守る
+      Options:
+        ProtectDuration: 保護持続時間
+        ProtectCooldown: 保護クールダウン
+        TargetKnowsArchAngelExists: 対象が大天使の存在を知る
+        ArchAngelKnowsTargetRole: 大天使が対象の役職を知る
+        RoleChangeWhenTargetDies: 対象死亡時に役職変更
+        ShouldCancelWhichInteractions: 保護する干渉の種類
+        InteractionFormatter: '{0}干渉を無効化'
+        Indirect: 間接
+        Ranged: 遠距離
+        Delayed: 遅延
+        Neutral: ニュートラル
+        Fatal: 致命的
+        Hostile: 敵対的
+      ButtonText: 保護
+    Arsonist:
+      RoleName: アーソニスト
+      Description: プレイヤーの近くでキルボタンを連打すると、そのプレイヤーに油をかけます。対象にオレンジ色の丸が完全に表示されると、油をかけ終えた状態になります。\n\n全プレイヤーに油をかけ、ペットボタンで点火すると勝利します。
+      Blurb: 全員に油をかけて点火し勝利する
+      Options:
+        AttacksToCompleteDouse: 油をかけ終えるまでの攻撃回数
+        CanIgniteAnytime: いつでも点火可能
+        DouseCooldown: 油かけクールダウン
+        IgniteCooldown: 点火クールダウン
+        ShareSameCooldown: 片方がクールダウン中は油かけ/点火不可
+      IncineratedDeathName: 焼死
+      DouseEventMessage: '{0} が {1} に油をかけました。'
+      PressIgniteToWinMessage: 点火して勝利
+      DousedPlayerStatistic: 油をかけたプレイヤー数
+      IncineratedPlayerStatistic: 焼死させたプレイヤー数
+      ButtonText: 油をかける
+      IgniteButtonText: 点火
+    BloodKnight:
+      RoleName: ブラッドナイト
+      Description: ブラッドナイトはニュートラルキラーです。プレイヤーをキルするたびに、数秒間攻撃から守られます。
+      Blurb: キルするたびにシールドを得る
+      Options:
+        ProtectDuration: 保護持続時間
+    Copycat:
+      RoleName: コピーキャット
+      Description: コピーキャットは、初めて攻撃された時に陣営と役職が変化します。インポスターに攻撃された場合はインポスターになり、単独キラーに攻撃された場合は同じく単独キラーになります。ホスト設定によっては、相手の進行状況も引き継ぐ場合があります。
+      Blurb: 自分を攻撃した相手の相棒になる
+      Options:
+        KillerKnowsCopycat: キラーがコピーキャット::0を知る
+        CopyRoleProgress: 役職の進行状況をコピー
+      CopyCatFactionChangeName: '{0}キャット'
+    Deathknight:
+      RoleName: デスナイト
+      Description: デスナイトはネクロマンサーの副役職で、プレイヤーをアンデッドへ転化させる手助けをします。\nデスナイトはペットボタンを使い、対象プレイヤーの転化を開始します。その後、ネクロマンサーが同じプレイヤーにキルボタンを使うことで転化が完了します。転化の進行状況は、名前の横にある丸い印で確認できます。\nデスナイトは同時に1人しか存在できません。ネクロマンサーが死亡すると、デスナイトが新しいネクロマンサーになります。\n\nデスナイトは、ネクロマンサーが最初に転化したプレイヤーに付与されます。
+      Blurb: 役職をアンデッドへ転化させる手助けをする
+      Options:
+        CanBecomeNecromancer: ネクロマンサーになれる
+        InfluenceCooldown: 転化開始クールダウン
+        InfluenceRange: 転化開始範囲
+        InfluenceMany: 複数に転化開始
+      ButtonText: 転化
+    Demon:
+      RoleName: デーモン
+      Description: デーモンがいるゲームでは、全プレイヤーの頭上に緑の体力バーが表示された状態で開始します（デーモンにのみ見えます）。\n\nデーモンがプレイヤーを攻撃すると、相手の体力バーが減少します。体力バーを完全に削り切ると、そのプレイヤーは死亡します。\n\nデーモンが攻撃を受けた場合も、自分の体力バーが減少します。デーモンはプレイヤーをキルすることで少しだけ回復できます。
+      Blurb: プレイヤーを攻撃して体力を減らす
+      Options:
+        AttackCooldown: 攻撃クールダウン
+        DamagePerAttack: 攻撃ごとのダメージ
+        HealthHealedOnKill: キル時の回復量
+        DamageTakenOnAttack: 攻撃を受けた時のダメージ
+      ButtonText: 攻撃
+    Egoist:
+      RoleName: エゴイスト
+      Description: エゴイストはニュートラルキラーで、インポスターが誰かを見ることができますが、インポスターをキルすることはできません。\n\nエゴイストの目的は、インポスターを裏切って投票で追放させながら、他のプレイヤーをキルして単独勝利を狙うことです。インポスターはエゴイストをキルできますが、エゴイストがいることは見えません。
+      Blurb: 全員をキルし、インポスターを追放する
+      Options:
+        IsShapeshifter: エゴイストをシェイプシフターにする
+    Executioner:
+      RoleName: エクスキューショナー
+      Description: エクスキューショナーにはゲーム開始時に対象が与えられます。対象の名前はエクスキューショナーと同じ色で表示され、対象が投票で追放されるとエクスキューショナーの勝利になります。\n\n対象が追放される前に死亡した場合、エクスキューショナーはホスト設定に応じてクルーメイト、ジェスター、機会主義者のいずれかに変化します。対象がジェスターの場合、エクスキューショナーも追加勝利者になれます。
+      Blurb: 対象を追放させて勝利する
+      Options:
+        TargetImpostors: インポスターを対象にできる
+        TargetNeutrals: ニュートラルを対象にできる
+        RoleChange: 対象死亡時に役職変更
+    Glitch:
+      RoleName: グリッチ
+      Description: キルボタンを使ってプレイヤーを能力妨害、またはキルできます。ペットボタンでハッキング（能力妨害）とキルを切り替えられます。\n\nハッキングされたプレイヤーは、キル、死体通報、会議招集、シェイプシフト、ベント使用ができなくなります。
+      Blurb: プレイヤーを能力妨害またはキルする
+      ModeHacking: ハッキング
+      ModeKilling: キル
+      Glitch:
+        Options:
+          HackingDuration: ハッキング持続時間
+    Hacker:
+      RoleName: ハッカー
+      Description: ハッカーはサボタージュを修理してポイントを獲得する必要があります。サボタージュを1回修理するたびに1ポイントを獲得し、ホストが設定した必要ポイントに到達すると勝利します。修理屋と同じように、ハッカーはサボタージュをより素早く、1人で修理できます。
+      Blurb: サボタージュを修理して勝利する
+      Options:
+        HackerSabotagePointAmount: 勝利に必要なポイント
+        FixingDoorsGivesPoints: ドア修理でポイントを獲得
+        HackerCanVent: ハッカー::0がベント使用可能
+    Harbinger:
+      RoleName: ハービンジャー
+      Options:
+        TasksPerRitualCircle: 儀式陣ごとの必要タスク数
+        RitualCirclesUntilWin: 勝利までに必要な儀式陣数
+      Blurb: <Roles.Harbinger.Blurb>
+    Hitman:
+      RoleName: ヒットマン
+      Description: 生き残りましょう！ヒットマンはニュートラルキラーで、ゲーム終了時に生存していれば、ほとんどのチームと一緒に勝利できます。\n\nヒットマンがエクスキューショナーやジェスターと一緒に勝利できるかどうかは、ホストが設定できます。
+      Blurb: プレイヤーをキルして生き残る
+      Options:
+        WinWithAbsolutes: 特殊勝利役職と一緒に勝利
+        Executioner: エクスキューショナー
+        Jester: ジェスター
+    Jackal:
+      RoleName: ジャッカル
+      Description: ジャッカルはインポスターを含む全員をキルできます。勝利するには最後の1人まで生き残る必要があります。
+      Blurb: 全員をキルする
+      Options:
+        CanRecruit: 勧誘可能
+        OnNonCrewRecruit: 非クルーメイト勧誘時
+        KillsUntilRecruit: 勧誘までの必要キル数
+        SidekickBecomesJackal: ジャッカル死亡時にサイドキックがジャッカル化
+        NewJackalCanRecruit: 新しいジャッカルが勧誘可能
+      NextKillIsRecruit: >-
+        <size=1.5>勧誘に必要なキル数に達しました。
+
+        次のキルは対象を勧誘します。</size>
+      Recruit: 勧誘
+    Jester:
+      RoleName: ジェスター
+      Description: ジェスターは投票で追放されると勝利します。ジェスターが追放されると、ゲームは即座に終了し、ジェスターの勝利になります。\n\nホスト設定によっては、ジェスターが会議を招集できなかったり、勝利可能になるまで一定回数の会議が必要になったりします。
+      Blurb: 投票で追放される
+      Options:
+        ImpostorVision: インポスター視界を持つ
+        CanUseVents: ベント使用可能
+        CantCallEmergencyMeetings: 緊急会議を招集不可
+        MeetingsBeforeWinning: 勝利可能になるまでの最小会議数
+      WinConditionName: ジェスター::0追放
+    Juggernaut:
+      RoleName: ジャガーノート
+      Description: ジャガーノートは最初のキルクールダウンが長めですが、キルするたびにクールダウンが短くなります。\n\nインポスターを含む全員をキルし、最後の生存者になる必要があります。
+      Blurb: 全員をキルし、最後まで生き残る
+      Options:
+        CooldownReductionPerKill: キルごとのクールダウン短縮量
+    Marksman:
+      RoleName: マークスマン
+      Description: マークスマンはプレイヤーをキルすることで、より遠いキル距離を得られます。キル距離が伸びるまでに必要なキル数はホストが設定します。
+      Blurb: キルしてキル距離を伸ばす
+      Options:
+        KillsBeforeIncrease: 距離増加に必要なキル数
+        StartingKillDistance: 初期キル距離
+    Necromancer:
+      RoleName: ネクロマンサー
+      Description: ネクロマンサーはアンデッド陣営の主な仲間役です。最初に仲間した相手(キルボタンを使った相手)はデスナイトになります。デスナイトと協力し、他のプレイヤーをアンデッドへ転化させていく必要があります。ネクロマンサーは、デスナイトがすでに転化を始めているプレイヤーにキルボタンを使うことで、そのプレイヤーを完全に転化できます。\n\n転化済み、または転化途中のプレイヤーには、名前の横に丸い印が表示されます。塗りつぶされた丸は完全に転化していることを示します。デスナイトが転化を始めていないプレイヤーを転化しようとすると、阻止されます。
+      Blurb: 役職をアンデッドに転化させる
+      Options:
+        ConvertCooldown: 転化クールダウン
+        PartialConvertImmunity: 転化途中のプレイヤーに対する免疫
+      ButtonText: 転化
+    Occultist:
+      RoleName: オカルティスト
+      Description: オカルティストのキル/呪いボタンは、プレイヤーを呪う効果とキルする効果が交互に切り替わります。\n\nオカルティストに呪われたプレイヤーは、会議中に十字の印が表示されます。その会議でオカルティストが追放されなかった場合、呪われたプレイヤーは死亡します。\n\n通常キルではベイトのセルフレポートが発動します。\n呪いではベイトのセルフレポートは発動しません。
+      Blurb: プレイヤーを呪い、キルする
+      Options:
+        FreelySwitchModes: モードを自由に切り替え
+        SwitchModesAfterAttack: 攻撃後にモードを切り替え
+      CursedMessage: '{0}::0 が {1}::1 に呪いをかけ、次の会議終了時に死亡するようにしました。'
+      CursingModeText: 呪い
+      KillingModeText: キル
+      HexedCauseOfDeath: 呪殺
+      CursedStatusDescription: あなたは呪いを受けています。呪いをかけた相手が追放されない限り、呪われたプレイヤーは会議後に死亡します。
+    Opportunist:
+      RoleName: 機会主義者
+      Description: ゲームの勝敗に関係なく、機会主義者は試合終了まで生存していれば勝利します。
+      Blurb: ゲーム終了まで生き残る
+    Pelican:
+      RoleName: ペリカン
+      Description: ペリカンはキルボタンでプレイヤーを丸呑みにします。丸呑みにされたプレイヤーはマップ外へテレポートされ、サボタージュを含むゲーム内の操作ができなくなります。\n\n会議が開かれると、丸呑みにされていたプレイヤーは全員即死します。ペリカンが死亡または切断した場合、丸呑みにされていたプレイヤーは全員、ペリカンが最後にいた場所へ戻されます。
+      Blurb: プレイヤーを丸呑みにする
+      Options:
+        GulpCooldown: 丸呑みクールダウン
+        AllowEscapeFromPelican: ペリカンからの脱出を許可
+        SpawnBodiesOnPelican: 会議時にペリカンの位置へ死体を出現
+      GulpedStatistic: 丸呑みにしたプレイヤー数
+      DeathName: 丸呑み
+      ButtonText: 丸呑み
+    Pestilence:
+      RoleName: ペスティレンス
+      Description: ペスティレンスは、プレイグベアラーが全員への感染を終えた後に変化する副役職です。ペスティレンスは直接キルされず、ペスティレンスに干渉したプレイヤーは反撃され、代わりに死亡します。\n\nペスティレンスは投票で追放できるほか、ウォーロックやパペット状態のプレイヤーなどによる間接的なキルで死亡することがあります。\n\nホスト設定によっては、他の種類の攻撃でもペスティレンスをキルできる場合があります。また、ペスティレンスの攻撃が防御不能になる場合もあります。
+      Blurb: 全員をキルして単独勝利する
+      Options:
+        UnblockableKill: 防御不能キル
+        InvincibilitySettings: 無敵設定
+        ImmuneManipulatorAttackers: 操られた攻撃者に免疫
+        ImmuneRangedAttacks: 遠距離攻撃に免疫
+        ImmuneDelayedAttacks: 遅延攻撃に免疫
+        ImmuneArsonistIgnite: アーソニストの点火に免疫
+      ButtonText: キル
+    Pirate:
+      RoleName: 海賊
+      Description: >-
+        海賊は、役職を推測してプレイヤーをキルできるニュートラルのゲッサーです。海賊がプレイヤーの役職を正しく推測すると、そのプレイヤーは脱落します。
+
+        会議中、推測したいプレイヤーに投票すると対象を選択できます。投票後、チャットコマンド（/cmd [rolename]）で推測する役職を選択できます。
+
+        推測を確定するには、同じプレイヤーにもう一度投票してください。推測が正しければ対象のプレイヤーが死亡し、間違っていれば海賊が死亡します。
+
+        海賊が勝利するには、ホストが設定した回数だけ推測を成功させる必要があります。ホスト設定によっては、推測に失敗しても海賊が死亡しない場合がありますが、そのラウンド中は再び推測できません。
+
+        推測をキャンセルするには、いつでもスキップできます。次の投票は通常通り扱われます。
+
+        注: オラクルなどによって判明している役職は推測できません。
+      Blurb: プレイヤーの役職を推測する
+      Options:
+        GuessWinAmount: 海賊の勝利に必要な推測成功数
+        DieOnMisguess: 海賊が推測失敗時に死亡
+    PlagueBearer:
+      RoleName: プレイグベアラー
+      Description: キルボタンを使って全員を感染させます。全員が感染すると、プレイグベアラーはペスティレンスに変化します。
+      Blurb: 全員を感染させてペスティレンスになる
+      Options:
+        InfectCooldown: 感染クールダウン
+      InfectedHistoryMessage: '{0}::0 が {1}::1 を感染させました。'
+      ButtonText: 感染
+    Postman:
+      RoleName: 郵便屋
+      Description: 郵便屋は他のプレイヤーに手紙を届ける必要があります。タスクを完了すると配達先の対象プレイヤーが指定されます（設定によっては対象への矢印が表示されます）。\n\n対象が指定されると、そのプレイヤーの名前が黒く表示されます。郵便屋はその対象に触れて手紙を届けなければなりません。さらにタスクを完了すると新しい対象を得られますが、最初の対象に配達する前にこれを行うと、郵便屋は自殺します。\n\n生存している全プレイヤーへの配達が完了すると、次の会議で他のプレイヤーに郵便屋を追放するよう通知されます。その会議で郵便屋が追放されなかった場合、郵便屋が勝利し、ゲームが終了します。
+      Blurb: すべての手紙を届けて勝利する
+      Announcement: 郵便屋はすべての配達を完了しました。追放しないと郵便屋が勝利します。
+      Postman:
+        Options:
+          ArrowsToTargets: 対象への矢印を表示
+          TargetDies: 対象が死亡した場合
+    Retributionist:
+      RoleName: 報復者
+      Description: 報復者は、自分への攻撃に報復できるニュートラルキラーです。\n\n他のプレイヤーが報復者をキルしようとすると、そのキルは阻止され、報復者はランダムなベントへテレポートします。その後、報復者には一定時間が与えられ、時間切れになる前に自分を殺そうとした相手（名前がオレンジ色で表示されます）を見つけてキルしなければなりません。\n\n時間内にキルできれば報復者は生存し、失敗すると死亡します。
+      Blurb: 生き残るためのもう一度のチャンス
+      Options:
+        RevengeTimeLimit: 報復の制限時間
+        InvisibleRevenge: 報復中に透明化
+        TotalRevengeAmount: 報復回数
+    SchrodingersCat:
+      RoleName: シュレディンガーの猫
+      Description: 'シュレディンガーの猫は、誰かにキルされそうになるたびに所属チームが変わります。ライフには上限があり、ライフが尽きるかゲームが終了するまでチームを変え続けます。\n\nシュレディンガーの猫の役職名は、現在どのチームに所属しているかに応じて変化します。ゲーム中にそのチームを守ったり、味方への疑いをそらしたりして、所属チームの勝利を助けるのが目的です。\n\nシュレディンガーの猫は、ゲーム終了時に所属しているチームと一緒に勝利します。例: ジャッカルがシュレディンガーの猫をキルしようとした場合、役職名は「ジャッカルキャット」に変わり、ゲーム終了時までその状態であればジャッカルと一緒に勝利します。\n\nコピーキャットと違い、シュレディンガーの猫はキルできません。'
+      Blurb: 命を狙われるたびにチームが変わる
+      Aliases: Schrodingers Cat, SC, SCat, S Cat, SchrodingersCat, Schrodinger's Cat
+      CopycatFactionChangeName: '{0}キャット'
+      CatFactionChangeName: '{0}キャット'
+      Options:
+        NumberOfLives: ライフ数
+        KillerKnowsCat: キラーがシュレディンガーの::0猫::1を知る
+    Survivor:
+      RoleName: サバイバー
+      Description: ゲーム終了まで生存すると勝利します。\n\nサバイバーはペットボタンを使い、短時間だけ自分を攻撃から守れます。サバイバーはエクスキューショナーやジェスターとは一緒に勝利できません。
+      Blurb: 最後まで生き残って勝利する
+      Options:
+        VestDuration: シールド持続時間
+        VestCooldown: シールドクールダウン
+        TotalShields: シールド回数
+      ButtonText: シールド
+    Taskrunner:
+      RoleName: タスクランナー
+      Description: タスクランナーは、自分のタスクをすべて完了すると勝利します。ホスト設定で決められた数のタスクを完了するまでは死亡しません。\n\nタスクランナーがすべてのタスク完了に近づくと、全員にタスクランナーの方向を示す矢印が表示され、タスクランナーの名前の横には「⚠」が表示されます。\n\nタスク完了を阻止するには、終わる前にタスクランナーをキルしてください。タスクランナーは投票では追放できず、必ずキルする必要があります。
+      Blurb: タスクを完了して単独勝利する
+      Options:
+        ImmuneToRangedInteractions: 遠距離干渉に免疫
+        RemainingTaskWarning: 残りタスク警告
+        RemainingTaskTargetable: ターゲット可能になる残りタスク数
+    Terrorist:
+      RoleName: テロリスト
+      Description: すべてのタスクを完了した後、キルされると勝利します。ホスト設定によっては、追放されても勝利できます。
+      Blurb: すべてのタスクを終えてから死亡して勝利する
+      Options:
+        CanWinBySuicide: 自殺で勝利可能
+        CanWinByExiled: 追放で勝利可能
+    Vulture:
+      RoleName: ヴァルチャー
+      Description: レポートボタンを使って死体を食べ、通報できない状態にします。ヴァルチャーはペットボタンで、死体を食べるモードと通報するモードを切り替えられます。\n\nヴァルチャーは、設定された数の死体を食べると勝利します。ホスト設定によっては、死体の方向を示す矢印が表示されます。
+      Blurb: 死体を食べる
+      EatingModeText: 食事中
+      ReportingModeText: 通報中
+      Options:
+        RequiredBodies: 必要な死体数
+        HasImpostorVision: インポスター視界を持つ
+        SwitchModes: 食べる/通報を切り替え可能
+        CanUseVent: ベント使用可能
+        HasArrowsToBody: 死体への矢印を表示
+      EatButtonText: 食べる
+      ReportButtonText: 通報
+    Werewolf:
+      RoleName: ウェアウルフ
+      Description: ウェアウルフはニュートラルキラーです。ペットボタンで暴走を開始し、短いキルクールダウンでキルできます。\n\nウェアウルフは暴走中にしかキルできません。
+      Blurb: 暴走して全員をキルする
+      Rampage: 全員をキル
+      Options:
+        RampageKillCooldown: 暴走中のキルクールダウン
+        RampageCooldown: 暴走クールダウン
+        RampageDuration: 暴走持続時間
+        CanVentNormally: 通常時にベント使用可能
+        CanVentInRampage: 暴走中にベント使用可能
+      PetButtonText: 暴走
+      KillButtonText: 引き裂く
+    GM:
+      RoleName: GM
+      Blurb: あなたはゲームマスターです
+      Description: ゲームの「管理者」、つまりホストです。ホストがGMになるとゲーム内のプレイヤーとしては数えられず、スポーン直後に「死亡」します。これにより、すべてのプレイヤーを見守り、ゲームが正しく進行しているか確認できます（または離席できます）。
+    Bait:
+      RoleName: ベイト
+      Description: ベイトがキルされると、キラーは自動的にセルフレポートします。
+      Blurb: 死亡時に強制セルフレポート
+      Options:
+        AnnounceBait: 初回会議でベイトを告知
+      BaitAnnounceMessage: '{0} はベイトです！このプレイヤーが死亡すると、キラーは自動的に死体をセルフレポートします。'
+    Bewilder:
+      RoleName: 幻惑
+      Description: 幻惑を持つプレイヤーがキルされると、そのキラーの視界はゲーム終了まで大きく狭くなります。
+      Blurb: キルされた時にキラーの視界を狭める
+      BewilderedStatus: 幻惑状態
+      BewilderedDescription: 幻惑状態になると、指定された倍率で視界が狭くなります。
+      Options:
+        VisionMultiplier: 視界倍率
+    Deadly:
+      RoleName: デッドリー
+      Blurb: キルクールダウンを短縮
+      Description: デッドリーのモディファイアを持つプレイヤーは、キルクールダウンが設定された割合だけ短くなります。
+      Options:
+        CooldownReduction: クールダウン短縮率
+        AssignableToNonKilling: キル能力のない役職にも付与可能
+    Diseased:
+      RoleName: 病人
+      Description: 死亡時にキラーのキルクールダウンを増加させます。
+      Blurb: キラーのキルクールダウンを増やす
+      Options: 
+      CooldownIncrease: クールダウン増加率
+      DiseasedAffectDescription: あなたは「病人」状態です。キルクールダウンが一定割合増加しています。
+    Escalation:
+      RoleName: エスカレーション
+      Blurb: キルで速度が上昇
+      Description: エスカレーションのモディファイアを持つプレイヤーは、キルするたびに一定の速度上昇を得ます。
+      Options:
+        SpeedGainPerKill: プレイヤー死亡ごとの追加速度
+    Flash:
+      RoleName: フラッシュ
+      Description: フラッシュは、他のプレイヤーより速く移動できます。
+      Blurb: 移動速度が上昇
+      Options:
+        SpeedIncrease: 速度上昇量
+    Guesser:
+      RoleName: ゲッサー
+      Description: >-
+        任意の役職に推測能力を付与します。ゲッサーはプレイヤーの役職を推測し、正しければそのプレイヤーを脱落させることができます。
+
+
+        会議中、ゲッサーは推測したいプレイヤーに投票して対象を選択できます。投票後、チャットコマンド（/cmd [rolename]）で推測する役職を選択できます。
+
+        推測を確定するには、同じプレイヤーにもう一度投票してください。推測が正しければ対象のプレイヤーが死亡し、間違っていればゲッサーが死亡します。
+
+        推測をキャンセルするには、いつでもスキップできます。次の投票は通常通り扱われます。
+
+        注: オラクルなどによって判明している役職は推測できません。
+      Blurb: プレイヤーの役職を推測する
+      Options:
+        GuesserPerMeeting: 会議ごとの推測回数
+        CanGuessTeammates: チームメイトを推測可能
+        FactionMaxGuessers: '{0}::0陣営の最大ゲッサー数'
+        NeutralKillingSetting: ニュートラル::0キラー::1を推測可能
+        NeutralPassiveSetting: ニュートラル::0パッシブ::1を推測可能
+        ImpostorSetting: インポスター::0を推測可能
+        CrewmateSetting: クルーメイト::0を推測可能
+        MadmateSetting: マッドメイト::0を推測可能
+        SubroleSetting: サブロール::0を推測可能
+        RestrictedToNonVote: 投票関連でない役職に限定
+        FollowGuesserSettings: ゲッサー設定に従う
+      GuesserTitle: ゲッサー
+      UnknownRole: '不明な役職です: {0}。推測できるすべての役職を見るには「/cmd available」と入力してください。'
+      HintMessage: '残り推測回数: {0}回。推測したいプレイヤーに投票してください。'
+      NoGuessesLeft: 推測回数を使い切りました。次の投票は通常通り扱われます。
+      SkippedGuessing: 推測モードを終了しました。次の投票は通常通り扱われます。
+      GuessDeathAnnouncement: >-
+        ゲッサーが推測を行いました。
+
+        {0} が死亡しました。
+      CantGuessBecauseOfRole: あなたの役職の制限により、{0} を推測できません！別のプレイヤーを選んでください。
+      CantGuessKnownRole: あなたは {0} の役職を確認できます！そのプレイヤーは推測できません。
+      CantGuessTeammate: '{0} はあなたのチームメイトです！そのプレイヤーは推測できません。'
+      PickedRoleText: >-
+        {0} の役職を {1} として推測しようとしています。推測を確定するには、そのプレイヤーにもう一度投票してください。
+
+        やり直す場合は、別のプレイヤーに投票してください。
+      PickedPlayerText: '{0} を推測対象に選択しました。役職を選ぶには `/cmd [rolename]` と入力してください。このコマンドは他のプレイヤーには表示されません。'
+    LastResort:
+      RoleName: ラストリゾート
+      Description: ラストリゾートは自分に投票することで、その試合中ずっと追加票を得られます。この投票は取り消され、その後は他のプレイヤーに通常通り投票できます。\n\nただし、代償としてあなたの役職が全員に公開されます。
+      Blurb: 土壇場で追加票を得る
+      Options:
+        AdditionalVotes: 追加票
+      RevealText: '{0} が {1} だと公開されました！'
+      HintText: 自分に投票すると役職を公開して追加票を得ます。他のプレイヤーには通常通り投票できます。
+    Nimble:
+      RoleName: 身軽
+      Description: 元々ベントを使えない役職でも、ベントを使えるようになります。
+      Blurb: ベント能力を得る！
+    Oblivious:
+      RoleName: 鈍感
+      Description: 鈍感のモディファイアを持つプレイヤーは死体を通報できません。ミディアムのように死体通報に役職能力が関わる役職には、鈍感は付与されません。
+      Blurb: 死体を通報できない
+      Options:
+        PassOnDeath: 死亡時に引き継ぐ
+    Obvious:
+      RoleName: 目立ち屋
+      Description: 目立ち屋は、触れた死体を自動で通報します。
+      Blurb: 死体を自動通報
+    Rebellious:
+      RoleName: 反逆者
+      Description: 反逆者のモディファイアを持つプレイヤーは、元の役職能力を保ったままマッドメイトになります。\n\nつまり、そのプレイヤーはインポスター側につき、クルーの敵として扱われます。そのため、スニッチのような役職に反逆者だと見破られることがあります。
+      Blurb: クルーの信頼を得る
+      Options:
+        AssignToNK: ニュートラルキラーに付与
+        AssignToNP: キル能力のないニュートラルに付与
+        FactionMaxRogues: '{0}::0陣営の最大反逆者数'
+    Rogue:
+      RoleName: ローグ
+      Description: ローグのモディファイアを持つプレイヤーは、元の役職能力を保ったままキル能力を得ます。\n\n他のプレイヤーを全員キルすると勝利します。クルーメイトやインポスターがローグを持っている場合、それぞれの本来の陣営とは一緒に勝利できません。
+      Blurb: 能力を使って全員をキルする
+      Options:
+        RestrictToCompatbileRoles: 対応役職のみに限定
+        FactionMaxRogues: '{0}::0陣営の最大ローグ数'
+    Romantic:
+      RoleName: マンティック
+      Blurb: 生涯を共にするパートナーを選ぶ
+      Description: ロマンティックは、ゲーム最初の会議中に必ずパートナーにするプレイヤーへ投票しなければなりません。選ばなかった場合は死亡します。パートナーを選ぶと、ロマンティックはペットボタンで一時的にパートナーへシールドを付与できます。\n\nロマンティックのパートナーが死亡した場合、ホスト設定に応じて復讐のロマンティック、または冷酷なロマンティックに変化します。\n\nホスト設定によって、ロマンティックはパートナーと一緒に勝利できる場合も、単独勝利としてパートナーなしで勝利できる場合もあります。
+      Options:
+        TargetKnowsRomantic: 対象にロマンティック関係を通知
+        ProtectionCooldown: 保護クールダウン
+        ProtectionDuration: 保護持続時間
+        PartnerCanWin: パートナーがロマンティックと勝利可能
+        CancelGameWinIfSolo: 単独勝利時に通常勝利を無効化
+      PartnerText: パートナー::0 {0} ♥::0
+      RomanticMessage: あなたはロマンティックです。この会議が終わるまでにパートナーを選ばないと死亡します！パートナーを選ぶには同じ相手に2回投票してください。その後は通常通り投票できます。
+      RomanticSelectMessage: '{0} をパートナー候補に選びました。確定するにはもう一度そのプレイヤーに投票してください。変更する場合は別のプレイヤーに投票してください。'
+      ConfirmedPartnerMessage: '{0} をパートナーとして確定しました。これ以降は通常通り投票できます。'
+      NotifyPartnerMessage: あなたは {0} のロマンティックパートナーに選ばれました！おめでとうございます！
+      NoSkipMessage: パートナーを選ぶまではスキップできません！
+    RuthlessRomantic:
+      RoleName: 冷酷なロマンティック
+      Blurb: 誰も生き残らせない
+      Description: "冷酷なロマンティックは、ロマンティックのモディファイアを持つプレイヤーのパートナーがキルされた時に付与されます。通常のニュートラルキラーとして行動し、単独で勝利します。この役職になったプレイヤーが元々クルーメイトだった場合、ペットボタンがキルボタンとして機能し、キルクールダウンは 'CD: Xs' と表示されます。"
+    Sleuth:
+      RoleName: 調査員
+      Description: レポートボタンで死体を通報します。会議チャットで、調査員には死亡したプレイヤーの役職を明かすメッセージが届きます。\n\n調査員が死亡したプレイヤーの役職を見られるのは、自分でその死体を通報した場合だけです。
+      Blurb: 死亡したプレイヤーの役職を知る
+    TieBreaker:
+      RoleName: タイブレーカー
+      Description: 会議で2人の投票数が同数になった場合、タイブレーカーの投票によって追放対象、またはスキップが決まります。
+      Blurb: 同票を決着させる
+      TieBreakerMessage: '{0} によって同票が決着しました！'
+    Torch:
+      RoleName: トーチ
+      Description: トーチは停電の影響を受けません。
+      Blurb: 停電の影響を受けない
+    Unstoppable:
+      RoleName: アンストッパブル
+      Blurb: 相手の防御を貫通する
+      Description: アンストッパブルを持つプレイヤーは、メディックのシールドを含むほとんどのガードを貫通してキルできます。\n\nホスト設定によっては、タスクランナーのような「純粋な」免疫すら貫通できる場合があります。
+      Options:
+        CanKillUntargetable: ターゲット不可のプレイヤーをキル可能
+    VengefulRomantic:
+      RoleName: 復讐のロマンティック
+      Blurb: 真実の愛に報復する
+      Description: 復讐のロマンティックは、ロマンティックのモディファイアを持つプレイヤーのパートナーがキルされた時に付与されます。目的は、パートナーを殺した相手を追い詰めてキルすることです。復讐のロマンティックはペットボタン、またはキルボタンを持っている場合はキルボタンで他のプレイヤーをキルできます。ただし、無実のプレイヤーを狙うと誤爆により死亡します。パートナーの復讐に成功すると、復讐のロマンティックは元の役職の通常勝利条件に戻ります。
+      Adjective: 復讐の
+      Options:
+        CanKillBystanders: 無関係なプレイヤーをキル可能
+        ArrowToKiller: キラーへの矢印
+        SuicideAfterRevenge: 復讐後に自殺
+    Watcher:
+      RoleName: ウォッチャー
+      Description: 匿名投票がオンでも、会議中に全員の投票先を見ることができます。ゲーム設定で匿名投票がオフの場合、ウォッチャーは誰にも割り当てられません。
+      Blurb: 会議中に全員の投票先が見える
+    Workhorse:
+      RoleName: ワークホース
+      Description: ワークホースのモディファイアを持つプレイヤーには、通常割り当てられるタスクに加えて追加タスクが与えられます。
+      Blurb: よく働き、より多くのタスクを持つ
+      Options:
+        AdditionalShortTasks: 追加ショートタスク
+        AdditionalLongTasks: 追加ロングタスク
+    Subroles:
+      Sleuth:
+        SleuthMessage: '{0} が {1} だったことを突き止めました！見事です、探偵！'
+        SleuthTitle: 調査員 {0}
+    Illegal:
+      RoleName: <Roles.Illegal.RoleName>
+      Blurb: <Roles.Illegal.Blurb>
+    LoversReal:
+      RoleName: <Roles.LoversReal.RoleName>
+      Blurb: <Roles.LoversReal.Blurb>
+    Miscellaneous:
+      PlayerSelector:
+        SelectPlayerString: '選択しました: <b>{0}</b>'
+        UnselectPlayerString: '選択を解除しました: <b>{0}</b>'
+        ConfirmationString: '確定しました: <b>{0}</b>'
+    Debugger:
+      RoleName: <Roles.Debugger.RoleName>
+      Blurb: <Roles.Debugger.Blurb>
+    Duplicator:
+      Options:
+        DuplicateCooldown: 複製クールダウン
+        DuplicateDuration: 複製持続時間
+        SpawnLocation: 出現場所
+        CurrentLocation: 現在地
+        RandomLocation: ランダム
+        KillRadius: キル範囲
+        OnlyKillUnalliedPlayers: 味方でないプレイヤーのみキル
+      RoleName: 複製者
+      Blurb: 自分自身を複製する
+      TrickedCauseOfDeath: 罠死
+      Description: ペットボタンを使って自分のクローンを作成します。クローンは会議、死亡、切断時に消滅します。ホスト設定によって、クローンは自分の上、またはランダムな部屋に出現します。他のプレイヤーのすぐ近くにはクローンを置けません。
+      Mutable:
+        KillRadius: クローンから距離 {0} 以内に入ったプレイヤーはキルされます。
+      ButtonText: 複製
+    GuesserRoleBase:
+      GuesserRoleBase: ゲッサー
+      PickedRoleText: '{0} の役職を {1} として推測しようとしています。確定する場合は {0} にもう一度投票してください。変更する場合は別のプレイヤーに投票するか、/cmd [rolename] と入力して別の役職を選んでください。'
+      PickedPlayerText: '{0} の役職を推測中です。役職を推測するには /cmd [rolename] と入力してください。'
+      TypeRText: その役職を推測するには /cmd [roleName] と入力してください。
+      UnknownRole: '不明な役職です: {0}。推測できる役職一覧を見るには /cmd available を使用してください。'
+      FinishedGuessingロText: 推測を確定しました。死亡していなければ、これ以降は通常通り投票できます。
+      ErrorCompletingGuess: 推測の確定中にエラーが発生しました。もう一度推測できます。
+      GuessAnnouncementMessage: ゲッサーが推測を行いました。{0} が死亡しました。
+    Genie:
+      RoleName: ジーニー
+      Options:
+        SuccessChance: 成功率
+        MaxGifts: 最大願い回数
+      WishFailed: '{0} に {1} のモディファイアを願いましたが、失敗しました。'
+      WishGranted: '{0} に {1} のモディファイアを願い、成功しました！対象にモディファイアが付与されました！'
+      MeetingMessage: プレイヤーに2回投票すると、そのプレイヤーに贈り物を願えます。通常投票に戻るにはスキップしてください。
+      OutOfWishes: 願いを使い切りました。今後、会議開始時に誰かへ投票する選択肢は表示されません。
+      Blurb: プレイヤーにモディファイアを付与する
+      AlreadyWished: '{0} にはすでにモディファイアを願っています。別のプレイヤーを選んでください！'
+      Description: 会議中、プレイヤーを選んでモディファイアを付与できる場合があります。ジーニーが付与できるのは、ホストが有効にしている有利なモディファイアだけです。成功は保証されず、失敗すると願いを1回失います。同じプレイヤーに2回願いをかけることはできません。
+    Painter:
+      GracePeriodText: 'キル禁止猶予時間: {0}'
+      RoleName: ペインター
+      Blurb: 敵対する色を倒す
+      Description: 自分と違う色のプレイヤーを排除します。ホスト設定によって、他のプレイヤーをキルするか、自分と同じ色に変えるかが決まります。
+    Striker:
+      ReviveCooldown: '復活まで: {0}'
+      GrabbedFlag: 旗を取りました！相手チームにはあなたの位置を示す矢印が表示されます！
+      RoleName: ストライカー
+      Blurb: 自チームの旗を守る
+      Description: 相手チームの旗に対してペットボタンを使うと、旗を持つことができます。旗を持っている間、全プレイヤーにあなたの位置を示す矢印が表示されます。\nホスト設定によっては移動速度が低下したり、ベントを使えなくなったりします。誰かがあなたにキルボタンを使っても死亡せず、代わりに数秒間だけ別の場所へテレポートします。復活時間が終わると、自チームの拠点へ戻されます。
+      OvertimeTitle: <b>延長戦</b>
+      OvertimeDeathMessage: ホストが延長戦で<b>「サドンデス」</b>を有効にしているため、復活は無効です。
+      CaptureButtonText: 獲得
+      TakeButtonText: 取る
+      GracePeriodTime: >-
+        無敵解除まで
+
+        残り: {0}
+    Jailor:
+      Options:
+        JailCooldown: 投獄クールダウン
+        JailorActionButton: 看守のアクションボタン
+        MaxExecutionTimes: 最大処刑回数
+        JailedPlayersVoteCounts: 投獄されたプレイヤーの票を看守に加算
+        JailedShowsToAll: 投獄されたプレイヤーを全員に表示
+      JailedText: 投獄中
+      JailorMessage: 投獄されたプレイヤーに投票すると処刑できます。設定によっては、そのプレイヤーがクルーメイトだった場合、あなたが死亡することがあります。また、投獄されたプレイヤーがあなたと同じ相手に投票するよう強制される場合もあります。誰も投獄されたプレイヤーには投票できず、あなた以外はそのプレイヤーをキルできません。
+      JailedMessage: あなたは投獄されています。投票や推測はできません。ただし、他のプレイヤーもあなたに投票できません。看守に処刑されないことを祈りましょう。
+      PublicExecuteMessage: 投獄されたプレイヤー（{0}）が処刑されました。
+      CannotVote: 投獄されたプレイヤーには投票できません！
+      RoleName: 看守
+      Blurb: キラーを投獄して処刑する
+      Description: ペット/キルボタンで、会議中に投獄するプレイヤーを選択します。会議では、設定によって投獄されたプレイヤーが全員に表示される場合があります。投獄されたプレイヤーは投票できず、会議中に役職能力も使えません。ただし、他のプレイヤーも投獄されたプレイヤーには投票できません。\nあなたはそのプレイヤーに投票することで処刑できます。設定によっては、相手がクルーメイトだった場合にあなたが自殺することがあります。処刑回数には上限があります。\n設定によっては、投獄されたプレイヤーがあなたに合わせて「投票」します。つまり、あなたが誰かに投票すると、そのプレイヤーも同じ相手に投票するよう強制されます。
+      ButtonText: 投獄
+    Sidekick:
+      RoleName: サイドキック
+      Blurb: ジャッカルが全員をキルするのを手助けする
+      Description: 設定が有効な場合、ジャッカルはプレイヤーをサイドキックとして仲間にできます。サイドキックは元の役職と能力を失いますが、ジャッカルの味方になり、キル能力を得ます。サイドキックはジャッカルのようにベントやサボタージュを使うことはできません。設定が有効な場合、ジャッカルが死亡するとサイドキックが昇格し、さらに別のサイドキックを仲間にできる場合があります。
+    Turncoat:
+      Options:
+        RevealedTurncoatWincon: '公開後のターンコートの勝利条件:'
+        RevealedTurncoatAllies: 公開後のターンコートが味方を知る
+        TurncoatLearns: ターンコートが知るタイミング
+        MustBeAlive: ターンコートは生存していないと勝利不可
+        AfterReveal: 公開後
+        BeforeReveal: 公開前
+        ImpFaction: インポスター
+        NeutralFaction: ニュートラルキラー / アンデッド
+        NonCrewFaction: 非クルー
+        Immediately: 即時
+        NextMeeting: 次の会議
+      NoTarget: キルボタンで対象を選択するまで、自分を公開できません。
+      BetrayReveal: >-
+        {0} は {1} であり、クルーを裏切ることを選びました！
+
+        ただし、{1} は誰かに呪いをかけています！{1} が死亡すると、呪われたプレイヤーも道連れになります。
+      TurncoatHint: 自分に投票するとクルーを裏切ります。ただし、自分の正体が他のクルー全員に公開されます。
+      BetrayedTeamPlayers: "あなたは「{0}」陣営に付きました。同じチームのプレイヤー: {1}"
+      NoPlayersOnBetrayedTeam: あなたが味方したチームにはプレイヤーがいません。
+      RoleName: ターンコート
+      Blurb: クルーを裏切る...かどうかはあなた次第
+      Description: ターンコートは、最初はクルーメイトチームに所属しているニュートラル役職です。ゲーム終了時にはクルーと一緒に勝利します。ただし、会議で自分に投票することでクルーを裏切る選択ができます。その結果、ターンコートの役職は全員に公開されます。クルーに即座に投票されるのを防ぐため、公開前にキルボタンでプレイヤーをマークできます。あなたが死亡した場合、そのプレイヤーも死亡するため、生き残るための交渉材料として利用できます。対象のプレイヤーは自分が犠牲者だと知らないため、あなたは嘘をついて、まったく別の人物（たとえばドクター）を責めることもできます。
+    Detective:
+      Options:
+        SuspectsPerCase: 事件ごとの容疑者数
+      RoleName: 探偵
+      Blurb: 情報を集め、殺人事件を解く
+      Description: 探偵は、死体を調査してキラーを突き止めるクルーメイト役職です。会議中、通報者から得た手がかりを使って、死体の場所やキラーのインポスター役職を推測できます。ラウンド中はプレイヤーを調査し、死体がキルされた時点でそのプレイヤーがどこにいたかを調べられます。
+    Viper:
+      Options:
+        DissolveTime: 溶解時間
+      RoleName: ヴァイパー
+      Blurb: キルした死体を溶かす
+      Description: ヴァイパーは、プレイヤーをキルした後に死体を溶かすインポスター役職です。一定時間が経過すると死体は完全に消え、通報できなくなります。溶解には3段階あり、完全に消えるまでの時間はホストが設定します。
+    Drafter:
+      RoleName: ドラフター
+      Blurb: 次の役職を選ぶ
+      Description: ゲーム開始時、ドラフターは提示された役職の中から自分の役職を選べます。この役職はドラフトゲームモードでのみ出現します。
+    Seeker:
+      RoleName: シーカー
+      Blurb: 制限時間内にハイダーを全員キルする
+      Description: バニラのAmong Usに存在する役職です。時間切れになる前に全員をキルすると勝利します。
+    Hider:
+      RoleName: ハイダー
+      Blurb: シーカーから隠れる
+      Description: バニラのAmong Usに存在する役職です。時間切れまでシーカーにキルされなければ勝利します。ベントをうまく活用しましょう。
+    Child:
+      EarDamageReason: 耳へのダメージ
+      ScreamedDeathReason: 叫び声
+      RoleName: 子ども
+      Blurb: キルされると即勝利
+      Description: 'これはエイプリルフール役職です。4月1日から4月7日までの間だけ、設定に表示され出現します。\n子どもはクルーメイト役職で、<b>ラウンド中</b>にキルされると即座に単独勝利します。会議中にキルされた場合（例: 推測による死亡）は勝利しません。'
+    Drunk:
+      RoleName: 酔っぱらい
+      Blurb: 操作が反転する
+      Description: これはエイプリルフール役職です。4月1日から4月7日までの間だけ、設定に表示され出現します。\nこのサブロールを持つプレイヤーは、生存中の操作が反転します。上は下に、左は右になります。
+    Lagger:
+      RoleName: ラガー
+      Blurb: ランダムに停止する
+      Description: これはエイプリルフール役職です。4月1日から4月7日までの間だけ、設定に表示され出現します。\n0.1〜20秒ごとに、プレイヤーは0.05〜4秒間その場で強制停止します。そのため、マップ内を移動しにくくなります。プレイヤーが死亡すると、この効果は止まります。
+    Slowpoke:
+      RoleName: のろま
+      Blurb: とても遅い
+      Description: これはエイプリルフール役職です。4月1日から4月7日までの間だけ、設定に表示され出現します。\nプレイヤーの速度が大幅に低下します（具体的には4分の1になります）。プレイヤーが死亡すると、速度は通常に戻ります。
+    Sneezer:
+      RoleName: くしゃみ
+      Blurb: うっかり会議を招集する
+      Description: これはエイプリルフール役職です。4月1日から4月7日までの間だけ、設定に表示され出現します。\n初回以外の各ラウンドで、開始から30〜120秒後に緊急会議を強制的に招集します。その時間までにプレイヤーが死亡した場合、会議は招集されません。
+  StaticOptions:
+    AutoKick: 自動キック
+    EnableGM: GM
+    KillFlashDuration: キルフラッシュ持続時間
+    SabotageTimeControl:
+      Enable: サボタージュ時間制御
+      PolusReactorTime: ポーラスのリアクター制限時間
+      AirshipReactorTime: エアシップのリアクター制限時間
+    TOSOptions:
+      Enable: TOS設定
+      AttackDefense: 攻撃・防御値
+      ResetKillcooldown: キルクールダウンをリセット
+      SkKillsRB: シリアルキラーが能力妨害した相手をキル
+      AutoGameProgress: ゲーム進行を自動化
+      RoundReview: ラウンドレビュー
+      AmnesiacRememberAnnouncement: アムネシアックの思い出し通知
+      GAVoteImmunity: 守護天使の投票無効
+    LightsPanelSettings:
+      Enable: 停電時の特殊設定
+      AirshipGapRoom: エアシップの昇降機の配電盤を無効化
+      AirshipCargoRoom: エアシップの貨物室の配電盤を無効化
+      AirshipViewingDeck: エアシップの展望デッキの配電盤を無効化
+    PlayerAppearanceCommands: プレイヤーが /cmd name、/cmd color、/cmd level を使用可能
+    DisableTasks:
+      Enable: タスクを無効化
+      CardSwipe: カードスワイプタスクを無効化
+      CardScan: スキャン提出を無効化
+      UnlockSafe: 金庫解除を無効化
+      UploadData: データアップロードを無効化
+      StartReactor: リアクター起動を無効化
+      ResetBreaker: ブレーカーリセットを無効化
+    RandomMap:
+      Enable: ランダムマップモード
+      Skeld: Skeld
+      Mira: MIRA HQ
+      Polus: Polus
+      Airship: Air Ship
+    RandomSpawn:
+      Enable: ランダムスポーン
+      AirshipExtraSpawn: エアシップの追加スポーン
+    SyncButton:
+      Enable: ボタン同期モード
+      Count: 同期するボタン回数
+    VoteMode:
+      Enable: 投票モード
+      SkipMode: スキップ投票時の処理
+      Mode:
+        Default: デフォルト
+        Suicide: 自殺
+        SelfVote: 自投票
+        Skip: スキップ
+      SkipFirstMeeting: 初回会議ではスキップ投票処理を適用しない
+      IgnoreNoBody: 死体がない会議ではスキップ投票処理を適用しない
+      IgnoreEmergencyMeeting: 緊急会議ではスキップ投票処理を適用しない
+      NonVote: 無投票時
+      Tie: 同票時
+      TieMode:
+        Default: デフォルト
+        All: 全員
+        Random: ランダム
+    AllAliveMeeting:
+      Enable: 全員生存時会議
+      Time: 全員生存時会議の時間
+    AdditionalEmergencyCooldown:
+      Enable: 追加緊急会議クールダウン
+    LadderDeath:
+      Enable: はしごからの落下死
+      Chance: はしご落下死の確率
+    FixFirstCooldown: 初回キルクールダウン設定
+    DisableTaskWin: タスク勝利を無効化
+    MinMax:
+      MinNeutralKiller: ニュートラルキラー最小数
+      MaxNeutralKiller: ニュートラルキラー最大数
+      MinNeutralNonKiller: キル能力のないニュートラル最小数
+      MaxNeutralNonKiller: キル能力のないニュートラル最大数
+    MadMates:
+      MinMadmates: マッドメイト最小数
+      MaxMadmates: マッドメイト最大数
+    NoGameEnd: ゲーム終了なし
+    GhostsCanSeeRoles: 幽霊が他の役職を見られる
+    GhostsCanSeeVotes: 幽霊が投票先を見られる
+    GhostIgnoreTasks: 幽霊のタスクを除外
+    CamoComms: 通信妨害時にカモフラージュ
+    AutoDisplayResult: 最新結果を自動表示
+    SuffixMode: 名前の末尾表示
+    ColorNameMode: 色名表示モード
+    ChangeNameToRoleInfo: 名前を役職情報に変更
+    ShowHistoryTimestamp: 履歴のタイムスタンプを表示
+    MayhemOptions:
+      Enable: カオス設定
+      AllRolesVent: ほとんどの役職がベント使用可能
+    CustomServerMode: N/A
+  Commands:
+    Aliases:
+      Help: help
+    Help:
+      Roles:
+        Usage: 使い方が正しくありません。有効な役職名を指定してください。
+        RoleNotFound: 役職 {0} が見つかりませんでした。
+      HelpTitle: ヘルプ
+      HostSection: '<size=85%>ホストコマンド:'
+      GeneralSection: '一般コマンド:'
+      LobbySection: 'ロビーコマンド:'
+      InGameSection: 'ゲーム中コマンド:'
+      OtherSection: 'その他のコマンド:'
+      MessageParameter: msg
+      RoleNameParameter: role
+      NameParameter: name
+      IdCommandDescription: 全プレイヤーとIDを表示します。
+      SayCommandDescription: 全プレイヤーにメッセージを表示します。
+      KickCommandDescription: 指定したプレイヤーをキックします。
+      BanCommandDescription: 指定したプレイヤーをBANします。
+      DumpCommandDescription: ログダンプを作成します。
+      TemplateHelpCommandDescription: すべてのテンプレートコマンドの情報を表示します。
+      MyRoleCommandDescription: 現在の自分の役職説明を表示します。
+      RoleOptionCommandDescription: 現在の自分の役職設定を表示します。
+      DescCommandDescription: 初回会議で表示される説明文を表示します。
+      LastResultCommandDescription: 最新の試合結果を表示します。
+      WinnerCommandDescription: 最新の勝者を表示します。
+      DeathCommandDescription: 自分の死因を表示します。（死亡中またはロビーでのみ使用可能）
+      DeathOtherCommandDescription: 他のプレイヤーの死因を表示します。（死亡中またはロビーでのみ使用可能）
+      RoleInfoCommandDescription: 役職の説明や設定を表示します。
+      RolesCommandDescription: MOD内のすべての役職を表示します。
+      NowSpecificCommandDescription: 指定したカテゴリで有効な役職や設定をすべて表示します。
+      NowAllCommandDescription: 有効な役職や設定をすべて表示します。
+      PercCommandDescription: 有効な役職とその出現率をすべて表示します。
+      NameCommandDescription: プレイヤー名を変更します。
+      ColorCommandDescription: プレイヤーの色を変更します。
+      StatsCommandDescription: このロビーでの自分の統計を表示します。
+      StatsOtherCommandDescription: このロビーでの他のプレイヤーの統計を表示します。
+      ModCommandDescription: プレイヤーをモデレーターにし、キックやBANを行えるようにします。
+      AdminCommandDescription: 他のプレイヤーを管理者にし、モデレーター権限を付与します。管理者は他のプレイヤーのモデレーター権限を付与・削除できます。
+      StartCommandDescription: ゲームを強制的に即開始します。ホストなしで管理者がゲームを開始できるようにするための機能です。
+      InfoCommandDescription: ラウンド開始時にチャットへ表示された自分の役職情報を再送します。
+      StatusCommandDescription: 自分、または他のプレイヤー名に付いているアイコンの意味を確認します。
+      HistoryCommandDescription: 前回のゲームの全ログを、開始時点からのタイムスタンプ付きで表示します。
+    Stats:
+      PlayerNotFound: プレイヤー "%s" が見つかりません。
+    Color:
+      NotInRange: '{0} は有効な色の範囲外です。'
+    Winners: 勝者
+    Dump:
+      Success: ログのダンプに成功しました。logsフォルダー内の "dump.log" を確認してください！
+    HostOptions:
+      RoleInfo: ★ 役職情報 ★
+      RoleCategory: ★ {0} 役職
+      CurrentRoles: 現在の役職
+    InvalidUsage: ⚠ 使い方が正しくありません ⚠
+    NotPermittedTitle: ⚠ 権限がありません ⚠
+    NotPermittedText: このコマンドを使用する権限がありません。
+    Say:
+      MessageTitle: ホストからのメッセージ
+    Admin:
+      KickMessage: '{0} はホストによってキックされました。'
+      BanMessage: '{0} はホストによってBANされました。'
+    Ids:
+      PlayerIdMessage: '{0} のプレイヤーIDは {1} です。'
+    PlayerNotFoundText: プレイヤー： "{0}" が見つかりません。
+    CommandError: ⚠ コマンドエラー ⚠
+    Friends:
+      NoFriendcodeText: '{0} を追加できませんでした。有効なフレンドコードがありません。'
+      SuccessText: '{0}（{1}）を追加しました。'
+      RemoveText: フレンドリストから {0} を削除しました。
+      LastKnownAsText: '別名: {0}'
+    Template:
+      CreatedTemplateText: 'テンプレートを作成しました（ID: {0}）。'
+      ErrorRemovingTemplateText: テンプレートの削除中にエラーが発生しました。
+      SuccessRemovingTemplateText: 'テンプレートを削除しました（ID: {0}）。'
+      SuccessTaggingTemplateText: 'テンプレート（ID: {1}）にタグ「{0}」を追加しました。'
+      ErrorTaggingTemplateText: 'テンプレート（ID: {1}）にタグ「{0}」を追加中にエラーが発生しました。'
+      SuccessRemovingTagText: 'テンプレート（ID: {0}）からタグを削除しました。'
+      ErrorPreviewingTemplateText: 'テンプレート（ID: {0}）のプレビュー中にエラーが発生しました。'
+      ErrorShowingTemplateText: '{0} にテンプレートを表示中にエラーが発生しました。'
+      SuccessEditingTemplateText: 'テンプレートを編集しました（ID: {0}）。'
+      ErrorEditingTemplateText: 'テンプレート（ID: {0}）の編集中にエラーが発生しました。'
+      ReloadTemplatesText: テンプレートを再読み込みしました。
+      ErrorRemovingTagText: 'テンプレート（ID: {0}）からタグを削除中にエラーが発生しました。'
+    TemplateCommands:
+      TemplateCommandTitle: テンプレートコマンド
+    LastResults:
+      NoPreviousGameText: まだゲームが行われていません！
+      PlayerResultTitle: '{0} の結果'
+      RoleText: <b>役職:</b> {0}
+      ModifierText: <b>モディファイア:</b> {0}
+      WinnerText: 勝者
+      ResultsText: 結果
+      WinResultText: '勝者: {0}'
+      WinReasonText: '勝因: {0}'
+    MyDeath:
+      DirectDeathString: '{0} は {1} によって死亡しました<br>死因: {2}'
+      IndirectDeathString: '{0} の死因: {1}'
+      CouldNotDetermineDeathText: '{0} の死因を特定できませんでした。'
+      PlayerIsAliveText: '{0} はまだ生存しているため、死因はありません。'
+      DeathInfoTitle: 死亡情報
+      CannotViewDeathWhileAlive: 生存中は死亡情報を確認できません！
+      ListExtension: 一覧
+      ListMessageStart: >
+        全員の死因一覧:
+    NoPreviousGameText: まだ試合は行われていません！
+    Mods:
+      SomethingWentWrong: コマンドの実行中に問題が発生しました。<br>パラメータを確認してください。
+      SuccessfulMod: '{0} がモデレーターになりました。<br>/cmd kick と /cmd ban コマンドを使用できるようになりました！'
+      RemovedMod: '{0} をモデレーターから削除しました。<br>モデレーター関連コマンドは使用できなくなりました。'
+      AlreadyMod: '{0} はすでにモデレーターです。'
+    BugReports:
+      WaitingOnReport: 前回の報告への返信待ちのため、この報告は無効になりました。
+      FailedReport: >-
+        リクエストの送信中にエラーが発生しました。1分ほど待ってから、もう一度お試しください。
+
+        エラー: {0}
+      ReportingBug: リクエストを受け付けました。現在、バグ報告を送信しています。しばらくお待ちください。
+      ReportedBug: バグ報告が正常に送信されました。ご協力ありがとうございます！
+      ReportSuggest: '{0} が「{1}」の報告を提案しています。'
+      UploadingLog: ログファイルをアップロード中...（{0}/{1}）
+    Role:
+      AbortSearch: 検索結果が5件を超えたため、中止しました。<br>もう少し詳しく入力してください。
+      NoRoles: >-
+        このゲームモードでは、検索条件に一致する役職が見つかりませんでした。
+
+        入力ミスをしていませんか？
+    Info:
+      NoInfoMessage: この役職には表示できる情報がありません。
+    Poll:
+      PollStarted: >-
+        現在のゲームモードを変更するための投票を開始しました！
+
+        /cmd gmpoll vote (ID) を使用して、希望するゲームモードに投票してください。
+
+        この投票は {0} 秒後に終了します。
+      PollEnded: The poll has ended! The winning gamemode is {0} with {1} votes.
+      PollEndedTie: >-
+        投票が終了しました！
+
+        複数のゲームモードが同票だったため、{1} 票を獲得した {0} がランダムで選ばれました。
+      VoteMessage: 　{0} に投票しました！
+      NoVotes: 投票は終了しました。<br>誰も投票しませんでした。
+      NoPollActive: 現在行っている投票はありません。
+      PollActive: 既に進行中の投票があります。
+      InvalidID: '選択したゲームモードIDが存在しません。<br投票可能なゲームモードは以下の通りです。:<br>'
+      NoIdInCommand: '投票したいゲームモードのIDを入力してください。<br>投票可能なゲームモードは以下のものです。:<br>'
+      CurrentStandings: >-
+        <size=75%>{0}
+
+        残り {1} 秒です.<sub><br>⚠今現在、PL側のコードの問題で常に残り0秒と表示されます。⚠</sub>
+      Hint: <size=75%>現在投票が行われています。<br><b>「/cmd gmpoll vote</b>」で投票できます。
+      AvailableModesTitle: 利用可能なゲームモード
+      CurrentStandingsTitle: 現在の順位
+    OldCommandWarning: >-
+      <size=75%>古い形式のコマンドを使用しています！
+
+      現在全てのコマンドの先頭には、「/cmd」をつける必要があります。
+
+      「/{0}」ではなく「/cmd {0}」を使用してください。
+
+      3月までは古い形式のコマンドも使用可能ですが、4月以降は使用できなくなります。</size>
+  Announcements:
+    SystemMessage: システムメッセージ
+    CannotSabotageMessage: 霊界サボタージュはホストによって禁止されています。<br>使用できません。
+  OptionShower:
+    ActiveRolesList: 現在有効な役職の一覧
+    NextPage: Tabキーを押して次へ…
+  ModUpdater:
+    ModBrokenMessage: N/A
+    ModUpdateMessage: N/A
+    UpdateButton: N/A
+  HistoryEvent:
+    PlayerChangedRole: 変更役職
+    Death:
+      PlayerMurdered: キル
+      PlayerSuicide: 自殺
+  PingDisplay:
+    AddonsLoaded: 個のアドオンを読み込みました<br> </color>日本語翻訳適応済み
+    AddonsFailed: '{0} 個のアドオンの読み込みに失敗しました: {1}'
+  DisconncetReasons:
+    FreeChatOnly: <size=80%>Project Lotus はフリーチャットモードでのみ正常に動作します<br>フリーチャットモードに切り替えてプレイしてください。</size>
+  Gamemodes:
+    Colorwars:
+      Options:
+        GracePeriod: 猶予時間
+  Statistics:
+    BodiesReported: 死体通報数
+    CommonTasksComplete: コモンタスク完了数
+    Deaths: 死亡回数
+    FirstDeaths: 初手死回数
+    FirstKills: 初キル回数
+    Games: 試合数
+    Kills: キル数
+    LongTasksComplete: ロングタスク完了数
+    MeetingsCalled: 会議招集回数
+    MessagesSent: 送信メッセージ数
+    PlayersExiled: 追放されたプレイヤー数
+    SabotagesCalled: サボタージュ発動回数
+    SabotagesFixed: サボタージュ修理回数
+    Shapeshifts: シェイプシフト回数
+    ShortTasksComplete: ショートタスク完了数
+    TimeAlive: 生存時間
+    TimeDead: 死亡時間
+    TimesExiled: 追放された回数
+    TimesVented: ベント使用回数
+    TimesVoteSkipped: スキップ投票数
+    TimesVoted: 投票回数
+    TotalTasksComplete: 完了したタスク数
+    TotalTime: 総プレイ時間
+    TotalVotesFor: プレイヤーへの総投票数
+    CommsSabotaged: 通信サボタージュ発動回数
+    DoorsSabotaged: ドア閉鎖発動回数
+    LightsSabotaged: 停電発動回数
+    OxygenSabotaged: 酸素サボタージュ発動回数
+    ReactorSabotaged: リアクターサボタージュ発動回数
+    Losses: 敗北数
+    Wins: 勝利数
+    Statistics: 統計
+  Options:
+    Roles:
+      Maximum: 最大数
+      SubsequentChance: 追加出現率
+      CanVent: ベント使用可能
+      CanSabotage: サボタージュができる
+      KillCooldown: キルクールダウン
+      ImpostorVision: インポスター視界
+      Switch: 切り替え
+      Command: コマンド
+      Vote: 投票
+    General:
+      OnText: オン
+      OffText: オフ
+      EnabledText: 有効
+      DisabledText: 無効
+      DefaultText: デフォルト
+      NeverText: なし
+      ShowText: 表示
+      HideText: 非表示
+      FriendsText: フレンド
+      EveryoneText: 全員
+      DurationText: 持続時間
+      AllText: すべて
+      NoOneText: 誰もいない
+      CommonText: 共通
+      GlobalText: 全体
+      CustomText: カスタム
+      NoneText: なし
+      SecondsSuffix: 秒
+      AlwaysText: 常に
+      Options: 設定
+      Kill: キル
+      Vent: ベント
+      Pet: ペット
+    RolesNeutral:
+      NeutralPassiveSlots: ニュートラルパッシブ::1枠
+      NeutralKillingSlots: ニュートラルキラー::2枠
+      MinimumNeutralPassiveRoles: ニュートラルパッシブの役職の最小数
+      MaximumNeutralPassiveRoles: ニュートラルパッシブの役職の最大数
+      MinimumNeutralKillingRoles: ニュートラルキラーの役職の最小数
+      MaximumNeutralKillingRoles: ニュートラルキラーの役職の最大数
+      NeutralTeamMode: ニュートラル::0のチーム化モード
+      SameRoleText: 同じ役職
+      KillingAndPassiveText: キラー::2とパッシブ::1
+      AlliedKnowRoles: チーム内で全員の役職を共有
+    Subroles:
+      ModifierMaximumText: プレイヤー1人あたりの最大モディファイア::0数
+      EvenlyDistributeModifierText: モディファイア::0を均等に配分
+      UncappedText: 上限なし
+      NoModifiersText: モディファイアなし
+      SubroleOptions: サブロール設定
+    Admin:
+      SectionTitle: ホスト設定
+      HostGM: ホストGM
+      AutoKick: チャット自動キック
+      AutoKickNoFriendcode: フレンドコードがないプレイヤーをキック
+      AutoKickLevel: 指定レベル未満のプレイヤーをキック
+      AutoKickMobile: モバイル版プレイヤーをキック
+      AutoStart: 自動開始
+      AutoStartOptionSuffix: 人
+      AutoPlayAgain: 自動でロビーに戻る
+      AutoStartPlayerThreshold: 自動開始に必要な人数
+      AutoStartMaxWaitTime: 最大待機時間
+      AutoStartGameCountdown: ゲーム開始カウントダウン
+      SpectatorMode: 観戦モード
+      AutoHauntCooldown: 自動憑依クールダウン
+      EnableWhitelist: フレンドコードによるホワイトリストを有効化
+    Debug:
+      SectionTitle: デバッグ設定
+      NoGameEnd: ゲームを終了しない
+      NameRoleAssignment: 名前による役職割り当て
+      AdvancedRoleAssignment: 高度な役職割り当て
+    Gameplay:
+      SectionTitle: ゲームプレイ設定
+      OptimizeRoleAmounts: 役職数を遊びやすく調整
+      FixFirstKillCooldown: 初回キルクールダウン設定
+      DisableTasks: タスクを無効化
+      DisableCardSwipe: カードスワイプを無効化
+      DisableMedScan: 医務室スキャンを無効化
+      DisableUnlockSafe: 金庫を無効化
+      DisableUploadData: データアップロードを無効化
+      DisableStartReactor: リアクター起動を無効化
+      DisableResetBreaker: ブレーカーリセットを無効化
+      DisableTaskWin: タスク勝利を無効化
+      GhostSeeRoles: 幽霊が役職を見られる
+      GhostSeeInfo: 幽霊が情報を見られる
+      GhostIgnoreTask: 幽霊のタスクを除外
+      SyncMeetingText: 会議回数を同期
+      SyncMeetingNever: 同期しない
+      ForceNoVenting: ベントを強制禁止
+      FirstKillCooldown: 初回キルクールダウン
+      TenSecondCooldown: 10秒
+      GlobalCooldown: 全体クールダウン
+      RoleCooldown: 役職クールダウン
+      SetCooldown: 指定クールダウン
+      SetCooldownValue: クールダウン指定値
+      DisableFixWiring: 配線修理を無効化
+      LadderDeath: はしごからの転落死
+      ModifierTextMode: モディファイア表示名
+      FirstValue: 初回
+      BlockDeadFromSabotaging: 霊界サボタージュを禁止
+      BlockDoorsWhenAllSabotagersAreDead: サボタージュができる人が全員死亡したらドア閉鎖を禁止
+      DisabledTasks:
+        DisableCardSwipe: カードスワイプを無効化
+        DisableFixWiring: 配線修理を無効化
+        DisableIdCode: IDコード入力を無効化
+        DisableScanBoardingPass: 搭乗券スキャンを無効化
+        DisableInsertKeys: キー挿入を無効化
+        DisableAlignTelescope: 望遠鏡の調整を無効化
+        DisableAssembleArtifact: アーティファクト組み立てを無効化
+        DisableBuyBeverage: 飲み物購入を無効化
+        DisableCalibrateDistributor: 配電器の調整を無効化
+        DisableChartCourse: 航路設定を無効化
+        DisableCleanO2Filter: O2フィルター清掃を無効化
+        DisableCleanToilet: トイレ掃除を無効化
+        DisableCleanVent: ベント掃除を無効化
+        DisableClearAsteroids: 小惑星破壊を無効化
+        DisableDecontaminate: 除染を無効化
+        DisableDivertPower: 電力転送を無効化
+        DisableDressMannequin: マネキンの着せ替えを無効化
+        DisableFixShower: シャワー修理を無効化
+        DisableMakeBurger: バーガー作りを無効化
+        DisableMeasureWeather: 天候測定を無効化
+        DisableMonitorOxygen: 酸素監視を無効化
+        DisablePickUpTowels: タオル拾いを無効化
+        DisablePolishRuby: ルビー磨きを無効化
+        DisablePrimeShields: シールド起動を無効化
+        DisableProcessData: データ処理を無効化
+        DisablePutAwayPistols: ピストル片付けを無効化
+        DisablePutAwayRifles: ライフル片付けを無効化
+        DisableRecordTemperature: 温度記録を無効化
+        DisableRepairDrill: ドリル修理を無効化
+        DisableRunDiagnostics: 診断実行を無効化
+        DisableSortRecords: 記録整理を無効化
+        DisableSortSamples: サンプル整理を無効化
+        DisableStabilizeSteering: ステアリング安定化を無効化
+        DisableStartReactor: リアクター起動を無効化
+        DisableStoreArtifacts: アーティファクト収納を無効化
+        DisableSubmitScan: スキャン提出を無効化
+        DisableUnlockManifolds: マニホールド解除を無効化
+        DisableAlignEngineOutput: エンジン出力調整を無効化
+        DisableDevelopPhotos: 写真現像を無効化
+        DisableEmptyGarbage: ゴミ捨てを無効化
+        DisableFuelEngines: エンジン給油を無効化
+        DisableInspectSample: サンプル検査を無効化
+        DisableRebootWifi: Wi-Fi再起動を無効化
+        DisableOpenWaterways: 水路開放を無効化
+        DisableReplaceWaterJug: 水差し交換を無効化
+        DisableResetBreaker: ブレーカーリセットを無効化
+        DisableRewindTapes: テープ巻き戻しを無効化
+        DisableStartFans: ファン起動を無効化
+        DisableUnlockSafe: 金庫解除を無効化
+        DisableUploadData: データアップロードを無効化
+        DisableWaterPlants: 植物への水やりを無効化
+      DisableCommonTasks: コモンタスクを無効化
+      DisableShortTasks: ショートタスクを無効化
+      DisableLongTasks: ロングタスクを無効化
+      CrewCanSoloKillers: キル可能なクルーはインポスター/ニュートラルキラーと1対1可能
+    Mayhem:
+      SectionTitle: カオス設定
+      RandomMaps: ランダムマップを有効化
+      RandomSpawn: ランダムスポーン
+      CamoComms: 通信妨害時にカモフラージュ
+      AllRolesCanVent: 全役職がベントを使用可能
+      Skeld: Skeld
+      Mira: MIRA HQ
+      Polus: Polus
+      Airship: Air Ship
+    Miscellaneous:
+      SectionTitle: その他設定
+      AssignedPet: 付与するペット
+      AllowNameCommand: /cmd name の使用を許可
+      AllowColorAndLevelCommand: /cmd color と /cmd level の使用を許可
+      AutoDisplayResults: 試合結果を自動送信
+      SuffixMode: 名前の末尾表示
+      ColorNames: 色名を表示
+      LadderDeath: はしごからの落下死
+      AutoDisplayCauseOfDeath: 死因を自動送信
+      AllowTeleportCommand: /cmd tpin と /cmd tpout の使用を許可
+      BlackscreenResolver: 暗転対策
+      EventLog: イベントを記録
+      KillsOnly: キルのみ
+    Sabotage:
+      SectionTitle: サボタージュ設定
+      DefaultValue: デフォルト
+      DisableSabotages: サボタージュを無効化
+      ReactorCountdown: リアクターサボタージュの制限時間
+      OxygenCountdown: 酸素サボタージュの制限時間
+      DisableReactor: リアクターサボタージュを無効化
+      DisableOxygen: 酸素サボタージュを無効化
+      DisableLights: 停電サボタージュを無効化
+      DisableCommunications: 通信サボタージュを無効化
+      DisableDoors: ドアを無効化
+      DisableHelicopters: 衝突回避サボタージュを無効化
+      CrashCourseCountdown: 衝突までの制限時間
+    RolesMadmates:
+      MadmatesTakeImpostorSlots: マッドメイト::0をインポスター枠に含める
+    GameMode:
+      GamemodeText: ゲームモード
+      GamemodeSelection: ゲームモード選択
+      Standard:
+        Name: スタンダード
+        ButtonText: Lotus設定
+        Description: 通常ゲームモードの各種設定を変更します。
+        ImpostorTab: インポスター設定
+        CrewmateTab: クルーメイト設定
+        NeutralTab: ニュートラル設定
+        MiscTab: その他の設定
+        HiddenTab: 非表示
+        GamemodeDescription: 通常のAmong Usルールです。クルーメイトはタスクを完了し、キラーを投票で追放します。一方、インポスターとニュートラルキラーは、それぞれの陣営の勝利を目指します。
+      CaptureTheFlag:
+        Name: キャプチャー・ザ・フラッグ
+        ButtonText: CTF設定
+        Description: CTFの設定を変更します。
+        GamemodeDescription: 基本的なキャプチャー・ザ・フラッグです。\n相手チームの旗を奪い、自分の拠点まで持ち帰ると得点できます。攻撃を受けると、少し時間が経ってから復活します。\n復活後は、一定時間が経過するか、他のプレイヤーをキルするまで無敵になります。
+      Colorwars:
+        Name: カラーウォーズ
+        ButtonText: カラーウォーズ設定
+        Description: カラーウォーズの設定を変更します。
+        GamemodeDescription: プレイヤーはチーム分けされ、ランダムな色を割り当てられます。\n色変換モードが有効な場合、他のプレイヤーをキルしようとすると、そのプレイヤーの色が自分と同じ色に変わります。残りの色が1色になるとゲーム終了です。サドンデスが有効な場合、残りの色数がホストの設定した数以下になると、変換ではなく互いにキルするようになります。\n\n色変換モードが無効な場合、他の色のプレイヤーをキルして脱落させる必要があります。残りの色が1色になるとゲーム終了です。
+      Draft:
+        Name: ドラフト
+        ButtonText: ドラフト設定
+        Description: ドラフトゲームモードの設定を変更します。
+        RoleChoiceCount: 役職の選択肢数
+        DraftTitle: ドラフトゲームモード
+        RandomOption: ランダム
+        PlayerEndTurn: プレイヤー {0} が {1} を選択しました。
+        PlayerSwapChoice: '現在の選択: {0}。スキップ投票で確定します。{1}'
+        PlayerChoiceOptions: >-
+          選択肢: {0}
+
+          選択を変更するには、任意のプレイヤーに投票してください。
+        PlayerStartsTurn: プレイヤー {0} が役職を選択中です。{1}秒以内に選ばない場合、自動でランダムが選択されます。
+        GamemodeDescription: <size=95%>通常ゲームモードの派生ルールです。通常ゲームモードで使える役職はすべて使用できます。\n\nこのゲームモードでは、まず通常通り、アサインされる役職が選ばれます。ただし、その時点ではプレイヤーに割り当てず、候補リストに追加されるだけです。\nゲーム開始時に会議が開かれます。この会議中、各プレイヤーには自分専用の番号（カスタムID）が通知されます。プレイヤーは番号の小さい順（1から参加人数まで）に、候補リストからランダムに提示された役職の中から1つずつ選びます。\n選択肢の数はホストが設定します。任意のプレイヤーに投票すると選択を変更できます。提示された役職が気に入らない場合は、常に「ランダム」という追加選択肢があります。\nランダムを選ぶと、候補リストに残っていて、まだ誰にも選ばれていない役職から1つが選ばれます。選択内容に問題がなければ、スキップ投票で確定できます。\n制限時間内に役職を選ばなかった場合は、自動的にランダムが選ばれます。選んだ選択肢はチャットで公開されます。\nその役職が選ばれたことは全員に伝わりますが、誰に割り当てられたかは分かりません。\n\n全員が役職を選び終えると会議が終了し、通常通りゲームが始まります。
+        DecisionTime: 選択時間
+        StartingInText: '{0}秒後に開始...'
+        PlayerIdText: あなたのIDは {0} です。自分の番まで待ってください。
+      HNSStandard:
+        Name: かくれんぼ
+        GamemodeDescription: かくれんぼモードです。 \nハイダーはタスクを完了して残り時間を減らし、必要に応じてベントに隠れます。 \nシーカーは時間切れになる前に全員をキルしなければなりません。\n時間切れになるとハイダーの勝利です。
+    CaptureTheFlag:
+      SectionTitle: CTF設定
+      GameLength: ゲーム時間
+      ReviveDuration: 復活までの時間
+      CarryingSpeedMultiplier: 旗運搬中の移動速度倍率
+      CarryingCanVent: 旗運搬中のベント使用
+      OvertimeOnTies: 同点時に延長戦
+      OvertimeLength: 延長戦の時間
+      SuddenDeath: サドンデス
+      InvincibilityDuration: 復活後の無敵時間
+    Colorwars:
+      SectionTitle: カラーウォーズ設定
+      TeamSize: チーム人数
+      PreferSmall: 少人数チームを優先
+      ConvertColorMode: 色変換モード
+      GracePeriod: 猶予時間
+      CustomTeams: カスタムチーム
+      TeamOption: チーム {0}
+      CustomTeamTitle: カスタムチーム
+      EnablesWithXTeamsLeft: '有効化する残りチーム数'
+      DisableVents: ベントを無効化
+      EnableArrows: プレイヤーの位置を矢印で表示
+  GUI:
+    GeneralButton: General
+    GraphicsButton: Graphics
+    SoundButton: Sound
+    VentLibButton: Vent Lib
+    AddonsButton: アドオン
+    ReturnButton: 戻る
+    LeaveGameButton: ゲームを退出
+    ModUpdateMenu:
+      ExitGameText: ゲームを終了
+      CloseText: 閉じる
+      UpdateText: アップデート
+      UpdateAvailableText: アップデートがあります！
+    LotusButton: Lotus
+    InnerslothButton: Innersloth
+    HistoryMenu:
+      ButtonText: 試合結果
+    ComboMenu: # コンボ、排他設定てきなヤツ。 <- 組み合わせにしたほうがわかりやすい
+      ButtonText: 役職の組み合わせ
+      DeleteArea:
+        TitleText: >-
+          この組み合わせを削除しますか？
+      ChooseComboTypeArea:
+        ForceComboTitleText: 必須の組み合わせ
+        BanComboTitleText: 禁止する組み合わせ
+        TitleText: 
+        ForcedRoleModifierComboText: >-
+          役職が {1} の場合は、
+
+          {0} が必ず付与されます。
+        ForcedModifierModifierComboText: >-
+          {0} と {1} はセットでアサインされます。
+        ForcedRoleRoleComboText: >-
+          {0} がアサインされると、{1} も必ずアサインされます。
+
+          アサイン枠がない場合はどちらのアサインされません。
+        BannedRoleRoleComboText: >-
+          {0} と {1} は同時にアサインされません。
+        BannedRoleModifierComboText: >-
+          役職が {0} のプレイヤーは
+
+          {1} がアサインされません。
+        BannedModifierModifierComboText: >-
+          {0} と {1} を同時にアサインしない
+      CreateComboArea:
+        NothingFound: >-
+          入力された役職、モディファイアが見つかりませんでした。
+
+          入力ミスをしていませんか？
+        SelectRolesText: >-
+          組み合わせる役職を選択して、
+
+          [次へ]ボタンを押してください。
+        SearchTooVague: >-
+          検索条件が曖昧です！！！
+
+          もう少し詳しく入力してね。
+        SelectedRoles: '選択済みの役職:'
+        ReturnText: 戻る
+        NextText: 次へ
+      FinalizeArea:
+        TitleText: 本当にこの組み合わせを作成しますか？
+        CreateComboText: 組み合わせを作成する
+      MainArea:
+        TitleText: 組み合わせを編集する
+        AddComboText: 　　　組み合わせを追加する
+        CycleUpText: 　　上にスクロール
+        CycleDownText: 　　下にスクロール
+        PresetText: <br>プリセット名： {0}
+  Factions: #陣営とかそこらへん。
+    Crewmates:
+      Name: クルーメイト
+      Description: タスクをしつつ、インポスターを追放しよう
+    Impostors:
+      Name: インポスター
+      Description: クルーを全員殺して勝利しよう
+    Madmates:
+      Name: マッドメイト
+      Description: インポスターの手助けをしよう
+    Neutral:
+      Name: ニュートラル
+      Description: 自分以外を利用して勝利しよう
+    Modifiers:
+      Name: モディファイア
+      Description: もう1つの力で勝利しよう
+    TheUndead:
+      Name: アンデッド
+      Description: 逆らう者を全て殺して勝利しよう
+    ColorTeam:
+      Name: カラーチーム
+      Description: 自分と同じ色のプレイヤー全員が味方だ
+    NeutralKillers:
+      Name: ニュートラルキラー
+      Description: 他人を利用しつつ全員キルして勝利しよう
+  Constants: # 死因です。
+    DeathNames:
+      Killed: キル
+      Suicide: 自殺
+      Exiled: 追放
+      Bombed: 爆死
+      Bitten: 噛殺
+      Cursed: 呪殺
+      Incinerated: 焼死
+      Misfired: 誤爆
+      Parried: 反撃
+      Sniped: 射殺
+      Executed: 処刑
+      Guessed: 推測
+  Meetings:
+    RoleRevealText: '{0} は {1} だった。'
+    RemainingImpostorsText: '残り{0}人 インポスターが残っている。'
+    NoImpostorsText: 残り0人 インポスターが残っている。
+  Internals:
+    FatalErrorHandler:
+      FatalErrorTitle: エラーが発生しました。
+      FatalErrorMessage: 　 [{0}] の実行中にエラーが発生しました。
+      CheckLogMessage: 詳細についてはログを確認してください。
+  PrivacyPolicy:
+    PrivacyPolicyText: Project Lotusには、バグレポートやロビー情報の共有など、APIへのデータ送信が必要な任意機能があります。詳しくは<link=https://lotusau.top/privacy/>プライバシーポリシー</link>をご確認ください。これらの追加機能を有効にし、データの処理を許可しますか？
+    UpdatedPrivacyPolicy: <link=https://lotusau.top/privacy/>プライバシーポリシー</link>が更新されました。内容をご確認のうえ、必要に応じて設定を変更してください。引き続きこれらの機能を有効にし、データの処理を許可しますか？
+    DisagreeText: 必須ではないオンライン通信をすべて無効にしました。個別の機能は設定メニューから有効にできます。
+    AcceptText: すべてのオンライン通信を有効にしました。個別の機能は設定メニューから無効にできます
+    CustomizeText: 設定を保存しました。設定メニューからいつでも変更できます。
+    PrivacyPolicyTitle: 'Project: Lotus Privacy Policy'
+    ManageData: データ収集の管理
+    CustomizeButtonText: カスタマイズ
+    DisagreeButtonText: いいえ
+    AcceptButtonText: はい
+  Whitelist:
+    WhitelistBan: "{0} はホワイトリストに登録されていないため、キックしました。"
+  PetWarning:
+    WarningToHost: >-
+      <size=75%>以下のプレイヤーがペットを装備していません : {0}
+
+      以下の役職がペットを必要とします : {1}
+    WarningToPlayer: There are roles enabled that have pets. Please equip one in the cosmetics area.
+    WarningTitle: <color=red>⚠ <color=yellow>警告 <color=red>⚠</color>
+  RoleOptionsWarning:
+    WarningTitle: <color=red>⚠ <color=yellow>警告 <color=red>⚠</color>
+    WarningToHost: >-
+      {2} が有効になっているため、{0} を自動的に {1} に設定しました。
+
+      手動で値を設定する場合は、Lotus設定から変更してください。
