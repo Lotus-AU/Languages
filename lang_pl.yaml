@@ -28,3 +28,5 @@ Translations:
       Blurb: Zabijaj cele, by zmniejszyć czas odnowienia zabójstwa
       Options:
         TimeUntilNewTarget: Czas do zmiany celu
+        AfterKillingTarget: Czas odnowienia po zabiciu celu
+        AfterKillingNonTarget: Czas odnowienia po zabiciu nie-celu
