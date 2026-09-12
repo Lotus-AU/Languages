@@ -3,8 +3,28 @@ Translations:
     Assassin:
       RoleName: Skrytobójca
       Description: |-
-        Skrytobójca to Impostor, który może też zabijać nie-impostorów zgadując ich role. Nie możesz zgadywać żadnych ról impostorów.
-        Podczas spotkania, możesz wybrać gracza, którego rolę chcesz zgadnąć, głosując na niego. Po głosowaniu możesz użyć komendy na chacie (/cmd [nazwa roli]), żeby wybrać rolę którą chcesz zgadnąć.
-        Aby zakończyć zgadnięcie, zagłosuj na tego gracza jeszcze raz aby potwierdzić, że wszystko jest poprawnie. Jeżeli zgadłeś/aś poprawnie, ten gracz zginie, w przeciwnym razie to Skrytobójca zginie.
-        Aby anulować zgadywanie, możesz pominąć spotkanie kiedy chcesz, a twój następny głos będzie normalny.
-        Uwaga: Ujawnione role (np. Oracle) nie mogą zostać odgadnięte.
+        Skrytobójca to Impostor, który może też zabijać nie-Impostorów, zgadując ich role. Nie możesz zgadywać żadnych ról Impostorów.
+        Podczas spotkania, możesz wybrać gracza, którego rolę chcesz zgadnąć, głosując na niego. Po głosowaniu możesz użyć komendy na czacie (/cmd [nazwa roli]), żeby wybrać rolę, którą chcesz zgadnąć.
+        Aby zakończyć zgadywanie, zagłosuj na tego gracza ponownie, aby potwierdzić, że wszystko jest poprawnie. Jeżeli odgadnięcie jest poprawne, ten gracz zginie, w przeciwnym razie to Skrytobójca zginie.
+        Aby anulować zgadywanie, możesz pominąć głosowanie, a twój następny głos będzie normalny.
+        Uwaga: Ujawnione role (np. przez Oracle) nie mogą zostać odgadnięte.
+      Blurb: Zabijaj i odgaduj role graczy
+    Blackmailer:
+      RoleName: Szantażysta
+      Description: Zmien się w innego gracza, aby go zaszantażować. Podczas spotkania, ten gracz będzie miał wyświetlony tekst "ZASZANTAŻOWANY", który będzie widoczny przez wszystkich innych graczy.\n\nJeżeli szantażowany gracz spróbuje wysłać wiadomość, otrzyma ostrzeżenie, by milczeć. Kiedy osiągnie maksymalną ilość ostrzeżeń (wyznaczoną przez hosta), zostanie stracony.
+      Blurb: Szantażuj graczy, by milczeli
+      Options:
+        WarningsUntilDeath: Ostrzeżenia przed straceniem
+        ShowBlackmailedToAll: Pokaż szantażowanego wszystkim
+        BlackmailerIsSSBased: Szantażysta używa Zmiennokształtnego
+      BlackmailedMessage: Zostałeś zaszantażowany! Jeżeli wyślesz wiadomość na czacie, zginiesz.
+      WarningMessage: Nie możesz rozmawiać! Jeżeli wyślesz kolejną wiadomość, możesz zginąć.
+      BlackmailedText: ZASZANTAŻOWANY
+      BlackmailingMode: Szantażowanie
+      BlackmailButtonText: Szantaż
+    BountyHunter:
+      RoleName: Łowca nagród
+      Description: Łowca nagród otrzyma cel do zabójstwa (zaznaczony czarną nazwą). Jeżeli zabije swój cel, czas do następnego zabójstwa zostanie znacznie skrócony.\n\nCzas do zmiany celu, czas odnowienia zabójstwa po zabiciu celu lub innego gracza są określone przez hosta w ustawieniach.
+      Blurb: Zabijaj cele, by zmniejszyć czas odnowienia zabójstwa
+      Options:
+        TimeUntilNewTarget: Czas do zmiany celu
