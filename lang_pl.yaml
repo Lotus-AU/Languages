@@ -1,1 +1,10 @@
-{}
+Translations:
+  Roles:
+    Assassin:
+      RoleName: Skrytobójca
+      Description: |-
+        Skrytobójca to Impostor, który może też zabijać nie-impostorów zgadując ich role. Nie możesz zgadywać żadnych ról impostorów.
+        Podczas spotkania, możesz wybrać gracza, którego rolę chcesz zgadnąć, głosując na niego. Po głosowaniu możesz użyć komendy na chacie (/cmd [nazwa roli]), żeby wybrać rolę którą chcesz zgadnąć.
+        Aby zakończyć zgadnięcie, zagłosuj na tego gracza jeszcze raz aby potwierdzić, że wszystko jest poprawnie. Jeżeli zgadłeś/aś poprawnie, ten gracz zginie, w przeciwnym razie to Skrytobójca zginie.
+        Aby anulować zgadywanie, możesz pominąć spotkanie kiedy chcesz, a twój następny głos będzie normalny.
+        Uwaga: Ujawnione role (np. Oracle) nie mogą zostać odgadnięte.
