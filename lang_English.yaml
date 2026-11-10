@@ -10,19 +10,13 @@ Translations:
     Assassin:
       RoleName: Assassin
       Description: >-
-        The Assassin is an Impostor that can also kill non-Impostors by guessing
-        their roles. You cannot guess any Impostor role.
+        The Assassin is an Impostor that can also kill non-Impostors by guessing their roles. You cannot guess any Impostor role.
 
-        While in meeting, you can select a player they want to guess by voting
-        for them. After voting, you can use a chat command (/cmd [rolename])
-        to select the role you wish to guess.
+        While in meeting, you can select a player they want to guess by voting for them. After voting, you can use a chat command (/cmd [rolename]) to select the role you wish to guess.
 
-        To finish the guess, vote the player again to confirm everything is
-        correct. If the guess is correct, the guessed player will die, otherwise
-        the Assassin will die.
+        To finish the guess, vote the player again to confirm everything is correct. If the guess is correct, the guessed player will die, otherwise the Assassin will die.
 
-        To cancel guessing, you can skip at any time and your next vote will
-        be normal.
+        To cancel guessing, you can skip at any time and your next vote will be normal.
 
         Note: Revealed roles (e.g. from Oracle) are unable to be guessed.
       Blurb: Kill & Guess Players' Roles
@@ -96,13 +90,10 @@ Translations:
     FireWorks:
       RoleName: FireWorks
       Description: >-
-        Use your Shapeshift button to plant a firework (i.e. bomb) around
-        the map. You can then use your Pet Button at any time to detonate
-        the fireworks, killing anyone within the radius of a firework.
+        Use your Shapeshift button to plant a firework (i.e. bomb) around the map. You can then use your Pet Button at any time to detonate the fireworks, killing anyone within the radius of a firework.
 
 
-        Note: The explosion goes through walls. The FireWorks can also kill
-        normally between placing fireworks.
+        Note: The explosion goes through walls. The FireWorks can also kill normally between placing fireworks.
       Blurb: Plant Fireworks to Explode Players
       Options:
         PlantFireworkCooldown: Plant Firework Cooldown
@@ -173,12 +164,9 @@ Translations:
       RevealerItem: Role Revealer
       RevealerReady: Role Revealer Ready
       ShopMessage: >-
-        You are a member of the Mafia! You can purchase items during meetings.
-        To purchase an item, first vote yourself until that item is selected.
-        Then skip to continue.
+        You are a member of the Mafia! You can purchase items during meetings. To purchase an item, first vote yourself until that item is selected. Then skip to continue.
 
-        Voting for ANY OTHER player will count as your vote for that player,
-        otherwise you will still remain in shop mode.
+        Voting for ANY OTHER player will count as your vote for that player, otherwise you will still remain in shop mode.
       SelectedItemMessage: You have selected to purchase {0}. Purchasing this will leave you with {1} cash. Press the skip vote button to continue your purchase.
       PurchaseItemMessage: 'You have purchased: {0}. You now have {1} cash leftover.'
       RoleName: Mafioso
@@ -256,15 +244,10 @@ Translations:
     SerialKiller:
       RoleName: Serial Killer
       Description: >-
-        The Serial Killer has a significantly reduced kill cooldown (determined
-        by host), however, they also have a timer next to their name. Every
-        time the Serial Killer kills, the timer will reset. If the timer reaches
-        0, the Serial Killer will die.
+        The Serial Killer has a significantly reduced kill cooldown (determined by host), however, they also have a timer next to their name. Every time the Serial Killer kills, the timer will reset. If the timer reaches 0, the Serial Killer will die.
 
 
-        Note: If 'Timer Begins After First Kill' is off, then Suicide Timer
-        will be extended by the same amount as the 'First Kill Cooldown' in
-        Gameplay Options.
+        Note: If 'Timer Begins After First Kill' is off, then Suicide Timer will be extended by the same amount as the 'First Kill Cooldown' in Gameplay Options.
       Blurb: Kill Quickly to Stay Alive
       Options:
         TimeUntilSuicide: Time Until Suicide
@@ -382,8 +365,7 @@ Translations:
       RoleName: Alchemist
       Blurb: Collect Ingredients to Craft the Perfect Potions
       Description: >
-        Alchemist is a jack-of-all-trades crewmate role that collects "ingredients".
-        Ingredients can be found in the following ways:
+        Alchemist is a jack-of-all-trades crewmate role that collects "ingredients". Ingredients can be found in the following ways:
           • Catalyst - Found by completing tasks
           • Essence of Sight - Found when helping fix lights
           • Fragment of Discussions - Found randomly in groups of 3 or more
@@ -391,21 +373,13 @@ Translations:
           • Shifting Rose - Found after a player shapeshifts
           • Theta Rift - Found randomly
           • Vial of Decay - Found off dead bodies
-        The Alchemist can use their pet button to pick up these ingredients,
-        and will get a message below their name saying: "Found: [Ingredient
-        Name]".
+        The Alchemist can use their pet button to pick up these ingredients, and will get a message below their name saying: "Found: [Ingredient Name]".
 
-        The Alchemist uses ingredients to craft potions, to switch into "crafting
-        mode" the Alchemist must hold down their pet button. Once in crafting
-        mode, the pet button can be used to switch the next crafted potion.
+        The Alchemist uses ingredients to craft potions, to switch into "crafting mode" the Alchemist must hold down their pet button. Once in crafting mode, the pet button can be used to switch the next crafted potion.
 
-        If in the crafting menu, the Alchemist can hold down their pet button
-        to exit it. If the Alchemist has all of the necessary ingredients
-        to craft the potion they were on, the potion will begin crafting as
-        they hold the pet button.
+        If in the crafting menu, the Alchemist can hold down their pet button to exit it. If the Alchemist has all of the necessary ingredients to craft the potion they were on, the potion will begin crafting as they hold the pet button.
 
-        Once the Alchemist has a potion, they can hold down the pet button
-        to use it, consuming it.
+        Once the Alchemist has a potion, they can hold down the pet button to use it, consuming it.
       Ingredients:
         Catalyst: Catalyst
         Chaos: Theta Rift
@@ -448,17 +422,13 @@ Translations:
         As the Bodyguard, you must select a player you want to protect.
 
 
-        The Bodyguard must select a player by voting for them in a meeting
-        (this will not count as a vote). When the Bodyguard's target is attacked,
-        the attacker is killed alongside the Bodyguard, and their target will
-        remain alive.
+        The Bodyguard must select a player by voting for them in a meeting (this will not count as a vote). When the Bodyguard's target is attacked, the attacker is killed alongside the Bodyguard, and their target will remain alive.
 
 
         After a Bodyguard votes for their target, they may vote or skip freely.
 
 
-        Note: After the Bodyguard protects their target, 2 bodies will show
-        next to the protected player (the Bodyguard's and the attacker's).
+        Note: After the Bodyguard protects their target, 2 bodies will show next to the protected player (the Bodyguard's and the attacker's).
       Blurb: Sacrifice's Life To Protect Another
       ProtectingMessage: 'You are currently protecting:'
       VotePlayerInfo: Vote to select a player to guard.
@@ -482,7 +452,7 @@ Translations:
         The Charmer can use their Pet/Kill button to charm Impostors or Neutral Killers to join the Crewmate's team.
 
 
-        Charmed players will know they've been charmed and lose the ability to kill other crewmates; however, they can still kill other evils.
+        Charmed players will know they've been charmed, and lose the ability to kill other players.
 
 
         If the Charmer tries to charm a Crewmate, they misfire and die.
@@ -541,8 +511,7 @@ Translations:
 
         2. The player they voted for is exiled.
 
-        3. Sacrifice themself (they die) if they have no more dictate votes
-        left.
+        3. Sacrifice themself (they die) if they have no more dictate votes left.
 
 
         Note: Nothing happens if the dictator skips.
@@ -625,17 +594,13 @@ Translations:
     Investigator:
       RoleName: Investigator
       Description: >-
-        Use the Pet button to investigate if the player is good or bad. Investigated
-        player's names will show as either green or red. In general, red is
-        bad and green is good.
+        Use the Pet button to investigate if the player is good or bad. Investigated player's names will show as either green or red. In general, red is bad and green is good.
 
 
-        Be careful, depending on the host settings, some Crewmate-sided roles
-        (ex. Sheriff) might show up as bad!
+        Be careful, depending on the host settings, some Crewmate-sided roles (ex. Sheriff) might show up as bad!
 
 
-        Players with the Rogue modifier will only show up red if the Neutral
-        Killing setting is set to All.
+        Players with the Rogue modifier will only show up red if the Neutral Killing setting is set to All.
       Blurb: Investigate Players
       Options:
         InvestigateCooldown: Investigate Cooldown
@@ -778,13 +743,10 @@ Translations:
     Sheriff:
       RoleName: Sheriff
       Description: >-
-        The Sheriff can kill Impostors and Neutrals. Be Careful! The Sheriff
-        will misfire (kill themselves) if they try to shoot a Crewmate or
-        a Neutral not allowed by host.
+        The Sheriff can kill Impostors and Neutrals. Be Careful! The Sheriff will misfire (kill themselves) if they try to shoot a Crewmate or a Neutral not allowed by host.
 
 
-        Note: If the Sheriff's 'Action Button' is set to Kill, the Sheriff
-        will not be given any tasks to complete.
+        Note: If the Sheriff's 'Action Button' is set to Kill, the Sheriff will not be given any tasks to complete.
       Blurb: Shoot Impostors
       MisfireStat: Misfires
       NeutralKillingSetting: Can Kill Neutral::0 Killing::1
@@ -823,8 +785,7 @@ Translations:
       Description: The first two players you vote each meeting will have the number of votes against them swapped.\n\nAfter voting those players, you may vote as normal. Alternatively, you can skip at the start and continue to normal voting.\n\nAfter you have chosen one player to swap, you may re-vote them to cancel the selection. Once you have selected two players to swap you may not change your selections
       Blurb: Swap Players' Votes
       SwapperInfoMessage: >-
-        You are Swapper. To swap the votes received by two players, vote two
-        separate players.
+        You are Swapper. To swap the votes received by two players, vote two separate players.
 
         You may change the first swapped person by re-voting them.
 
@@ -876,20 +837,13 @@ Translations:
       RoleName: Vigilante
       Blurb: Guess Impostor Roles to Kill
       Description: >-
-        The Vigilante is a Crewmate that can kill Impostors and Neutrals by
-        guessing the players and their roles. You are not able to guess Crewmate
-        roles.
+        The Vigilante is a Crewmate that can kill Impostors and Neutrals by guessing the players and their roles. You are not able to guess Crewmate roles.
 
-        While in meeting, you can select a player they want to guess by voting
-        for them. After voting, the Vigilante can use a chat command (/cmd
-        [rolename]) to select the role you wish to guess.
+        While in meeting, you can select a player they want to guess by voting for them. After voting, the Vigilante can use a chat command (/cmd [rolename]) to select the role you wish to guess.
 
-        To finish the guess, vote the player again to confirm everything is
-        correct. If the guess is correct, the guessed player will die, otherwise
-        the Vigilante will die.
+        To finish the guess, vote the player again to confirm everything is correct. If the guess is correct, the guessed player will die, otherwise the Vigilante will die.
 
-        To cancel guessing, you can skip at any time and your next vote will
-        be normal.
+        To cancel guessing, you can skip at any time and your next vote will be normal.
 
         Note: Revealed roles (e.g. from Oracle) are unable to be guessed.
       SelectPlayer: 'You have selected to kill:'
@@ -902,19 +856,13 @@ Translations:
         The AgiTater can start a deadly game of 'hot potato'.
 
 
-        Use your Kill button to pass a bomb to a player who must pass the
-        bomb to another player before it explodes (may be after a duration
-        or when the next meeting is called).
+        Use your Kill button to pass a bomb to a player who must pass the bomb to another player before it explodes (may be after a duration or when the next meeting is called).
 
 
-        Players holding the bomb can pass it on by walking by another player,
-        and whoever is holding it will have an indicator text that says 'Holding
-        the Bomb!'.
+        Players holding the bomb can pass it on by walking by another player, and whoever is holding it will have an indicator text that says 'Holding the Bomb!'.
 
 
-        Note: If the bomb is set to explode after a duration, the indicator
-        text will turn from green, to yellow, to red as it gets closer to
-        exploding.
+        Note: If the bomb is set to explode after a duration, the indicator text will turn from green, to yellow, to red as it gets closer to exploding.
       Blurb: Pass The Bomb (Hot Potato)
       Options:
         PlaceBombCooldown: Place Bomb Cooldown
@@ -942,9 +890,7 @@ Translations:
     Amnesiac:
       RoleName: Amnesiac
       Description: >-
-        When the Amnesiac first reports a body, they will join the dead player's
-        team. If enabled, the Amnesiac will instead steal the player's exact
-        role.
+        When the Amnesiac first reports a body, they will join the dead player's team. If enabled, the Amnesiac will instead steal the player's exact role.
 
 
         If Amnesiac reports --> Then it becomes:
@@ -1005,12 +951,7 @@ Translations:
         ProtectDuration: Protect Duration
     Child:
       Blurb: Get Killed to Instantly Win
-      Description: >-
-        This is an April Fools role. It will only appear in the settings and
-        spawn from April 1st to 7th.\nThe Child is a crewmate role that wins
-        instantly and by themselves when they are killed <b>during a round</b>.
-        If the child is killed during a meeting (e.g. guessing), then they will
-        not win.
+      Description: This is an April Fools role. It will only appear in the settings and spawn from April 1st to 7th.\nThe Child is a crewmate role that wins instantly and by themselves when they are killed <b>during a round</b>. If the child is killed during a meeting (e.g. guessing), then they will not win.
       EarDamageReason: Ear Damage
       RoleName: Child
       ScreamedDeathReason: Screamed
@@ -1065,7 +1006,6 @@ Translations:
       Glitch:
         Options:
           HackingDuration: Hacking Duration
-
     Hacker:
       RoleName: Hacker
       Description: The Hacker must fix sabotages to earn points. Each sabotage fix is equal to one point, and the Hacker needs a certain number of points (determined by host) to win. Like the Repairman, the Hacker can fix sabotages more quickly and by themselves.
@@ -1158,6 +1098,9 @@ Translations:
         GulpCooldown: Gulp Cooldown
         AllowEscapeFromPelican: Allow Escape from Pelican
         SpawnBodiesOnPelican: Spawn Bodies on Pelican when Meeting
+        KillAfterTimeLimit: 'Kill Gulped After # Seconds'
+        SpawnBodiesOnTimerEnd: Spawn Bodies on Timer End
+        DecomposeBody: Decompose Body
       GulpedStatistic: Players Gulped
       DeathName: Swallowed
       ButtonText: Swallow
@@ -1176,24 +1119,15 @@ Translations:
     Pirate:
       RoleName: Pirate
       Description: >-
-        The Pirate is a Neutral Guesser that can kill players by guessing
-        their roles. If the Pirate is able to successfully guess a player's
-        role, then that player will be eliminated.
+        The Pirate is a Neutral Guesser that can kill players by guessing their roles. If the Pirate is able to successfully guess a player's role, then that player will be eliminated.
 
-        While in meeting, you can select a player they want to guess by voting
-        for them. After voting, you can use a chat command (/cmd [rolename])
-        to select the role you wish to guess.
+        While in meeting, you can select a player they want to guess by voting for them. After voting, you can use a chat command (/cmd [rolename]) to select the role you wish to guess.
 
-        To finish the guess, vote the player again to confirm everything is
-        correct. If the guess is correct, the guessed player will die, otherwise
-        the Pirate will die.
+        To finish the guess, vote the player again to confirm everything is correct. If the guess is correct, the guessed player will die, otherwise the Pirate will die.
 
-        The Pirate needs a certain amount of guesses to win, determined by
-        the host. The Pirate may not die on misguess depending on host settings,
-        but they won't be able to guess again for the rest of the round.
+        The Pirate needs a certain amount of guesses to win, determined by the host. The Pirate may not die on misguess depending on host settings, but they won't be able to guess again for the rest of the round.
 
-        To cancel guessing, you can skip at any time and your next vote will
-        be normal.
+        To cancel guessing, you can skip at any time and your next vote will be normal.
 
         Note: Revealed roles (e.g. from Oracle) are unable to be guessed.
       Blurb: Guess Players' Roles
@@ -1280,8 +1214,7 @@ Translations:
       BetrayReveal: >-
         {0} is the {1} and they have chosen to betray the crew!
 
-        However, the {1} has cursed someone! If the {1} dies, they take the
-        cursed player with them.
+        However, the {1} has cursed someone! If the {1} dies, they take the cursed player with them.
       TurncoatHint: Vote yourself to betray the crew. But remember, it will reveal your identity to the rest of the crew.
       BetrayedTeamPlayers: "You sided with the '{0}' faction(s). These players are on the same team: {1}"
       NoPlayersOnBetrayedTeam: There are no players on the team you betrayed for.
@@ -1345,17 +1278,13 @@ Translations:
       RoleName: Diseased
       Description: Multiplies the killer's kill cooldown upon death
       Blurb: Increase The Killer's Kill Cooldown
-      Options:
+      Options: 
       CooldownIncrease: Cooldown Increase
       DiseasedAffectDescription: You you have the "Diseased" status. This means that your kill cooldown is increased by a certain percentage.
     Drunk:
       RoleName: Drunk
       Blurb: Inverts Controls
-      Description: >-
-        This is an April Fools role. It will only appear in the settings and
-        spawn from April 1st to 7th.\nThis subrole inverts the player's controls
-        while they are alive. Up goes down, and left goes right.
-
+      Description: This is an April Fools role. It will only appear in the settings and spawn from April 1st to 7th.\nThis subrole inverts the player's controls while they are alive. Up goes down, and left goes right.
     Escalation:
       RoleName: Escalation
       Blurb: Gain Speed on Kills
@@ -1371,20 +1300,14 @@ Translations:
     Guesser:
       RoleName: Guesser
       Description: >-
-        Gives any role the ability to guess. Guessers have the ability to
-        guess players' roles to eliminate them.
+        Gives any role the ability to guess. Guessers have the ability to guess players' roles to eliminate them.
 
 
-        While in meeting, a guesser can select a player they want to guess
-        by voting for them. After voting, the Guesser can use a chat command
-        (/cmd [rolename]) to select the role you wish to guess.
+        While in meeting, a guesser can select a player they want to guess by voting for them. After voting, the Guesser can use a chat command (/cmd [rolename]) to select the role you wish to guess.
 
-        To finish the guess, vote the player again to confirm everything is
-        correct. If the guess is correct, the guessed player will die, otherwise
-        the guesser will die.
+        To finish the guess, vote the player again to confirm everything is correct. If the guess is correct, the guessed player will die, otherwise the guesser will die.
 
-        To cancel guessing, you can skip at any time and your next vote will
-        be normal.
+        To cancel guessing, you can skip at any time and your next vote will be normal.
 
         Note: Revealed roles (e.g. from Oracle) are unable to be guessed.
       Blurb: Guess Players' Roles
@@ -1413,8 +1336,7 @@ Translations:
       CantGuessKnownRole: You can see {0}'s role! You can't guess that player.
       CantGuessTeammate: "{0} is your teammate! You can't guess that player."
       PickedRoleText: >-
-        You are attempting to guess {0} as {1}. To confirm this guess, vote
-        that player again.
+        You are attempting to guess {0} as {1}. To confirm this guess, vote that player again.
 
         Otherwise, vote another player to reset the process.
       PickedPlayerText: You have selected to guess {0}. To select a role, type `/cmd [rolename]`. This command will be hidden from other players.
@@ -1429,11 +1351,7 @@ Translations:
       GuessAnnouncementMessage: The guesser has made a guess. {0} died.
     Lagger:
       Blurb: Random Freezes
-      Description: >-
-        This is an April Fools role. It will only appear in the settings and
-        spawn from April 1st to 7th.\nEvery 0.1-20 seconds the player will be
-        forced to stop in place for 0.05-4 seconds, making it harder to move
-        around the map. If the player dies, this will stop happening.
+      Description: This is an April Fools role. It will only appear in the settings and spawn from April 1st to 7th.\nEvery 0.1-20 seconds the player will be forced to stop in place for 0.05-4 seconds, making it harder to move around the map. If the player dies, this will stop happening.
       RoleName: Lagger
     LastResort:
       RoleName: Last Resort
@@ -1498,20 +1416,11 @@ Translations:
       Blurb: Know Deceased Player Roles
     Slowpoke:
       Blurb: Very very Slow
-      Description: >-
-        This is an April Fools role. It will only appear in the settings and
-        spawn from April 1st to 7th.\nThe player's speed is significant reduced
-        (specifically a fourth). When the player dies, their speed will go back
-        to normal.
+      Description: This is an April Fools role. It will only appear in the settings and spawn from April 1st to 7th.\nThe player's speed is significant reduced (specifically a fourth). When the player dies, their speed will go back to normal.
       RoleName: Slowpoke
     Sneezer:
       Blurb: Calls Meetings Accidentally
-      Description: >-
-        This is an April Fools role. It will only appear in the settings and
-        spawn from April 1st to 7th.\nEvery round after the first, the player
-        will be forced to call an emergency meeting 30-120 seconds into the
-        round. If the player dies between this time, a meeting will not be
-        called.
+      Description: This is an April Fools role. It will only appear in the settings and spawn from April 1st to 7th.\nEvery round after the first, the player will be forced to call an emergency meeting 30-120 seconds into the round. If the player dies between this time, a meeting will not be called.
       RoleName: Sneezer
     TieBreaker:
       RoleName: Tiebreaker
@@ -1587,20 +1496,47 @@ Translations:
         in: {0}
     Seeker:
       Blurb: Kill all hiders before the timer ends.
-      Description: >-
-        This is a vanilla Among Us role. Kill everyone before the time runs out
-        to win.
+      Description: This is a vanilla Among Us role. Kill everyone before the time runs out to win.
       RoleName: Seeker
     Hider:
       Blurb: Hide from the Seeker
-      Description: >-
-        This is a vanilla Among Us role. Avoid getting killed by the Seeker
-        until the timer runs out to win. Use vents to your advantage.
+      Description: This is a vanilla Among Us role. Avoid getting killed by the Seeker until the timer runs out to win. Use vents to your advantage.
       RoleName: Hider
     Drafter:
       RoleName: Drafter
       Blurb: Choose your next role
       Description: At the start of the game, the Drafter can choose their role from a selection of roles. This role only spawns in the Draft gamemode.
+    Tasker:
+      RoleName: Tasker
+      Blurb: Complete All Tasks, then Kill Everyone
+      Description: Complete all of your tasks to gain access to the kill button. Now, use the kill button to eliminate everyone else to win.
+    Warden:
+      RoleName: Warden
+      Blurb: Capture All Fugitives & Burn Them
+      Description: The goal of the Wardens is to capture all of the Fugitives before they all escape, or the timer runs out.\nTo capture the Fugitives, the Wardens will use their kill button on them to 'down them'. In this state, they move a lot slower. Use the kill button on a downed player to start dragging them. A warden may only drag one Fugitive at a time.\nTo eliminate a Fugitive, the Warden must stand on top of a vent for a few seconds. The fugitive will then automatically jump in the vent and a timer will appear over the vent. This timer counts down from a number set by the host. When it reaches 0, the Fugitive will die. Another fugitive may vent inside that vent to rescue the Fugitive. However, the timer still persists. Next time this player is captured, the timer will begin from where it ended before they were rescued.\nThe wardens may be slightly slower than Fugitives depending on host settings.
+      ButtonText: Down
+    Fugitive:
+      RoleName: Fugitive
+      Blurb: Hack All Terminals & Avoid the Wardens
+      Description: The goal of the Fugitives is to escape the facility before the timer runs out.\nAround the map, there will be a certain number of Terminals. Fugitives must work together to hack these terminals before the Warden(s) can catch them all.\n\nThese terminals will have random skill checks, where anyone who is hacking that terminal will be turned into a Phantom, and they must use their Vanish ability when the Terminal turns a specific color.\nIf a skill check is failed, the terminal will turn red, and all alive players will receive an arrow to the failed terminal (Wardens & People close to the Terminal will receive a reactor flash as well)\n\nAfter all terminals are hacked, there will be (n + 1) (n = Warden Count) exits opened on the map, survivors must hack this exit, and can then escape by using the Pet button.
+    Runner:
+      Options:
+        AbilitySpeedMultiplier: Ability Speed Multiplier
+        AbilityCooldown: Ability Cooldown
+        AbilityDuration: Ability Duration
+      RoleName: Runner
+      Blurb: Capture All Fugitives & Burn Them
+      Description: The Runner is a role in the Escape The Facility gamemode. They are on the Warden team.\n\nThey are able to use their vanish button to gain a temporary speed boost to help catch fugitives.
+      VentButtonText: Rescue
+      HackButtonText: Hack
+      SkillCheckText: Respond
+      ButtonText: Boost
+    Judge:
+      Options:
+        TaskRequirementPercentage: Tasks Completed to use Ability
+      RoleName: Judge
+      Blurb: Take over a meeting
+      Description: Take control of the vote and overrule a meeting to eject an Impostor.\nIf wrong, you get ejected. In order to do this, you first must complete a certain percentage of your tasks. Once this is done, you can use the new blue button icon when attempting to vote another player.
   StaticOptions:
     AutoKick: AutoKick
     EnableGM: Host GM
@@ -1789,6 +1725,7 @@ Translations:
       ResultsText: Results
       WinResultText: 'Winners: {0}'
       WinReasonText: 'Reason: {0}'
+      GameLengthText: 'Game Length: {0}'
     MyDeath:
       DirectDeathString: '{0} died to {1}\nCause of Death: {2}'
       IndirectDeathString: "{0}'s cause of death: {1}"
@@ -1808,8 +1745,7 @@ Translations:
     BugReports:
       WaitingOnReport: This report has been voided as we are waiting on a response for your previous report.
       FailedReport: >-
-        An error occurred while sending the request. Please try again in a
-        minute.
+        An error occurred while sending the request. Please try again in a minute.
 
         Error: {0}
       ReportingBug: Your request has went through and we are now reporting your bug. Thanks!
@@ -1829,8 +1765,7 @@ Translations:
         A poll to change the current gamemode has started!
 
 
-        Please vote for your desired game mode using the command /cmd gmpoll
-        vote (id)
+        Please vote for your desired game mode using the command /cmd gmpoll vote (id)
 
 
         This poll will expire in {0}s
@@ -1838,8 +1773,7 @@ Translations:
       PollEndedTie: >-
         The poll has ended!
 
-        Multiple gamemodes had the same votes, so it was randomly selected
-        to be {0} with {1} votes.
+        Multiple gamemodes had the same votes, so it was randomly selected to be {0} with {1} votes.
       VoteMessage: You have casted your vote for {0}!
       NoVotes: The poll is over, No votes were cast.
       NoPollActive: No poll is currently in progress.
@@ -1854,11 +1788,11 @@ Translations:
       AvailableModesTitle: Available Gamemodes
       CurrentStandingsTitle: Current Standings
     OldCommandWarning: >-
-      You are trying to use the deprecated command format!
+      You are using a deprecated command!
 
       Every command has changed to use '/cmd' in front. For example, you typed: '/{0}'. The correct command should be '/cmd {0}'.
 
-      This warning is here to remind you about this change, so make sure to adapt!
+      You have been warned for now, but this deprecated command will stop working sometime in March.
   Announcements:
     SystemMessage: System Message
     CannotSabotageMessage: The host has disabled dead players from sabotaging.
@@ -1982,6 +1916,7 @@ Translations:
       SpectatorMode: Spectator Mode
       AutoHauntCooldown: Auto Haunt Cooldown
       EnableWhitelist: Enable Whitelist via Friendcode
+      HandicapHost: Handicap Host
     Debug:
       SectionTitle: Debug Options
       NoGameEnd: Prevent Game Over
@@ -2097,6 +2032,7 @@ Translations:
       BlackscreenResolver: Blackscreen Resolver
       EventLog: Log Events
       KillsOnly: Only Kills
+      RoleIntroTextTime: Role Intro Text Duration
     Sabotage:
       SectionTitle: Sabotage Options
       DefaultValue: Default
@@ -2116,11 +2052,8 @@ Translations:
       GamemodeText: GameMode
       GamemodeSelection: Gamemode Selection
       HNSStandard:
-        GamemodeDescription: >-
-          The standard Hide & Seek Gameplay. Hiders complete tasks to reduce
-          time and hide in vents when necessary. The Seeker must kill all
-          players before time runs out or the hiders win.
-        Name: Standard
+        GamemodeDescription: The standard Hide & Seek Gameplay. Hiders complete tasks to reduce time and hide in vents when necessary. The Seeker must kill all players before time runs out or the hiders win.
+        Name: Hide n Seek
       Standard:
         Name: Standard
         ButtonText: Lotus Settings
@@ -2140,7 +2073,7 @@ Translations:
         Name: Colorwars
         ButtonText: Colorwars Settings
         Description: Modify the Colorwars settings here!
-        GamemodeDescription: Players are divded into teams and are assigned random colors.\nIf Convert Color Mode is enabled, trying to kill a player will change their color to yours. The game will end when there is only one color remaining. If Sudden Death is on, once the number of colors remaining dips to a number decided by the host, players will start killing each other instead of converting them.\n\nIf Convert Color Mode is disabled, players must kill players of other colors to eliminate them. The game will end when only one color remains.
+        GamemodeDescription: Players are divded into teams and are assigned random colors.\nIf Convert Color Mode is enabled, trying to kill a player will change their color to yours. The game will end when there is only one color remaining. If Sudden Death is one, once the number of colors remaining dips to a number decided by the host, players will start killing each other instead of converting them.\n\nIf Convert Color Mode is disabled, players must kill players of other colors to eliminate them. The game will end when only one color remains.
       Draft:
         Name: Draft
         ButtonText: Draft Settings
@@ -2159,6 +2092,45 @@ Translations:
         DecisionTime: Decision Time
         StartingInText: Starting In {0}...
         PlayerIdText: Your ID is {0}. Wait for your turn.
+      Speedrun:
+        Name: Speedrun
+        ButtonText: Speedrun Settings
+        Description: Modify the Speedrun settings here!
+        GamemodeDescription: >-
+          In Speedrun, there are only crewmates called Taskers.
+
+          The tasker must complete their tasks before everyone else does.
+
+
+          Once someone completes all of their tasks, they will gain the ability to kill, and must kill all other Taskers to win.
+      EscapeTheFacility:
+        Name: Escape The Facility
+        ButtonText: ETF Settings
+        Description: Change any setting for ETF here!
+        GamemodeDescription: There are two factions, the Fugitives, and the Wardens.\nThe goal of the Fugitives is to escape the facility before the timer runs out, while the goal of the Warden(s) is to capture all players.\nView the role descriptions of both roles for more information on how the gamemode works.
+        PlayersRescued: Players Rescued
+        PlayersIncinerated: Players Incinerated
+        TerminalsCompleted: Terminals Completed
+        FindExitText: Find an Exit!
+        TerminalsRemainingText: 'Terminals Remaining: {0}'
+        WardenTab: Warden Settings
+        FugitiveDied: You Died! Enjoy the chaos.
+        FugitiveEscaped: You Escaped! Enjoy the chaos.
+        FugitiveDowned: You were hit by the Warden! Your speed is much slower now.
+        FugitiveVanish: Press VANISH when the terminal turns PURPLE.
+        TerminalFailed: >-
+          At least one player failed the skillcheck. The Warden now knows the location of the terminal.
+
+          You can still hack the computer.
+        WardenTooClose: ⚠ Too Close to Captured Fugitive ⚠
+        FugitiveInvisible: >-
+          You are currently invisible to the Warden(s).
+
+          Use this time to get away from the vent!
+        WardenStunned: You are currently stunned for 1.5s because you downed a player.
+        PlayersLeftText: '{0}/{1} Players Left'
+        WardenDrag: Take the Fugitive to an empty Vent!
+        FugitiveInteractHint: Use the PET button to interact with this object.
     CaptureTheFlag:
       SectionTitle: CTF Settings
       GameLength: Game Duration
@@ -2194,6 +2166,7 @@ Translations:
       CloseText: Close
       UpdateText: Update
       UpdateAvailableText: Updates Available!
+      UpdatesFoundText: Updates Found!
     LotusButton: Lotus
     InnerslothButton: Innersloth
     HistoryMenu:
@@ -2298,8 +2271,7 @@ Translations:
       Executed: Executed
       Guessed: Guessed
   DisconncetReasons:
-    FreeChatOnly: >-
-      Project Lotus only works correctly when using Free Chat mode. Pl
+    FreeChatOnly: Project Lotus only works correctly when using Free Chat mode. Pl
   Meetings:
     RoleRevealText: '{0} was the {1}.'
     RemainingImpostorsText: '{0} impostors remaining.'
@@ -2320,8 +2292,6 @@ Translations:
     CustomizeButtonText: Customize
     DisagreeButtonText: No
     AcceptButtonText: Yes
-  Messages:
-    BanedByBanList: "{0} was banned because they are on the host's banlist."
   Whitelist:
     WhitelistBan: "{0} was kicked because they weren't on the whitelist."
   PetWarning:
@@ -2333,11 +2303,19 @@ Translations:
     WarningTitle: ⚠ WARNING ⚠
   RoleOptionsWarning:
     WarningTitle: ⚠ WARNING ⚠
-    WarningToHost: |-
+    WarningToHost: >-
       Automatically set {0} to {1} due to {2} being enabled.
+
       To manually set your own amounts, change them in the Lotus Settings.
   TranslationUpdate:
     UpdateTitle: Translation Update
     UpdateMessage: The translation files have been downloaded. Please restart the game for them to apply and take effect correctly.
     ErrorTitle: Translation Update Error
     ErrorMessage: An error occurred while downloading the translation files. A fallback file has been used. It will try to redownload the files again on next launch.
+  ModerationActions:
+    BannedByBanList: "{0} was banned because they are on the host's banlist."
+    BlockedPlayer: '{0} was banned because they are blocked by the host.'
+    NoFriendCode: '{0} was kicked because they do not have a friendcode.'
+    MobileDevice: '{0} was kicked because they are on a mobile platform.'
+    LevelKick: '{0} was kicked because they do not meet the minimum level requirement.'
+    BannedName: '{0} was kicked because they have a banned name.'
