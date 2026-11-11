@@ -1180,7 +1180,7 @@ Translations:
       RoleName: 病人
       Description: 死亡時にキラーのキルクールダウンを増加させます。
       Blurb: キラーのキルクールダウンを増やす
-      Options: 
+      Options:
       CooldownIncrease: クールダウン増加率
       DiseasedAffectDescription: あなたは「病人」状態です。キルクールダウンが一定割合増加しています。
     Escalation:
@@ -2099,7 +2099,7 @@ Translations:
       ChooseComboTypeArea:
         ForceComboTitleText: 必須の組み合わせ
         BanComboTitleText: 禁止する組み合わせ
-        TitleText: 
+        TitleText:
         ForcedRoleModifierComboText: >-
           役職が {1} の場合は、
 
