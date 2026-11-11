@@ -55,7 +55,7 @@ Translations:
       ButtonText: 隐蔽
     Consort:
       RoleName: 魅惑者
-      Description: 通过宠物键在魅惑和击杀模式之间切换.被魅惑的玩家不能杀人,报告尸体,召集会议,变形和跳管.
+      Description: 通过宠物键在魅惑和击杀模式之间切换.\n\n被魅惑的玩家不能杀人,报告尸体,召集会议,变形和跳管.
       Blurb: 小弟弟~别害羞嘛~
       Aliases: 邪恶的护卫, 封锁者, 魅惑菇, 配偶, CS
       Options:
@@ -122,7 +122,7 @@ Translations:
       Options:
         FreezeCooldown: 冰冻冷却时间
         FreezeDuration: 冰冻持续时间
-      ButtonText: Freeze
+      ButtonText: 冰冻
     Grenadier:
       RoleName: 掷弹兵
       Description: 使用宠物键以投掷闪光弹,一定范围内的玩家将被致盲.掷弹兵也可能会致盲队友,而这取决于房间设置.在致盲持续时间时,掷弹兵能够做到悄无声息的击杀.
@@ -191,7 +191,7 @@ Translations:
       CanVoteOtherPlayersOnSkip: 你在购买商品前选择了跳过,现在你可以正常投票
     Mare:
       RoleName: 梦魇
-      Description: '梦魇会在某些破坏中获得特殊能力(取决于设置). 这些能力是: 增加移速和减少击杀冷却时间. 小心! 如果开了某些设置, 在能力生效时,你的名字会显示为紫色.'
+      Description: '梦魇会在某些破坏中获得特殊能力(取决于设置). 这些能力是: 增加移速和减少击杀冷却时间. \n\n小心! 如果开了某些设置, 在能力生效时,你的名字会显示为紫色.'
       Blurb: 直面你们的恐惧!
       Aliases: MR, 噩梦
       Options:
@@ -202,8 +202,8 @@ Translations:
         SabotageKillCooldown: 破坏时击杀冷却时间
         SabotageSettings: 破坏期间设置
     Mastermind:
-      RoleName: 策划者
-      Description: 策划者通过击杀键标记其他玩家. 一段时间之后, 那个玩家会得到一个提示显示他被操控了, 并且开始倒计时. 那个玩家必须在倒计时结束前杀掉一个玩家(用他们的击杀键或宠物键), 不然他们就会自杀. 策划者不能正常击杀.
+      RoleName: 谋士
+      Description: 谋士通过击杀键标记其他玩家. \n\n一段时间之后, 那个玩家会得到一个提示显示他被操控了, 并且开始倒计时. 那个玩家必须在倒计时结束前杀掉一个玩家(用他们的击杀键或宠物键), 不然他们就会自杀. 谋士不能正常击杀.
       Blurb: 暗中盘算
       Aliases: 心灵大师, 心灵操控师, 精神操纵师, MD
       Options:
@@ -214,7 +214,7 @@ Translations:
         KillerCDAfterManipulate: 操控后被操控者冷却时间
       ManipulatedText: 被操控
       KillImploredText: >-
-        你<b>必须</b> 在{0}秒内杀一个人
+        你 <b>必须</b> 在{0}秒内杀一个人
 
         (用你的击杀键或者宠物键!)
       ManipulateButtonText: 操控
@@ -243,6 +243,9 @@ Translations:
       Options:
         VanishCooldown: 幻术冷却时间
         VanishDuration: 幻术持续时间
+        ImmuneToRangedInteractions: 免疫远距离交互
+        RemainingTaskWarning: 警告时任务剩余数
+        RemainingTaskTargetable: 可被选中时任务剩余数
     PickPocket:
       RoleName: 窃票者
       Description: 窃票者从他们杀死的玩家那里窃取选票.这些票加在一起,可以让窃票者变成市长awa.
@@ -291,7 +294,7 @@ Translations:
         RefundBulletOnKill: 击杀时回复子弹数
         PreciseShooting: 精确射击
         PlayerPiercing: 可穿透玩家数
-      ButtonText: Aim
+      ButtonText: 瞄准
     Swooper:
       RoleName: 隐身人
       Description: 隐身人可以通过跳进管道以隐身. 隐身时,隐身人可以做所有伪装者都能做的事(击杀,破坏,跳管).\n\n小心点! 取决于房主设置,隐身人在击杀时可能会现形!
@@ -318,15 +321,15 @@ Translations:
         ReturnTimeAfterDeath: 死亡后时间恢复
     Vampire:
       RoleName: 吸血鬼
-      Description: 吸血鬼的击杀/吸血为延迟击杀. 被咬的玩家会在一段时间后死亡 (时间由房主设置) 或者在会议开始前死亡.\n\n如果吸血鬼刀了诱饵, 那么在延迟时间结束后,吸血鬼会报告诱饵的尸体.
+      Description: 吸血鬼的击杀/吸血为延迟击杀. 被咬的玩家会在一段时间后死亡 (时间由房主设置) 或者在会议开始前死亡.如果吸血鬼刀了诱饵, 那么在延迟时间结束后,吸血鬼会报告诱饵的尸体.
       Blurb: 死在血泊之中吧!
       Aliases: VP, 吸血魔
       Options:
         KillDelay: 击杀延迟时间
-      ButtonText: Bite
+      ButtonText: 吸血
     Vampiress:
       RoleName: 吸血公主
-      Description: 类似于吸血鬼, 吸血公主可以延迟击杀 (时间由房主设置), 但是, 吸血公主可以自己决定普通击杀和延迟击杀模式.通过摸宠物切换模式.\n\n吸血公主是一个隐藏角色,它生成时将会代替吸血鬼生成.
+      Description: 类似于吸血鬼, 吸血公主可以延迟击杀 (时间由房主设置), 但是, 吸血公主可以自己决定普通击杀和延迟击杀模式.通过摸宠物切换模式.吸血公主是一个隐藏角色,它生成时将会代替吸血鬼生成.
       Blurb: 血溅与刀光的交错,多么美妙...
       Aliases: VPS, 吸血女鬼
     Warlock:
@@ -337,7 +340,7 @@ Translations:
       Options:
         CursedKillImmediately: 下咒时立即击杀
         LimitedCurseKillRange: 限制下咒击杀距离
-      ButtonText: Curse
+      ButtonText: 诅咒
     Witch:
       RoleName: 女巫
       Description: 女巫有击杀和诅咒两种模式,两种模式轮流切换或可通过摸宠物自由更改模式.\n\n被女巫诅咒的玩家在会议中会在他的名字后面出现一个十字架. 如果女巫在那个会议没有被投出, 被诅咒的玩家就死了.\n\n一般击杀会触发诱饵效果.\n而诅咒不会触发.
@@ -407,7 +410,7 @@ Translations:
 
         如果在制造菜单中,炼金术士可以按住他们的宠物按钮退出.如果炼金术士拥有制作药剂所需的所有材料,药剂将在他们开始按住宠物键时开始制作.
 
-        当炼金术士有了药水,他们可以按住宠物按钮来使用它或者喝下它.ps:材料名称原文是制作组彩蛋哦\n所有药剂的作用:\n瞬间伤害药水:可以用来击杀玩家\n"城堡"啤酒:一次性盾牌\n吐真剂:揭示其他玩家身份\n机械师的密酿:修复破坏\n光之药水:获得伪装者视野\n虫洞药水:交换随机两个玩家的位置\n领袖药水:可以获得额外票数\n不稳定的混合物:随机能力
+        当炼金术士有了药水,他们可以按住宠物按钮来使用它或者喝下它.ps:材料名称原文是制作组彩蛋哦
       Ingredients:
         Catalyst: 催化剂
         Chaos: 裂开的西塔
@@ -436,7 +439,7 @@ Translations:
         InstantText: 立即
         KillerArrow: 凶手有指向复活玩家箭头
         PortableVitals: 拥有便携式生命检测仪
-      ButtonText: Revive
+      ButtonText: 复活
     Bastion:
       RoleName: 埋雷兵
       Description: 跳管埋雷.下一个跳这个管道的人会被炸死.\n注意! 埋雷兵可以被自己炸死.\n炸弹只存在一回合. 下一回合管道会被重置.
@@ -477,14 +480,14 @@ Translations:
         InvisibilityCooldown: 隐身冷却时间
       HiddenText: 隐身中::0 {0}
       TimesInvisibleStatistic: 隐身次数
-      ButtonText: Conceal
+      ButtonText: 隐身
     Charmer:
       RoleName: 谈判家
       Description: >-
         谈判家可以使用他们的宠物/击杀键以说服伪装者或独立阵营(杀戮型)加入船员阵营.
 
 
-        被说服的玩家会知道自己被说服了,并且失去击杀其他玩家的能力.
+        被说服的玩家会知道自己被说服了,并且失去击杀其他船员的能力,但仍能击杀其他非船员玩家.
 
 
         如果谈判家尝试说服一个船员,他将会死于走火.
@@ -523,7 +526,7 @@ Translations:
       Options:
         BeneficialInteractionProtection: 抵挡 增益型::0 的互动
         NeutralInteractionProtection: 抵挡 中立型::0 的互动
-      ButtonText: Protect
+      ButtonText: 保护
     Demolitionist:
       RoleName: 同命爆手
       Description: 同命爆手被杀后,会留下炸弹,如果凶手没有及时进入管道,则会被炸死.\n\n凶手击杀同命爆手后会在他们的名字下面提示他们刚刚击杀了同命爆手.
@@ -1576,42 +1579,53 @@ Translations:
         FactionMaxRogues: '{0}::0 阵营最大反叛者数量'
       RoleName: 反叛者
       Blurb: 为了超级民主!为了超级地球!
+      Description: 反叛者附加可以让玩家保留其原本职业能力的情况下变成叛徒.\n\n这意味着玩家将会与伪装者处于同一阵营并且被判定为船员的敌人,所以类似于告密者的职业可能会揭示出反叛者.
     Detective:
       Options:
         SuspectsPerCase: 每个案件嫌犯数
       RoleName: 侦探
       Blurb: 搜索,解析,确定!
+      Description: 侦探是一个能通过调查尸体以找到凶手的职业.在会议中,他们可以使用报告者的线索推理出尸体在哪以及凶手的职业.在回合进行中,他们能通过调查玩家以认出杀害那名玩家的凶手.
     Viper:
       Options:
         DissolveTime: 溶解时间
       RoleName: 毒蛇
       Blurb: 群蛇形态!
+      Description: 毒蛇是一个可以将尸体分解的伪装者职业.尸体在一段时间后将完全消失并无法报告.分解有三个阶段,尸体完全消失的时间取决于房主设置.
     Child:
       EarDamageReason: 耳膜震碎
       ScreamedDeathReason: 惊吓致死
       RoleName: 小孩
       Blurb: 我是卑鄙的小登
+      Description: 这是愚人节限定职业.只会出现以及生成于4月1号至7号的愚人节活动中.\n小孩是一个船员职业, <b>在回合进行时</b>被任何人(包括自身)击杀时将获得胜利.如果小孩在会议中被击杀(例如被猜测),那么他们将不会获胜.
     Drunk:
       RoleName: 醉汉
       Blurb: 老子没醉!
+      Description: 这是愚人节活动的职业.只会出现在4月1号至7号的愚人节活动期间.\n这个副职业会将玩家的控制方向交换.上下交换,以及左右交换.
     Lagger:
       RoleName: 网卡
       Blurb: woqu,wangkale
+      Description: 这是愚人节活动的职业.只会出现在4月1号至7号的愚人节活动期间.\n每0.1-20秒,玩家将会强行停下0.05-4秒,使其更难移动,玩家死亡后失效.
     Slowpoke:
       RoleName: 笨蛋
       Blurb: 看起来我很笨,实际上我一点都不聪明
+      Description: 这是愚人节活动的职业.只会出现在4月1号至7号的愚人节活动期间.\n玩家的移速将会显著下降(尤其在4号).玩家死亡后该效果无效.
     Sneezer:
       RoleName: 喷嚏虫
       Blurb: 111v我50张纸,谢谢你
+      Description: 这是愚人节活动的职业.只会出现在4月1号至7号的愚人节活动期间.\n除了首轮后的每个回合,玩家将在回合进行至30-120秒时强行召开紧急会议.如果玩家在这期间死亡,则会议将不会召开.
     Drafter:
       RoleName: 轮抽
       Blurb: 轮抽选角的初始职业
+      Description: 游戏开始时,轮抽角色可以从一些职业中选择.这个职业只会在轮抽选角模式中出现.
     Seeker:
       RoleName: 搜寻者
       Blurb: 找!
+      Description: 这是原版职业.在时间结束前杀掉所有玩家以获胜.
     Hider:
       RoleName: 躲藏者
       Blurb: 躲!
+      Description: 这是原版职业.在时间结束前,不要被寻找者击杀以获胜.多加利用管道.
   StaticOptions:
     EnableGM: 房主管理员模式
     KillFlashDuration: 击杀闪光持续时间
@@ -1633,7 +1647,7 @@ Translations:
       AirshipGapRoom: 禁用Airship间隙室旁修灯处
       AirshipCargoRoom: 禁用 Airship仓库的修灯处
       AirshipViewingDeck: 禁用 Airship观察甲板的修灯处
-    PlayerAppearanceCommands: 允许玩家使用/name, /color, 和 /level
+    PlayerAppearanceCommands: 允许玩家使用/cmd name, /cmd color, 和 /cmd level
     DisableTasks:
       Enable: 禁用任务设置
       CardSwipe: 禁用刷卡
@@ -1703,6 +1717,7 @@ Translations:
       Enable: 混乱性设置
       AllRolesVent: 所有人均可使用管道
     CustomServerMode: N/A
+    AutoKick: 自动踢出
   Commands:
     Aliases:
       Help: 帮助
@@ -1812,7 +1827,7 @@ Translations:
     NoPreviousGameText: 还没有进行过游戏!
     Mods:
       SomethingWentWrong: 执行命令时发生错误.请检查您的指令参数.
-      SuccessfulMod: '{0}现在是管理员了!他们被允许使用/kick和/ban了!'
+      SuccessfulMod: '{0}现在是管理员了!他们被允许使用/cmd kick和/cmd ban了!'
       RemovedMod: '{0}的管理员已被移除.他们不再被允许使用模组相关的指令.'
       AlreadyMod: '{0}已经是管理员了.无事发生.'
     BugReports:
@@ -1868,6 +1883,7 @@ Translations:
       CurrentStandingsTitle: 当前设置
   Announcements:
     SystemMessage: 系统信息
+    CannotSabotageMessage: 房主已禁止死亡玩家进行破坏.
   OptionShower:
     ActiveRolesList: 已启用职业的列表
     NextPage: 按Tab键以翻页...
@@ -1882,6 +1898,7 @@ Translations:
       PlayerSuicide: 自杀
   PingDisplay:
     AddonsLoaded: 个插件已载入
+    AddonsFailed: '{0} 个插件加载失败: {1}'
   Gamemodes:
     Colorwars:
       Options:
@@ -2091,14 +2108,14 @@ Translations:
     Miscellaneous:
       SectionTitle: 其他设置
       AssignedPet: 固定宠物
-      AllowNameCommand: 允许使用/name
-      AllowColorAndLevelCommand: 允许使用/color和/level
+      AllowNameCommand: 允许使用/cmd name
+      AllowColorAndLevelCommand: 允许使用/cmd color和/cmd level
       AutoDisplayResults: 自动显示结果
       SuffixMode: 附加模式
       ColorNames: 颜色代替名字
       LadderDeath: 可从梯子上摔死
       AutoDisplayCauseOfDeath: 自动显示死因
-      AllowTeleportCommand: 允许使用/tpin和/tpout
+      AllowTeleportCommand: 允许使用/cmd tpin和/cmd tpout
       BlackscreenResolver: 防止黑屏
       EventLog: 事件记录
       KillsOnly: 仅击杀
@@ -2139,7 +2156,7 @@ Translations:
         Name: 色彩战争
         ButtonText: 色彩战争设置
         Description: 色彩战争的所有设置都在这里!
-        GamemodeDescription: 将其他颜色消灭,,或者转化.
+        GamemodeDescription: 玩家将被分进几个不同颜色的阵营\n如果转化模式启用了,那么击杀将会变成转化.当场上仅剩一种颜色时游戏将会结束.如果立即死亡选项开启,那么当场上的颜色种类数量降低到房主设置的数量时,转化将会变成击杀.\n\n如果转化模式未启用,那么玩家之间必须互相残杀.游戏将会在仅剩一种颜色时结束.
       HNSStandard:
         Name: 经典躲猫猫
         GamemodeDescription: 经典的躲猫猫. 躲藏者做任务减少时间.搜寻者在时间结束前找到并击杀躲藏者以阻止躲藏者获胜.
@@ -2303,7 +2320,7 @@ Translations:
       Parried: 反杀
       Sniped: 狙杀
       Executed: 处决
-      Guessed: Guessed
+      Guessed: 被猜测
   Meetings:
     RoleRevealText: '{0}是{1}.'
     RemainingImpostorsText: 剩余{0}个伪装者.
@@ -2314,8 +2331,8 @@ Translations:
       FatalErrorMessage: 在[{0}]时遇到致命错误
       CheckLogMessage: 检查日志以获得更多信息.
   PrivacyPolicy:
-    PrivacyPolicyText: 莲花计划有一些功能要求与我们的API分享数据,比如bug即时反馈和大厅信息. 查看我们的<link=https://beta.lotusau.top/privacy/>隐私政策</link> 以获得更多细节. 你想要启用这些功能并与我们分享数据吗?
-    UpdatedPrivacyPolicy: 我们已经修订了<link=https://beta.lotusau.top/privacy/>隐私政策</link>. 因此我们鼓励你查看这些文件并做出你的选择. 你仍然想要启用这些功能并允许我们使用您的数据吗?
+    PrivacyPolicyText: 莲花计划有一些功能要求与我们的API分享数据,比如bug即时反馈和大厅信息. 查看我们的<link=https://lotusau.top/privacy/>隐私政策</link> 以获得更多细节. 你想要启用这些功能并与我们分享数据吗?
+    UpdatedPrivacyPolicy: 我们已经修订了<link=https://lotusau.top/privacy/>隐私政策</link>. 因此我们鼓励你查看这些文件并做出你的选择. 你仍然想要启用这些功能并允许我们使用您的数据吗?
     DisagreeText: 所有非必要的线上需求功能已关闭,你可以在设置菜单中启用你需要的功能.
     AcceptText: 所有的线上需求功能已开启,你可以在设置菜单中禁用你不需要的功能.
     CustomizeText: 你的选择已保存. 你可以在设置菜单中随时改变你的选择
@@ -2339,3 +2356,12 @@ Translations:
       已自动将 {0} 设置为 {1} 因为 {2} 启用了.
 
       想要手动修改, 请在lotus设置里面修改.
+  DisconncetReasons:
+    FreeChatOnly: 莲花计划模组仅能在自由聊天模式中正常运行
+  Messages:
+    BanedByBanList: '{0} 被禁止,因为他在房主的封神榜上.'
+  TranslationUpdate:
+    UpdateTitle: 翻译更新
+    UpdateMessage: 翻译文件已下载.请重启游戏以让其正常应用.
+    ErrorTitle: 翻译更新错误
+    ErrorMessage: 下载翻译文件时出现错误.有过时文件仍在被使用.下次登录时将试图重新下载.
