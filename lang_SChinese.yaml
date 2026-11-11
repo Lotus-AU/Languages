@@ -107,7 +107,7 @@ Translations:
       Options:
         PlantFireworkCooldown: 烟花放置冷却时间
         TotalFireworks: 烟花总数
-        AbleToDetonateText: 只能在成为最后一个 伪装者::0时引爆
+        AbleToDetonateText: 引爆已就绪!
         AbleToDetonateEarly: 只能在成为最后一个 伪装者::0时引爆
       AbleToDetonateEarly: 只能在成为最后一个 伪装者::0时引爆
       AbleToDetonateText: 引爆准备!
@@ -186,7 +186,7 @@ Translations:
       RoleName: 黑帮成员
       Blurb: 什么AK47 M4A1都是tm的垃圾!
       Aliases: 黑手党, 黑市商人, MF
-      Description: 黑帮成员是一个独特的伪装者职业,他不能直接击杀. 取而代之的是黑帮成员需要做任务以获得金钱.在会议中,黑帮成员可以使用他们的钱买到很多独特的物品.\n\n汤普森冲锋枪- 能够让黑帮成员击杀玩家(购买时立即击杀)\n\n子弹 - 需要跟汤普森冲锋枪一起使用\n\n防弹衣 - 让黑帮成员在下一回合能够有一次抵挡击杀的能力\n\n预言球 - 能够让黑帮成员揭示一个玩家的职业\n\n使用/o 以查看物品价格. 只有物品在能够使用/购买时才会在商店中显示.
+      Description: 黑帮成员是一个独特的伪装者职业,他不能直接击杀. 取而代之的是黑帮成员需要做任务以获得金钱.在会议中,黑帮成员可以使用他们的钱买到很多独特的物品.\n\n汤普森冲锋枪- 能够让黑帮成员击杀玩家(购买时立即击杀)\n\n子弹 - 需要跟汤普森冲锋枪一起使用\n\n防弹衣 - 让黑帮成员在下一回合能够有一次抵挡击杀的能力\n\n预言球 - 能够让黑帮成员揭示一个玩家的职业\n\n使用/cmd o 以查看物品价格. 只有物品在能够使用/购买时才会在商店中显示.
       CanVoteOtherPlayers: 你在购买商品前选择了给别人投票而不是自己(购买),你的投票视为正常投票.
       CanVoteOtherPlayersOnSkip: 你在购买商品前选择了跳过,现在你可以正常投票
     Mare:
@@ -1279,7 +1279,7 @@ Translations:
       Description: 被杀时增加凶手的击杀冷却.
       Blurb: 给我板蓝根....咳咳
       Aliases: DIS, 患病, 患者
-      Options: 
+      Options:
       CooldownIncrease: 冷却增加倍数
       DiseasedAffectDescription: 你有"患病" 状态. 这意味着你的击杀冷却时间会增加.
     Escalation:
